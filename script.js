@@ -3,23 +3,6 @@ const burgerMenuContent = document.getElementById("burger-menu-content");
 const burgersvg = document.getElementById("burgersvg");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let isVisible = false;
 
 window.addEventListener("resize", () => {
@@ -63,3 +46,36 @@ burgerIcon.addEventListener("click", () => {
 
   toggleMenu();
 });
+
+
+
+const skills = [
+    {
+      id: 1,
+      img: "./pics/html-5.png",
+    },
+    {
+      id: 2,
+      img: "./pics/css-3.png",
+    },
+    {
+      id: 3,
+      img: "https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png",
+    },
+  ];
+
+
+
+for (const skill of skills) {
+    const { img } = skill;
+  
+    const skillCard = document.createElement("div");
+    skillCard.classList.add("skill-card");
+  
+    skillCard.innerHTML = `
+    <img src="${img}" alt="" class="skill-img" />
+    `;
+  
+    document.querySelector("#skills").appendChild(skillCard);
+  }
+  
