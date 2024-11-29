@@ -12,6 +12,7 @@
 body {
   /* background: #1f242d; */
   overflow-x: hidden;
+  position: relative;
 }
 hr {
   background-color: #7cf03d;
@@ -26,7 +27,8 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 0;
 }   
 
 a {
@@ -42,7 +44,7 @@ a {
 
 .navbar ul {
   position: absolute;
-  right: 130px;
+  right: 90px;
   top: 31px;
   display: flex;
 }
@@ -83,7 +85,7 @@ a {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 88dvh;
+    height: 100dvh;
     padding: 0px 9% 0px;
     color: white;
     background-color: #160959;
@@ -150,10 +152,9 @@ a {
     box-shadow: 0 0 10px #7cf03d;
   }
   .home-img img {
-    height: 380px;
-    width: 380px;
+    height: 350px;
+    width: 350px;
     border-radius: 10%;
-    padding: 6px;
     box-shadow: 0 0 10px #fff;
     /* background-color: #7cf03d; */
   }
