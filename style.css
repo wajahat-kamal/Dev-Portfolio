@@ -159,3 +159,52 @@ a {
     /* background-color: #7cf03d; */
   }
   
+
+  /* Skill Section */
+
+
+  
+#MySkills{
+    /* height: 100dvh; */
+    padding-bottom: 1px;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #1f242d;
+  }
+  #MySkills h1{
+    margin-top: 20px;
+    font-size: 45px;
+    color: #7cf03d;
+    text-align: center;
+  }
+  #skills{
+    margin: 60px;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  
+  .skill-card{
+    height:400px; 
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .skill-card img{
+    height: 330px;
+    width: 350px;
+  }
+  
+  .my{
+    color: white;
+  }
