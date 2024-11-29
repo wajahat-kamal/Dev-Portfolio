@@ -42,7 +42,7 @@ a {
 
 .navbar ul {
   position: absolute;
-  right: 90px;
+  right: 80px;
   top: 31px;
   display: flex;
 }
@@ -90,17 +90,17 @@ a {
   }
   
   .home-content h1 {
-    font-size: 57px;
+    font-size: 52px;
     display: flex;
     gap: 15px;
   }
   .home-content .kamal{
     color: #7cf03d;
-    font-size: 57px;
+    font-size: 52px;
   }
   
   .home-content h2 {
-    font-size: 29px;
+    font-size: 26px;
     /* margin-top: -5px; */
   }
   #element {
