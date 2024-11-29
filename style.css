@@ -10,20 +10,18 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  /* background: #1f242d; */
+  background-color: #1f242d;
   overflow-x: hidden;
   position: relative;
 }
-hr {
-  background-color: #7cf03d;
-  height: 8px;
-  width: 100dvw;
-}
+
+
+/* Navbar Section */
 
 .navbar {
   width: 100%;
   padding: 25px 9%;
-  background: #160959;
+  background-color: #1f242d;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,7 +86,7 @@ a {
     height: 100dvh;
     padding: 0px 9% 0px;
     color: white;
-    background-color: #160959;
+  background-color: #1f242d;
   }
   
   .home-content h1 {
