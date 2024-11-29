@@ -65,3 +65,96 @@ a {
 .hidden {
   display: none;
 }
+
+
+ /* Home Section */
+
+
+
+ .line{
+    height: 1px;
+    width: 100dvw;
+    background-color: gray;
+  }
+  
+  
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 88dvh;
+    padding: 0px 9% 0px;
+    color: white;
+    background-color: #160959;
+  }
+  
+  .home-content h1 {
+    font-size: 57px;
+    display: flex;
+    gap: 15px;
+  }
+  .home-content .kamal{
+    color: #7cf03d;
+    font-size: 57px;
+  }
+  
+  .home-content h2 {
+    font-size: 29px;
+    /* margin-top: -5px; */
+  }
+  #element {
+    color: transparent;
+    -webkit-text-stroke: 1.9px #7cf03d;
+  }
+  
+  .home-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .download-btn {
+    padding: 10px 35px;
+    display: inline-block;
+    background-color: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 20px;
+    color: #1f242d;
+    font-weight: 700;
+    transition: 0.4s;
+  }
+  .download-btn:hover {
+    box-shadow: none;
+    background: transparent;
+    color: #7cf03d;
+  }
+  .home-link {
+    margin-left: 20px;
+  }
+  .home-link a {
+    border: 2px solid #7cf03d;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 9px;
+    font-size: 31px;
+    color: #7cf03d;
+    margin: 0 5px;
+    transition: 0.4s;
+  }
+  .home-link a:hover {
+    background: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d;
+  }
+  .home-img img {
+    height: 380px;
+    width: 380px;
+    border-radius: 10%;
+    padding: 6px;
+    box-shadow: 0 0 10px #fff;
+    /* background-color: #7cf03d; */
+  }
+  
