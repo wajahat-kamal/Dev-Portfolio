@@ -187,7 +187,6 @@ a {
     gap: 20px;
   }
   
-  
   .skill-card{
     height:400px; 
     width: 350px;
@@ -206,6 +205,44 @@ a {
   .my{
     color: white;
   }
+#MySkills:hover{
+  .skill-card {
+    -webkit-animation: sscale-up-bottom  0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            animation: scale-up-bottom 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  }
+}
+
+
+@-webkit-keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+@keyframes scale-up-bottom {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+
+
 
 
 
@@ -259,21 +296,23 @@ a {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    column-gap: 11rem;
     margin-top: 30px;
     padding-bottom: 40px;
   }
   
-  
   .workcard{
     border-radius: 2rem;
-    box-shadow: 0 0 2rem black;
-    background-color: #160959;
-    width: 350px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
   }
   .workcard img{
     border-radius: 2rem;
-    width: 350px;
+    width: 500px;
     height: 230px;
+    box-shadow: 0 0 2rem black;
+
   }
   .workcard p{
       font-size: 14px;
@@ -281,7 +320,67 @@ a {
       color: #7cf03d;
   }
 
+  #MyProject:hover{
 
+  .workcard:nth-child(1) {
+    -webkit-animation: slide-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  .workcard:nth-child(3) {
+    -webkit-animation: slide-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-right 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  .workcard:nth-child(2) {
+    -webkit-animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  .workcard:nth-child(4) {
+    -webkit-animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+
+ @-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
 
   /* About Section */
 
