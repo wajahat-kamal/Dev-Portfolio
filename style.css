@@ -253,7 +253,7 @@ a {
   color: #1f242d;
 }
 .upperWork h1 {
-  font-size: 45px;
+  font-size: 40px;
   color: #7cf03d;
 }
 
@@ -261,7 +261,7 @@ a {
   cursor: pointer;
   margin: 15px;
   margin-right: 5dvw;
-  padding: 10px 20px;
+  padding: 9px 18px;
   border-radius: 40px;
   font-size: 16px;
   color: #1f242d;
@@ -289,21 +289,24 @@ a {
 
 .workcard {
   border-radius: 2rem;
-  width: 250px;
-  height: 150px;
+  width: 410px;
+  height: 165px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .workcard img {
   border-radius: 2rem;
-  width: 100%;
+  width: 365px;
   height: 100%;
   box-shadow: 0 0 2rem black;
 }
-.workcard p {
-  font-size: 14px;
-  font-weight: 500;
-  color: #7cf03d;
+.workcard .card-title {
+  position: absolute;
+  top: 42%;
+  right: 36%;
+  font-size: 20px;
+  color: rgb(11, 207, 135);
 }
 
 #MyProject:hover {
@@ -386,8 +389,8 @@ a {
   border-radius: 50%;
 }
 .aboutimg img {
-  height: 330px;
-  width: 330px;
+  height: 300px;
+  width: 300px;
   border-radius: 10%;
   box-shadow: 0 0 10px #fff;
 }
@@ -397,12 +400,12 @@ a {
 .abouth2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 22px;
 }
 .aboutp {
   text-align: center;
   font-weight: 500;
-  font-size: 18.5px;
+  font-size: 16px;
 }
 
 .footer a {
