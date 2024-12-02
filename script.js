@@ -64,6 +64,37 @@ const skills = [
     },
   ];
 
+  const projects = [
+
+    {
+      id: "big1",
+      title: "Amazon Clone",
+      img: "./projects/assets/amazon.png",
+      description: "Amazon Clone Project,  HTML and CSS.",
+      link: "./projects/Amazon-clone/index.html",
+    },
+    {
+      id: "big2",
+      title: "Netflix Clone",
+      img: "./projects/assets/netflix.png",
+      description: "Netflix Clone Project,  HTML and CSS.",
+      link: "./projects/Netflix-clone/index.html",
+    },
+    {
+      id: "big3",
+      title: "Spotify Clone",
+      img: "./projects/assets/Screenshot (2).png",
+      description: "Spotify Clone Project, HTML and CSS.",
+      link: "./projects/spotify-clone/index.html",
+    },
+    {
+      id: 16,
+      title: "Calculator",
+      img: "./projects/assets/Screenshot (139).png",
+      description: "A simple calculator with basic functions.",
+      link: "./projects/Calculator/index.html",
+    },
+  ]
 
 
 for (const skill of skills) {
@@ -78,4 +109,23 @@ for (const skill of skills) {
   
     document.querySelector("#skills").appendChild(skillCard);
   }
+
+
   
+for (const project of projects) {
+  const {img, link, title} = project;
+
+  const  workcard = document.createElement("div");
+  workcard.classList.add("workcard");
+
+  workcard.innerHTML = `
+  
+  <a target="_blank" href="${link}">
+
+  <img src="${img}" alt="" />
+
+  <h4 class="card-title" >${title}</h4> </a>
+`;
+
+  document.querySelector("#projects").appendChild(workcard);
+}
