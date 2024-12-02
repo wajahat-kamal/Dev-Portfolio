@@ -69,28 +69,28 @@ const skills = [
     {
       id: "big1",
       title: "Amazon Clone",
-      img: "./projects/assets/amazon.png",
+      img: "./pics/amazon.png",
       description: "Amazon Clone Project,  HTML and CSS.",
       link: "./projects/Amazon-clone/index.html",
     },
     {
       id: "big2",
       title: "Netflix Clone",
-      img: "./projects/assets/netflix.png",
+      img: "./pics/netflix.png",
       description: "Netflix Clone Project,  HTML and CSS.",
       link: "./projects/Netflix-clone/index.html",
     },
     {
       id: "big3",
       title: "Spotify Clone",
-      img: "./projects/assets/Screenshot (2).png",
+      img: "./pics/Screenshot (2).png",
       description: "Spotify Clone Project, HTML and CSS.",
       link: "./projects/spotify-clone/index.html",
     },
     {
       id: 16,
       title: "Calculator",
-      img: "./projects/assets/Screenshot (139).png",
+      img: "./pics/Screenshot (139).png",
       description: "A simple calculator with basic functions.",
       link: "./projects/Calculator/index.html",
     },
@@ -111,7 +111,7 @@ for (const skill of skills) {
   }
 
 
-  
+
 for (const project of projects) {
   const {img, link, title} = project;
 
