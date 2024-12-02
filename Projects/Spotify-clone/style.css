@@ -1,0 +1,748 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --a: 0;
+}
+
+/* Utility Classes */
+.invert {
+  filter: invert(1);
+}
+.invert1 {
+  filter: invert(0.8);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333; /* Dark color for the thumb */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+/* Utility Classes */
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: black;
+  min-height: 100dvh;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  height: 83.5dvh;
+}
+
+
+
+
+
+
+
+.top {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.spotifyLogo {
+  height: 33px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.SH {
+  position: absolute;
+  right: 40px;
+  top: 18px;
+  cursor: pointer;
+  border-inline-start: 1px solid #333;
+  padding-left: 5px;
+}
+.sea {
+  position: absolute;
+  left: 73px;
+  top: 22px;
+}
+.hom {
+  background-color: #2c2c2c;
+  height: 45px;
+  width: 45px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.homeI {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+#Sbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 34dvw;
+  margin-right: 30px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background-color: #2c2c2c;
+  color: white;
+  font-size: 14px;
+}
+.signupBtn {
+  font-weight: bold;
+  color: gray;
+  background-color: black;
+  border: nne;
+  height: 30px;
+  width: 70px;
+  padding: 5px;
+  margin: 5px;
+  margin-right: 0px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.loginBtn {
+  height:40px;
+  width: 80px;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  margin-right: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.left {
+  padding: 10px;
+  height: 81dvh;
+  width: 27.5dvw;
+  background-color: #121212;
+  border-radius: 11px;
+  position: relative;
+  margin: 0px;
+  margin-top: 11px;
+}
+.Lheading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: rgb(188, 188, 188);
+  cursor: pointer;
+}
+.Lheading h5:hover {
+  color: white;
+  transition-duration: 0.3s;
+}
+.Lheading img {
+  height: 20px;
+}
+.plus {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.Lbox1,
+.Lbox2 {
+  padding-top: 35px;
+  border-radius: 11px;
+  height: 130px;
+  width: 26dvw;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  padding: 15px;
+  font-size: 13px;
+  margin: 20px 0;
+  margin-right: 10px;
+}
+.Lboxp {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.Lbox1 {
+  margin-top: 25px;
+}
+.boxB {
+  height: 38px;
+  width: 130px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+.boxB:hover {
+  cursor: pointer;
+  height: 40px;
+  width: 135px;
+  font-weight: 800;
+  transition-duration: 0.3s;
+}
+
+.Lfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  flex-wrap: wrap;
+  width: 95%;
+  gap: 7px;
+  position: absolute;
+  bottom: 90px;
+  font-size: 11px;
+  cursor: pointer;
+}
+.Lfooter a {
+  color: rgb(152, 151, 151);
+  text-decoration: none;
+}
+.encore-text {
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  bottom: 80px;
+  left: 18px;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  width: 85px;
+  height: 28px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 15px;
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+}
+.language:hover {
+  height: 25px;
+  border: 2px solid white;
+}
+.erth {
+  height: 12px;
+  width: 12px;
+  margin-right: 2.5px;
+}
+
+.Lbtn-hide{
+  display: none;
+}
+
+
+
+.right {
+  margin: 10px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  height: 81dvh;
+  width: 70.2dvw;
+  background-color: #121212;
+  color: white;
+  border-radius: 11px;
+  padding: 10px;
+  position: relative;
+}
+.cardContainer {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 79.5dvh;
+  width: 69.3dvw;
+  overflow-y: scroll;
+}
+.Cconh1 {
+  font-size: 22px;
+  margin: 10px;
+  margin-left: 4px;
+}
+.Cconh1:hover{
+  text-decoration: underline;
+}
+
+.cardP1,
+.cardP2,
+.cardP3,
+.cardP4,
+.cardP5 {
+  display: flex;
+  align-content: center;
+  /* flex-wrap: wrap; */
+}
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+  height: 200px;
+  width: 144px;
+  padding: 5px 3px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+}
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p {
+  font-size: 12px;
+  color: rgb(194, 190, 190);
+  margin-left: 8px;
+  margin-top: 3px;
+  font-weight: 400;
+}
+.cardh4 {
+  margin: 5px;
+  margin-left: 8px;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.card1 img{
+  height: 130px;
+  width: 130px;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  border-radius: 50%;
+}
+
+.card2 img,
+.card3 img,
+.card4 img,
+.card5 img {
+  height: 130px;
+  width: 130px;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  margin-left: 4px;
+}
+
+.card1:hover {
+  background-color: #232323;
+  --a: 1;
+}
+.card2:hover {
+  background-color: #232323;
+  --a: 1;
+}
+.card3:hover {
+  background-color: #232323;
+  --a: 1;
+}
+.card4:hover {
+  background-color: #232323;
+  --a: 1;
+}
+.card5:hover {
+  background-color: #232323;
+  --a: 1;
+}
+
+.play {
+  width: 43px;
+  height: 43px;
+  background-color: #1fdf64;
+  padding: 9.5px ;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 70px;
+  right: 15px;
+  opacity: var(--a);
+  transition: all 1s ease-out;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: 80px;
+  position: relative;
+}
+.link h5 {
+  margin-bottom: 12px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 105px;
+}
+.link ul li {
+  list-style-type: none;
+  font-size: 13px;
+  margin: 0px;
+  margin-bottom: 7px;
+  color: rgb(250, 246, 246);
+}
+.link a {
+  text-decoration: none;
+  color: gray;
+}
+.link a:hover {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+}
+.icon {
+  background-color: rgb(255, 255, 255);
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  position: relative;
+  bottom: 60px;
+  right: 10px;
+}
+.line {
+  height: 5px;
+  width: 95%;
+  background-color: gray;
+  margin-left: 20px;
+}
+.last {
+  font-size: 14px;
+  color: rgb(163, 163, 163);
+  margin: 20px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+.bottom {
+  height: 57px;
+  width: 100%;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#af2896),
+    to(#509bf5)
+    );
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 13px;
+    color: whitesmoke;
+    /* margin-bottom: 3px; */
+}
+.bottomP {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 3px;
+  /* margin-left: 15px; */
+}
+.bottomBtn {
+  font-weight: bold;
+  height: 39px;
+  width: 140px;
+  border-radius: 18px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  margin-right: 10px;
+}
+
+
+@media screen and  (max-width: 1025px){
+ .top{
+  width: 99%;
+  /* height: 50px; */
+ }
+
+ .container{
+  height: 81.6dvh;
+ }
+
+  .left{
+    height: 78dvh;
+  }
+  .Lbox{
+    height: 40dvh;
+    width: 26.2dvw;
+    overflow-y: scroll ;
+  }
+  .Lbox1,.Lbox2{
+    width: 24dvw;
+  }
+  .Lfooter{
+    /* font-size: 11px; */
+    gap: 0px;
+  }
+  .right{
+    height: 78dvh;
+    width: 69dvw;
+  }
+  .cardContainer{
+    height: 76dvh;
+    width: 67.7dvw;
+
+  }
+ 
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5{
+    width: 170px;
+    height: 230px;
+  }
+  .card1 img,
+  .card2 img,
+  .card3 img,
+  .card4 img,
+  .card5 img{
+    width: 155px;
+    height: 160px;
+  }
+
+  .card1:nth-child(4){display: none;}
+  .card1:nth-child(5){display: none;}
+  .card2:nth-child(4){display: none;}
+  .card2:nth-child(5){display: none;}
+  .card3:nth-child(4){display: none;}
+  .card3:nth-child(5){display: none;}
+  .card4:nth-child(4){display: none;}
+  .card4:nth-child(5){display: none;}
+  .card5:nth-child(4){display: none;}
+  .card5:nth-child(5){display: none;}
+
+
+
+
+  .bottom{
+  height: 90px;
+    width: 99%;
+  }
+}
+
+
+@media screen and (max-width: 769px){
+
+
+  .Lbox{
+    overflow: auto;
+  }
+  .Lbox1{height: 140px;}
+  .Lbox2{
+    height: 160px;
+  }
+
+
+  .card1:nth-child(6){display: none;}
+  .card2:nth-child(6){display: none;}
+  .card3:nth-child(6){display: none;}
+  .card4:nth-child(6){display: none;}
+  .card5:nth-child(6){display: none;}
+  
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5{
+    width: 165px;
+  }
+  .card1 img,
+  .card2 img,
+  .card3 img,
+  .card4 img,
+  .card5 img{
+    width: 155px;
+  }
+
+  .bottom{
+    height: 65px;
+  }
+}
+
+
+@media screen and (max-width: 430px){
+
+  body{
+    height: 50dvh;
+    /* width: 100dvw; */
+  }
+
+  .spotifyLogo{
+    margin-left: 0px;
+    width: 25px;
+    height: 25px;
+  }
+  .homeI{
+    width: 25px;
+    height: 25px;
+  }
+ #Sbar{
+   width: 55dvw;
+   margin-right: 0;
+   font-size: 14px;
+  }
+  .SH{
+    width: 25px;
+    height: 25px;
+    right: 7px;
+  }
+  .loginBtn, .signupBtn{
+    height: 25px;
+    width: 70px; 
+  }
+
+  .left{
+    display: none;
+  }
+
+  .right{
+    width: 95dvw;
+    height: 78dvh;
+    margin: 20px 0;
+  }
+  .cardContainer{
+    width: 93dvw;
+    height:76dvh;
+    position: relative;
+  }
+
+  .card1:nth-child(3){display: none;}
+  .card2:nth-child(3){display: none;}
+  .card3:nth-child(3){display: none;}
+  .card4:nth-child(3){display: none;}
+  .card5:nth-child(3){display: none;}
+
+
+  .card1, .card2, .card3, .card4, .card5{
+    width: 200px;
+    height: 240px;
+
+  }
+
+  .card1 img,.card2 img,.card3 img,.card4 img,.card5 img{
+    width:175px;
+    height: 175px;
+  }
+  
+
+  .links{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+  }
+  .company h5{
+    bottom: 580px;
+  }
+  .communities h5{
+    bottom: 470px;
+  }
+  .useful-links h5{
+    bottom: 315px;
+  }
+  .spotify-plans h5{
+    bottom: 225px;
+  }
+  .icons{
+    margin-top: 28px;
+  }
+
+  .Lbtn-hide{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 85px;
+    height: 28px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+  .bottom{
+    height: 100px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .bottomP{
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .bottom h5{
+    font-size: 15px;
+  }
+  .bottomBtn{
+    font-size: 12.5px;
+  }
+  
+}
