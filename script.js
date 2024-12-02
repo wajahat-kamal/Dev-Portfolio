@@ -71,28 +71,28 @@ const skills = [
       title: "Amazon Clone",
       img: "./pics/amazon.png",
       description: "Amazon Clone Project,  HTML and CSS.",
-      link: "./projects/Amazon-clone/index.html",
+      link: "./Projects/Amazon-clone/index.html",
     },
     {
       id: "big2",
       title: "Netflix Clone",
       img: "./pics/netflix.png",
       description: "Netflix Clone Project,  HTML and CSS.",
-      link: "./projects/Netflix-clone/index.html",
+      link: "./Projects/Netflix-clone/index.html",
     },
     {
       id: "big3",
       title: "Spotify Clone",
       img: "./pics/Screenshot (2).png",
       description: "Spotify Clone Project, HTML and CSS.",
-      link: "./projects/spotify-clone/index.html",
+      link: "./Projects/spotify-clone/index.html",
     },
     {
       id: 16,
       title: "Calculator",
       img: "./pics/Screenshot (139).png",
       description: "A simple calculator with basic functions.",
-      link: "./projects/Calculator/index.html",
+      link: "./Projects/Calculator/index.html",
     },
   ]
 
