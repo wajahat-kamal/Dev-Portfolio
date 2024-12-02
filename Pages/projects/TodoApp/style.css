@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  background-color: blueviolet;
+}
+.container {
+  display: inline;
+  /* justify-content: center; */
+  /* align-items: cente-r; */
+  /* height: 100dvh; */
+  background-color: blueviolet;
+  position: relative;
+}
+.box {
+  border: 5px solid rgb(255, 242, 0);
+  height: 450px;
+  width: 350px;
+  background-color: aliceblue;
+  cursor: pointer;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  /* justify-content: center; */
+}
+.btnbox {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(255, 242, 0);
+  font-size: 20px;
+}
+.dabba {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid rgb(255, 242, 0);
+  height: 450px;
+  width: 350px;
+  background-color: aliceblue;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0px 10px 0 0 ;
+}
+#text,
+#dattime,
+#title {
+  height: 30px;
+  width: 100%;
+  margin: 0px;
+}
+#text {
+  height: 100px;
+}
+.dttimh3 {
+  margin: 5px;
+}
+.teh3 {
+  margin: 5px;
+}
+.svto {
+  position: relative;
+}
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+}
+.lastbtn {
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(255, 242, 0);
+}
+.task {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.task *{
+  margin: 0;
+}
+

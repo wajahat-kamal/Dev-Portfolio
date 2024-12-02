@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Roller</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      user-select: none;
+    }
+    body{
+      min-height: 100dvh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: black;
+      color: white;
+    }
+    .heading {
+      padding-bottom: 50px;
+      font-size: 2rem;
+      text-decoration: underline;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    img{
+      max-width: 100%;
+    }
+    #img{
+      height: 150px;
+      width: 150px;
+    }
+    .btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20px;
+      padding:20px;
+      border-radius: 10px;
+      font-size: 23px;
+      background-color: aqua;
+      cursor: pointer;
+    }
+    .btn:active{
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="heading">Dice Roller</h2>
+  <img src="assets/1.png" alt="" id="img">
+  <br>
+  <button class="btn" onclick="anim()">Shuffle</button>
+</body>
+<script src="js.js"></script>
+</html>

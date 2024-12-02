@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Joke Generater</title>
+
+   <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;padding: 0;
+      }
+      body{
+        min-height: 100dvh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        color: white;
+      }
+      .box{
+        margin-top: 30px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         border-radius: 10px;
+       background-color: #fff;
+       text-align: center;
+       color: black;
+       width: 350px;
+       font-size: 1.5rem;
+      }
+      #jokep{
+       padding: 10px;
+       margin: 10px;
+      
+      }
+      .jokebtn{
+        height: 40px;
+        width: 120px;
+        border-radius: 10px;
+        background-color: aquamarine;
+        font-size: 18px;
+        border: none;
+        transition: .2s linear;
+        cursor: pointer;
+      }
+      .jokebtn:active{
+        background-color: blueviolet;
+      }
+   </style>
+
+</head>
+<body>
+  <h1 class="heading">Joke Generater<span>😂</span></h1>
+  <div class="box">
+    <p id="jokep"></p>
+    <button class="jokebtn">New Joke</button>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
