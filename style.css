@@ -28,13 +28,40 @@ body {
   top: 0;
 }
 
+.navbar {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+}
+
+
 a {
   text-decoration: none;
   color: #fff;
 }
 
 .nav-name {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 700;
   text-align: center;
 }
@@ -48,10 +75,10 @@ a {
 
 .navbar ul li {
   list-style: none;
-  margin: 0 9px;
+  margin: 0 10px;
 }
 .nav-link {
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 600;
   transition: 0.5s;
 }
@@ -79,23 +106,23 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   height: 100dvh;
-  padding: 0px 9% 0px;
+  padding: 0px 3% 0px;
   color: white;
   background-color: #1f242d;
 }
 
 .home-content h1 {
-  font-size: 43px;
+  font-size: 49px;
   display: flex;
   gap: 15px;
 }
 .home-content .kamal {
   color: #7cf03d;
-  font-size: 43px;
+  font-size: 49px;
 }
 
 .home-content h2 {
-  font-size: 22px;
+  font-size: 25px;
   /* margin-top: -5px; */
 }
 #element {
@@ -110,7 +137,7 @@ a {
 }
 
 .download-btn {
-  padding: 9px 25px;
+  padding: 10px 25px;
   display: inline-block;
   background-color: #7cf03d;
   border: 2px solid #7cf03d;
@@ -127,14 +154,14 @@ a {
   color: #7cf03d;
 }
 .home-link {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .home-link a {
   border: 2px solid #7cf03d;
   border-radius: 50%;
   display: inline-flex;
   padding: 7px;
-  font-size: 25px;
+  font-size: 30px;
   color: #7cf03d;
   margin: 0 3px;
   transition: 0.4s;
@@ -145,12 +172,68 @@ a {
   box-shadow: 0 0 10px #7cf03d;
 }
 .home-img img {
-  height: 300px;
-  width: 290px;
+  height: 330px;
+  width: 360px;
   border-radius: 10%;
   box-shadow: 0 0 10px #fff;
   /* background-color: #7cf03d; */
 }
+
+.home-content{
+  -webkit-animation: s-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: s-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.home-img{
+  -webkit-animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  both;
+animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes s-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(70px);
+    transform: translateX(70px);
+  }
+}
+@keyframes s-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(70px);
+    transform: translateX(70px);
+  }
+}
+
+@-webkit-keyframes s-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+    transform: translateX(70px);
+  }
+}
+@keyframes s-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-70px);
+    transform: translateX(-70px);
+  }
+}
+
+
+
 
 /* Skill Section */
 
@@ -160,6 +243,7 @@ a {
   width: 100dvw;
   height: 100dvh;
   background-color: #1f242d;
+  position: relative;
 }
 #MySkills h1 {
   margin-top: 20px;
@@ -180,9 +264,9 @@ a {
 }
 
 .skill-card {
-  height: 280px;
-  width: 260px;
-  padding: 25px;
+  height: 320px;
+  width: 300px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,12 +278,29 @@ a {
   height: 100%;
   width: 100%;
 }
-
+/* .skill-card:nth-child(1){
+  position: absolute;
+  top: 25dvh;
+  left: 100px;
+}
+.skill-card:nth-child(2){
+  position: absolute;
+  top: 35dvh;
+  left:  37dvw;
+}
+.skill-card:nth-child(3){
+  position: absolute;
+  top: 45dvh;
+  right: 10dvw;
+}
+.skill-card:hover{
+  transform: scale(1.1);
+} */
 .my {
   color: white;
 }
 
-#MySkills:hover {
+#MySkills:hover{
   .skill-card {
     -webkit-animation: scale-up-bottom 0.7s
       cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
@@ -209,8 +310,8 @@ a {
 
 @-webkit-keyframes scale-up-bottom {
   0% {
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
   }
@@ -223,8 +324,8 @@ a {
 }
 @keyframes scale-up-bottom {
   0% {
-    -webkit-transform: scale(0.7);
-    transform: scale(0.7);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
   }
@@ -289,17 +390,18 @@ a {
 
 .workcard {
   border-radius: 2rem;
-  width: 410px;
-  height: 165px;
+  width: 500px;
+  height: 190px;
   display: flex;
   justify-content: center;
   position: relative;
 }
 .workcard img {
   border-radius: 2rem;
-  width: 365px;
+  width: 430px;
   height: 100%;
   box-shadow: 0 0 2rem black;
+  transition: .4s;
 }
 .workcard .card-title {
   position: absolute;
@@ -307,6 +409,9 @@ a {
   right: 36%;
   font-size: 20px;
   color: rgb(11, 207, 135);
+}
+.workcard img:hover{
+  transform: scale(1.1);
 }
 
 #MyProject:hover {

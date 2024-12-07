@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body{   
+  background-color: #1f242d;
+    overflow-x: hidden;
+}
+.parent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+  }
+  .main-heading{
+  color: #7cf03d;
+    text-align: center;
+    font-size: 45px;
+    margin: 15px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    /* font-weight: bold; */
+    padding: 25px;
+    margin: 17px 25px;
+    /* height: 266px; */
+    border-radius: 15px;
+}
+.project-card {
+  border-radius: 2rem;
+  box-shadow: 0 0 2rem black;
+  background-color: #160959;
+  width: 270px;
+  }
+.project-card img {
+  border-radius: 2rem 2rem 0 0;
+  width: 270px;
+  height: 180px;
+  }
+  .project-card p {
+    margin-left: 3px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #7cf03d;
+  }
+  i {
+    margin-top: 3px;
+    margin-right: 3px;
+  }
+  .project-card a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+    width: 100%;
+    margin-top: 10px;  
+    border-radius: 0 0 2rem 2rem;
+    border: 2px solid #7cf03d;
+    color: #7cf03d;
+  }
+  .project-card a:hover {
+    background-color: #7cf03d;
+    color: #160959;
+    font-weight: 700;
+  }
+  @media screen and (max-width: 431px) {
+    .prject-card{
+      width: 340px;
+    }
+    .prject-card img{
+      width: 340px;
+      height: 180px;
+    }
+  
+  }
