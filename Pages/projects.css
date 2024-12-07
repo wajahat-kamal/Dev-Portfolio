@@ -13,7 +13,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
+    /* height: 100dvh; */
     width: 100dvw;
   }
   .main-heading{
@@ -29,7 +29,7 @@ body{
     gap: 2rem;
     align-items: center;
     /* font-weight: bold; */
-    padding: 25px;
+    padding: 15px;
     margin: 17px 25px;
     /* height: 266px; */
     border-radius: 15px;
@@ -38,40 +38,19 @@ body{
   border-radius: 2rem;
   box-shadow: 0 0 2rem black;
   background-color: #160959;
-  width: 270px;
+  width: 250px;
+  height: 160px;
+  position: relative;
   }
 .project-card img {
-  border-radius: 2rem 2rem 0 0;
-  width: 270px;
-  height: 180px;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
   }
-  .project-card p {
-    margin-left: 3px;
-      font-size: 15px;
-      font-weight: 500;
-      color: #7cf03d;
+  .project-card a h4{
+    text-align: none;
   }
-  i {
-    margin-top: 3px;
-    margin-right: 3px;
-  }
-  .project-card a {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:30px;
-    width: 100%;
-    margin-top: 10px;  
-    border-radius: 0 0 2rem 2rem;
-    border: 2px solid #7cf03d;
-    color: #7cf03d;
-  }
-  .project-card a:hover {
-    background-color: #7cf03d;
-    color: #160959;
-    font-weight: 700;
-  }
+
   @media screen and (max-width: 431px) {
     .prject-card{
       width: 340px;

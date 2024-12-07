@@ -89,10 +89,10 @@ const skills = [
     },
     {
       id: 16,
-      title: "Calculator",
-      img: "./pics/Screenshot (139).png",
-      description: "A simple calculator with basic functions.",
-      link: "./Projects/Calculator/index.html",
+      title: "Rock Paper Scissors",
+      img: "./pics/Screenshot (1).png",
+      // description: "A simple calculator with basic functions.",
+      link: "./Projects/Rock-Paper-Scissors-Game/index.html",
     },
   ]
 

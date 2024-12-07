@@ -1,8 +1,6 @@
 
 
 const projects = [
- 
-  
   {
     id: "big1",
     title: "Amazon Clone",
@@ -24,26 +22,27 @@ const projects = [
     description: "Spotify Clone Project, HTML and CSS.",
     link: "./projects/spotify-clone/index.html",
   },
+
   {
     id: 6,
-    title: "Calculator",
-    img: "./assets/Screenshot (139).png",
-    description: "A simple calculator with basic functions.",
-    link: "./projects/Calculator/index.html",
-  },
-  {
-    id: 5,
     title: "Rock Paper Scissors.",
     img: "./assets/Screenshot (1).png",
     description: "Classic Rock Paper Scissors game play with computer. ",
     link: "./projects/Rock-Paper-Scissors-Game/index.html",
   },
   {
-    id: 4,
+    id: 5,
     title: "Tic Tac Toe",
     img: "./assets/Screenshot (143).png",
     description: "Classic Tic Tac Toe game play with friends. ",
     link: "./projects/Tic-Tac-Toe/index.html",
+  },
+  {
+    id: 4,
+    title: "Calculator",
+    img: "./assets/Screenshot (139).png",
+    description: "A simple calculator with basic functions.",
+    link: "./projects/Calculator/index.html",
   },
   {
     id: 3,
@@ -78,7 +77,7 @@ const projects = [
 for (const project of projects) {
   const {img, link, title} = project;
 
-  const   projectCard = document.createElement("div");
+  const projectCard = document.createElement("div");
   projectCard.classList.add("project-card");
 
   projectCard.innerHTML = `
@@ -90,5 +89,5 @@ for (const project of projects) {
   <h4 class="card-title" >${title}</h4> </a>
 `;
 
-  document.querySelector(".container").appendChild("projectCard");
+  document.querySelector(".container").appendChild(projectCard);
 }
