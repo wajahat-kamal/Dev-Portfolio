@@ -38,9 +38,14 @@ body{
   border-radius: 2rem;
   box-shadow: 0 0 2rem black;
   background-color: #160959;
-  width: 250px;
+  width: 320px;
   height: 160px;
   position: relative;
+  transition: .3s;
+  }
+  .project-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #7cf03d;
   }
 .project-card img {
   border-radius: 2rem;
