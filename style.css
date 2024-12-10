@@ -22,7 +22,8 @@ body {
   height: 70px;
   padding: 10px 9%;
   margin-top: 0;
-  background-color: black;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -313,8 +314,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
-  border-radius: 5px;
+  border-radius:7px;
   overflow: hidden;
   transition: .3s;
   background-color: white;
@@ -325,7 +325,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .skill-card:hover{
   transform: scale(1.1);
-  box-shadow: 0 0 20px #7cf03d;
+  box-shadow: 0 0 25px #7cf03d;
 }
 /* .skill-card:nth-child(1){
   position: absolute;
