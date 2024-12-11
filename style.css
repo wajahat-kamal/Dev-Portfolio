@@ -14,7 +14,12 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+:root{
+  /* --primiry-color: #7cf03d; */
+  --primiry-color: #00ffee;
+  --secondary-color: #fff;
 
+}
 /* Navbar Section */
 
 .navbar {
@@ -28,7 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 1;
 }
 
@@ -61,13 +66,17 @@ body {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary-color);
 }
 
 .nav-name {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
+}
+.nav-name span{
+  color: var(--primiry-color);
+  text-shadow: 0 0 15px var(--primiry-color);
 }
 
 .navbar ul {
@@ -87,7 +96,7 @@ a {
   transition: 0.3s;
 }
 .nav-link:hover {
-  color: #7cf03d;
+  color: var(--primiry-color);
 }
 .burmen {
   display: none;
@@ -109,9 +118,9 @@ a {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 87dvh;
+  height: 90dvh;
   padding: 0px 3% 0px;
-  color: white;
+  color: var(--secondary-color);
 }
 
 .home-content h1 {
@@ -120,7 +129,7 @@ a {
   gap: 15px;
 }
 .home-content .kamal {
-  color: #7cf03d;
+  color: var(--primiry-color);
   font-size: 51px;
 }
 
@@ -130,7 +139,7 @@ a {
 }
 #element {
   color: transparent;
-  -webkit-text-stroke: 1.9px #7cf03d;
+  -webkit-text-stroke: 1.9px var(--primiry-color);
 }
 
 .home-btn {
@@ -142,10 +151,10 @@ a {
 .download-btn {
   padding: 10px 35px;
   display: inline-block;
-  background-color: #7cf03d;
-  border: 2px solid #7cf03d;
+  background-color: var(--primiry-color);
+  border: 2px solid var(--primiry-color);
   border-radius: 40px;
-  box-shadow: 0 0 10px #7cf03d;
+  box-shadow: 0 0 10px var(--primiry-color);
   font-size: 20px;
   color: #1f242d;
   font-weight: 700;
@@ -154,36 +163,36 @@ a {
 .download-btn:hover {
   box-shadow: none;
   background: transparent;
-  color: #7cf03d;
+  color: var(--primiry-color) ;
 }
 .home-link {
   margin-left: 15px;
 }
 .home-link a {
-  border: 2px solid #7cf03d;
+  border: 2px solid var(--primiry-color);
   border-radius: 50%;
   display: inline-flex;
   padding: 9px;
   font-size: 26px;
-  color: #7cf03d;
+  color: var(--primiry-color);
   margin: 0 3px;
   transition: 0.4s;
 }
 .home-link a:hover {
-  background: #7cf03d;
+  background: var(--primiry-color);
   color: #1f242d;
-  box-shadow: 0 0 10px #7cf03d;
+  box-shadow: 0 0 10px var(--primiry-color);
 }
 .home-img img {
   height: 310px;
   width: 310px;
   border-radius: 50%;
-  box-shadow: 0 0 15px #7cf03d;
+  box-shadow: 0 0 15px var(--primiry-color);
   /* background-color: #7cf03d; */
   transition: .3s;
 }
 .home-img img:hover{
-  box-shadow: 0 0 30px #7cf03d;
+  box-shadow: 0 0 40px var(--primiry-color);
   
 }
 
@@ -251,7 +260,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  color: white;
+  color: var(--secondary-color);
   width: 100dvw;
   height: 100dvh;
 }
@@ -266,8 +275,11 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .abouth1{
    font-size: 50px;
-   color: #7cf03d;
+   color: var(--primiry-color);
    margin-bottom: 30px;
+}
+.abouth1 span{
+  color: white;
 }
 .aboutp {
   /* text-align: center; */
@@ -284,7 +296,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   /* height: 100dvh; */
   padding-bottom: 1px;
   width: 100dvw;
-  /* height: 100dvh; */
+  height: 100dvh;
   position: relative;
   padding-top: 10dvh;
 
@@ -292,7 +304,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 #MySkills h1 {
   margin-top: 20px;
   font-size: 45px;
-  color: #7cf03d;
+  color: var(--primiry-color);
   text-align: center;
 }
 #skills {
@@ -317,7 +329,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   border-radius:7px;
   overflow: hidden;
   transition: .3s;
-  background-color: white;
+  background-color: var(--secondary-color);
 }
 .skill-card img {
   height: 100%;
@@ -325,7 +337,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .skill-card:hover{
   transform: scale(1.1);
-  box-shadow: 0 0 25px #7cf03d;
+  box-shadow: 0 0 25px var(--primiry-color);
 }
 /* .skill-card:nth-child(1){
   position: absolute;
@@ -346,7 +358,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   transform: scale(1.1);
 } */
 .my {
-  color: white;
+  color: var(--secondary-color);
 }
 
 
@@ -368,7 +380,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .upperWork h1 {
   font-size: 40px;
-  color: #7cf03d;
+  color: var(--primiry-color);
 }
 
 .mywork-btn button {
@@ -381,14 +393,14 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   color: #1f242d;
   font-weight: 700;
   transition: 0.4s;
-  background-color: #7cf03d;
-  box-shadow: 0 0 10px #7cf03d;
-  border: 2px solid #7cf03d;
+  background-color: var(--primiry-color);
+  box-shadow: 0 0 10px var(--primiry-color);
+  border: 2px solid var(--primiry-color);
 }
 .mywork-btn button:hover {
   box-shadow: none;
   background: transparent;
-  color: #7cf03d;
+  color: var(--primiry-color);
 }
 .projects {
   display: flex;
@@ -403,29 +415,29 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 
 .workcard {
   border-radius: 2rem;
-  width: 400px;
-  height: 180px;
+  width: 420px;
+  height: 185px;
   display: flex;
   justify-content: center;
   position: relative;
 }
 .workcard img {
   border-radius: 2rem;
-  width: 400px;
+  width: 420px;
   height: 100%;
   box-shadow: 0 0 2rem black;
   transition: .4s;
 }
 .workcard .card-title {
-  position: absolute;
+  /* position: absolute;
   top: 42%;
-  right: 36%;
-  font-size: 20px;
-  color: rgb(11, 207, 135);
+  right: 22%; */
+  font-size: 17px;
+  color: var(--primiry-color);
 }
 .workcard img:hover{
   transform: scale(1.1);
-  box-shadow: 0 0 15px #7cf03d;
+  box-shadow: 0 0 15px var(--primiry-color);
 }
 
 
@@ -435,15 +447,15 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #62b535;
-  color: black;
+  background-color: var(--primiry-color);
+  color: white;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
 }
 .footer:hover {
   text-decoration: underline;
-  color: black;
+  color: white;
 }
 
 @media screen and (max-width: 769px) {
@@ -473,7 +485,7 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     /* color: white; */
   }
   #burger-menu-content a:hover {
-    color: #7cf03d;
+    color: var(--primiry-color);
   }
 }
 @media screen and (max-width: 431px) {
