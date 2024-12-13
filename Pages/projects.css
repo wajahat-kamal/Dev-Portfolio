@@ -5,7 +5,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body{   
-  background-color: #1f242d;
+  background-color: black;
     overflow-x: hidden;
 }
 .parent-container{
@@ -17,7 +17,7 @@ body{
     width: 100dvw;
   }
   .main-heading{
-  color: #7cf03d;
+  color: #00ffee;
     text-align: center;
     font-size: 45px;
     margin: 15px;
@@ -45,7 +45,7 @@ body{
   }
   .project-card:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 15px #7cf03d;
+    box-shadow: 0 0 15px #00ffee;
   }
 .project-card img {
   border-radius: 2rem;
