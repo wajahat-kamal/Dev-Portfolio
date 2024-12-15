@@ -22,7 +22,13 @@ const projects = [
     description: "Spotify Clone Project, HTML and CSS.",
     link: "./projects/spotify-clone/index.html",
   },
-
+  {
+    id: 7,
+    title: "Sign in & Sign up Page",
+    img: "./assets/Screenshot (4).png",
+    description: "Sign in & Sign up Page Project, HTML,  CSS and Javascript.",
+    link: "./projects/signup-page/index.html",
+  },
   {
     id: 6,
     title: "Rock Paper Scissors.",
