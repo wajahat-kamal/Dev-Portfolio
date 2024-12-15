@@ -23,10 +23,17 @@ const projects = [
     link: "./projects/spotify-clone/index.html",
   },
   {
+    id: 8,
+    title: "QR Code Generator",
+    img: "./assets/Screenshot (5).png",
+    description: "QR Code Generato HTML,  CSS and Javascript.",
+    link: "./projects/QR-Code-Generator/index.html",
+  },
+  {
     id: 7,
     title: "Sign in & Sign up Page",
     img: "./assets/Screenshot (4).png",
-    description: "Sign in & Sign up Page Project, HTML,  CSS and Javascript.",
+    description: "Sign in & Sign up Page HTML,  CSS and Javascript.",
     link: "./projects/signup-page/index.html",
   },
   {
