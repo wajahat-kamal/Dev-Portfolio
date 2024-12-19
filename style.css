@@ -165,7 +165,7 @@ a {
 }
 
 .download-btn {
-  padding: 10px 35px;
+  padding: 10px 30px;
   display: inline-block;
   background-color: var(--primiry-color);
   border: 2px solid var(--primiry-color);
