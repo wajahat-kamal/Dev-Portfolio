@@ -181,6 +181,13 @@ a {
   background: transparent;
   color: var(--primiry-color) ;
 }
+.home-btn .download-icon{
+  color: #1f242d;
+}
+.home-btn .download-icon:hover{
+  color: var(--primiry-color);
+}
+
 .home-link {
   margin-left: 15px;
 }
