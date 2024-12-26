@@ -23,6 +23,13 @@ const projects = [
     link: "./projects/spotify-clone/index.html",
   },
   {
+    id: 9,
+    title: "Note App",
+    img: "./assets/Screenshot (8).png",
+    description: "Note App HTML, CSS and Javascript.",
+    link: "./projects/Note-app/index.html",
+  },
+  {
     id: 8,
     title: "QR Code Generator",
     img: "./assets/Screenshot (5).png",
