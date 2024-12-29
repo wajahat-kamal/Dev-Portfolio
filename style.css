@@ -215,7 +215,7 @@ a {
   transition: .3s;
 }
 .home-img img:hover{
-  box-shadow: 0 0 40px var(--primiry-color);
+  box-shadow: 0 0 50px var(--primiry-color);
   
 }
 
@@ -316,10 +316,9 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 /* Skill Section */
 
 #MySkills {
-  /* height: 100dvh; */
   padding-bottom: 1px;
   width: 100dvw;
-  height: 100dvh;
+  min-height: 100dvh;
   position: relative;
   padding-top: 10dvh;
 
@@ -332,7 +331,9 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 #skills {
   margin: 50px;
-  padding: 40px;
+  margin-bottom: 0;
+  padding:20px;
+  padding-top: 40px;
   border-radius: 20px;
   margin-top: 20px;
   display: flex;
@@ -343,8 +344,8 @@ animation: s-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .skill-card {
-  height: 250px;
-  width: 220px;
+  height: 200px;
+  width: 180px;
   padding: 20px;
   display: flex;
   align-items: center;
