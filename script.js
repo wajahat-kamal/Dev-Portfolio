@@ -60,8 +60,11 @@ const skills = [
     },
     {
       id: 3,
-      // img: "https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png",
-      img: "https://e7.pngegg.com/pngimages/640/199/png-clipart-javascript-logo-html-javascript-logo-angle-text-thumbnail.png",
+      img: "./pics/javaScript.jpg",
+    },
+    {
+      id: 4,
+      img: "./pics/typeScript.jpg",
     },
   ];
 
