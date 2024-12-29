@@ -291,6 +291,7 @@ a {
   font-size: 50px;
   color: var(--primiry-color);
   margin-bottom: 30px;
+  text-shadow: 0 0 20px var(--primiry-color);
 }
 .abouth1 span {
   color: white;
