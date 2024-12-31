@@ -71,10 +71,11 @@ a {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
+  text-shadow: 0 0 15px var(--primiry-color);
 }
 .nav-name span {
   color: var(--primiry-color);
-  text-shadow: 0 0 15px var(--primiry-color);
+  text-shadow: 0 0 15px var(--secondary-color);
 }
 
 .navbar ul {
@@ -141,17 +142,17 @@ a {
 .home-content h1 {
   font-size: 51px;
   display: flex;
-  text-shadow: 0 0 7px var(--primiry-color);
+  text-shadow: 0 0 8px var(--primiry-color);
   gap: 15px;
 }
 .home-content .kamal {
   color: var(--primiry-color);
   font-size: 51px;
-  text-shadow: 0 0 7px white;
+  text-shadow: 0 0 8px var(--secondary-color);
 }
 
 .home-content h2 {
-  font-size: 25px;
+  font-size: 28px;
   /* margin-top: -5px; */
 }
 #element {
@@ -208,16 +209,16 @@ a {
   box-shadow: 0 0 10px var(--primiry-color);
 }
 .home-img img {
-  height: 310px;
-  width: 310px;
+  height: 350px;
+  width: 350px;
   border-radius: 50%;
-  box-shadow: 0 0 15px var(--primiry-color);
+  /* box-shadow: 0 0 15px var(--primiry-color); */
   /* background-color: #7cf03d; */
   transition: 0.3s;
 }
-.home-img img:hover {
+/* .home-img img:hover {
   box-shadow: 0 0 50px var(--primiry-color);
-}
+} */
 
 .home-content {
   -webkit-animation: s-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -382,7 +383,6 @@ a {
 #MyProject {
   padding-top: 13dvh;
   width: 100dvw;
-  height: 100dvh;
 }
 .upperWork {
   display: flex;
