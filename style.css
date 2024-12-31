@@ -111,6 +111,7 @@ a {
 }
 .nav-link:hover {
   color: var(--primiry-color);
+  text-shadow: 0 0 5px var(--primiry-color);
 }
 .burmen {
   display: none;
@@ -140,11 +141,13 @@ a {
 .home-content h1 {
   font-size: 51px;
   display: flex;
+  text-shadow: 0 0 7px var(--primiry-color);
   gap: 15px;
 }
 .home-content .kamal {
   color: var(--primiry-color);
   font-size: 51px;
+  text-shadow: 0 0 7px white;
 }
 
 .home-content h2 {
