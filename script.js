@@ -3,10 +3,11 @@ const burgerMenuContent = document.getElementById("burger-menu-content");
 const burgersvg = document.getElementById("burgersvg");
 
 const crossIcon = document.querySelector(".cross-icon");
+const navbar = document.querySelector(".navbar");
 
 let isVisible = false;
 
-window.addEventListener("resize", () => {
+window.addEventListener("resize", (e) => {
   if (window.innerWidth > 720) {
     isVisible = false;
     toggleMenu();

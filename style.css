@@ -210,15 +210,15 @@ a {
 }
 .home-img img {
   height: 350px;
-  width: 350px;
-  border-radius: 50%;
-  /* box-shadow: 0 0 15px var(--primiry-color); */
-  /* background-color: #7cf03d; */
+  width: 360px;
+  border-radius: 30%;
+  background-color: #306763;
+  box-shadow: 0 0 15px var(--primiry-color);
   transition: 0.3s;
 }
-/* .home-img img:hover {
+.home-img img:hover {
   box-shadow: 0 0 50px var(--primiry-color);
-} */
+}
 
 .home-content {
   -webkit-animation: s-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -343,7 +343,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 7px;
+  border-radius: 8px;
   overflow: hidden;
   transition: 0.3s;
   background-color: var(--secondary-color);
@@ -354,7 +354,7 @@ a {
 }
 .skill-card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 25px var(--primiry-color);
+  box-shadow: 0 0 30px var(--primiry-color);
 }
 /* .skill-card:nth-child(1){
   position: absolute;
@@ -438,7 +438,7 @@ a {
   position: relative;
 }
 .workcard img {
-  border-radius: 2rem;
+  border-radius: 20px;
   width: 480px;
   height: 100%;
   box-shadow: 0 0 2rem black;
@@ -506,9 +506,9 @@ a {
     font-size: 19px;
   }
   .home-img img {
-    width: 260px;
+    width: 270px;
     color: rgb(255, 255, 255);
-    height: 260px;
+    height: 270px;
   }
   #burger-menu-content ul {
     position: absolute;
@@ -516,12 +516,12 @@ a {
     right: 5px;
     display: flex;
     flex-direction: column;
-
     gap: 5px;
     font-weight: 600;
     font-size: 18px;
     padding: 15px;
-    background-color: #000000;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
   }
   #burger-menu-content a {
     cursor: pointer;
@@ -550,10 +550,7 @@ a {
   }
 
   .home-content h2 {
-    font-size: 20.5px;
-  }
-  .download-btn {
-    font-size: 15px;
+    font-size: 22px;
   }
   .home-link a {
     padding: 5px;
@@ -561,7 +558,7 @@ a {
     font-size: 20px;
   }
   .home-img img {
-    width: 290px;
+    width: 320px;
   }
   .aboutp {
     font-size: 23px;
@@ -607,21 +604,19 @@ a {
 }
 
 @media screen and (max-width: 391px) {
-  .home-content h1 {
+  .home-content h1, .home-content .kamal {
     font-size: 30px;
   }
 
   .home-content h2 {
-    font-size: 15px;
+    font-size: 17px;
   }
-  .download-btn {
-    font-size: 10px;
-  }
+
   .home-link a {
     padding: 3px;
   }
   .home-img img {
-    height: 300px;
+    height: 270px;
     width: 300px;
   }
   .skill-card {
