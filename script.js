@@ -119,3 +119,17 @@ for (const project of projects) {
 
   document.querySelector("#projects").appendChild(workcard);
 }
+
+
+function footerA() {
+  const year = new Date().getFullYear();
+
+  const footer = document.createElement("div");
+  footer.classList.add("footer");
+  footer.innerHTML = `
+  <a href="#"> @ ${year} WAJAHAT KAMAL</a>
+  `
+
+  document.querySelector("#MyProject").appendChild(footer);
+}
+footerA();

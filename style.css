@@ -431,7 +431,7 @@ a {
 
 .workcard {
   border-radius: 2rem;
-  width: 490px;
+  width:550px;
   height: 188px;
   display: flex;
   justify-content: center;
@@ -456,17 +456,19 @@ a {
   box-shadow: 0 0 15px var(--primiry-color);
 }
 
-.footer a {
+.footer  {
   width: 100dvw;
   height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--primiry-color);
-  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
+}
+.footer a{
+  color: rgb(0, 0, 0);
 }
 .footer:hover {
   text-decoration: underline;
