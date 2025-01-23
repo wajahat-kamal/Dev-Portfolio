@@ -425,17 +425,18 @@ a {
   flex-wrap: wrap;
   gap: 2.5rem;
   /* column-gap: 11rem; */
-  margin-top: 15px;
-  padding-bottom: 50px;
+  margin-top: 20px;
+  padding-bottom: 55px;
 }
 
 .workcard {
   border-radius: 2rem;
-  width:550px;
+  /* width:550px; */
   height: 188px;
   display: flex;
   justify-content: center;
   position: relative;
+  box-shadow: 0 0 1rem var(--primiry-color);
 }
 .workcard img {
   border-radius: 20px;

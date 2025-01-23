@@ -48,10 +48,7 @@ const skills = [
       id: 3,
       img: "./pics/javaScript.jpg",
     },
-    {
-      id: 4,
-      img: "./pics/typeScript.jpg",
-    },
+  
   ];
 
   const projects = [
@@ -62,6 +59,13 @@ const skills = [
       img: "./pics/amazon.png",
       description: "Amazon Clone Project,  HTML and CSS.",
       link: "./Projects/Amazon-clone/index.html",
+    },
+    {
+      id: "big2",
+      title: "WK Restaurant",
+      img: "./pics/restaurant.png",
+      description: "WK Restaurant Project,  HTML, CSS and JAVASCRIPT.",
+      link: "./Projects/resturant/index.html",
     },
     {
       id: "big2",
@@ -77,13 +81,7 @@ const skills = [
       description: "Spotify Clone Project, HTML and CSS.",
       link: "./Projects/spotify-clone/index.html",
     },
-    {
-      id: 16,
-      title: "Rock Paper Scissors",
-      img: "./pics/Screenshot (1).png",
-      // description: "A simple calculator with basic functions.",
-      link: "./Projects/Rock-Paper-Scissors-Game/index.html",
-    },
+
   ]
 
 

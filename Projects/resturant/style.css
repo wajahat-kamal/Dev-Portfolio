@@ -151,6 +151,7 @@ header{
     flex-wrap: wrap;
    gap: 20px;
    padding: 40px 0;
+   padding-top: 80px;
     width: 100dvw;
 }
 .nd-card{
@@ -191,6 +192,7 @@ header{
     /* gap: 10px;  */
     /* height: 81dvh; */
     padding: 40px 0;
+    padding-top: 80px;
 }
 .images{
     width: 600px;
@@ -286,6 +288,7 @@ header{
     align-items: center;
     flex-direction: column;
     background-color: var(--color);
+    padding-top: 50px;
 }
 .fourth-headings{
     display: flex;
@@ -487,7 +490,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
+    height: 520px;
 }
 .sixth-section h1{
     font-family: "Nunito",sans-serif;
