@@ -54,18 +54,18 @@ const skills = [
   const projects = [
 
     {
-      id: "big1",
-      title: "Amazon Clone",
-      img: "./pics/amazon.png",
-      description: "Amazon Clone Project,  HTML and CSS.",
-      link: "./Projects/Amazon-clone/index.html",
-    },
-    {
       id: "big2",
       title: "WK Restaurant",
       img: "./pics/restaurant.png",
       description: "WK Restaurant Project,  HTML, CSS and JAVASCRIPT.",
       link: "./Projects/resturant/index.html",
+    },
+    {
+      id: "big1",
+      title: "Amazon Clone",
+      img: "./pics/amazon.png",
+      description: "Amazon Clone Project,  HTML and CSS.",
+      link: "./Projects/Amazon-clone/index.html",
     },
     {
       id: "big2",
