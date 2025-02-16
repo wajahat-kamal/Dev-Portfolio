@@ -49,3 +49,43 @@ launch.addEventListener("click", () => {
 dinner.addEventListener("click", () => {
     fourSmallLine.style.transform = "translateX(280px)"
 })
+
+
+
+
+
+const burgerIcon = document.getElementById("burger-icon");
+const burgerMenuContent = document.getElementById("burger-menu-content");
+const burgersvg = document.getElementById("burgersvg");
+
+const crossIcon = document.querySelector(".cross-icon");
+const navbar = document.querySelector(".navbar");
+
+let isVisible = false;
+
+window.addEventListener("resize", (e) => {
+  if (window.innerWidth > 720) {
+    isVisible = false;
+    toggleMenu();
+  }
+});
+
+const toggleMenu = () => {
+  if (isVisible) {
+    burgerIcon.innerHTML = `
+       <img class="cross-icon" src="./pics/images.png" alt="">
+    `;
+    burgerIcon.style.fontSize = "2rem";
+    burgerMenuContent.classList.remove("hidden");
+  } else {
+    burgerIcon.innerHTML = "";
+    burgerIcon.appendChild(burgersvg);
+    burgerMenuContent.classList.add("hidden");
+  }
+};
+
+burgerIcon.addEventListener("click", () => {
+  isVisible = !isVisible;
+
+  toggleMenu();
+});

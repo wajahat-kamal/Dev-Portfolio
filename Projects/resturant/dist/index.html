@@ -14,20 +14,64 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
-  <body>    
+  <body>
 
     <div class="nav">
       <h1><i class="fa-solid fa-utensils"></i>&nbsp;WK Restaurant</h1>
 
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#third-section">About</a></li>
-        <li><a href="#second-section">Service</a></li>
-        <li><a href="#fourth-section">Menu</a></li>
-        <li><a href="#seventh-section">Contact</a></li>
-        <li><a href="#sixth-section">Reviews</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Reviews</a></li>
         <button class="book" id="reloadbtns">Book A Table</button>
       </ul>
+
+      <div id="burger-menu">
+        <i id="burger-icon" class="burmen"
+          ><svg
+            id="burgersvg"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40px"
+            height="90px"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M4 18L20 18"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 6L20 6"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+            /></svg
+        ></i>
+
+        <div id="burger-menu-content" class="hidden">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Reviews</a></li>
+            <button class="book" id="reloadbtns">Book A Table</button>
+          </ul>
+        </div>
+      </div>
+
     </div>
     
     <header>
@@ -46,7 +90,7 @@
       </div>
     </header>
 
-    <div class="second-section" id="second-section">
+    <div class="second-section">
       <div class="nd-card">
         <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
         <h2>Master Chefs</h2>
@@ -81,7 +125,7 @@
       </div>
     </div>
 
-    <div class="third-section" id="third-section">
+    <div class="third-section">
       <div class="images">
         <div class="Timg1">
           <img src="./pics/hotel-1.png" alt="" />
@@ -131,7 +175,7 @@
     </div>
 
 
-    <div class="fourth-section" id="fourth-section">
+    <div class="fourth-section">
  
       <div class="fourth-headings">
         <h2 class="fourth-headings-h2">---- &nbsp;Food Menu&nbsp; ----</h2>
@@ -282,7 +326,7 @@
     </div>
 
 
-    <div class="fifth-section" id="fifth-section">
+    <div class="fifth-section">
       <div class="booktable">
         <h2>Reservation ----</h2>
         <h1>Book A Table Online</h1>
@@ -305,7 +349,7 @@
       </div>
 
 
-       <div class="sixth-section" id="sixth-section">
+       <div class="sixth-section">
         <h2>---- Testimonial ----</h2>
         <h1>Our Clients Say!!!</h1>
 
@@ -368,7 +412,7 @@
        </div>
 
 
-      <div class="seventh-section" id="seventh-section">
+      <div class="seventh-section">
            <div class="contact">
             <ul class="S-1stul">
               <h2>Company ----</h2>
