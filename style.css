@@ -521,10 +521,11 @@ a {
     flex-direction: column;
     gap: 5px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 22px;
     padding: 15px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(6px);
+    width: 100dvw;
   }
   #burger-menu-content a {
     cursor: pointer;
@@ -578,7 +579,7 @@ a {
     margin: 0;
   }
   .projects {
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 10px;
   }
   .upperWork h1 {
@@ -592,7 +593,7 @@ a {
   }
   .workcard {
     width: 290px;
-    height: 108px;
+    height: 150px;
   }
   .workcard img {
     width: 300px;
