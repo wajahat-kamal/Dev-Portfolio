@@ -432,7 +432,7 @@ a {
 .workcard {
   border-radius: 2rem;
   /* width:550px; */
-  height: 188px;
+  height: 240px;
   display: flex;
   justify-content: center;
   position: relative;
