@@ -58,7 +58,7 @@ const skills = [
       title: "WK Restaurant",
       img: "./pics/restaurant.png",
       description: "WK Restaurant Project,  HTML, CSS and JAVASCRIPT.",
-      link: "./Projects/resturant/index.html",
+      link: "./Projects/resturant/dist/index.html",
     },
     {
       id: "big1",
@@ -67,20 +67,20 @@ const skills = [
       description: "Amazon Clone Project,  HTML and CSS.",
       link: "./Projects/Amazon-clone/index.html",
     },
-    {
-      id: "big2",
-      title: "Netflix Clone",
-      img: "./pics/netflix.png",
-      description: "Netflix Clone Project,  HTML and CSS.",
-      link: "./Projects/Netflix-clone/index.html",
-    },
-    {
-      id: "big3",
-      title: "Spotify Clone",
-      img: "./pics/Screenshot (2).png",
-      description: "Spotify Clone Project, HTML and CSS.",
-      link: "./Projects/spotify-clone/index.html",
-    },
+    // {
+    //   id: "big2",
+    //   title: "Netflix Clone",
+    //   img: "./pics/netflix.png",
+    //   description: "Netflix Clone Project,  HTML and CSS.",
+    //   link: "./Projects/Netflix-clone/index.html",
+    // },
+    // {
+    //   id: "big3",
+    //   title: "Spotify Clone",
+    //   img: "./pics/Screenshot (2).png",
+    //   description: "Spotify Clone Project, HTML and CSS.",
+    //   link: "./Projects/spotify-clone/index.html",
+    // },
 
   ]
 
