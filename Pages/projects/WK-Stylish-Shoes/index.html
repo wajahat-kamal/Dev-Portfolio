@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WK SHOES</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />   
+</head>
+<body>
+
+  <div class="search-section  search-section-display-none">
+    <div class="search-input">
+      <input type="search" placeholder="Search..." >
+      <i class="fa-solid fa-magnifying-glass search" ></i>
+    </div>
+    <i class="fa-solid fa-xmark close" id="search-close"></i>
+  </div>
+
+  <div class="cart-parent cart-parent-hidden">
+
+    <div class="cart">
+      <header>
+        <h3>YOUR CART</h3>
+        <i class="fa-solid fa-xmark close-icon" id="cart-close"></i>
+      </header>
+      <hr>
+      <main>
+        <ul>
+          <li>
+            <img src="https://themewagon.github.io/stylish/images/card-item3.jpg" alt="">
+
+            <div class="cart-content">
+              <div>
+                <h3>Sport shoes for men</h3>
+                <h4>Price: $109</h4>
+              </div>
+        
+              <i class="fa-solid fa-xmark close-icon"></i>
+            </div>
+            
+
+          </li>
+          <hr>
+          <li>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe6GV2PnQ8j-kmBW8h2qJunwcVAUOi2OBYfA&s" alt="">
+
+              <div class="cart-content">
+                <div>
+                   <h3>Brand shoes for men</h3>
+                  <h4>Price: $129</h4>
+                </div>
+          
+                <i class="fa-solid fa-xmark close-icon"></i>
+              </div>   
+
+            </li>
+            <hr>
+         <div class="total">
+             <h3>Subtotal:</h3>
+             <h4>$238</h4>
+         </div>
+        </ul>
+      </main>
+      <hr>
+      <footer>
+         <button class="viewcart">View Cart</button>
+         <button class="checkout">Checkout</button>
+      </footer>
+    </div>
+
+  </div>
+
+  <div class="login-parent login-parent-hidden">
+      <div class="login">
+        <header>
+          <h1>Log in</h1>
+          <i class="fa-solid fa-xmark login-close-icon" ></i>
+        </header>
+        <main>
+          <input type="email" placeholder="Username or Email Address">
+          <input type="password" placeholder="Password">
+           <h4>Forgot Password?</h4>
+        </main>
+        <hr>
+        <footer>
+           <button class="login-btn">Log in</button>
+           <button class="register">Register</button>
+        </footer>
+      </div>
+  </div>
+
+   <div class="card-search-parent card-search-parent-hidden">
+    <div class="card-search-card">
+      <header>
+        <img src="pics/main-image-2.png" alt="">
+        <i class="fa-solid fa-xmark" id="card-search-close"></i>
+      </header>
+      <main>
+        <div>  
+          <h3>Running shoes for men</h3>
+          <h2>$109</h2>
+        </div>
+        <p>
+          Buy good shoes and a good mattress, because when you're not in one you're in the other. With four pairs of shoes, I can travel the world.
+        </p>
+      </main>
+      <footer>
+        <button class="card-search-btn">Add to cart</button>
+      </footer>
+    </div>
+   </div>
+
+
+
+    <nav class="navbar" id="navbar">
+      <!-- <div class="nav-logo"><h1>WK SHOES</h1><p>Online Store</p></div> -->
+      <div class="nav-logo"><img src="pics/Main-logo.png"  alt=""></div>
+      <div class="nav-list">
+
+
+        <ul class="list-1">
+            <li><a href="#navbar">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#discount-section">Sale</a></li>
+            <li><a href="#about-section-1">About</a></li>
+        </ul>
+
+
+        <div id="burger-menu">
+          <i id="burger-icon" class="burmen"
+            ><svg
+              id="burgersvg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="30px"
+              height="65px"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M4 18L20 18"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 12L20 12"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 6L20 6"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              /></svg
+          ></i>
+  
+          <div id="burger-menu-content" class="hidden">
+            <ul>
+              <li><img src="pics/Main-logo.png" alt=""></li>
+              <li><a href="#navbar">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#discount-section">Sale</a></li>
+              <li><a href="#about-section-1">About</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="list-2">
+          <i class="fa-solid fa-user nav-icon" id="login-icon"></i>
+          <i class="fa-solid fa-cart-shopping nav-icon" id="cart-icon"></i>
+          <i id="search-icon" class="fa-solid fa-magnifying-glass nav-icon"></i>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="main-container">
+
+      <div class="main-images">
+        <img src="pics/main-image-1.png" alt="">
+        <img src="pics/main-image-2.png" alt="">
+      </div>
+      <div class="main-content">
+        <h1>WK SHOES</h1>
+        <p>ONLINE SHOES STORE</p>
+      </div>
+
+    </div>
+
+    <div class="discount-section" id="discount-section">
+      <div class="discount">
+        <div class="discount-content">
+          <h1>10% OFF Discount Coupons</h1>
+          <p>Subscribe us to get 10% OFF on all the purchases</p>
+        </div>
+        <button class="discount-btn">EMAIL ME</button>
+      </div>
+    </div>
+
+    <div class="latest-products" id="products">
+
+      <div class="latest-products-heading">
+        <h2>LATEST PRODUCTS</h2>
+        <P>VIEW ALL</P>
+      </div>
+
+      <div class="latest-products-cards">
+
+        </div>
+    </div>
+
+
+    <div class="feature-products">
+
+      <div class="feature-products-heading">
+        <h2>FEATURED PRODUCTS</h2>
+        <P>VIEW ALL</P>
+      </div>
+
+      <div class="feature-products-cards">
+        <!-- <div class="FP-card">
+          <img src="https://themewagon.github.io/stylish/images/card-item1.jpg" alt="">
+          <div class="fp-card-lower">
+            <p>Running shoes for men</p>
+            <h4>$99</h4>
+          </div>
+        </div> -->
+      </div>
+
+    </div>
+
+   <div class="popular-products">
+    <div class="popular-products-heading">
+      <h2>POPULAR PRODUCTS</h2>
+      <p>VIEW ALL</p>
+    </div>
+    
+    <div class="popular-products-cards">
+      
+    </div>
+   </div>
+
+
+   <div class="big-images">
+     <img src="pics/shoes-2.png" alt="">
+     <img src="pics/shoes-1.png" alt="">
+   </div>
+
+
+   <div class="about-section-1" id="about-section-1">
+
+    <div class="about about">
+      <h3>ABOUT</h3>
+      <ul>
+        <li><a href="#">History</a></li>
+        <li><a href="#">Our team</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Log in</a></li>
+      </ul>
+    </div>
+
+    <div class="info about">
+      <h3>INFO</h3>
+      <ul>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </div>
+
+
+    <div class="popular about">
+      <h3>POPULAR</h3>
+      <ul>
+        <li><a href="#">Price Drop</a></li>
+        <li><a href="#">Best Sales</a></li>
+        <li><a href="#">New Products</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Whole sale</a></li>
+      </ul>
+    </div>
+
+
+    <div class="men-collection about">
+      <h3>MEN COLLECTION</h3>
+      <ul>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Take your order</a></li>
+        <li><a href="#">Our Blog</a></li>
+        <li><a href="#">Manufacture</a></li>
+      </ul>
+    </div>
+
+
+    <div class="women-collection about">
+      <h3>WOMEN COLLECTION</h3>
+      <ul>
+        <li><a href="#">Take your order</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Delivery</a></li>
+        <li><a href="#">Manufacture</a></li>
+        <li><a href="#">Our Blog</a></li>
+      </ul>
+    </div>
+
+   </div>
+
+   <div class="about-section-2">
+
+     <p class="about-section-2-p1"> © Copyright WK Stylish Shoes 2025.</p>
+  
+  
+     <div class="about-section-2-div">
+      <a href="./Dev-Portfolio/index.html">See my Dev Porfolio</a>
+     </div>
+   
+   </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- https://themewagon.github.io/stylish/index.html? -->

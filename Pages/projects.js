@@ -2,21 +2,36 @@
 
 const projects = [
   {
+    id: "big2",
+    title: "WK Shoes Store",
+    img: "./assets/WK-Shoes-Pic.png",
+    description: "Shoes store project, HTML, CSS and Javascript.",
+    link: "./projects/WK-Stylish-Shoes/index.html",
+  },
+
+  {
     id: "big1",
+    title: "WK Restaurant",
+    img: "./assets/restaurant.png",
+    description: "WK Restaurant Project,  HTML, CSS and JAVASCRIPT.",
+    link: "./Projects/resturant/dist/index.html",
+  },
+  {
+    id: "big3",
     title: "Amazon Clone",
     img: "./assets/amazon.png",
     description: "Amazon Clone Project, HTML and CSS.",
     link: "./projects/Amazon-clone/index.html",
   },
   {
-    id: "big2",
+    id: "big4",
     title: "Netflix Clone",
     img: "./assets/netflix.png",
     description: "Netflix Clone Project, HTML and CSS.",
     link: "./projects/Netflix-clone/index.html",
   },
   {
-    id: "big3",
+    id: "big5",
     title: "Spotify Clone",
     img: "./assets/Screenshot (2).png",
     description: "Spotify Clone Project, HTML and CSS.",

@@ -52,21 +52,28 @@ const skills = [
   ];
 
   const projects = [
-
     {
       id: "big2",
+      title: "WK Shoes Store",
+      img: "./pics/WK-Shoes-Pic.png",
+      description: "Shoes store project, HTML, CSS and Javascript.",
+      link: "./projects/WK-Stylish-Shoes/index.html",
+    },
+
+    {
+      id: "big1",
       title: "WK Restaurant",
       img: "./pics/restaurant.png",
       description: "WK Restaurant Project,  HTML, CSS and JAVASCRIPT.",
       link: "./Projects/resturant/dist/index.html",
     },
-    {
-      id: "big1",
-      title: "Amazon Clone",
-      img: "./pics/amazon.png",
-      description: "Amazon Clone Project,  HTML and CSS.",
-      link: "./Projects/Amazon-clone/index.html",
-    },
+    // {
+    //   id: "big1",
+    //   title: "Amazon Clone",
+    //   img: "./pics/amazon.png",
+    //   description: "Amazon Clone Project,  HTML and CSS.",
+    //   link: "./Projects/Amazon-clone/index.html",
+    // },
     // {
     //   id: "big2",
     //   title: "Netflix Clone",
