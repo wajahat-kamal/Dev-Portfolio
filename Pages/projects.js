@@ -14,7 +14,7 @@ const projects = [
     title: "WK Restaurant",
     img: "./assets/restaurant.png",
     description: "WK Restaurant Project,  HTML, CSS and JAVASCRIPT.",
-    link: "./Projects/resturant/dist/index.html",
+    link: "./Projects/resturant/index.html",
   },
   {
     id: "big3",
