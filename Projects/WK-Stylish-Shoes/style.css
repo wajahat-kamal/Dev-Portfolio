@@ -23,7 +23,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  transition: all 0.5s;
 }
 .search-section-display-none {
   display: none;
@@ -59,7 +58,7 @@ body {
 
 .navbar {
   background-color: #dfdfdf;
-  height: 100px;
+  height: 90px;
   width: 100dvw;
   display: flex;
   align-items: center;
@@ -113,7 +112,9 @@ li {
 .main-container {
   position: relative;
   width: 100dvw;
-  height: 85dvh;
+  height: 87dvh;
+  display: flex;
+  align-items: flex-end;
 }
 
 .main-images {
@@ -135,7 +136,7 @@ li {
 }
 .main-content {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 35%;
 }
 .main-container h1 {
@@ -167,7 +168,7 @@ li {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 4;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .card-search-parent-hidden,
@@ -386,9 +387,11 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 4.8dvw;
-  padding-bottom: 40px;
+  padding: 8dvh 4.8dvw;
+  padding-bottom: 0px;
 }
+.popular-products{
+  padding-bottom: 40px;}
 .popular-products-heading,
 .feature-products-heading,
 .latest-products-heading {
@@ -526,6 +529,9 @@ li {
 .about ul li {
   margin-bottom: 9px;
   list-style: none;
+}
+.about ul li:hover{
+  text-decoration: underline;
 }
 .about ul li a {
   text-decoration: none;
