@@ -65,7 +65,7 @@ const skills = [
       title: "WK Restaurant",
       img: "./pics/restaurant.png",
       description: "WK Restaurant Project,  HTML, CSS and JAVASCRIPT.",
-      link: "./Projects/resturant/dist/index.html",
+      link: "./Projects/resturant/index.html",
     },
     // {
     //   id: "big1",
