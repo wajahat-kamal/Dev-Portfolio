@@ -34,11 +34,6 @@ export const HeroSection = () => <section id="hero" className="relative min-h-sc
           View My Work
         </a>
       </div>
-      <div className=" opacity-0 animate-fade-in-delay-4">
-        <a target="-blank" href="https://github.com/wajahat-kamal" className="cosmic-button">
-          <Github/>
-        </a>
-      </div>
 
     </div>
 
