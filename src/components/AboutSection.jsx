@@ -82,7 +82,7 @@ export const AboutSection = () => {
                   <h4 className="font-semibold text-lg">Wordpress Development</h4>
 
                   <p className="text-muted-foreground">
-                    Creating custom theme websites for WordPress.
+                    Creating custom theme for WordPress website.
                   </p>
                 </div>
 
