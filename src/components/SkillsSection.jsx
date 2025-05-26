@@ -2,12 +2,12 @@
 
 
 const skills =[
-  {name: "Wordpress", level: 20, categery: "fronted" },
-  {name: "HTML", level: 90, categery: "fronted" },
-  {name: "CSS", level: 90, categery: "fronted" },
+  {name: "Wordpress", level: 20, categery: "full stack" },
+  {name: "ReactJS", level: 70, categery: "fronted" },
   {name: "TailwindCSS", level: 70, categery: "fronted" },
   {name: "JavaScript", level: 75, categery: "fronted" },
-  {name: "ReactJS", level: 70, categery: "fronted" },
+  {name: "CSS", level: 90, categery: "fronted" },
+  {name: "HTML", level: 90, categery: "fronted" },
   
 ]
 

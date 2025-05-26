@@ -75,7 +75,7 @@ export const StarBackground = () => {
             }}
           />
         )
-      })};
+      })}
 
       {meteors.map((meteor) => {
         return (
