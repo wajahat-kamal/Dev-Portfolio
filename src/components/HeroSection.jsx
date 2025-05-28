@@ -7,7 +7,7 @@ export const HeroSection = () => <section id="hero" className="relative min-h-sc
     <div className="space-y-6">
 
       <div className="w-full flex justify-center">
-       <img src="./public/portfolioimg.png" alt="portfolio img" className="w-80 rounded-full" />
+       <img src="./portfolioimg.png" alt="portfolio img" className="w-80 rounded-full" />
       </div>
 
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
