@@ -1,5 +1,4 @@
-import { ExternalLink, Github, ArrowRight } from "lucide-react"
-
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const projects = [
   {
@@ -9,18 +8,19 @@ const projects = [
     image: "/projects/WK-Shoes-Store.png",
     tags: ["HTML", "CSS", "JavaScript"],
     demoURL: "https://wkshoesstore.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git"
+    githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
   },
   {
     id: 2,
     title: "WK Restaurant",
-    description: "A beautiful WK Restaurant website build HTML, CSS and JavaScript.",
+    description:
+      "A beautiful WK Restaurant website build HTML, CSS and JavaScript.",
     image: "/projects/WK-Restaurant.png",
     tags: ["HTML", "CSS", "JavaScript"],
     demoURL: "https://wk-restaurant.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/WK-Restaurant.git"
+    githubURL: "https://github.com/wajahat-kamal/WK-Restaurant.git",
   },
-]
+];
 
 export const ProjectsSection = () => {
   return (
