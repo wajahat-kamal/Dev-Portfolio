@@ -52,7 +52,7 @@ export const AboutSection = () => {
                     Front-end Development
                   </h4>
 
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground sm:text-[17px] text-[14px]">
                     Creating responsive websites and web applications using
                     ReactJS.
                   </p>
@@ -71,7 +71,7 @@ export const AboutSection = () => {
                     Wordpress Development
                   </h4>
 
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground sm:text-[17px] text-[14px]">
                     Creating custom theme for WordPress website.
                   </p>
                 </div>
