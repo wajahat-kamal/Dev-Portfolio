@@ -9,7 +9,7 @@ export const HeroSection = () => (
       <div className="space-y-6">
         <div className="w-full flex justify-center">
           <img
-            src="./public/portfolioimg.png"
+            src="/portfolioimg.png"
             alt="portfolio img"
             className="w-50 md:w-80 rounded-full"
           />
