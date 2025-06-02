@@ -12,12 +12,13 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              WordPress & ReactJS Developer
+              Modern React JS Developer
             </h3>
 
             <p className="text-muted-foreground">
-              I specialize in web development, creating user-friendly interfaces
-              using Wordpress and ReactJS. My passion lies in optimizing website
+              With over 6 months of experience in front-end web development, 
+              I specialize in front-end development, creating user-friendly interfaces
+              using React JS. My passion lies in optimizing website
               performance and ensuring responsive design.
               {/* With over 6 months of experience in front-end web development, I specialize
               in creating responsive, accessible, and performant web
@@ -60,7 +61,7 @@ export const AboutSection = () => {
               </div>
             </div>
 
-            <div className="gradient-border p-6 card-hover">
+            {/* <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <User className="h-6 w-6 text-primary" />
@@ -76,7 +77,7 @@ export const AboutSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* <div className="gradient-border p-6 card-hover">
 
@@ -98,6 +99,7 @@ export const AboutSection = () => {
               </div>
 
             </div> */}
+
           </div>
         </div>
       </div>

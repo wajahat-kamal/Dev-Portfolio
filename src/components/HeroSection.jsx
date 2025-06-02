@@ -27,11 +27,11 @@ export const HeroSection = () => (
           </span>
         </h1>
 
-        <p className="text-lg md:text-3xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+        <p className="text-lg md:text-4xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
           {/* I create stellar web experiences with modern technologies.
         Specializing in front-end development, I build interfaces that are
         both beautiful and functional. */}
-          Wordpress and ReactJS Developer
+          Modern React JS Developer
         </p>
 
         <div className=" opacity-0 animate-fade-in-delay-4">
@@ -42,9 +42,9 @@ export const HeroSection = () => (
       </div>
     </div>
 
-    <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+    {/* <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
       <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
       <ArrowDown className="h-5 w-5 text-primary" />
-    </div>
+    </div> */}
   </section>
 );
