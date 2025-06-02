@@ -16,10 +16,10 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              With over 6 months of experience in front-end web development, 
-              I specialize in front-end development, creating user-friendly interfaces
-              using React JS. My passion lies in optimizing website
-              performance and ensuring responsive design.
+              At just 15 years old, I have over 6 months of experience in
+              front-end web development, specializing in building user-friendly
+              interfaces with React JS. I'm passionate about optimizing website
+              performance and creating fully responsive designs.
               {/* With over 6 months of experience in front-end web development, I specialize
               in creating responsive, accessible, and performant web
               applications using ReactJS and Wordpress. */}
@@ -41,21 +41,23 @@ export const AboutSection = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-6">
-            <div className="gradient-border p-6 card-hover">
+            <div className="gradient-border p-6 py-10 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">
+                  <h4 className="font-semibold text-lg mb-2">
                     {" "}
                     Front-end Development
                   </h4>
 
-                  <p className="text-muted-foreground sm:text-[17px] text-[14px]">
-                    Creating responsive websites and web applications using
-                    ReactJS.
+                  <p className="text-muted-foreground sm:text-[16px] text-[14px]">
+                    Using React JS, developers create responsive websites and
+                    web applications. This powerful library enables the
+                    development of fast, dynamic, and interactive user
+                    interfaces.
                   </p>
                 </div>
               </div>
@@ -99,7 +101,6 @@ export const AboutSection = () => {
               </div>
 
             </div> */}
-
           </div>
         </div>
       </div>
