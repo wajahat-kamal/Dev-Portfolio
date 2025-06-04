@@ -24,7 +24,7 @@ function App() {
       {loading ? (
         <PageLoader />
       ) : (
-        <div className="p-1">
+        <div className="p-0">
           
       <BrowserRouter>
         <Routes>
