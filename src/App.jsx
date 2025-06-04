@@ -1,16 +1,31 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
-
-
-// import { Toaster } from "@/components/ui/toaster";
+import React, { useEffect, useState } from 'react';
+import PageLoader from './components/PageLoader';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Show loader for 2 seconds on every load
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // Set loader time
+
+    return () => clearTimeout(timer);
+  }, []);
+
 
   return (
 
-    <>
-      {/* <Toaster /> */}
+  
+      <>
+      {loading ? (
+        <PageLoader />
+      ) : (
+        <div className="p-1">
+          
       <BrowserRouter>
         <Routes>
 
@@ -19,7 +34,8 @@ function App() {
 
         </Routes>
       </BrowserRouter>
-
+        </div>
+      )}
     </>
 
   );
