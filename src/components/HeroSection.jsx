@@ -34,7 +34,7 @@ export const HeroSection = () => (
         <div className=" opacity-0 animate-fade-in-delay-4">
           <a
           className="cosmic-button"
-            href="wajahatkamal-CV.png"
+            href="/wajahatkamal-CV.png"
             download
             target="_blank"
             rel="WajahatKamal-CV"
