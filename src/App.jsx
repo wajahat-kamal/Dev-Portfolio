@@ -8,10 +8,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Show loader for 2 seconds on every load
+
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // Set loader time
+    }, 1000); 
 
     return () => clearTimeout(timer);
   }, []);
