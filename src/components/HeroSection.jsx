@@ -27,16 +27,19 @@ export const HeroSection = () => (
           </span>
         </h1>
 
-        <p className="text-lg md:text-4xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-          {/* I create stellar web experiences with modern technologies.
-        Specializing in front-end development, I build interfaces that are
-        both beautiful and functional. */}
+        <p className="text-[18px] md:text-4xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
           Modern React JS Developer
         </p>
 
         <div className=" opacity-0 animate-fade-in-delay-4">
-          <a href="#projects" className="cosmic-button">
-            View My Work
+          <a
+          className="cosmic-button"
+            href="wajahatkamal-CV.png"
+            download
+            target="_blank"
+            rel="WajahatKamal-CV"
+          >
+            Download My CV
           </a>
         </div>
       </div>
