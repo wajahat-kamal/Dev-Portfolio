@@ -35,9 +35,9 @@ export const HeroSection = () => (
           <a
           className="cosmic-button"
             href="/wajahatkamal-CV.png"
-            download
+            download="wajahatkamal-CV.png"
             target="_blank"
-            rel="WajahatKamal-CV"
+            rel="noopener noreferrer"
           >
             Download My CV
           </a>
