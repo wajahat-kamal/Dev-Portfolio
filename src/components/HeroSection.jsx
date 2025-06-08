@@ -1,4 +1,4 @@
-import { ArrowDown, Github } from "lucide-react";
+
 
 export const HeroSection = () => (
   <section
