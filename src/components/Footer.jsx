@@ -28,7 +28,7 @@ export const Footer = () => {
             target="_blank"
             href="https://github.com/wajahat-kamal/WK-Dev-Portfolio"
           >
-            Check the code of this Portfolio Website.
+            View the source code of this WK Portfolio website.
           </a>
         </p>
       </div>
