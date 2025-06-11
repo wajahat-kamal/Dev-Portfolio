@@ -1,4 +1,4 @@
-
+import { ArrowDown } from "lucide-react";
 
 export const HeroSection = () => (
   <section
@@ -10,7 +10,7 @@ export const HeroSection = () => (
         <div className="w-full flex justify-center">
           <img
             src="/portfolioimg.png"
-            alt="portfolio img"
+            alt="Wajahat Kamal's portfolio image"
             className="w-50 md:w-80 rounded-full"
           />
         </div>
@@ -27,7 +27,7 @@ export const HeroSection = () => (
           </span>
         </h1>
 
-        <p className="text-[18px] md:text-4xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+        <p className="text-[18px] md:text-4xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
           Modern React JS Developer
         </p>
 

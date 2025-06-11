@@ -4,14 +4,14 @@ const projects = [
   {
     id: 1,
     title: "WK Shoes Store",
-    description: "A beautiful WK Shoes Store build HTML, CSS and JavaScript.",
+    description: "A modern online shoe store built with ReactJS and TailwindCSS, offering stylish and comfortable footwear for every step.",
     image: "/projects/WK-Shoes-Store.png",
-    tags: ["HTML", "CSS", "JavaScript"],
-    demoURL: "https://wkshoesstore.vercel.app/",
+    tags: ["React JS", "Tailwind CSS"],
+    demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
   },
   {
-    id: 2,
+    id: 2,  
     title: "WK Restaurant",
     description:
       "A beautiful WK Restaurant website build HTML, CSS and JavaScript.",
