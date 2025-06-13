@@ -11,7 +11,16 @@ const projects = [
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
   },
   {
-    id: 2,  
+    id: 2,
+    title: "WK AI Chatbot",
+    description: "I built a responsive chatbot using React JS, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
+    image: "/projects/WK-Chatbot.png",
+    tags: ["React JS", "Tailwind CSS", "Gemini API"],
+    demoURL: "https://wk-ai-chatbot.vercel.app/",
+    githubURL: "https://github.com/wajahat-kamal/WK-Chatbot.git",
+  },
+  {
+    id: 3,  
     title: "WK Restaurant",
     description:
       "A beautiful WK Restaurant website build HTML, CSS and JavaScript.",
