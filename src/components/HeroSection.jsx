@@ -28,7 +28,7 @@ export const HeroSection = () => (
         </h1>
 
         <p className="text-[18px] md:text-4xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-          Modern React JS Developer
+          React JS Developer
         </p>
 
         <div className=" opacity-0 animate-fade-in-delay-4">
