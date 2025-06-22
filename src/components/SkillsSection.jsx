@@ -1,9 +1,9 @@
 const skills = [
-  { name: "React JS", level: 70, categery: "fronted" },
-  { name: "TailwindCSS", level: 70, categery: "fronted" },
-  { name: "JavaScript", level: 75, categery: "fronted" },
-  { name: "CSS", level: 90, categery: "fronted" },
-  { name: "HTML", level: 90, categery: "fronted" },
+  { name: "React JS", image: "/skills/React-icon.svg", level: 75, categery: "Fronted" },
+  { name: "JavaScript", image: "/skills/JavaScript-logo.svg", level: 75, categery: "Fronted" },
+  { name: "Tailwind CSS", image: "/skills/Tailwind_CSS_Logo.svg", level: 80, categery: "Fronted" },
+  { name: "CSS", image: "/skills/HTML5_logo_and_wordmark.svg", level: 85, categery: "Fronted" },
+  { name: "HTML", image: "/skills/CSS3_logo_and_wordmark.svg", level: 85, categery: "Fronted" },
 ];
 
 export const SkillsSection = () => {
@@ -18,24 +18,28 @@ export const SkillsSection = () => {
           {skills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-5 m-3 rounded-lg shadow-xs card-hover"
+              className="bg-card px-5 py-4 m-3 rounded-lg shadow-xs card-hover"
             >
-              <div className="text-left mb-4">
+              <div className="text-left mb-4 flex flex-row items-center justify-between gap-2">
                 <h3 className="font-semibold text-xl">{skill.name}</h3>
+                <img className="w-10 h-10 bg-white p-1 rounded" src={skill.image} alt={skill.name} />
               </div>
 
-              <div className="w-full bg-secondary/50 h2 sounded-full overflow-hidden">
+              <div className="w-full bg-secondary/50 h2 sounded-full overflow-hidden flex flex-row items-center justify-between">
                 <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
                   style={{ width: skill.level + "%" }}
-                ></div>
+                >
 
-                <div className="text-right mt-1">
+                </div>
+                <div className="">
                   <span className="text-sm text-muted-foreground">
                     {skill.level}%
                   </span>
                 </div>
+
               </div>
+
             </div>
           ))}
         </div>
