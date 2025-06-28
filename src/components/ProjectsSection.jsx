@@ -6,7 +6,7 @@ const projects = [
     title: "WK Shoes Store",
     description: "A modern online shoe store built with ReactJS and TailwindCSS, offering stylish and comfortable footwear for every step.",
     image: "/projects/WK-Shoes-Store.png",
-    tags: ["React JS", "Tailwind CSS", "Cursor"],
+    tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
   },
@@ -25,7 +25,7 @@ const projects = [
     description:
       "NoteApp – A simple and clean note-taking app built with ReactJS, Tailwind CSS for organizing your thoughts efficiently.",
     image: "/projects/wk-note-app.png",
-    tags: ["React JS", "Tailwind CSS", "Cursor"],
+    tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://wk-note-app.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-NoteApp.git",
   },
