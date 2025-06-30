@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="bg-background text-foreground py-4">
+    <footer className="text-foreground py-4">
       <div className="container mx-auto text-center">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Wajahat Kamal. All rights reserved.

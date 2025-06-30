@@ -41,15 +41,15 @@ export const SkillsSection = () => {
   return (
     <section id="skills" className="py-20 px-4 bg-secondary/30 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-5xl font-bold mb-12 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold mb-8 text-center">
           My <span className="text-primary">Skills</span>
         </h2>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((skill, index) => (
             <div
             key={index}
-            className="bg-card rounded-2xl p-5 pb-3 shadow-md transition-transform hover:scale-[1.02] hover:shadow-lg"
+            className="bg-card rounded-2xl px-5 py-3 shadow-md transition-transform hover:scale-[1.02] hover:shadow-lg"
           >
             {/* Header */}
             <div className="flex items-center justify-between mb-4">
