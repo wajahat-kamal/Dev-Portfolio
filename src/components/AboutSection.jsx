@@ -11,10 +11,10 @@ export const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-2 md:space-y-6">
-            <h3 className="text-2xl md:text-3xl font-semibold">React JS Developer</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold">Web Development</h3>
 
             <p className="text-muted-foreground">
-              At just 15 years old, I have over 6 months of experience in
+              At just 15 years old, I have over 8 months of experience in
               front-end web development, specializing in building user-friendly
               interfaces with React JS. I'm passionate about optimizing website
               performance and creating fully responsive designs.
