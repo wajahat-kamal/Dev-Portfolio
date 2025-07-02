@@ -7,7 +7,6 @@ const TypingEffect = () => (
       strings: [
         "JavaScript Developer",
         "React JS Developer",
-        "Tailwind CSS Specialist",
       ],
       autoStart: true,
       loop: true,
@@ -23,9 +22,6 @@ const TypingEffect = () => (
         .pauseFor(2000)
         .deleteAll()
         .typeString("React JS Developer")
-        .pauseFor(2000)
-        .deleteAll()
-        .typeString("Tailwind CSS Specialist")
         .pauseFor(2000)
         .deleteAll()
     }}

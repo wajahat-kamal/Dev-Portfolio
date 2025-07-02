@@ -22,12 +22,11 @@ const HeroSection = () => {
 
           {/* Typing Text */}
           <p className="text-primary font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center gap-2">
-           <TypingEffect />
+            <TypingEffect />
           </p>
 
           {/* Buttons */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 opacity-0 animate-fade-in-delay-4">
-            
             {/* CV Button */}
             <a className="px-6 py-2 bg-primary text-white rounded-full font-semibold hover:text-primary hover:bg-transparent transition duration-300 hover:border-primary border-2 cursor-pointer">
               Download CV
