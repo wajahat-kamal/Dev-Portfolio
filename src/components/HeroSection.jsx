@@ -5,13 +5,13 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center px-4 md:px-10 lg:px-20 py-10 text-gray-900"
+      className="relative min-h-screen flex items-center justify-center  md:px-10 lg:px-20 py-10 text-gray-900"
     >
-      <div className="container max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 md:gap-0 justify-between z-10">
+      <div className="container max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-20 justify-between z-10">
         {/* Left Content */}
-        <div className="text-start lg:text-left flex-1 space-y-3 md:space-y-5">
+        <div className="text-start lg:text-left flex-1 space-y-2 md:space-y-5">
           {/* Heading */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
             <span className="block opacity-0 animate-fade-in text-white text-2xl md:text-4xl">
               Hi, I'm
             </span>
@@ -21,14 +21,14 @@ const HeroSection = () => {
           </h1>
 
           {/* Typing Text */}
-          <p className="text-primary font-bold text-xl sm:text-2xl md:text-4xl lg:text-5xl tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center gap-2">
+          <p className="text-primary font-bold text-[21px] md:text-4xl lg:text-5xl tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center gap-2">
             <TypingEffect />
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 opacity-0 animate-fade-in-delay-4">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-1 md:gap-4 opacity-0 animate-fade-in-delay-4">
             {/* CV Button */}
-            <a className="px-6 py-2 bg-primary text-white rounded-full font-semibold hover:text-primary hover:bg-transparent transition duration-300 hover:border-primary border-2 cursor-pointer">
+            <a className="px-4 py-2 bg-primary text-white rounded-full font-semibold hover:text-primary hover:bg-transparent transition duration-300 hover:border-primary border-2 cursor-pointer">
               Download CV
             </a>
 
@@ -36,12 +36,11 @@ const HeroSection = () => {
             <a
               target="_blank"
               href="https://github.com/wajahat-kamal"
-              className="flex items-center  hover:shadow-sm shadow-primary gap-2 px-5 py-[8px] border-2 border-primary text-primary rounded-full hover:bg-primary  hover:text-white transition duration-300"
+              className="flex items-center  hover:shadow-sm shadow-primary gap-2 px-2 py-[6px] md:px-3  md:py-[8px] border-2 border-primary text-primary rounded-full hover:bg-primary  hover:text-white transition duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
+                className="w-6 h-6 md:w-[22px] md-[22px]"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -68,14 +67,13 @@ const HeroSection = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com"
-              className="flex items-center gap-2 hover:shadow-sm shadow-primary px-5 py-[8px] border-2 border-primary text-primary rounded-full hover:bg-primary hover:text-white transition duration-300"
+              className="flex items-center gap-2 hover:shadow-sm shadow-primary px-2 py-[8px] md:px-3  md:py-[8px] border-2 border-primary text-primary rounded-full hover:bg-primary hover:text-white transition duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
                 viewBox="0 0 24 24"
                 fill="currentColor"
+                className="w-5 h-5 md:w-[22px] md-[22px]"
               >
                 <path
                   d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 
