@@ -213,3 +213,6 @@
     to { opacity: 1; transform: translateY(0); }
   }
 }
+.fira-code {
+  font-family: 'Source Code Pro', monospace;
+}

@@ -35,11 +35,11 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
-          <span className="relative z-60 text-2xl md:text-3xl">
-            <span className="text-glow text-foreground"> WK </span> &lt;Portfolio /&gt;
+          <span className="text-2xl md:text-3xl flex items-center text-glow fira-code">
+            {"<Portfolio />"}
           </span>
         </a>
-  
+
         {/* desktop nav */}
         <div className="hidden md:flex space-x-8 relative z-30">
           {navItems.map((item, key) => (
@@ -52,7 +52,7 @@ export const Navbar = () => {
             </a>
           ))}
         </div>
-  
+
         {/* mobile nav button */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
@@ -61,7 +61,7 @@ export const Navbar = () => {
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-  
+
         {/* mobile nav menu */}
         <div
           className={cn(
@@ -84,11 +84,7 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
-
-     
-
-
       </div>
     </nav>
-  );  
+  );
 };

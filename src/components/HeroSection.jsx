@@ -12,7 +12,7 @@ const HeroSection = () => {
         <div className="text-start lg:text-left flex-1 space-y-2 md:space-y-5">
           {/* Heading */}
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight">
-            <span className="block opacity-0 animate-fade-in text-white text-2xl md:text-4xl">
+            <span className="block opacity-0 animate-fade-in text-white text-center md:text-start text-2xl md:text-4xl">
               Hi, I'm
             </span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
