@@ -38,11 +38,12 @@ export const AboutSection = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
-            <div className="gradient-border md:p-6 md:py-12 p-4 py-6 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+          <div className="grid grid-cols-1 gap-2">
+
+            <div className="gradient-border p-4 py-6 card-hover">
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-full bg-primary/10">
+                  <Code className="h-5 w-5 text-primary" />
                 </div>
 
                 <div className="text-left">
@@ -51,7 +52,7 @@ export const AboutSection = () => {
                     Front-end Development
                   </h4>
 
-                  <p className="text-muted-foreground sm:text-[16px] text-[14px]">
+                  <p className="text-muted-foreground text-sm">
                     Using React JS, developers create responsive websites and
                     web applications. This powerful library enables the
                     development of fast, dynamic, and interactive user
@@ -60,6 +61,29 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
+
+            <div className="gradient-border p-4 py-6 card-hover">
+              <div className="flex items-start gap-3">
+                <div className="p-2 rounded-full bg-primary/10">
+                  <Code className="h-5 w-5 text-primary" />
+                </div>
+
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg mb-2">
+                    {" "}
+                    FullStack Development
+                  </h4>
+
+                  <p className="text-muted-foreground text-sm">
+                    Using NextJS, developers create responsive websites and
+                    web applications. This powerful library enables the
+                    development of fast, dynamic, and interactive user
+                    interfaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
