@@ -14,7 +14,7 @@ export const AboutSection = () => {
             <h3 className="text-2xl md:text-3xl font-semibold">Web Development</h3>
 
             <p className="text-muted-foreground">
-              At just 15 years old, I have over 8 months of experience in
+              I have over 8 months of experience in
               front-end web development, specializing in building user-friendly
               interfaces with React JS. I'm passionate about optimizing website
               performance and creating fully responsive designs.
@@ -71,7 +71,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg mb-2">
                     {" "}
-                    FullStack Development
+                    FullStack Development <button className="inline-block text-xs text-yellow-400 bg-yellow-900/40 px-3 py-1 rounded-full font-semibold">Upcomming..</button>
                   </h4>
 
                   <p className="text-muted-foreground text-sm">
