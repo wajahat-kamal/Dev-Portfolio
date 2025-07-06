@@ -75,7 +75,7 @@ export const AboutSection = () => {
                   </h4>
 
                   <p className="text-muted-foreground text-sm">
-                    Using NextJS, developers create responsive websites and
+                    Using Next.JS, Node.JS, ExpressJS and MongoDB, developers create responsive websites and
                     web applications. This powerful library enables the
                     development of fast, dynamic, and interactive user
                     interfaces.
