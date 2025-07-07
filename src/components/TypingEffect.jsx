@@ -11,13 +11,13 @@ const TypingEffect = () => (
       autoStart: true,
       loop: true,
       cursor: "|",
-      delay: 75,
+      delay: 65,
       deleteSpeed: 50,
       pauseFor: 2000,
     }}
     onInit={(typewriter) => {
       typewriter
-        .changeDelay(75)
+        .changeDelay(65)
         .typeString("JavaScript Developer")
         .pauseFor(2000)
         .deleteAll()
