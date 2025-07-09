@@ -10,6 +10,7 @@ const projects = [
     demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
   },
+
   {
     id: 2,
     title: "WK AI Chatbot",
@@ -19,6 +20,7 @@ const projects = [
     demoURL: "https://wk-ai-chatbot.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Chatbot.git",
   },
+
   {
     id: 3,  
     title: "WK Note App",
@@ -34,6 +36,7 @@ const projects = [
 export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-18 px-4 relative">
+      
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center">
           {" "}
