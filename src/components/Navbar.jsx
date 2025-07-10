@@ -36,7 +36,7 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="text-2xl md:text-3xl flex items-center gap-1 text-glow fira-code">
-          <img src="/wk-logo.png" width={30} height={30}   alt="Wajahat Kamal Logo" /> Portfolio
+             {"<Portfolio/>"}
           </span>
         </a>
 
