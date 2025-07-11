@@ -1,8 +1,20 @@
 const skills = [
   {
+    name: "Mongo DB",
+    image: "/skills/mongodb-icon.svg",
+    level: "Learning",
+    category: "Database",
+  },
+  {
+    name: "Express JS",
+    image: "/skills/expressjs-icon.png",
+    level: "Learning",
+    category: "Backend",
+  },
+  {
     name: "Node JS",
-    image: "/skills/Nodejs.svg",
-    level: "Pending",
+    image: "/skills/Nodejs-icon.svg",
+    level: "Learning",
     category: "Backend",
   },
   {
