@@ -7,7 +7,7 @@ const skills = [
   },
   {
     name: "Express JS",
-    image: "/skills/expressjs-icon.png",
+    image: "/skills/expressjs-icon.svg",
     level: "Learning",
     category: "Backend",
   },
@@ -20,7 +20,7 @@ const skills = [
   {
     name: "React JS",
     image: "/skills/React-icon.svg",
-    level: 75,
+    level: 70,
     category: "Frontend",
   },
   {
@@ -32,19 +32,19 @@ const skills = [
   {
     name: "Tailwind CSS",
     image: "/skills/Tailwind_CSS_Logo.svg",
-    level: 80,
+    level: 65,
     category: "Frontend",
   },
   {
     name: "CSS",
     image: "/skills/CSS3_logo_and_wordmark.svg",
-    level: 85,
+    level: 80,
     category: "Frontend",
   },
   {
     name: "HTML",
     image: "/skills/HTML5_logo_and_wordmark.svg",
-    level: 85,
+    level: 80,
     category: "Frontend",
   },
 ];
