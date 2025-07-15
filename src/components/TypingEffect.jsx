@@ -5,7 +5,8 @@ const TypingEffect = () => (
   <Typewriter
     options={{
       strings: [
-        "JavaScript Developer",
+        "Frontend Developer",
+        "JavaScript Coder",
         "React JS Developer",
       ],
       autoStart: true,
@@ -18,7 +19,10 @@ const TypingEffect = () => (
     onInit={(typewriter) => {
       typewriter
         .changeDelay(65)
-        .typeString("JavaScript Developer")
+        .typeString("Frontend Developer")
+        .pauseFor(2000)
+        .deleteAll()
+        .typeString("JavaScript Coder")
         .pauseFor(2000)
         .deleteAll()
         .typeString("React JS Developer")
