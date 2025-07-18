@@ -36,7 +36,7 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="text-2xl md:text-3xl flex items-center gap-1 text-glow fira-code">
-             {"<Portfolio/>"}
+            {"<Portfolio/>"}
           </span>
         </a>
 

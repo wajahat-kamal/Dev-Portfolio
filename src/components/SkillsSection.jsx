@@ -1,4 +1,4 @@
-const skills = [ 
+const skills = [
   // {
   //   name: "Next JS",
   //   image: "/skills/nextjs-logo.svg",
@@ -69,7 +69,7 @@ export const SkillsSection = () => {
               key={index}
               className="relative bg-card rounded-2xl px-5 py-3 shadow-md transition-transform hover:scale-[1.02] hover:shadow-lg"
             >
-    
+
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-semibold">{skill.name}</h3>
