@@ -1,59 +1,57 @@
-const skills = [
+const skills = [ 
+  // {
+  //   name: "Next JS",
+  //   image: "/skills/nextjs-logo.svg",
+  //   level: "Learning",
+  //   category: "Full Stack",
+  // },
   {
     name: "Mongo DB",
     image: "/skills/mongodb-icon.svg",
     level: "Learning",
     category: "Database",
-    tooltip: "NoSQL document-based database storing flexible JSON-like data for modern web applications.",
   },
   {
     name: "Express JS",
     image: "/skills/expressjs-icon.svg",
     level: "Learning",
     category: "Backend",
-    tooltip: "Minimal Node.js web framework for creating APIs, middleware, and server-side routing.",
   },
   {
     name: "Node JS",
     image: "/skills/Nodejs-icon.svg",
     level: "Learning",
     category: "Backend",
-    tooltip: "JavaScript runtime for building fast, scalable server-side applications using event-driven architecture.",
   },
   {
     name: "React JS",
     image: "/skills/React-icon.svg",
     level: 70,
     category: "Frontend",
-    tooltip: "Component-based frontend library for building dynamic UIs with virtual DOM and JSX.",
   },
   {
     name: "JavaScript",
     image: "/skills/JavaScript-logo.svg",
     level: 75,
     category: "Frontend",
-    tooltip: "Adds logic, interactivity, and dynamic functionality to websites using the browser's capabilities.",
   },
   {
     name: "Tailwind CSS",
     image: "/skills/Tailwind_CSS_Logo.svg",
     level: 65,
     category: "Frontend",
-    tooltip: "Utility-first CSS framework enabling fast, responsive UI building with minimal custom CSS.",
   },
   {
     name: "CSS",
     image: "/skills/CSS3_logo_and_wordmark.svg",
     level: 80,
     category: "Frontend",
-    tooltip: "Styles webpages with layout, spacing, fonts, colors, transitions, and responsive design utilities.",
   },
   {
     name: "HTML",
     image: "/skills/HTML5_logo_and_wordmark.svg",
     level: 80,
     category: "Frontend",
-    tooltip: "Defines webpage structure using semantic tags, forms, media, and basic accessibility rules.",
   },
 ];
 
@@ -69,12 +67,9 @@ export const SkillsSection = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="group relative bg-card rounded-2xl px-5 py-3 shadow-md transition-transform hover:scale-[1.02] hover:shadow-lg"
+              className="relative bg-card rounded-2xl px-5 py-3 shadow-md transition-transform hover:scale-[1.02] hover:shadow-lg"
             >
-                {/* Tooltip */}
-  <div className="absolute z-10 -top-10 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:opacity-100 transition-opacity duration-500 bg-[#05080F] text-white text-1xl px-3 py-2 rounded-md shadow-md shadow-[#45505e] w-[90%] text-center">
-    {skill.tooltip}
-  </div>
+    
               {/* Header */}
               <div className="flex items-center justify-between mb-4">
                 <h3 className="text-xl font-semibold">{skill.name}</h3>
