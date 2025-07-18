@@ -2,7 +2,7 @@ import { ArrowDown } from "lucide-react";
 import TypingEffect from "./TypingEffect";
 
 const HeroSection = () => {
-  return ( 
+  return (
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center  md:px-10 lg:px-20 py-10 text-gray-900"

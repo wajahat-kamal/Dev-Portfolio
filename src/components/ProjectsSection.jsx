@@ -22,7 +22,7 @@ const projects = [
   },
 
   {
-    id: 3,  
+    id: 3,
     title: "WK Note App",
     description:
       "NoteApp – A simple and clean note-taking app built with ReactJS, Tailwind CSS for organizing your thoughts efficiently.",
@@ -36,7 +36,7 @@ const projects = [
 export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-18 px-4 relative">
-      
+
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center">
           {" "}
