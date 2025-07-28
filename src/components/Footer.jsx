@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="text-foreground py-4 px-4 md:px-9 bg-[#0B111E] flex justify-between items-center">
       <div className="">
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} Wajahat Kamal. All rights reserved.
+          &copy; {new Date().getFullYear()} Wajahat Kamal-28-july. All rights reserved.
         </p>
         <p className="text-sm">
           Built with{" "}

@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center  md:px-10 lg:px-20 py-10 text-gray-900"
+      className="relative min-h-screen flex items-center justify-center  md:px-10 lg:px-15 py-10 text-gray-900"
     >
       <div className="container max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-20 justify-between z-10">
         {/* Left Content */}
@@ -21,7 +21,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Typing Text */}
-          <p className="text-primary font-bold text-[21px] md:text-4xl lg:text-5xl tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center gap-2">
+          <p className="text-primary text-center md:text-start font-bold text-[21px] md:text-4xl lg:text-5xl tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center gap-2">
             <TypingEffect />
           </p>
 
