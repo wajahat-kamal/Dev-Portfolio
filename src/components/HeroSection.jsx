@@ -93,7 +93,7 @@ const HeroSection = () => {
         {/* Right Content: Profile Image */}
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
-            src="/portfolioimg.png"
+            src="/portfolioimg.jpg"
             alt="Wajahat Kamal"
             className="w-72 sm:w-80 md:w-[320px] lg:w-[360px] rounded-full opacity-80 shadow-xl border-4 border-primary hover:scale-105 transition-transform duration-500"
           />
