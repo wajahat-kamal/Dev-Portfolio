@@ -9,7 +9,7 @@ const projects = [
     tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
-    date: "2025 June 20",
+    date: "2025 June 28",
   },
 
   {
@@ -20,7 +20,7 @@ const projects = [
     tags: ["React JS", "Tailwind CSS", "Gemini API"],
     demoURL: "https://wk-ai-chatbot.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Chatbot.git",
-    date: "2025 June 10",
+    date: "2025 June 14",
   },
 
   {
