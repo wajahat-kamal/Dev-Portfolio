@@ -4,21 +4,23 @@ const projects = [
   {
     id: 1,
     title: "WK Shoes Store",
-    description: "A modern online shoe store built with ReactJS and TailwindCSS, offering stylish and comfortable footwear for every step.",
+    description: "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
     image: "/projects/WK-Shoes-Store.png",
     tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
+    date: "2025 June 20",
   },
 
   {
     id: 2,
     title: "WK AI Chatbot",
-    description: "I built a responsive chatbot using React JS, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
+    description: "I built a responsive and interactive chatbot using React JS, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
     image: "/projects/WK-Chatbot.png",
     tags: ["React JS", "Tailwind CSS", "Gemini API"],
     demoURL: "https://wk-ai-chatbot.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Chatbot.git",
+    date: "2025 June 10",
   },
 
   {
@@ -30,6 +32,7 @@ const projects = [
     tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://wk-note-app.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-NoteApp.git",
+    date: "2025 May 25",
   },
 ];
 
@@ -75,8 +78,9 @@ export const ProjectsSection = () => {
                 <p className="text-muted-foreground text-sm mb-2">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
+                <div className="flex justify-between items-center w-full">
+                  <div className="flex justify-between items-center w-full">
+                    <div className="flex items-center gap-2">
                     <a
                       href={project.demoURL}
                       target="_blank"
@@ -91,6 +95,10 @@ export const ProjectsSection = () => {
                     >
                       <Github size={20} />
                     </a>
+                    </div>
+
+                    <p className="text-muted-foreground text-sm">{project.date}</p>
+
                   </div>
                 </div>
               </div>
