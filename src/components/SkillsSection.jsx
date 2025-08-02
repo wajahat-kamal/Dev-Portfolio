@@ -8,31 +8,31 @@ const skills = [
   {
     name: "Mongo DB",
     image: "/skills/mongodb-icon.svg",
-    level: "Learning",
+    level: 70,
     category: "Database",
   },
   {
     name: "Express JS",
     image: "/skills/expressjs-icon.svg",
-    level: "Learning",
+    level: 75,
     category: "Backend",
   },
   {
     name: "Node JS",
     image: "/skills/Nodejs-icon.svg",
-    level: "Learning",
+    level: 70,
     category: "Backend",
   },
   {
     name: "React JS",
     image: "/skills/React-icon.svg",
-    level: 70,
+    level: 75,
     category: "Frontend",
   },
   {
     name: "JavaScript",
     image: "/skills/JavaScript-logo.svg",
-    level: 75,
+    level: 70,
     category: "Frontend",
   },
   {
