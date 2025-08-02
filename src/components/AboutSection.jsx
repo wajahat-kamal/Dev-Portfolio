@@ -71,11 +71,12 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg mb-2">
                     {" "}
-                    FullStack Development <button className="inline-block text-xs text-yellow-400 bg-yellow-900/40 px-3 py-1 rounded-full font-semibold">Upcomming..</button>
+                    FullStack Development
+                    {/* <button className="inline-block text-xs text-yellow-400 bg-yellow-900/40 px-3 py-1 rounded-full font-semibold">Upcomming..</button> */}
                   </h4>
 
                   <p className="text-muted-foreground text-sm">
-                    Using Next.JS, Node.JS, ExpressJS and MongoDB, developers create responsive websites and
+                    Using NodeJS, ExpressJS, MongoDB with ReactJS developers create responsive websites and
                     web applications. This powerful library enables the
                     development of fast, dynamic, and interactive user
                     interfaces.
