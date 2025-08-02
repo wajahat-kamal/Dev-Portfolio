@@ -7,6 +7,7 @@ const TypingEffect = () => (
       strings: [
         "MERN Stack Developer",
         "JavaScript Coder",
+        "Full Stack Developer",
         "React JS Developer",
       ],
       autoStart: true,
