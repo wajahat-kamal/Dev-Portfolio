@@ -5,10 +5,9 @@ const TypingEffect = () => (
   <Typewriter
     options={{
       strings: [
-        "Frontend Developer",
+        "MERN Stack Developer",
         "JavaScript Coder",
         "React JS Developer",
-        "MERN Stack Developer",
       ],
       autoStart: true,
       loop: true,
