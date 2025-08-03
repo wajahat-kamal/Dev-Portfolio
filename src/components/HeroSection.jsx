@@ -21,7 +21,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Typing Text */}
-          <p className="text-primary text-center md:text-start font-bold text-[21px] md:text-4xl lg:text-[45px] tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center">
+          <p className="text-primary text-center md:text-start font-bold text-[21px] md:text-4xl lg:text-[50px] tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center">
             <TypingEffect />
           </p>
 
