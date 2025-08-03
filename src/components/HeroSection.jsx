@@ -13,7 +13,7 @@ const HeroSection = () => {
           {/* Heading */}
           <h1 className="text-[32px] sm:text-5xl md:text-[65px] font-extrabold tracking-tight">
             <span className="block opacity-0 animate-fade-in text-foreground/80 text-center md:text-start text-2xl md:text-4xl">
-              Hey, &nbsp;&nbsp;&nbsp;I'm
+              Hey, I'm
             </span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               Wajahat Kamal
