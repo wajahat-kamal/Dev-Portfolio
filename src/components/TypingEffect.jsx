@@ -6,8 +6,8 @@ const TypingEffect = () => (
     options={{
       strings: [
         "Full Stack Developer",
-        "JavaScript Coder",
-        "NodeJS Developer",
+        "JavaScript Developer",
+        "Node.js Architect",
       ],
       autoStart: true,
       loop: true,
@@ -22,10 +22,10 @@ const TypingEffect = () => (
         .typeString("Full Stack Developer")
         .pauseFor(2000)
         .deleteAll()
-        .typeString("JavaScript Coder")
+        .typeString("JavaScript Developer")
         .pauseFor(2000)
         .deleteAll()
-        .typeString("NodeJS Developer")
+        .typeString("Node.js Architect")
         .pauseFor(2000)
         .deleteAll()
     }}
