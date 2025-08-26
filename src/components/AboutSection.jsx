@@ -159,16 +159,16 @@ export const AboutSection = () => {
                 </h3>
 
                 {/* Skills Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
                   {skills.map((skill, index) => (
                     <div
                       key={index}
-                      className="flex flex-col items-center justify-center gap-1 bg-gray-800/60 backdrop-blur-md rounded-2xl p-2 shadow-md border border-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-blue-500"
+                      className="flex flex-col items-center justify-center gap-1 bg-gray-800/60 backdrop-blur-md rounded-2xl py-2 shadow-md border border-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-blue-500"
                     >
                       <img
                         src={skill.image}
                         alt={skill.name}
-                        className="w-12 h-12 p-1 bg-white rounded-lg shadow-sm"
+                        className="w-15 h-10 py-1 px-2 bg-white rounded-lg shadow-sm"
                       />
                       <div className="flex flex-col items-center text-center">
                         <h4 className="text-[12px] font-semibold text-white tracking-wide">
@@ -183,6 +183,7 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
