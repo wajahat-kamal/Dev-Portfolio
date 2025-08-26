@@ -146,7 +146,7 @@ export const AboutSection = () => {
               </div>
             </div> */}
 
-            <div className="gradient-border p-6 card-hover rounded-2xl shadow-lg bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950">
+            <div className="gradient-border p-6 card-hover rounded-2xl shadow-xl bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950">
               <div className="flex flex-col gap-6">
                 {/* Heading */}
 
@@ -183,7 +183,7 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
