@@ -62,8 +62,11 @@ export const AboutSection = () => {
     <section id="about" className="py-20 px-4 relative">
       {" "}
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-10 text-center text-primary">
-          About Me
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-14 relative">
+          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide">
+            About Me
+          </span>
+          <span className="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-36 h-[4px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"></span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -101,7 +104,6 @@ export const AboutSection = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-2">
-
             <div className="gradient-border p-6 card-hover rounded-2xl shadow-xl bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950">
               <div className="flex flex-col gap-6">
                 {/* Heading */}
@@ -139,7 +141,6 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

@@ -1,6 +1,5 @@
 import { Database, Layout } from "lucide-react";
 
-
 export const ServicesSection = () => {
   const services = [
     {
@@ -12,8 +11,8 @@ export const ServicesSection = () => {
         "Interactive User Interfaces 💬",
         "JavaScript & React Development ⚛️",
         "UI/UX Enhancements 🛠️",
-        "Performance Optimization ⚡"
-      ]
+        "Performance Optimization ⚡",
+      ],
     },
     {
       title: "Full Stack Development",
@@ -24,20 +23,20 @@ export const ServicesSection = () => {
         "Database Design & Management 🗃️",
         "End-to-End Project Management 📈",
         "Authentication & Security 🔐",
-        "Deployment & Cloud Hosting ☁️"
-      ]
-    }
+        "Deployment & Cloud Hosting ☁️",
+      ],
+    },
   ];
 
   return (
-    <section
-      id="services"
-      className="py-20 px-6relative"
-    >
+    <section id="services" className="py-20 px-6relative">
       <div className="container mx-auto max-w-6xl">
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
-          My Services
+        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-14 relative">
+          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide">
+            Services
+          </span>
+          <span className="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-36 h-[4px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"></span>
         </h2>
 
         {/* Services Grid */}
