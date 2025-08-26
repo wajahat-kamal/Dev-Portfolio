@@ -28,19 +28,21 @@ const HeroSection = () => {
           {/* Buttons */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-1 md:gap-4 opacity-0 animate-fade-in-delay-4">
             {/* CV Button */}
-            <a className="md:px-6 px-4 py-2 bg-primary text-foreground/80 rounded-full font-semibold hover:text-primary hover:bg-transparent transition duration-300 hover:border-primary border-2 cursor-pointer">
-              Download CV
+            <a>
+              <button className="cosmic-button flex items-center text-lg font-semibold gap-2">
+                Download CV
+              </button>
             </a>
 
             {/* GitHub Button */}
             <a
               target="_blank"
               href="https://github.com/wajahat-kamal"
-              className="flex items-center  hover:shadow-sm shadow-primary gap-2 px-2 py-[6px] md:px-2 md:py-[6px] border-2 border-primary text-primary rounded-full hover:bg-primary  hover:text-foreground/80 transition duration-300"
+              className=" hover:shadow-sm shadow-primary cosmic-button flex items-center gap-2 hover:bg-primary  hover:text-foreground/80 transition duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 md:w-8 md-8"
+                className="w-6 h-6 md:w-10 md-10"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -67,13 +69,13 @@ const HeroSection = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com"
-              className="flex items-center gap-2 hover:shadow-sm shadow-primary px-2 py-[8px] md:px-2  md:py-[8px] border-2 border-primary text-primary rounded-full hover:bg-primary hover:text-foreground/80 transition duration-300"
+              className="cosmic-button flex items-center gap-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-5 h-5 md:w-8 md-8"
+                className="w-6 h-6 md:w-10 md-10"
               >
                 <path
                   d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 

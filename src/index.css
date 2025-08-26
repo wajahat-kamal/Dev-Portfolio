@@ -164,9 +164,13 @@
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-         transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.5)];
+  @apply px-6 py-2 rounded-full font-medium text-white 
+         bg-gradient-to-r from-blue-400 to-purple-500
+         transition-all duration-300 
+         hover:shadow-[0_0_20px_rgba(139,92,246,0.6)]
+         hover:scale-105;
 }
+
 
 @utility star {
   @apply absolute rounded-full bg-white;
