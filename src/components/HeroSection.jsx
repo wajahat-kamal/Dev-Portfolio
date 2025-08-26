@@ -28,7 +28,7 @@ const HeroSection = () => {
           {/* Buttons */}
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-1 md:gap-4 opacity-0 animate-fade-in-delay-4">
             {/* CV Button */}
-            <a>
+            <a href="#">
               <button className="cosmic-button flex items-center text-lg font-semibold gap-2">
                 Download CV
               </button>

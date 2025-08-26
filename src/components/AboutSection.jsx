@@ -85,14 +85,14 @@ export const AboutSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a
                 href="#contact"
-                className="cosmic-button hover:bg-transparent border-2 border-primary hover:text-primary transition-colors duration-300"
+                className="cosmic-button  transition-colors duration-300"
               >
                 {" "}
                 Get In Touch
               </a>
 
               <a
-                className="cosmic-button hover:bg-transparent border-2 border-primary hover:text-primary transition-colors duration-300"
+                className="cosmic-button transition-colors duration-300"
                 href="/wajahatkamal-CV.png"
                 download="wajahatkamal-CV.png"
                 target="_blank"

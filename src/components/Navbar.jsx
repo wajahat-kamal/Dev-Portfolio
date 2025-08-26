@@ -35,7 +35,7 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
-          <span className="text-2xl md:text-3xl flex items-center gap-1 text-glow fira-code">
+          <span className="text-2xl md:text-3xl flex items-center gap-1 text-glow fira-code bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 bg-clip-text text-transparent">
             {"<Portfolio/>"}
           </span>
         </a>
@@ -46,7 +46,7 @@ export const Navbar = () => {
             <a
               key={key}
               href={item.href}
-              className="text-foreground/80 hover:text-primary text-xl font-semibold transition-colors duration-300"
+              className="text-foreground/80 hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-400 hover:to-purple-600 bg-clip-text hover:text-transparent tracking-wide text-xl font-semibold transition-colors duration-300"
             >
               {item.name}
             </a>
