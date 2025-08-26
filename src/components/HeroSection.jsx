@@ -15,13 +15,13 @@ const HeroSection = () => {
             <span className="block opacity-0 animate-fade-in text-foreground/80 text-center md:text-start text-2xl md:text-4xl">
               Hey, I'm
             </span>
-            <span className="text-primary opacity-0 animate-fade-in-delay-1">
+            <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 bg-clip-text text-transparent tracking-wide animate-fade-in-delay-1">
               Wajahat Kamal
             </span>
           </h1>
 
           {/* Typing Text */}
-          <p className="text-primary text-center md:text-start font-bold text-[21px] md:text-4xl lg:text-[45px] tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center">
+          <p className="bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 bg-clip-text text-transparent text-center md:text-start font-bold text-[21px] md:text-4xl lg:text-[45px] tracking-wide opacity-0 animate-fade-in-delay-2 flex fle-row items-center">
             <TypingEffect />
           </p>
 
