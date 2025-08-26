@@ -1,4 +1,3 @@
-import { Briefcase, Code, User } from "lucide-react";
 import { Rocket } from "lucide-react";
 
 const skills = [
@@ -63,8 +62,8 @@ export const AboutSection = () => {
     <section id="about" className="py-20 px-4 relative">
       {" "}
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-10 text-center">
-          About <span className="text-primary"> Me</span>
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-10 text-center text-primary">
+          About Me
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -102,49 +101,6 @@ export const AboutSection = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-2">
-            {/* <div className="gradient-border p-4 py-6 card-hover">
-              <div className="flex items-start gap-3">
-                <div className="p-2 rounded-full bg-primary/10">
-                  <Code className="h-5 w-5 text-primary" />
-                </div>
-
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg mb-2">
-                    {" "}
-                    Front-end Development
-                  </h4>
-
-                  <p className="text-muted-foreground text-sm">
-                    Using React JS, developers create responsive websites and
-                    web applications. This powerful library enables the
-                    development of fast, dynamic, and interactive user
-                    interfaces.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="gradient-border p-4 py-6 card-hover">
-              <div className="flex items-start gap-3">
-                <div className="p-2 rounded-full bg-primary/10">
-                  <Code className="h-5 w-5 text-primary" />
-                </div>
-
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg mb-2">
-                    {" "}
-                    FullStack Development
-                 </h4>
-
-                  <p className="text-muted-foreground text-sm">
-                    Using NodeJS, ExpressJS, MongoDB with ReactJS developers create responsive websites and
-                    web applications. This powerful library enables the
-                    development of fast, dynamic, and interactive user
-                    interfaces.
-                  </p>
-                </div>
-              </div>
-            </div> */}
 
             <div className="gradient-border p-6 card-hover rounded-2xl shadow-xl bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950">
               <div className="flex flex-col gap-6">
