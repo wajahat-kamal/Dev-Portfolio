@@ -1,4 +1,5 @@
 import { Briefcase, Code, User } from "lucide-react";
+import { Rocket } from "lucide-react";
 
 const skills = [
   // {
@@ -146,11 +147,15 @@ export const AboutSection = () => {
             </div> */}
 
             <div className="gradient-border p-6 card-hover rounded-2xl shadow-lg bg-gradient-to-b from-gray-800 via-gray-900 to-gray-950">
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-6">
                 {/* Heading */}
-                <h3 className="text-2xl md:text-3xl font-extrabold text-center bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent tracking-wider relative">
-                  🚀 <span>My Skills</span>
-                  <span className="block w-16 h-[2px] bg-gradient-to-r from-blue-400 to-purple-500 mx-auto mt-2 rounded-full"></span>
+
+                <h3 className="text-2xl md:text-3xl relative flex items-center justify-center gap-2">
+                  <Rocket className="w-6 h-6 text-blue-400" />
+                  <span className="font-extrabold bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent tracking-wider">
+                    My Skills
+                  </span>
+                  <span className="absolute bottom-[-8px] left-1/2 -translate-x-1/2 w-16 h-[2px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></span>
                 </h3>
 
                 {/* Skills Grid */}
@@ -178,7 +183,6 @@ export const AboutSection = () => {
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
