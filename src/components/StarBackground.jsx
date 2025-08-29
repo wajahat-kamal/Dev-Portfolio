@@ -37,7 +37,6 @@ export const StarBackground = () => {
     setStars(newStars);
   };
 
-
   // const generateMeteors = () => {
   //   const numberOfMeteors = 4;
   //   const newMeteors = [];
@@ -55,7 +54,6 @@ export const StarBackground = () => {
   //   setMeteors(newMeteors);
   // };
 
-  
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
       {stars.map((star) => {
@@ -75,7 +73,6 @@ export const StarBackground = () => {
         );
       })}
 
-
       {/* {meteors.map((meteor) => {
         return (
           <div
@@ -92,8 +89,6 @@ export const StarBackground = () => {
           />
         );
       })} */}
-
-      
     </div>
   );
 };

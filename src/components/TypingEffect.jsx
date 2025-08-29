@@ -27,7 +27,7 @@ const TypingEffect = () => (
         .deleteAll()
         .typeString("Node.js Architect")
         .pauseFor(2000)
-        .deleteAll()
+        .deleteAll();
     }}
   />
 );

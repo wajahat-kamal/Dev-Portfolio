@@ -46,7 +46,8 @@ const HeroSection = () => {
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
-                <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 5.303
                   3.438 9.8 8.205 11.385.6.113.82-.258.82-.577
                   0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61C5.422
                   17.07 4.633 16.7 4.633 16.7c-1.087-.744.083-.729.083-.729
@@ -59,7 +60,8 @@ const HeroSection = () => {
                   1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475
                   5.92.42.36.81 1.096.81 2.21 0 1.595-.015 2.88-.015
                   3.27 0 .315.21.69.825.57C20.565 21.795 24
-                  17.295 24 12c0-6.627-5.373-12-12-12z"/>
+                  17.295 24 12c0-6.627-5.373-12-12-12z"
+                />
               </svg>
             </a>
 
@@ -75,14 +77,16 @@ const HeroSection = () => {
                 fill="currentColor"
                 className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8"
               >
-                <path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761
+                <path
+                  d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761
                   2.239 5 5 5h14c2.761 0 5-2.239
                   5-5V5c0-2.761-2.239-5-5-5zM7.12 20.452H3.56V9h3.56v11.452zM5.34
                   7.433c-1.144 0-2.067-.93-2.067-2.078 0-1.147.923-2.078
                   2.067-2.078s2.067.931 2.067 2.078c0 1.148-.923
                   2.078-2.067 2.078zM20.452 20.452h-3.558v-5.563c0-1.327-.027-3.036-1.849-3.036-1.851
                   0-2.134 1.447-2.134 2.942v5.657h-3.558V9h3.415v1.561h.049c.475-.898
-                  1.637-1.849 3.368-1.849 3.601 0 4.268 2.368 4.268 5.448v6.292z"/>
+                  1.637-1.849 3.368-1.849 3.601 0 4.268 2.368 4.268 5.448v6.292z"
+                />
               </svg>
             </a>
           </div>
@@ -100,7 +104,9 @@ const HeroSection = () => {
 
       {/* Scroll Down Indicator */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-xs sm:text-sm text-muted-foreground mb-1">Scroll</span>
+        <span className="text-xs sm:text-sm text-muted-foreground mb-1">
+          Scroll
+        </span>
         <ArrowDown className="h-4 w-4 sm:h-5 sm:w-5 text-primary" />
       </div>
     </section>
