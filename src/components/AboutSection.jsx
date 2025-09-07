@@ -70,7 +70,7 @@ export const AboutSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-2 md:space-y-6">
+          <div className="space-y-3">
             <h3 className="text-2xl md:text-3xl font-semibold">
               Web Development
             </h3>
@@ -82,12 +82,22 @@ export const AboutSection = () => {
               fully responsive designs.
             </p>
 
+            {/* Email Address */}
+            <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300">
+              📧 Email:{" "}
+              <a
+                href="mailto:wajahatkamal3.0@gmail.com"
+                className="text-blue-600 hover:underline"
+              >
+                wajahatkamal3.0@gmail.com
+              </a>
+            </p>
+
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a
                 href="#contact"
-                className="cosmic-button  transition-colors duration-300"
+                className="cosmic-button transition-colors duration-300"
               >
-                {" "}
                 Get In Touch
               </a>
 
