@@ -14,11 +14,12 @@ export const AboutSection = () => {
         </h2>
 
         {/* Equal Height Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
           {/* About Card */}
           <div className="h-full flex flex-col justify-between space-y-6 bg-gradient-to-b from-gray-900 via-gray-950 to-black border border-gray-700/60 rounded-2xl py-8 px-4 md:px-8 shadow-xl backdrop-blur-sm hover:border-blue-500 transition-colors duration-300">
+
             <h3 className="text-xl font-semibold text-white">
-              Meet Wajahat Kamal – MERN Stack Developer
+              Meet Wajahat Kamal – Full Stack Developer
             </h3>
 
             <p className="text-gray-300 text-base md:text-md leading-relaxed tracking-wide">
