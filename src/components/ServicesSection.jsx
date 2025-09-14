@@ -42,7 +42,7 @@ export const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white/5 backdrop-blur-lg p-8 rounded-2xl border border-white/10 shadow-md hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 group"
+              className="bg-gradient-to-b from-gray-900 via-gray-950 to-black backdrop-blur-sm p-8 rounded-2xl border border-white/10 shadow-md hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 group"
             >
               {/* Icon + Title */}
               <div className="flex items-center gap-3 mb-6">
