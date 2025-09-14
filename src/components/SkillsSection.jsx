@@ -9,9 +9,9 @@ const skills = [
   { name: "React JS", image: "/skills/React-icon.svg", category: "Frontend" },
 //   { name: "TypeScript", image: "/skills/typescript-icon.svg", category: "Frontend" },
   { name: "JavaScript", image: "/skills/javascript-icon.svg", category: "Frontend" },
-  { name: "Tailwind", image: "/skills/Tailwind_CSS_Logo.svg", category: "Frontend" },
-  { name: "CSS3", image: "/skills/CSS3_logo_and_wordmark.svg", category: "Frontend" },
-  { name: "HTML5", image: "/skills/HTML5_logo_and_wordmark.svg", category: "Frontend" },
+  { name: "Tailwind", image: "/skills/tailwindcss-icon.svg", category: "Frontend" },
+  { name: "CSS3", image: "/skills/css3-icon.svg", category: "Frontend" },
+  { name: "HTML5", image: "/skills/html5-icon.svg", category: "Frontend" },
 ];
 
 function SkillsSection() {
