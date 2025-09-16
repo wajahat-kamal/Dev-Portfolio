@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -11,7 +10,6 @@ const navItems = [
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +24,7 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed w-full z-20 transition-all duration-300 backdrop-blur-md bg-background/60",
+        "fixed w-full z-20 transition-all duration-300",
         isScrolled ? "md:py-3 py-2 shadow-md" : "md:py-5 py-3"
       )}
     >
@@ -40,50 +38,19 @@ export const Navbar = () => {
           </span>
         </a>
 
-        {/* desktop nav */}
-        <div className="hidden md:flex space-x-8 relative z-30">
-          {navItems.map((item, key) => (
-            <a
-              key={key}
-              href={item.href}
-              className="text-foreground/80 hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-400 hover:to-purple-600 bg-clip-text hover:text-transparent tracking-wide text-xl font-semibold transition-colors duration-300"
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
-
-        {/* mobile nav button */}
-        <button
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-0.5 mt-3 text-foreground relative z-50 border-2 border-white rounded"
-          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-
-        {/* mobile nav menu */}
-        <div
-          className={cn(
-            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden",
-            isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          )}
-        >
-          <div className="flex flex-col space-y-2 text-xl w-full p-3 bg-[#000000da] absolute top-15 z-50">
-            {navItems.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
-                className="text-foreground/90 hover:text-primary font-semibold transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
+        <ul className="flex flex-row justify-end items-center gap-8 backdrop-blur-md bg-black rounded-2xl py-4 px-8">
+          {navItems.map((item, index) => (
+            <li key={index}>
+              <a href={item.href}>
+                <Icon />
+                <span className="hidden md:block text-foreground/80 hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-400 hover:to-purple-600 bg-clip-text hover:text-transparent tracking-wide text-xl font-semibold transition-colors duration-300">
+                  {" "}
+                  {item.name}
+                </span>
               </a>
-            ))}
-          </div>
-        </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
