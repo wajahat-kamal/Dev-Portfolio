@@ -2,10 +2,10 @@ import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Projects", href: "#projects" },
+  { name: "Home", href: "#hero", Icon },
+  { name: "About", href: "#about", Icon },
+  { name: "Services", href: "#services", Icon },
+  { name: "Projects", href: "#projects",Icon },
 ];
 
 export const Navbar = () => {
