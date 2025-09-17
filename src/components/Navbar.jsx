@@ -32,7 +32,7 @@ export const Navbar = () => {
           className="
             flex items-center gap-6 md:gap-10
             rounded-full px-6 py-3
-            backdrop-blur-lg bg-black/40 border-b border-white/10
+            backdrop-blur-sm bg-black/30 border-b border-white/10
             shadow-[0_4px_20px_rgba(0,0,0,0.15)]
           "
         >
