@@ -21,9 +21,17 @@ const HeroSection = () => {
           </h1>
 
           {/* Typing Text */}
-          <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 bg-clip-text text-transparent text-center lg:text-left font-bold text-lg sm:text-2xl md:text-4xl lg:text-[40px] tracking-wide opacity-0 animate-fade-in-delay-2 flex flex-row items-center justify-center lg:justify-start">
+          <div
+            className="
+              flex justify-center lg:justify-start
+              text-lg sm:text-2xl md:text-4xl lg:text-[40px] font-bold
+              bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600
+              bg-clip-text text-transparent tracking-wide
+              opacity-0 animate-fade-in-delay-2
+            "
+          >
             <TypingEffect />
-          </span>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 opacity-0 animate-fade-in-delay-4">
             <a href="#">
