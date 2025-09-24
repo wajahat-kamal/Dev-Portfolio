@@ -4,9 +4,10 @@ const projects = [
   {
     id: 1,
     title: "GLOBIFY",
-    description: "",
-    image: "",
-    tags: ["MERN Technology", "Tailwind CSS", "Gemini API"],
+    description:
+      "AI-powered MERN stack blog built with Tailwind CSS for smart content creation and a modern, responsive UI.",
+    image: "/projects/wk-Globify.png",
+    tags: ["MERN Stack", "Tailwind CSS", "Gemini API"],
     demoURL: "https://globify-wk.vercel.app",
     githubURL: "https://github.com/wajahat-kamal/GLOBIFY/",
     date: "2025 Sept 18",
@@ -67,14 +68,13 @@ export const ProjectsSection = () => {
             Exciting Full Stack Projects are coming soon.
           </button>
         </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-sm:gap-4">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-md overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-38 overflow-hidden">
+              <div className="h-32 sm:h-36 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -82,45 +82,106 @@ export const ProjectsSection = () => {
                 />
               </div>
 
-              <div className="p-3">
-                <div className="flex flex-wrap gap-2 mb-4">
+              <div className="p-2 sm:p-3">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3">
                   {project.tags.map((tag, index) => (
                     <span
                       key={`${project.id}-${index}`}
-                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                      className="px-2 py-0.5 text-[10px] sm:text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                <h3 className="text-xl font-semibold"> {project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-2">
+                <h3 className="text-lg sm:text-xl font-semibold">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-xs sm:text-sm mb-2">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center w-full">
-                  <div className="flex justify-between items-center w-full">
-                    <div className="flex items-center gap-2">
-                      <a
-                        href={project.demoURL}
-                        target="_blank"
-                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                      >
-                        <ExternalLink size={20} />
-                      </a>
-                      <a
-                        href={project.githubURL}
-                        target="_blank"
-                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                      >
-                        <Github size={20} />
-                      </a>
-                    </div>
 
-                    <p className="text-muted-foreground text-sm">
-                      {project.date}
-                    </p>
+                <div className="flex justify-between items-center w-full">
+                  <div className="flex items-center gap-2">
+                    <a
+                      href={project.demoURL}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={16} />
+                    </a>
+                    <a
+                      href={project.githubURL}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={16} />
+                    </a>
                   </div>
+
+                  <p className="text-muted-foreground text-xs sm:text-sm">
+                    {project.date}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-sm:gap-4">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="group bg-card rounded-md overflow-hidden shadow-xs card-hover"
+            >
+              <div className="h-32 sm:h-36 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+
+              <div className="p-2 sm:p-3">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3">
+                  {project.tags.map((tag, index) => (
+                    <span
+                      key={`${project.id}-${index}`}
+                      className="px-2 py-0.5 text-[10px] sm:text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <h3 className="text-lg sm:text-xl font-semibold">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground text-xs sm:text-sm mb-2">
+                  {project.description}
+                </p>
+
+                <div className="flex justify-between items-center w-full">
+                  <div className="flex items-center gap-2">
+                    <a
+                      href={project.demoURL}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={16} />
+                    </a>
+                    <a
+                      href={project.githubURL}
+                      target="_blank"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={16} />
+                    </a>
+                  </div>
+
+                  <p className="text-muted-foreground text-xs sm:text-sm">
+                    {project.date}
+                  </p>
                 </div>
               </div>
             </div>
