@@ -3,6 +3,16 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "GLOBIFY",
+    description: "",
+    image: "",
+    tags: ["MERN Technology", "Tailwind CSS", "Gemini API"],
+    demoURL: "https://globify-wk.vercel.app",
+    githubURL: "https://github.com/wajahat-kamal/GLOBIFY/",
+    date: "2025 Sept 18",
+  },
+  {
+    id: 2,
     title: "WK Shoes Store",
     description:
       "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
@@ -10,11 +20,11 @@ const projects = [
     tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
-    date: "2025 June 28",
+    date: "2025 July 5",
   },
 
   {
-    id: 2,
+    id: 3,
     title: "WK AI Chatbot",
     description:
       "I built a responsive and interactive chatbot using React JS, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
@@ -26,7 +36,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "WK Note App",
     description:
       "NoteApp – A simple and clean note-taking app built with ReactJS, Tailwind CSS for organizing your thoughts efficiently.",
@@ -75,7 +85,10 @@ export const ProjectsSection = () => {
               <div className="p-3">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, index) => (
-                    <span key={`${project.id}-${index}`} className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
+                    <span
+                      key={`${project.id}-${index}`}
+                      className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
+                    >
                       {tag}
                     </span>
                   ))}
