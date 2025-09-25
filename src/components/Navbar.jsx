@@ -3,8 +3,16 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("Home"); // ✅ track active link
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const navLinks = ["Home", "About", "Projects", "Contact"];
+
+  const handleClick = (link) => {
+    setActiveLink(link);
+    setIsOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-sm bg-black/30">
@@ -20,11 +28,16 @@ const Navbar = () => {
 
           {/* -------- Desktop Menu -------- */}
           <div className="hidden md:flex items-center space-x-8">
-            {["Home", "About", "Projects", "Contact"].map((link) => (
+            {navLinks.map((link) => (
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className="text-gray-100 font-medium hover:text-primary transition-colors duration-200"
+                onClick={() => handleClick(link)}
+                className={`font-medium transition-colors duration-200 ${
+                  activeLink === link
+                    ? "text-primary"
+                    : "text-gray-100 hover:text-primary"
+                }`}
               >
                 {link}
               </a>
@@ -45,12 +58,16 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-black/60 backdrop-blur-sm shadow-md">
           <div className="flex flex-col items-center space-y-3 py-4">
-            {["Home", "About", "Projects", "Contact"].map((link) => (
+            {navLinks.map((link) => (
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                onClick={() => setIsOpen(false)}
-                className="text-gray-100 font-medium hover:text-primary transition-colors duration-200"
+                onClick={() => handleClick(link)}
+                className={`font-medium transition-colors duration-200 ${
+                  activeLink === link
+                    ? "text-primary"
+                    : "text-gray-100 hover:text-primary"
+                }`}
               >
                 {link}
               </a>
