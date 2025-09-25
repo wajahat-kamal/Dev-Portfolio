@@ -1,72 +1,65 @@
-import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
-import { Home, User, Briefcase, Folder } from "lucide-react";
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-const navItems = [
-  { name: "Home", href: "#hero", Icon: Home },
-  { name: "About", href: "#about", Icon: User },
-  { name: "Projects", href: "#projects", Icon: Folder },
-];
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-export const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 10);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav
-      className={cn(
-        "fixed inset-x-0 z-20 transition-all duration-300",
-        isScrolled
-          ? "py-2 md:py-3 shadow-md "
-          : "py-3 md:py-6"
-      )}
-    >
-      <div className="container flex items-center justify-center">
-        <ul
-          className="
-            flex items-center gap-6 md:gap-10
-            rounded-full px-6 py-3
-            backdrop-blur-sm bg-black/30 border-b border-white/10
-            shadow-[0_4px_20px_rgba(0,0,0,0.15)]
-          "
-        >
-          {navItems.map(({ name, href, Icon }, i) => (
-            <li key={i}>
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-sm bg-black/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="flex justify-between items-center h-16">
+          {/* -------- Logo -------- */}
+          <a
+            href="#"
+            className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70 fira-code"
+          >
+            {"<Portfolio/>"}
+          </a>
+
+          {/* -------- Desktop Menu -------- */}
+          <div className="hidden md:flex items-center space-x-8">
+            {["Home", "About", "Projects", "Contact"].map((link) => (
               <a
-                href={href}
-                className="
-                  group flex items-center gap-2
-                  text-foreground/70 hover:text-white
-                  transition-colors duration-300
-                "
+                key={link}
+                href={`#${link.toLowerCase()}`}
+                className="text-gray-100 font-medium hover:text-primary transition-colors duration-200"
               >
-                <Icon
-                  className="
-                    h-5 w-5 text-foreground/60
-                    transition-colors duration-300
-                    group-hover:text-white
-                  "
-                />
-                <span
-                  className="
-                    hidden md:inline text-lg font-medium tracking-wide
-                    bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600
-                    bg-clip-text text-transparent
-                    transition-opacity duration-300 group-hover:opacity-90
-                  "
-                >
-                  {name}
-                </span>
+                {link}
               </a>
-            </li>
-          ))}
-        </ul>
+            ))}
+          </div>
+
+          {/* -------- Mobile Menu Button -------- */}
+          <button
+            onClick={toggleMenu}
+            className="md:hidden text-gray-100 focus:outline-none"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
+
+      {/* -------- Mobile Menu -------- */}
+      {isOpen && (
+        <div className="md:hidden bg-black/60 backdrop-blur-sm shadow-md">
+          <div className="flex flex-col items-center space-y-3 py-4">
+            {["Home", "About", "Projects", "Contact"].map((link) => (
+              <a
+                key={link}
+                href={`#${link.toLowerCase()}`}
+                onClick={() => setIsOpen(false)}
+                className="text-gray-100 font-medium hover:text-primary transition-colors duration-200"
+              >
+                {link}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
+
+export default Navbar;
