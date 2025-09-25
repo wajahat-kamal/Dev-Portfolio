@@ -1,18 +1,6 @@
 import React from "react";
-import { Rocket } from "lucide-react";
+import { skills } from "../assets/Data";
 
-const skills = [
-//   { name: "Next JS", image: "/skills/nextjs-icon.svg", category: "Full Stack" },
-  { name: "Mongo DB", image: "/skills/mongodb-icon.svg", category: "Database" },
-  { name: "Express JS", image: "/skills/expressjs-icon.svg", category: "Backend" },
-  { name: "Node JS", image: "/skills/Nodejs-icon.svg", category: "Backend" },
-  { name: "React JS", image: "/skills/React-icon.svg", category: "Frontend" },
-//   { name: "TypeScript", image: "/skills/typescript-icon.svg", category: "Frontend" },
-  { name: "JavaScript", image: "/skills/javascript-icon.svg", category: "Frontend" },
-  { name: "Tailwind", image: "/skills/tailwindcss-icon.svg", category: "Frontend" },
-  { name: "CSS3", image: "/skills/css3-icon.svg", category: "Frontend" },
-  { name: "HTML5", image: "/skills/html5-icon.svg", category: "Frontend" },
-];
 
 function SkillsSection() {
   return (

@@ -1,53 +1,6 @@
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { projects } from "../assets/Data.js";
 
-const projects = [
-  {
-    id: 1,
-    title: "GLOBIFY",
-    description:
-      "AI-powered MERN stack blog built with Tailwind CSS for smart content creation and a modern, responsive UI.",
-    image: "/projects/wk-Globify.png",
-    tags: ["MERN Stack", "Tailwind CSS", "Gemini API"],
-    demoURL: "https://globify-wk.vercel.app",
-    githubURL: "https://github.com/wajahat-kamal/GLOBIFY/",
-    date: "2025 Sept 18",
-  },
-  {
-    id: 2,
-    title: "WK Shoes Store",
-    description:
-      "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
-    image: "/projects/WK-Shoes-Store.png",
-    tags: ["React JS", "Tailwind CSS"],
-    demoURL: "https://wk-shoes-store.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
-    date: "2025 July 5",
-  },
-
-  {
-    id: 3,
-    title: "WK AI Chatbot",
-    description:
-      "I built a responsive and interactive chatbot using React JS, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
-    image: "/projects/WK-Chatbot.png",
-    tags: ["React JS", "Tailwind CSS", "Gemini API"],
-    demoURL: "https://wk-ai-chatbot.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/WK-Chatbot.git",
-    date: "2025 June 14",
-  },
-
-  {
-    id: 4,
-    title: "WK Note App",
-    description:
-      "NoteApp – A simple and clean note-taking app built with ReactJS, Tailwind CSS for organizing your thoughts efficiently.",
-    image: "/projects/wk-note-app.png",
-    tags: ["React JS", "Tailwind CSS"],
-    demoURL: "https://wk-note-app.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/WK-NoteApp.git",
-    date: "2025 May 25",
-  },
-];
 
 export const ProjectsSection = () => {
   return (
