@@ -5,7 +5,7 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-18 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-8 relative">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-10 relative">
           <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide">
             Projects
           </span>

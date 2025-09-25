@@ -3,14 +3,14 @@ import { Rocket } from "lucide-react";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="relative py-8 pt-18 px-3 sm:px-4">
+    <section id="about" className="relative min-h-screen px-3 sm:px-4 flex items-center justify-center">
       <div className="container mx-auto max-w-4xl">
         {/* Heading */}
-        <h2 className="text-center text-2xl md:text-3xl font-extrabold mb-8 relative">
-          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-10 relative">
+          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide">
             About Me
           </span>
-          <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-16 h-[2px] rounded-full bg-gradient-to-r from-blue-400 to-purple-500 shadow-[0_0_8px_rgba(59,130,246,0.7)]"></span>
+          <span className="absolute bottom-[-15px] left-1/2 -translate-x-1/2 w-36 h-[4px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"></span>
         </h2>
 
         {/* Equal Height Grid */}
