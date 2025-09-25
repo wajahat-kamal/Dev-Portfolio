@@ -4,63 +4,54 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="w-full min-h-screen bg-gray-950 text-gray-100 py-16 px-4 sm:px-6 lg:px-10"
+      className="w-full bg-gray-950 text-gray-100 flex items-center justify-center py-9 px-4"
     >
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-md w-full">
         {/* ---------- Heading ---------- */}
-        <div className="text-center mb-12">
-          <h2 className="relative inline-block text-3xl md:text-5xl font-extrabold tracking-wide">
+        <div className="text-center mb-10">
+          <h2 className="relative inline-block text-3xl md:text-4xl font-extrabold tracking-wide">
             <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 bg-clip-text text-transparent">
               Contact Me
             </span>
-            <span className="absolute bottom-[-12px] left-1/2 -translate-x-1/2 w-32 h-[3px] bg-gradient-to-r from-blue-500 to-purple-600 rounded-full shadow-[0_0_10px_rgba(139,92,246,0.5)]"></span>
+            <span className="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-24 h-[3px] bg-gradient-to-r from-blue-500 to-purple-600 rounded-full shadow-[0_0_10px_rgba(139,92,246,0.5)]"></span>
           </h2>
-          <p className="mt-6 text-gray-400 max-w-xl mx-auto text-sm sm:text-base">
-            Let’s collaborate! Fill out the form below and I’ll get back to you soon.
+          <p className="mt-4 text-gray-400 text-sm">
+            I’d love to hear from you—send me a message!.
           </p>
         </div>
 
-        {/* ---------- Contact Form ---------- */}
+        {/* ---------- Compact Form ---------- */}
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="bg-black/40 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-lg space-y-6"
+          className="bg-black/40 backdrop-blur-md p-6 rounded-xl shadow-lg space-y-5 border border-gray-800"
         >
-          <div>
-            <label className="block mb-1 text-sm font-medium">Name</label>
-            <input
-              type="text"
-              placeholder="Your name"
-              className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700
-                         text-gray-100 focus:outline-none focus:border-purple-500"
-              required
-            />
-          </div>
+          <input
+            type="text"
+            placeholder="Your Name"
+            className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700
+                       text-gray-100 focus:outline-none focus:border-purple-500 text-sm"
+            required
+          />
 
-          <div>
-            <label className="block mb-1 text-sm font-medium">Email</label>
-            <input
-              type="email"
-              placeholder="you@example.com"
-              className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700
-                         text-gray-100 focus:outline-none focus:border-purple-500"
-              required
-            />
-          </div>
+          <input
+            type="email"
+            placeholder="you@example.com"
+            className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700
+                       text-gray-100 focus:outline-none focus:border-purple-500 text-sm"
+            required
+          />
 
-          <div>
-            <label className="block mb-1 text-sm font-medium">Message</label>
-            <textarea
-              rows="4"
-              placeholder="Write your message..."
-              className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700
-                         text-gray-100 focus:outline-none focus:border-purple-500"
-              required
-            ></textarea>
-          </div>
+          <textarea
+            rows="3"
+            placeholder="Your message..."
+            className="w-full px-4 py-2 rounded-lg bg-gray-900 border border-gray-700
+                       text-gray-100 focus:outline-none focus:border-purple-500 text-sm"
+            required
+          ></textarea>
 
           <button
             type="submit"
-            className="w-full py-3 rounded-lg font-semibold text-white
+            className="w-full py-2.5 rounded-lg font-semibold text-white text-sm
                        bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600
                        hover:opacity-90 transition duration-200"
           >
