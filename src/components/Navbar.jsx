@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("Home"); // ✅ track active link
+  const [activeLink, setActiveLink] = useState("Home");
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -21,7 +21,8 @@ const Navbar = () => {
           {/* -------- Logo -------- */}
           <a
             href="#"
-            className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70 fira-code"
+            className="text-2xl font-extrabold text-transparent bg-clip-text 
+                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code"
           >
             {"<Portfolio/>"}
           </a>
@@ -35,8 +36,8 @@ const Navbar = () => {
                 onClick={() => handleClick(link)}
                 className={`font-medium transition-colors duration-200 ${
                   activeLink === link
-                    ? "text-primary"
-                    : "text-gray-100 hover:text-primary"
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
+                    : "text-gray-100 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-400 hover:to-purple-600"
                 }`}
               >
                 {link}
@@ -65,8 +66,8 @@ const Navbar = () => {
                 onClick={() => handleClick(link)}
                 className={`font-medium transition-colors duration-200 ${
                   activeLink === link
-                    ? "text-primary"
-                    : "text-gray-100 hover:text-primary"
+                    ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
+                    : "text-gray-100 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-400 hover:to-purple-600"
                 }`}
               >
                 {link}
