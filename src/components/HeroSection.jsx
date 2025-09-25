@@ -4,7 +4,7 @@ import TypingEffect from "./TypingEffect";
 const HeroSection = () => {
   return (
     <section
-      id="hero"
+      id="home"
       className="relative min-h-screen flex items-center justify-center px-3 sm:px-4 md:px-6 py-8 text-gray-900"
     >
       <div className="container max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-6 sm:gap-4 justify-between z-10">

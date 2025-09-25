@@ -3,7 +3,7 @@ import { Rocket } from "lucide-react";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="relative py-12 px-3 sm:px-4">
+    <section id="about" className="relative py-8 pt-18 px-3 sm:px-4">
       <div className="container mx-auto max-w-4xl">
         {/* Heading */}
         <h2 className="text-center text-2xl md:text-3xl font-extrabold mb-8 relative">
