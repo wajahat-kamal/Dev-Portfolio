@@ -5,7 +5,6 @@ import { Home, User, Briefcase, Folder } from "lucide-react";
 const navItems = [
   { name: "Home", href: "#hero", Icon: Home },
   { name: "About", href: "#about", Icon: User },
-  { name: "Services", href: "#services", Icon: Briefcase },
   { name: "Projects", href: "#projects", Icon: Folder },
 ];
 
