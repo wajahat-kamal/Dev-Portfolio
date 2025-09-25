@@ -1,3 +1,19 @@
+// Import project images
+import wkGlobifyImg from "./projects/wk-Globify.png";
+import wkShoesStoreImg from "./projects/WK-Shoes-Store.png";
+import wkChatbotImg from "./projects/WK-Chatbot.png";
+import wkNoteAppImg from "./projects/wk-note-app.png";
+
+// Import skill icons
+import mongodbIcon from "./skills/mongodb-icon.svg";
+import expressjsIcon from "./skills/expressjs-icon.svg";
+import nodejsIcon from "./skills/Nodejs-icon.svg";
+import reactIcon from "./skills/React-icon.svg";
+import javascriptIcon from "./skills/javascript-icon.svg";
+import tailwindcssIcon from "./skills/tailwindcss-icon.svg";
+import css3Icon from "./skills/css3-icon.svg";
+import html5Icon from "./skills/html5-icon.svg";
+
 // Projects Section
 export const projects = [
   {
@@ -5,7 +21,7 @@ export const projects = [
     title: "GLOBIFY",
     description:
       "AI-powered MERN stack blog built with Tailwind CSS for smart content creation, seamless image optimization, and a modern, fully responsive UI.",
-    image: "/projects/wk-Globify.png",
+    image: wkGlobifyImg,
     tags: ["MERN Stack", "Tailwind CSS", "Gemini API"],
     demoURL: "https://globify-wk.vercel.app",
     githubURL: "https://github.com/wajahat-kamal/GLOBIFY/",
@@ -16,31 +32,29 @@ export const projects = [
     title: "WK Shoes Store",
     description:
       "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
-    image: "/projects/WK-Shoes-Store.png",
+    image: wkShoesStoreImg,
     tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
     date: "2025 July 5",
   },
-
   {
     id: 3,
     title: "WK AI Chatbot",
     description:
       "I built a responsive and interactive chatbot using React JS, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
-    image: "/projects/WK-Chatbot.png",
+    image: wkChatbotImg,
     tags: ["React JS", "Tailwind CSS", "Gemini API"],
     demoURL: "https://wk-ai-chatbot.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Chatbot.git",
     date: "2025 June 14",
   },
-
   {
     id: 4,
     title: "WK Note App",
     description:
       "NoteApp – A simple and clean note-taking app built with ReactJS, Tailwind CSS for organizing your thoughts efficiently.",
-    image: "/projects/wk-note-app.png",
+    image: wkNoteAppImg,
     tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://wk-note-app.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-NoteApp.git",
@@ -50,26 +64,24 @@ export const projects = [
 
 // Skills Section
 export const skills = [
-  //   { name: "Next JS", image: "/skills/nextjs-icon.svg", category: "Full Stack" },
-  { name: "Mongo DB", image: "/skills/mongodb-icon.svg", category: "Database" },
+  { name: "Mongo DB", image: mongodbIcon, category: "Database" },
   {
     name: "Express JS",
-    image: "/skills/expressjs-icon.svg",
+    image: expressjsIcon,
     category: "Backend",
   },
-  { name: "Node JS", image: "/skills/Nodejs-icon.svg", category: "Backend" },
-  { name: "React JS", image: "/skills/React-icon.svg", category: "Frontend" },
-  //   { name: "TypeScript", image: "/skills/typescript-icon.svg", category: "Frontend" },
+  { name: "Node JS", image: nodejsIcon, category: "Backend" },
+  { name: "React JS", image: reactIcon, category: "Frontend" },
   {
     name: "JavaScript",
-    image: "/skills/javascript-icon.svg",
+    image: javascriptIcon,
     category: "Frontend",
   },
   {
     name: "Tailwind",
-    image: "/skills/tailwindcss-icon.svg",
+    image: tailwindcssIcon,
     category: "Frontend",
   },
-  { name: "CSS3", image: "/skills/css3-icon.svg", category: "Frontend" },
-  { name: "HTML5", image: "/skills/html5-icon.svg", category: "Frontend" },
+  { name: "CSS3", image: css3Icon, category: "Frontend" },
+  { name: "HTML5", image: html5Icon, category: "Frontend" },
 ];

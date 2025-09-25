@@ -1,5 +1,6 @@
 import { ArrowDown, Github, Linkedin } from "lucide-react";
 import TypingEffect from "./TypingEffect";
+import portfolioImg from "../assets/portfolioimg.jpg";
 
 const HeroSection = () => {
   return (
@@ -35,7 +36,7 @@ const HeroSection = () => {
 
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 opacity-0 animate-fade-in-delay-4">
             <a href="#">
-              <button className="cosmic-button flex items-center justify-center text-xs sm:text-sm md:text-base font-semibold gap-2 px-3 py-1.5 w-full sm:w-auto">
+              <button className="cosmic-button flex items-center justify-center text-xs sm:text-sm  font-medium gap-2 px-3 py-1.5 w-full sm:w-auto">
                 Download CV
               </button>
             </a>
@@ -61,7 +62,7 @@ const HeroSection = () => {
         {/* Right Content: Profile Image */}
         <div className="flex-1 flex justify-center lg:justify-end">
           <img
-            src="/portfolioimg.jpg"
+            src={portfolioImg}
             alt="Wajahat Kamal"
             className="w-36 sm:w-44 md:w-56 lg:w-72 rounded-full opacity-90 shadow-xl border-4 border-primary hover:scale-105 transition-transform duration-500"
           />
