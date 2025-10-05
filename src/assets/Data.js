@@ -35,7 +35,7 @@ export const projects = [
     tags: ["MERN Stack", "Tailwind CSS", "Gemini API"],
     demoURL: "https://chatify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/chatify.git",
-    date: "2025 June 14",
+    date: "2025 October 2",
   },
   {
     id: 3,
