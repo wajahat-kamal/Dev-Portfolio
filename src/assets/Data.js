@@ -1,7 +1,7 @@
 // Import project images
 import wkGlobifyImg from "./projects/wk-Globify.png";
 import wkShoesStoreImg from "./projects/WK-Shoes-Store.png";
-import wkChatbotImg from "./projects/WK-Chatbot.png";
+import wkChatbotImg from "./projects/wk-chatify.png";
 import wkNoteAppImg from "./projects/wk-note-app.png";
 
 // Import skill icons
@@ -26,9 +26,19 @@ export const projects = [
     demoURL: "https://globify-wk.vercel.app",
     githubURL: "https://github.com/wajahat-kamal/GLOBIFY/",
     date: "2025 Sept 18",
+  }, {
+    id: 2,
+    title: "CHATIFY",
+    description:
+      "I built a responsive and interactive chatbot using MERN stack, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
+    image: wkChatbotImg,
+    tags: ["MERN Stack", "Tailwind CSS", "Gemini API"],
+    demoURL: "https://chatify-wk.vercel.app/",
+    githubURL: "https://github.com/wajahat-kamal/chatify.git",
+    date: "2025 June 14",
   },
   {
-    id: 2,
+    id: 3,
     title: "WK Shoes Store",
     description:
       "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
@@ -37,17 +47,6 @@ export const projects = [
     demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
     date: "2025 July 5",
-  },
-  {
-    id: 3,
-    title: "WK AI Chatbot",
-    description:
-      "I built a responsive and interactive chatbot using React JS, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
-    image: wkChatbotImg,
-    tags: ["React JS", "Tailwind CSS", "Gemini API"],
-    demoURL: "https://wk-ai-chatbot.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/WK-Chatbot.git",
-    date: "2025 June 14",
   },
   {
     id: 4,

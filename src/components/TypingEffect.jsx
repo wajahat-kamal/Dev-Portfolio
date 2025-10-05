@@ -6,8 +6,9 @@ const TypingEffect = () => (
     options={{
       strings: [
         "Full Stack Developer",
+        "ReactJS Enthusiast",
         "JavaScript Developer",
-        "Node.js Architect",
+        "MERN Stack Builder",
       ],
       autoStart: true,
       loop: true,
