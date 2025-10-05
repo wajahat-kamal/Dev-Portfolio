@@ -5,20 +5,16 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-18 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-      <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-10 relative">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-7 relative">
           <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide">
             Projects
           </span>
           <span className="absolute bottom-[-15px] left-1/2 -translate-x-1/2 w-36 h-[4px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"></span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
+        <p className="text-center text-xs text-muted-foreground mb-4 max-w-2xl mx-auto">
           Here are some of my recent projects. Each project was carefully
           crafted with attention to detail, performance, and user experience.
-          <br />
-          <button className="inline-block text-sm text-yellow-400 bg-yellow-900/40 px-3 py-1 rounded-full font-semibold">
-            Exciting Full Stack Projects are coming soon.
-          </button>
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-sm:gap-4">
           {projects.map((project) => (

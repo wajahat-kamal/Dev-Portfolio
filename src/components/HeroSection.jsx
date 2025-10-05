@@ -10,7 +10,7 @@ const HeroSection = () => {
     >
       <div className="container max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 z-10">
         {/* ---------- Left Content ---------- */}
-        <div className="flex-1 text-center lg:text-left space-y-4">
+        <div className="flex-1 text-center lg:text-left space-y-2 md:space-y-4">
           {/* Heading */}
           <h1 className="text-[26px] sm:text-4xl md:text-[48px] font-extrabold tracking-tight leading-snug">
             <span className="block text-gray-600 dark:text-gray-400 text-lg sm:text-xl md:text-2xl mb-1">
@@ -31,11 +31,11 @@ const HeroSection = () => {
             <TypingEffect />
           </div>
 
-          {/* Action Buttons & Social Links */}
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-3 sm:pt-4">
+            {/* Download CV Button */}
             <a
               href="#"
-              className="group relative inline-flex items-center justify-center px-6 py-2.5 text-sm sm:text-base font-semibold rounded-full overflow-hidden transition-all duration-300"
+              className="group relative inline-flex items-center justify-center px-4 sm:px-5 py-2 text-xs sm:text-sm font-semibold rounded-full overflow-hidden transition-all duration-300"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-80 group-hover:opacity-100 transition-all duration-300"></span>
               <span className="relative text-white group-hover:tracking-wider transition-all duration-300">
@@ -43,23 +43,24 @@ const HeroSection = () => {
               </span>
             </a>
 
-            <div className="flex gap-3">
+            {/* Social Icons */}
+            <div className="flex gap-2.5 sm:gap-3">
               <a
                 target="_blank"
                 href="https://github.com/wajahat-kamal"
                 aria-label="GitHub"
-                className="flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.7)] hover:scale-110"
+                className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-300 hover:shadow-[0_0_15px_rgba(139,92,246,0.6)] hover:scale-110"
               >
-                <Github className="w-5 h-5 text-gray-100" />
+                <Github className="w-4 h-4 sm:w-5 sm:h-5 text-gray-100" />
               </a>
 
               <a
                 target="_blank"
                 href="https://linkedin.com"
                 aria-label="LinkedIn"
-                className="flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-300 hover:shadow-[0_0_20px_rgba(139,92,246,0.7)] hover:scale-110"
+                className="flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-r from-blue-400 to-purple-500 transition-all duration-300 hover:shadow-[0_0_15px_rgba(139,92,246,0.6)] hover:scale-110"
               >
-                <Linkedin className="w-5 h-5 text-gray-100" />
+                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5 text-gray-100" />
               </a>
             </div>
           </div>
