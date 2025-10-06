@@ -2,6 +2,7 @@
 import wkGlobifyImg from "./projects/wk-Globify.png";
 import wkShoesStoreImg from "./projects/WK-Shoes-Store.png";
 import wkChatbotImg from "./projects/wk-chatify.png";
+import wkHomifyImg from "./projects/wk-homify.png";
 import wkNoteAppImg from "./projects/wk-note-app.png";
 
 // Import skill icons
@@ -34,11 +35,21 @@ export const projects = [
     image: wkChatbotImg,
     tags: ["MERN Stack", "Tailwind CSS", "Gemini API"],
     demoURL: "https://chatify-wk.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/chatify.git",
+    githubURL: "https://github.com/wajahat-kamal/CHATIFY/",
     date: "2025 October 2",
   },
   {
     id: 3,
+    title: "HOMIFY",
+    description: "Homify is a sleek and modern real estate website built with React.js and Tailwind CSS, helping users find and explore their dream homes effortlessly.",
+    image: wkHomifyImg,
+    tags: ["React JS", "Tailwind CSS"],
+    demoURL: "https://homify-wk.vercel.app/",
+    githubURL: "https://github.com/wajahat-kamal/HOMIFY/",
+    date: "2025 October 6",
+  },
+  {
+    id: 4,
     title: "WK Shoes Store",
     description:
       "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
@@ -49,7 +60,7 @@ export const projects = [
     date: "2025 July 5",
   },
   {
-    id: 4,
+    id: 5,
     title: "WK Note App",
     description:
       "NoteApp – A simple and clean note-taking app built with ReactJS, Tailwind CSS for organizing your thoughts efficiently.",
