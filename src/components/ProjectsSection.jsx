@@ -11,18 +11,19 @@ export const ProjectsSection = () => {
           </span>
           <span className="absolute bottom-[-15px] left-1/2 -translate-x-1/2 w-36 h-[4px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"></span>
         </h2>
-
         <p className="text-center text-xs text-muted-foreground mb-4 max-w-2xl mx-auto">
           Here are some of my recent projects. Each project was carefully
           crafted with attention to detail, performance, and user experience.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-sm:gap-4">
+        <div className="flex flex-wrap justify-center gap-6 max-sm:gap-4">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-card rounded-md overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-md overflow-hidden shadow-xs card-hover 
+                 w-full sm:w-[90%] md:w-[45%] lg:w-[30%]"
             >
-              <div className="h-32 sm:h-36 overflow-hidden">
+              {/* 🔹 Image height reduced */}
+              <div className="h-28 sm:h-32 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -30,8 +31,9 @@ export const ProjectsSection = () => {
                 />
               </div>
 
-              <div className="p-2 sm:p-3">
-                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3">
+              {/* 🔹 Padding slightly reduced */}
+              <div className="p-2.5 sm:p-3">
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-2">
                   {project.tags.map((tag, index) => (
                     <span
                       key={`${project.id}-${index}`}
@@ -42,10 +44,10 @@ export const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-semibold">
+                <h3 className="text-base sm:text-lg font-semibold">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-xs sm:text-sm mb-2">
+                <p className="text-muted-foreground text-[11px] sm:text-sm mb-2">
                   {project.description}
                 </p>
 
@@ -67,7 +69,7 @@ export const ProjectsSection = () => {
                     </a>
                   </div>
 
-                  <p className="text-muted-foreground text-xs sm:text-sm">
+                  <p className="text-muted-foreground text-[11px] sm:text-xs">
                     {project.date}
                   </p>
                 </div>
@@ -75,7 +77,6 @@ export const ProjectsSection = () => {
             </div>
           ))}
         </div>
-
         <div className="text-center mt-6">
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"

@@ -27,7 +27,8 @@ export const projects = [
     demoURL: "https://globify-wk.vercel.app",
     githubURL: "https://github.com/wajahat-kamal/GLOBIFY/",
     date: "2025 Sept 18",
-  }, {
+  },
+  {
     id: 2,
     title: "CHATIFY",
     description:
@@ -41,7 +42,8 @@ export const projects = [
   {
     id: 3,
     title: "HOMIFY",
-    description: "Homify is a sleek and modern real estate website built with React.js and Tailwind CSS, helping users find and explore their dream homes effortlessly.",
+    description:
+      "Homify is a modern real estate website built with React.js and Tailwind CSS, featuring a clean UI, smooth animations, and an easy way to connect with me for collaborations or inquiries.",
     image: wkHomifyImg,
     tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://homify-wk.vercel.app/",
