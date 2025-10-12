@@ -3,14 +3,18 @@ import React from "react";
 import { Mail, Send, Phone, MapPin, CheckCircle, XCircle } from "lucide-react";
 
 export const ContactSection = () => {
-  const [status, setStatus] = React.useState({ message: "", success: false, loading: false });
+  const [status, setStatus] = React.useState({
+    message: "",
+    success: false,
+    loading: false,
+  });
 
   const onSubmit = async (event) => {
     event.preventDefault();
     setStatus({ message: "Sending...", success: false, loading: true });
 
     const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); // Replace with your Web3Forms access key
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); // 🔑 Replace with your Web3Forms access key
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -21,14 +25,26 @@ export const ContactSection = () => {
       const data = await response.json();
 
       if (data.success) {
-        setStatus({ message: "Message sent successfully!", success: true, loading: false });
+        setStatus({
+          message: "Message sent successfully!",
+          success: true,
+          loading: false,
+        });
         event.currentTarget.reset();
       } else {
-        setStatus({ message: data.message || "Something went wrong.", success: false, loading: false });
+        setStatus({
+          message: data.message || "Something went wrong.",
+          success: false,
+          loading: false,
+        });
       }
     } catch (error) {
       console.error(error);
-      setStatus({ message: "Network error. Please try again later.", success: false, loading: false });
+      setStatus({
+        message: "Network error. Please try again later.",
+        success: false,
+        loading: false,
+      });
     }
   };
 
@@ -54,10 +70,13 @@ export const ContactSection = () => {
         {/* Contact Form */}
         <form
           onSubmit={onSubmit}
-          className="space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-6 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
+          className="max-w-2xl mx-auto space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-6 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
         >
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1 text-start">
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-300 mb-1 text-start"
+            >
               Your Name
             </label>
             <input
@@ -71,7 +90,10 @@ export const ContactSection = () => {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1 text-start">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-300 mb-1 text-start"
+            >
               Your Email
             </label>
             <input
@@ -85,7 +107,10 @@ export const ContactSection = () => {
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1 text-start">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-300 mb-1 text-start"
+            >
               Your Message
             </label>
             <textarea
@@ -98,6 +123,7 @@ export const ContactSection = () => {
             ></textarea>
           </div>
 
+          {/* Submit Button */}
           <button
             type="submit"
             disabled={status.loading}
@@ -112,12 +138,12 @@ export const ContactSection = () => {
           {/* Status Message */}
           {status.message && (
             <div
-              className={`mt-4 flex items-center gap-2 text-sm ${
+              className={`mt-4 flex items-center justify-center gap-2 text-sm transition-all duration-300 ${
                 status.success ? "text-green-400" : "text-red-400"
               }`}
             >
               {status.success ? (
-                <CheckCircle className="w-5 h-5" />
+                <CheckCircle className="w-5 h-5 animate-bounce" />
               ) : (
                 <XCircle className="w-5 h-5" />
               )}
