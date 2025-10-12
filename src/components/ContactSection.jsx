@@ -30,8 +30,8 @@ export const ContactSection = () => {
               Let's Connect 🚀
             </h3>
             <p className="text-sm leading-relaxed text-gray-400">
-              Have a project in mind or just want to say hello? I’d love to
-              hear from you. Let’s build something amazing together!
+              Have a project in mind or just want to say hello? I’d love to hear
+              from you. Let’s build something amazing together!
             </p>
 
             <div className="space-y-3 mt-6">
@@ -110,7 +110,9 @@ export const ContactSection = () => {
 
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 via-cyan-400 to-purple-500 text-white font-semibold py-2.5 rounded-md hover:opacity-90 active:scale-95 transition-all duration-300 shadow-[0_0_10px_rgba(59,130,246,0.4)]"
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-md  font-semibold text-white 
+         bg-gradient-to-r from-blue-400 to-purple-500 hover:scale-102
+         transition-all duration-300 "
             >
               Send Message
               <Send className="w-4 h-4" />
