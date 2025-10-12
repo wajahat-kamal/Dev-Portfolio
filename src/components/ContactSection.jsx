@@ -13,7 +13,7 @@ export const ContactSection = () => {
       id="contact"
       className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16"
     >
-      <div className="container mx-auto max-w-4xl bg-gradient-to-b from-gray-900 via-gray-950 to-black border border-gray-800/60 rounded-2xl p-8 md:p-12 shadow-[0_0_40px_rgba(59,130,246,0.08)] hover:shadow-[0_0_50px_rgba(59,130,246,0.15)] transition-all duration-500 backdrop-blur-sm">
+      <div className="container mx-auto max-w-4xl bg-gradient-to-b from-gray-900 via-gray-950 to-black border border-gray-800/60 rounded-2xl p-8 shadow-[0_0_40px_rgba(59,130,246,0.08)] hover:shadow-[0_0_50px_rgba(59,130,246,0.15)] transition-all duration-500 backdrop-blur-sm">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 relative">
           <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide drop-shadow-[0_0_5px_rgba(59,130,246,0.3)]">
@@ -58,12 +58,12 @@ export const ContactSection = () => {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-5 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-6 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
+            className="space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-6 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
           >
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-300 mb-1"
+                className="block text-sm font-medium text-gray-300 mb-1 text-start"
               >
                 Your Name
               </label>
@@ -79,7 +79,7 @@ export const ContactSection = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-300 mb-1"
+                className="block text-sm font-medium text-gray-300 mb-1 text-start"
               >
                 Your Email
               </label>
@@ -95,7 +95,7 @@ export const ContactSection = () => {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-300 mb-1"
+                className="block text-sm font-medium text-gray-300 mb-1 text-start"
               >
                 Your Message
               </label>
