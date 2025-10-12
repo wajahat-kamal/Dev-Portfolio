@@ -3,11 +3,30 @@ import React from "react";
 import { Mail, Send, Phone, MapPin } from "lucide-react";
 
 export const ContactSection = () => {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you for reaching out! I'll get back to you soon.");
-  };
+  const [result, setResult] = React.useState("");
 
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <section
       id="contact"
@@ -57,7 +76,7 @@ export const ContactSection = () => {
 
           {/* Contact Form */}
           <form
-            onSubmit={handleSubmit}
+            onSubmit={onSubmit}
             className="space-y-3 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-4 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
           >
             <div>
