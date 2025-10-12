@@ -45,14 +45,13 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-gray-300 text-sm mt-4">
-              📧{" "}
-              <span className="font-medium text-gray-200">Email:</span>{" "}
               <a
                 href="mailto:wajahatkamal3.0@gmail.com"
                 className="text-blue-400 hover:underline hover:text-cyan-300 transition-colors duration-200"
               >
                 wajahatkamal3.0@gmail.com
               </a>
+              <p>Karachi, Pakistan</p>
             </p>
           </div>
 
