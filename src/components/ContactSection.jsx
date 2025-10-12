@@ -57,7 +57,7 @@ export const ContactSection = () => {
           className="space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-6 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
         >
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
+            <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1 text-start">
               Your Name
             </label>
             <input
@@ -71,7 +71,7 @@ export const ContactSection = () => {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-1 text-start">
               Your Email
             </label>
             <input
@@ -85,7 +85,7 @@ export const ContactSection = () => {
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
+            <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1 text-start">
               Your Message
             </label>
             <textarea
