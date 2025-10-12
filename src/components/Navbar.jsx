@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("Home");
 
-  const navLinks = ["Home", "About", "Projects"];
+  const navLinks = ["Home", "About", "Projects", "Contact"];
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const handleClick = (link) => {
