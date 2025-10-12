@@ -58,7 +58,7 @@ export const ContactSection = () => {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-6 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
+            className="space-y-3 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-4 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
           >
             <div>
               <label
