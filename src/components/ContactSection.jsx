@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Mail, Send, Phone, MapPin, CheckCircle, XCircle } from "lucide-react";
+import { Send, CheckCircle, XCircle } from "lucide-react";
 
 export const ContactSection = () => {
   const [status, setStatus] = React.useState({
@@ -13,35 +13,27 @@ export const ContactSection = () => {
     event.preventDefault();
     setStatus({ message: "Sending...", success: false, loading: true });
 
-    const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); // 🔑 Replace with your Web3Forms access key
+    const formData = new FormData(event.target);
 
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
+    formData.append("access_key", "0e7ca1ec-6d30-4126-9b84-edf6c2d9164b");
 
-      const data = await response.json();
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
 
-      if (data.success) {
-        setStatus({
-          message: "Message sent successfully!",
-          success: true,
-          loading: false,
-        });
-        event.currentTarget.reset();
-      } else {
-        setStatus({
-          message: data.message || "Something went wrong.",
-          success: false,
-          loading: false,
-        });
-      }
-    } catch (error) {
-      console.error(error);
+    const data = await response.json();
+
+    if (data.success) {
       setStatus({
-        message: "Network error. Please try again later.",
+        message: "Message sent successfully!",
+        success: true,
+        loading: false,
+      });
+      event.currentTarget.reset();
+    } else {
+      setStatus({
+        message: data.message || "Something went wrong.",
         success: false,
         loading: false,
       });
@@ -63,7 +55,8 @@ export const ContactSection = () => {
             <span className="absolute bottom-[-12px] left-1/2 -translate-x-1/2 w-36 h-[3px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.6)]"></span>
           </h2>
           <p className="text-gray-400 mt-6 text-sm sm:text-base">
-            Have a project in mind or just want to say hello? Let’s connect and create something awesome together 🚀
+            Have a project in mind or just want to say hello? Let’s connect and
+            create something awesome together 🚀
           </p>
         </div>
 
