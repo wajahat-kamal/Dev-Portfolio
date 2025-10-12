@@ -4,7 +4,7 @@ import { Rocket } from "lucide-react";
 export const AboutSection = () => {
   return (
     <section id="about" className="relative min-h-screen px-3 sm:px-4 flex items-center justify-center">
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-4xl  bg-gradient-to-b from-gray-900 via-gray-950 to-black border border-gray-700/60 rounded-lg p-20">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-10 relative">
           <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide">
@@ -14,9 +14,9 @@ export const AboutSection = () => {
         </h2>
 
         {/* Equal Height Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch ">
           {/* About Card */}
-          <div className="h-full flex flex-col justify-between space-y-3 bg-gradient-to-b from-gray-900 via-gray-950 to-black border border-gray-700/60 rounded-lg py-4 px-3 md:px-5 shadow-md backdrop-blur-sm hover:border-blue-500 transition-colors duration-300">
+          <div className="h-full flex flex-col justify-between space-y-3 py-4 px-3 md:px-5 shadow-md backdrop-blur-sm hover:border-blue-500 transition-colors duration-300">
             <h3 className="text-base font-semibold text-white">
               Meet Wajahat Kamal – Full Stack Developer
             </h3>
@@ -64,3 +64,4 @@ export const AboutSection = () => {
     </section>
   );
 };
+
