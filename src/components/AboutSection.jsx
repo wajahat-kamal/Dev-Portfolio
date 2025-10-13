@@ -7,7 +7,7 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 py-16 bg-gradient-to-b from-gray-900 via-gray-950 to-black"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 md:px-16 py-16"
     >
       {/* ====== Heading ====== */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 relative">
@@ -18,9 +18,9 @@ export const AboutSection = () => {
       </h2>
 
       {/* ====== Image Left / Text Right ====== */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-20 w-full max-w-6xl">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full">
         {/* ====== Image Section ====== */}
-        <div className="flex justify-center md:justify-end w-full md:w-1/2">
+        <div className="flex justify-center w-full md:w-80">
           <img
             src={portfolioImg}
             alt="Wajahat Kamal"
@@ -33,17 +33,11 @@ export const AboutSection = () => {
           <p className="text-gray-300 text-[15px] md:text-base leading-relaxed tracking-wide">
             I’m <span className="font-semibold text-cyan-400">Wajahat Kamal</span>, 
             a passionate <span className="text-purple-400">Full Stack Developer</span> 
-            who loves building fast, scalable, and visually appealing web applications 
-            using the <span className="text-blue-400">MERN stack</span>. My goal is to 
-            create seamless digital experiences that blend functionality and design 
-            for real-world impact.
-          </p>
-
-          <p className="text-gray-400 text-sm md:text-[15px] leading-relaxed">
-            I enjoy solving challenging problems, learning modern technologies, 
-            and writing clean, maintainable code that brings ideas to life. 
-            When I’m not coding, I explore design trends and work on personal projects 
-            to stay sharp and creative.
+            who builds fast, scalable, and visually engaging web applications using the{" "}
+            <span className="text-blue-400">MERN stack</span>. I focus on creating seamless 
+            digital experiences that combine functionality with modern design. 
+            I love solving real-world problems, learning new technologies, and writing 
+            clean, maintainable code.
           </p>
 
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
@@ -59,7 +53,7 @@ export const AboutSection = () => {
       </div>
 
       {/* ====== Skills Section ====== */}
-      <div className="mt-20 w-full">
+      <div className="mt-10 w-full">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 relative">
           <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide drop-shadow-[0_0_5px_rgba(59,130,246,0.3)]">
             Skills
