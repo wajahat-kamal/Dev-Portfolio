@@ -222,3 +222,17 @@
 .fira-code {
   font-family: "Source Code Pro", monospace;
 }
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 25s linear infinite;
+}
