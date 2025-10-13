@@ -3,7 +3,7 @@ import { skills } from "../assets/Data";
 
 function SkillsSection() {
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full py-4">
       {/* Outer container with animation */}
       <div className="flex animate-slide gap-4 w-max">
         {/* First copy */}
