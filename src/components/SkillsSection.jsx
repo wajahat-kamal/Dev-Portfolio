@@ -1,18 +1,21 @@
+"use client";
 import React from "react";
 import { skills } from "../assets/Data";
 
 function SkillsSection() {
   return (
-    <div className="overflow-hidden w-full py-4">
-      {/* Outer container with animation */}
-      <div className="flex gap-4 w-max">
-        {/* First copy */}
-        {skills.map((skill, index) => (
+    <div className="w-full overflow-hidden py-4">
+      {/* Infinite sliding animation container */}
+      <div className="flex animate-slide gap-4 w-max">
+        {[...skills, ...skills].map((skill, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center justify-center gap-1 rounded-lg border border-gray-700/40 bg-gray-800/30 backdrop-blur-md shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md hover:border-blue-500/60 hover:bg-gray-800/50 py-2 px-3"
+            className="group flex flex-col items-center justify-center gap-1 rounded-lg border border-gray-700/40 
+                       bg-gray-800/40 backdrop-blur-md shadow-sm py-2 px-3 transition-all duration-300 
+                       hover:scale-105 hover:shadow-md hover:border-blue-500/60 hover:bg-gray-800/60"
           >
-            <div className="w-10 h-10 flex items-center justify-center bg-white rounded-md shadow-sm group-hover:shadow-blue-500/30 transition-all duration-300">
+            <div className="w-10 h-10 flex items-center justify-center bg-white rounded-md shadow-sm 
+                            group-hover:shadow-blue-500/30 transition-all duration-300">
               <img
                 src={skill.image}
                 alt={skill.name}
@@ -23,13 +26,27 @@ function SkillsSection() {
               <h4 className="text-[11px] font-semibold text-white tracking-wide">
                 {skill.name}
               </h4>
-              <p className="text-[9px] font-medium text-gray-400 italic">
-                {skill.category}
-              </p>
+              <p className="text-[9px] text-gray-400 italic">{skill.category}</p>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Animation keyframes */}
+      <style jsx>{`
+        @keyframes slide {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-slide {
+          display: flex;
+          animation: slide 25s linear infinite;
+        }
+      `}</style>
     </div>
   );
 }
