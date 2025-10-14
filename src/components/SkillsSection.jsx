@@ -32,21 +32,7 @@ function SkillsSection() {
         ))}
       </div>
 
-      {/* Animation keyframes */}
-      <style jsx>{`
-        @keyframes slide {
-          from {
-            transform: translateX(0);
-          }
-          to {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-slide {
-          display: flex;
-          animation: slide 25s linear infinite;
-        }
-      `}</style>
+      
     </div>
   );
 }

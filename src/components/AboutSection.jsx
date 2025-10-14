@@ -12,7 +12,26 @@ export const AboutSection = () => {
       {/* ====== Image Left / Text Right ====== */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 w-full max-w-6xl">
         {/* ====== Image Section ====== */}
-        <div className="flex justify-center items-center w-full sm:w-80 md:w-72 lg:w-80 h-auto bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40 shadow-lg shadow-purple-500/30 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/50 group">
+        <div
+          className="hidden lg:flex justify-center items-center w-full md:w-72 h-80 bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40  shadow-lg shadow-purple-500/30 transition-all duration-500 
+                 hover:scale-105 hover:shadow-purple-500/50 group"
+        >
+          <div className="relative">
+            <img
+              src={portfolioImg}
+              alt="Wajahat Kamal"
+              className="w-44 sm:w-56 md:w-64 lg:w-72 h-auto
+                "
+            />
+
+            {/* Gradient Glow Overlay */}
+            <div
+              className="absolute inset-0 rounded-xl bg-gradient-to-tr from-purple-500/20 to-blue-400/20 
+                    opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"
+            ></div>
+          </div>
+        </div>
+        <div className="md:hidden flex justify-center items-center w-full sm:w-80 md:w-72 lg:w-80 h-auto bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40 shadow-lg shadow-purple-500/30 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/50 group">
           <div className="relative">
             <img
               src={portfolioImg}
@@ -50,9 +69,7 @@ export const AboutSection = () => {
 
           {/* ====== Skills Section ====== */}
           <div className="mt-6 w-full">
-            <p className="text-sm text-gray-400 mb-2">
-              Technologies I work with:
-            </p>
+            <p className="text-sm text-gray-400">Technologies I work with:</p>
             <div className="flex justify-center md:justify-start">
               <SkillsSection />
             </div>
