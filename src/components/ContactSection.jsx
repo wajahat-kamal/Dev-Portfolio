@@ -47,15 +47,17 @@ export const ContactSection = () => {
     >
       <div className="container mx-auto max-w-4xl rounded-2xl p-8">
         {/* Heading */}
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-extrabold relative inline-block">
+
+        <div className="text-center mb-10">
+          <h2 className="text-3xl sm:text-4xl font-extrabold relative inline-block">
             <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent">
               Contact Me
             </span>
-            <span className="absolute bottom-[-12px] left-1/2 -translate-x-1/2 w-36 h-[3px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.6)]"></span>
+            <span className="absolute bottom-[-10px] left-1/2 -translate-x-1/2 w-24 sm:w-32 h-[3px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></span>
           </h2>
-          <p className="text-gray-400 mt-6 text-sm sm:text-base">
-          I'm currently looking for new opportunities. If you have any questions or would like to work with me, feel free to reach out!
+          <p className="text-gray-400 mt-6 text-sm sm:text-base max-w-2xl mx-auto">
+            I'm currently open to new opportunities and collaborations. Feel
+            free to drop me a message — I’d love to hear from you!
           </p>
         </div>
 
