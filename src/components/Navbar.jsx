@@ -33,7 +33,7 @@ const Navbar = () => {
                 key={link}
                 href={`#${link.toLowerCase()}`}
                 onClick={() => handleClick(link)}
-                className={`relative font-medium transition-all duration-300 
+                className={`relative font-medium transition-all duration-300 fira-code
                   ${
                     activeLink === link
                       ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
