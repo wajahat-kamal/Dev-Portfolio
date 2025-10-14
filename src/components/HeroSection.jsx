@@ -68,6 +68,25 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
+        <div
+          className="flex justify-center items-center w-full md:w-72 h-80 bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40  shadow-lg shadow-purple-500/30 transition-all duration-500 
+                 hover:scale-105 hover:shadow-purple-500/50 group"
+        >
+          <div className="relative">
+            <img
+              src={portfolioImg}
+              alt="Wajahat Kamal"
+              className="w-44 sm:w-56 md:w-64 lg:w-72 h-auto
+                "
+            />
+
+            {/* Gradient Glow Overlay */}
+            <div
+              className="absolute inset-0 rounded-xl bg-gradient-to-tr from-purple-500/20 to-blue-400/20 
+                    opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"
+            ></div>
+          </div>
+        </div>
       </div>
 
       {/* ---------- Scroll Down Indicator ---------- */}

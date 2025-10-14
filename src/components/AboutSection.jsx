@@ -20,24 +20,38 @@ export const AboutSection = () => {
       {/* ====== Image Left / Text Right ====== */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full">
         {/* ====== Image Section ====== */}
-        <div className="flex justify-center w-full md:w-80">
-          <img
-            src={portfolioImg}
-            alt="Wajahat Kamal"
-            className="w-40 sm:w-52 md:w-64 lg:w-80 rounded-full shadow-2xl border-4 border-purple-500/50 hover:scale-105 transition-transform duration-500 hover:shadow-[0_0_30px_rgba(168,85,247,0.6)]"
-          />
+        <div
+          className="flex justify-center items-center w-full md:w-72 h-80 bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40  shadow-lg shadow-purple-500/30 transition-all duration-500 
+                 hover:scale-105 hover:shadow-purple-500/50 group"
+        >
+          <div className="relative">
+            <img
+              src={portfolioImg}
+              alt="Wajahat Kamal"
+              className="w-44 sm:w-56 md:w-64 lg:w-72 h-auto
+                "
+            />
+
+            {/* Gradient Glow Overlay */}
+            <div
+              className="absolute inset-0 rounded-xl bg-gradient-to-tr from-purple-500/20 to-blue-400/20 
+                    opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"
+            ></div>
+          </div>
         </div>
 
         {/* ====== Text Content ====== */}
         <div className="max-w-xl w-full text-center md:text-left space-y-5 md:w-1/2">
           <p className="text-gray-300 text-[15px] md:text-base leading-relaxed tracking-wide">
-            I’m <span className="font-semibold text-cyan-400">Wajahat Kamal</span>, 
-            a passionate <span className="text-purple-400">Full Stack Developer</span> 
-            who builds fast, scalable, and visually engaging web applications using the{" "}
-            <span className="text-blue-400">MERN stack</span>. I focus on creating seamless 
-            digital experiences that combine functionality with modern design. 
-            I love solving real-world problems, learning new technologies, and writing 
-            clean, maintainable code.
+            I’m{" "}
+            <span className="font-semibold text-cyan-400">Wajahat Kamal</span>,
+            a passionate{" "}
+            <span className="text-purple-400">Full Stack Developer</span>
+            who builds fast, scalable, and visually engaging web applications
+            using the <span className="text-blue-400">MERN stack</span>. I focus
+            on creating seamless digital experiences that combine functionality
+            with modern design. I love solving real-world problems, learning new
+            technologies, and writing clean, maintainable code.
           </p>
 
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
