@@ -54,7 +54,7 @@ export const AboutSection = () => {
 
       {/* ====== Skills Section ====== */}
       <div className="mt-10 w-full">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-12 relative">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-6 relative">
           <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide drop-shadow-[0_0_5px_rgba(59,130,246,0.3)]">
             Skills
           </span>

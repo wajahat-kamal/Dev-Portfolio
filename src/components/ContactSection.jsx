@@ -45,7 +45,7 @@ export const ContactSection = () => {
       id="contact"
       className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16 text-white"
     >
-      <div className="container mx-auto max-w-4xl bg-gradient-to-b from-gray-900 via-gray-950 to-black border border-gray-800/60 rounded-2xl p-8 shadow-[0_0_40px_rgba(59,130,246,0.08)] hover:shadow-[0_0_60px_rgba(59,130,246,0.2)] transition-all duration-500 backdrop-blur-sm">
+      <div className="container mx-auto max-w-4xl rounded-2xl p-8">
         {/* Heading */}
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-extrabold relative inline-block">
@@ -55,15 +55,14 @@ export const ContactSection = () => {
             <span className="absolute bottom-[-12px] left-1/2 -translate-x-1/2 w-36 h-[3px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.6)]"></span>
           </h2>
           <p className="text-gray-400 mt-6 text-sm sm:text-base">
-            Have a project in mind or just want to say hello? Let’s connect and
-            create something awesome together 🚀
+          I'm currently looking for new opportunities. If you have any questions or would like to work with me, feel free to reach out!
           </p>
         </div>
 
         {/* Contact Form */}
         <form
           onSubmit={onSubmit}
-          className="max-w-2xl mx-auto space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-4 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
+          className="max-w-xl mx-auto space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 border border-gray-800 rounded-xl p-6 shadow-md hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
         >
           <div>
             <label
