@@ -36,8 +36,6 @@ const HeroSection = () => {
           <div
             className="flex justify-center lg:justify-start 
              text-base sm:text-xl md:text-3xl lg:text-4xl font-bold 
-             text-transparent bg-clip-text 
-             bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 
              font-mono tracking-wide"
           >
             <TypingEffect
