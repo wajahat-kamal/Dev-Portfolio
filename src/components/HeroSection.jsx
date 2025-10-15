@@ -34,12 +34,23 @@ const HeroSection = () => {
 
           {/* Typing Effect */}
           <div
-            className="flex justify-center lg:justify-start
-                       text-[17px] sm:text-2xl md:text-4xl font-bold
-                       text-transparent bg-clip-text 
-                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code tracking-wide"
+            className="flex justify-center lg:justify-start 
+             text-base sm:text-xl md:text-3xl lg:text-4xl font-bold 
+             text-transparent bg-clip-text 
+             bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 
+             font-mono tracking-wide"
           >
-            <TypingEffect />
+            <TypingEffect
+              text={[
+                "Full Stack Developer",
+                "React Enthusiast",
+                "JavaScript Coder",
+              ]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+            />
           </div>
 
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-6">

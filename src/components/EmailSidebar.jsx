@@ -3,7 +3,7 @@ import React from "react";
 
 function EmailSidebar() {
   return (
-    <div className="fixed bottom-0 right-0 hidden lg:flex flex-col items-center z-50">
+    <div className="fixed bottom-0 -right-13 hidden lg:flex flex-col items-center z-50">
       {/* Rotated Email */}
       <a
         href="mailto:wajahatkamal3.0@gmail.com"
