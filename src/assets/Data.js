@@ -6,10 +6,12 @@ import wkHomifyImg from "./projects/wk-homify.png";
 import wkNoteAppImg from "./projects/wk-note-app.png";
 
 // Import skill icons
+import nextjsIcon from "./skills/nextjs-icon.svg";
 import mongodbIcon from "./skills/mongodb-icon.svg";
 import expressjsIcon from "./skills/expressjs-icon.svg";
 import nodejsIcon from "./skills/Nodejs-icon.svg";
 import reactIcon from "./skills/React-icon.svg";
+import typescriptIcon from "./skills/typescript-icon.svg";
 import javascriptIcon from "./skills/javascript-icon.svg";
 import tailwindcssIcon from "./skills/tailwindcss-icon.svg";
 import css3Icon from "./skills/css3-icon.svg";
@@ -76,14 +78,20 @@ export const projects = [
 
 // Skills Section
 export const skills = [
+  { name: "Next.js", image: nextjsIcon, category: "Full Stack"},
   { name: "Mongo DB", image: mongodbIcon, category: "Database" },
   {
     name: "Express JS",
     image: expressjsIcon,
     category: "Backend",
   },
-  { name: "Node JS", image: nodejsIcon, category: "Backend" },
-  { name: "React JS", image: reactIcon, category: "Frontend" },
+  { name: "Node.js", image: nodejsIcon, category: "Backend" },
+  { name: "React", image: reactIcon, category: "Frontend" },
+  { 
+    name: "TypeScript",
+    image: typescriptIcon,
+    category: "Frontend"
+  },
   {
     name: "JavaScript",
     image: javascriptIcon,
