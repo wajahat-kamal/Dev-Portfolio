@@ -29,26 +29,7 @@ export const Footer = () => {
         </p>
       </div>
 
-      {/* Right Section */}
-      <div className="flex items-center gap-3 sm:gap-4 justify-center">
-        <a
-          target="_blank"
-          href="https://github.com/wajahat-kamal"
-          aria-label="GitHub"
-          className="hover:scale-110 transition-transform duration-200"
-        >
-          <Github className="w-5 h-5 sm:w-6 sm:h-6 text-gray-300" />
-        </a>
-
-        <a
-          target="_blank"
-          href="https://linkedin.com"
-          aria-label="LinkedIn"
-          className="hover:scale-110 transition-transform duration-200"
-        >
-          <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-gray-300" />
-        </a>
-      </div>
+     
     </footer>
   );
 };
