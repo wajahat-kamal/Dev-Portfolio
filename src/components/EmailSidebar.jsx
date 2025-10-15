@@ -7,11 +7,12 @@ function EmailSidebar() {
       {/* Rotated Email */}
       <a
         href="mailto:wajahatkamal3.0@gmail.com"
-        className="text-gray-400 mb-26 mr-5 hover:text-cyan-400 tracking-wider text-sm rotate-90 origin-bottom transition-all duration-300 hover:-translate-y-1"
+        className="text-gray-400 mb-22 mr-4 hover:text-cyan-400 tracking-wider text-[13px] rotate-90 origin-bottom transition-all duration-300 hover:-translate-y-1"
       >
-        <span class=" font-Header tracking-wider text-gray-400 hover:text-AAsecondary hover:cursor-pointer">
-          wajahatkamal3.0<span class="text-AAsecondary">@</span>gmail.com
-          <span class="text-AAsecondary">.</span>com
+        <span className="font-semibold">
+          wajahatkamal3.0
+          <span className="text-cyan-400">@</span>
+          gmail<span className="text-cyan-400">.com</span>
         </span>
       </a>
 

@@ -2,9 +2,9 @@ import { Github, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="text-foreground py-3 sm:py-4 px-3 sm:px-20 bg-[#0B111E] flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 text-center sm:text-left">
+    <footer className="text-foreground py-3 sm:py-4 px-3 sm:px-20 bg-[#0B111E] flex justify-center items-center gap-2 sm:gap-0 text-center sm:text-left">
       {/* Left Section */}
-      <div>
+      <div className="text-center">
         <p className="text-xs sm:text-sm">
           &copy; {new Date().getFullYear()} Wajahat Kamal 28-July. All rights reserved.
         </p>
