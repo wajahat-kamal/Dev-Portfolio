@@ -233,6 +233,20 @@
   }
 }
 
-.animate-slide {
-  animation: slide 25s linear infinite;
+@keyframes slide-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
+
+.animate-slide {
+  animation: slide 35s linear infinite;
+}
+
+.animate-slide-reverse {
+  animation: slide-reverse 35s linear infinite;
+}
+

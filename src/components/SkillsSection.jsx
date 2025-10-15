@@ -4,37 +4,51 @@ import { skills } from "../assets/Data";
 
 function SkillsSection() {
   return (
-    <div className="w-full overflow-hidden py-4">
-      {/* Infinite sliding animation container */}
-      <div className="flex animate-slide gap-4 w-max">
-        {[...skills, ...skills].map((skill, index) => (
-          <div
-            key={index}
-            className="group flex flex-col items-center justify-center gap-1 rounded-lg border border-gray-700/40 
-                       bg-gray-800/40 backdrop-blur-md shadow-sm py-2 px-3 transition-all duration-300 
-                       hover:scale-105 hover:shadow-md hover:border-blue-500/60 hover:bg-gray-800/60"
-          >
-            <div className="w-10 h-10 flex items-center justify-center bg-white rounded-md shadow-sm 
-                            group-hover:shadow-blue-500/30 transition-all duration-300">
-              <img
-                src={skill.image}
-                alt={skill.name}
-                className="w-7 h-7 object-contain"
-              />
-            </div>
-            <div className="text-center">
-              <h4 className="text-[11px] font-semibold text-white tracking-wide">
-                {skill.name}
-              </h4>
-              <p className="text-[9px] text-gray-400 italic">{skill.category}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="w-full overflow-hidden py-6 relative">
+      {/* ====== Infinite Sliding Animation ====== */}
+      <div className="flex flex-col gap-3">
+        {/* First Row */}
+        <div className="flex animate-slide gap-3 w-max">
+          {[...skills, ...skills].map((skill, index) => (
+            <SkillCard key={index} skill={skill} />
+          ))}
+        </div>
 
-      
+        {/* Second Row - Opposite Direction for Variation */}
+        <div className="flex animate-slide-reverse gap-3 w-max">
+          {[...skills, ...skills].map((skill, index) => (
+            <SkillCard key={index} skill={skill} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
+
+/* ====== Skill Card Component ====== */
+const SkillCard = ({ skill }) => (
+  <div
+    className="group flex flex-col items-center justify-center gap-1 rounded-lg border border-gray-700/40 
+               bg-gray-800/40 backdrop-blur-md shadow-sm py-2 px-3 transition-all duration-300 
+               hover:scale-105 hover:shadow-md hover:border-blue-500/60 hover:bg-gray-800/60"
+  >
+    <div
+      className="w-10 h-10 flex items-center justify-center bg-white rounded-md shadow-sm 
+                  group-hover:shadow-blue-500/30 transition-all duration-300"
+    >
+      <img
+        src={skill.image}
+        alt={skill.name}
+        className="w-7 h-7 object-contain"
+      />
+    </div>
+    <div className="text-center">
+      <h4 className="text-[11px] font-semibold text-white tracking-wide">
+        {skill.name}
+      </h4>
+      <p className="text-[9px] text-gray-400 italic">{skill.category}</p>
+    </div>
+  </div>
+);
 
 export default SkillsSection;
