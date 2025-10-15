@@ -6,6 +6,8 @@ import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar"
 import { ProjectsSection } from "../components/ProjectsSection"
 import { StarBackground } from "@/components/StarBackground"
+import { SocialSidebar } from "../components/SocialSidebar";
+import EmailSidebar from "../components/EmailSidebar";
 
 export const Home = () => {
   return (
@@ -21,6 +23,8 @@ export const Home = () => {
         <ProjectsSection />
         <ContactSection/>
         <Footer />
+        <SocialSidebar/>
+        <EmailSidebar/>
       </main>
 
     </div>
