@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between mt-3 border-t border-white/10 pt-2">
+        <div className="flex items-center justify-between mt-3 border-t border-white/10 py-2">
           <span className="text-[10px] sm:text-[11px] text-gray-400">{project.date}</span>
           <div className="flex gap-2 sm:gap-3">
             <a
