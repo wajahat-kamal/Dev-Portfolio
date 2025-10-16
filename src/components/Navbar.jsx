@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
@@ -13,12 +13,26 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-15 lg:pr-23">
         <div className="flex justify-between items-center h-16">
           {/* -------- Logo -------- */}
-          <a href="#" className="flex flex-row justify-center items-center gap-1 mt-4">
+          <a
+            href="#"
+            className="flex flex-row justify-center items-center gap-1 mt-4"
+          >
             <div className="relative h-11 w-12 opacity-100">
               <span
                 className="absolute h-12 w-10.5 flex justify-center items-center text-lg fira-code font-Header bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 bg-clip-text text-transparent"
@@ -34,7 +48,9 @@ const Navbar = () => {
               ></div>
               <div
                 className="h-1 w-6 rounded bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
-                style={{ transform: "translateX(-10px) translateY(18px) rotate(90deg)" }}
+                style={{
+                  transform: "translateX(-10px) translateY(18px) rotate(90deg)",
+                }}
               ></div>
               <div
                 className="h-1 w-6 rounded bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
@@ -42,15 +58,21 @@ const Navbar = () => {
               ></div>
               <div
                 className="h-1 w-6 rounded bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
-                style={{ transform: "translateX(19px) translateY(27px) rotate(-30deg)" }}
+                style={{
+                  transform: "translateX(19px) translateY(27px) rotate(-30deg)",
+                }}
               ></div>
               <div
                 className="h-1 w-6 rounded bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
-                style={{ transform: "translateX(19px) translateY(-10px) rotate(30deg)" }}
+                style={{
+                  transform: "translateX(19px) translateY(-10px) rotate(30deg)",
+                }}
               ></div>
               <div
                 className="h-1 w-6 rounded bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
-                style={{ transform: "translateX(28px) translateY(2px) rotate(90deg)" }}
+                style={{
+                  transform: "translateX(28px) translateY(2px) rotate(90deg)",
+                }}
               ></div>
             </div>
           </a>
@@ -73,7 +95,9 @@ const Navbar = () => {
                 {link}
                 <span
                   className={`absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 transition-transform duration-300 origin-left scale-x-0 ${
-                    activeLink === link ? "scale-x-100" : "group-hover:scale-x-100"
+                    activeLink === link
+                      ? "scale-x-100"
+                      : "group-hover:scale-x-100"
                   }`}
                 />
               </a>
