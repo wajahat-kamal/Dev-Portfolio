@@ -15,7 +15,7 @@ const ProjectCard = ({ project }) => {
       </div>
 
       {/* Content */}
-      <div className="p-4 flex flex-col justify-between">
+      <div className="py-1 px-4 flex flex-col justify-between">
         <div>
           <h3 className="text-lg sm:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 mb-1 sm:mb-2">
             {project.title}
@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mt-3 sm:mt-4">
+        <div className="flex flex-wrap gap-2 mt-3">
           {project.tags.map((tag, index) => (
             <span
               key={index}
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between mt-4  border-t border-white/10 pt-2">
+        <div className="flex items-center justify-between mt-3 border-t border-white/10 pt-2">
           <span className="text-[10px] sm:text-[11px] text-gray-400">{project.date}</span>
           <div className="flex gap-2 sm:gap-3">
             <a
