@@ -7,7 +7,7 @@ export const AboutSection = () => {
   return (
     <section
       id="about"
-      className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 py-16"
+      className="relative flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 py-16"
     >
       {/* ====== Image + Text Container ====== */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-6xl mt-10">

@@ -42,11 +42,11 @@ export const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative min-h-screen flex items-center justify-center px-3 sm:px-6 lg:px-8 py-12 sm:py-16 text-white"
+      className="relative flex items-center justify-center px-3 sm:px-6 lg:px-8 py-12 sm:py-16 text-white"
     >
       <div className="container mx-auto max-w-4xl rounded-2xl p-5 sm:p-8">
         {/* ====== Heading ====== */}
-        <div className="text-center mb-8 sm:mb-10">
+        <div className="text-center mb-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold relative inline-block">
             <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent">
               Contact Me
@@ -63,7 +63,7 @@ export const ContactSection = () => {
         {/* ====== Contact Form ====== */}
         <form
           onSubmit={onSubmit}
-          className="max-w-xl mx-auto space-y-4 sm:space-y-5 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 
+          className="max-w-xl mx-auto space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 
                      border border-gray-800 rounded-xl p-5 sm:p-6 shadow-md 
                      hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
         >
