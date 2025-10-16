@@ -3,7 +3,6 @@ import wkGlobifyImg from "./projects/wk-Globify.png";
 import wkShoesStoreImg from "./projects/WK-Shoes-Store.png";
 import wkChatbotImg from "./projects/wk-chatify.png";
 import wkHomifyImg from "./projects/wk-homify.png";
-import wkNoteAppImg from "./projects/wk-note-app.png";
 
 // Import skill icons
 import nextjsIcon from "./skills/nextjs-icon.svg";
@@ -62,17 +61,6 @@ export const projects = [
     demoURL: "https://wk-shoes-store.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
     date: "2025 July 5",
-  },
-  {
-    id: 5,
-    title: "WK Note App",
-    description:
-      "NoteApp – A simple and clean note-taking app built with ReactJS, Tailwind CSS for organizing your thoughts efficiently.",
-    image: wkNoteAppImg,
-    tags: ["React JS", "Tailwind CSS"],
-    demoURL: "https://wk-note-app.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/WK-NoteApp.git",
-    date: "2025 May 25",
   },
 ];
 
