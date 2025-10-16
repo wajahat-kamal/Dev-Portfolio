@@ -22,7 +22,7 @@ const ProjectCard = ({ project }) => {
           </h3>
 
           {/* Full Description on Mobile */}
-          <p className="text-gray-300 text-[11px] sm:text-sm leading-relaxed max-sm:line-clamp-none sm:line-clamp-3">
+          <p className="text-gray-300 text-[9px] sm:text-sm leading-relaxed line-clamp-3">
             {project.description}
           </p>
         </div>
@@ -40,7 +40,7 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between mt-4 sm:mt-5 border-t border-white/10 pt-2 sm:pt-3">
+        <div className="flex items-center justify-between mt-4  border-t border-white/10 pt-2">
           <span className="text-[10px] sm:text-[11px] text-gray-400">{project.date}</span>
           <div className="flex gap-2 sm:gap-3">
             <a
