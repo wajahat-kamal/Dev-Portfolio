@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
       {/* Content */}
       <div className="py-1 px-4 flex flex-col justify-between">
         <div>
-          <h3 className="text-lg sm:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 mb-1 sm:mb-2">
+          <h3 className="text-lg sm:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 my-1">
             {project.title}
           </h3>
 
