@@ -54,7 +54,8 @@ const HeroSection = () => {
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-6">
             {/* View My Resume */}
             <a
-              href="#"
+              href="/resume.pdf"
+              target="_blank"
               className="flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold text-white 
                    rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 shadow-md 
                    hover:shadow-purple-500/30
