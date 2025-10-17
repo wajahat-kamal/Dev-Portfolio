@@ -54,7 +54,7 @@ export const ContactSection = () => {
             <span className="absolute bottom-[-8px] left-1/2 -translate-x-1/2 w-20 sm:w-32 h-[2px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></span>
           </h2>
 
-          <p className="text-gray-400 mt-4 sm:mt-6 text-[13px] sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-400 mt-4 sm:mt-6 text-[13px] sm:text-sm md:text-base max-w-xl lg:max-w-2xl mx-auto leading-relaxed">
             I’m open to new opportunities and collaborations. Feel free to drop
             me a message — I’d love to hear from you!
           </p>
