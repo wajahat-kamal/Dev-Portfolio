@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Github, Instagram, Linkedin, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -124,11 +124,11 @@ const Navbar = () => {
 
       {/* -------- Mobile Slide Menu -------- */}
       <div
-        className={`fixed top-0 right-0 h-screen w-[75%] bg-black/80 backdrop-blur-md border-l border-white/10 transform transition-transform duration-500 ease-in-out ${
+        className={`fixed top-0 right-0 h-screen w-[80%] flex justify-between flex-col items-center bg-black/80 backdrop-blur-md border-l border-white/10 transform transition-transform duration-500 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden z-[50]`}
       >
-        <div className="flex flex-col items-center justify-center space-y-6 py-15">
+        <div className="flex flex-col items-center justify-center space-y-6 pt-25">
           {navLinks.map((link) => (
             <a
               key={link}
@@ -143,6 +143,64 @@ const Navbar = () => {
               {link}
             </a>
           ))}
+        </div>
+
+        <div className="flex flex-col justify-center items-center gap-3 pb-8">
+          <div className="flex flex-row items-center space-x-4">
+            {/* GitHub */}
+            <a
+              href="https://github.com/wajahat-kamal"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-400 hover:text-purple-500 transition-colors duration-300"
+            >
+              <Github className="w-6 h-6 cursor-pointer" />
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
+            >
+              <Linkedin className="w-6 h-6 cursor-pointer" />
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
+            >
+              <Instagram className="w-6 h-6 cursor-pointer" />
+            </a>
+          </div>
+          <a
+            href="mailto:wajahatkamal3.0@gmail.com"
+            className="text-gray-400 mr-4 hover:text-transparent bg-clip-text 
+                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code tracking-wider text-[13px] transition-all duration-300 hover:-translate-y-1"
+          >
+            <span className="font-semibold">
+              wajahatkamal3.0
+              <span
+                className="
+                       text-transparent bg-clip-text 
+                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code "
+              >
+                @
+              </span>
+              gmail
+              <span
+                className="
+                       text-transparent bg-clip-text 
+                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code "
+              >
+                .com
+              </span>
+            </span>
+          </a>
         </div>
       </div>
     </nav>
