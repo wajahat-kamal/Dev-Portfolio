@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-2 w-full md:w-[45%]">
       {/* Image */}
-      <div className="relative w-full h-44 sm:h-48 overflow-hidden">
+      <div className="relative w-full h-32 sm:h-48 overflow-hidden">
         <img
           src={project.image}
           alt={project.title}

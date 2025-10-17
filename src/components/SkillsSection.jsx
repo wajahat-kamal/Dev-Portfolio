@@ -8,14 +8,14 @@ function SkillsSection() {
       {/* ====== Infinite Sliding Animation ====== */}
       <div className="flex flex-col gap-3">
         {/* First Row */}
-        <div className="flex animate-slide gap-3 w-max">
+        <div className="flex animate-slide gap-2 md:gap-3 w-max">
           {[...skills, ...skills].map((skill, index) => (
             <SkillCard key={index} skill={skill} />
           ))}
         </div>
 
         {/* Second Row - Opposite Direction for Variation */}
-        <div className="flex animate-slide-reverse gap-3 w-max">
+        <div className="flex animate-slide-reverse gap-2 md:gap-3 w-max">
           {[...skills, ...skills].map((skill, index) => (
             <SkillCard key={index} skill={skill} />
           ))}
