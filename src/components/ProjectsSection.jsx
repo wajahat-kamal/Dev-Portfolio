@@ -12,11 +12,11 @@ export const ProjectsSection = () => {
           </span>
           <span className="absolute bottom-[-15px] left-1/2 -translate-x-1/2 w-36 h-[4px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"></span>
         </h2>
-        <p className="text-center text-xs text-muted-foreground mb-4 max-w-2xl mx-auto">
+        <p className="text-center text-xs text-muted-foreground mb-4 max-w-xl mx-auto">
           Here are some of my recent projects. Each project was carefully
           crafted with attention to detail, performance, and user experience.
         </p>
-        <div className="flex flex-wrap justify-center gap-6 max-sm:gap-4">
+        <div className="flex flex-wrap justify-center gap-4 max-sm:gap-4">
           {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

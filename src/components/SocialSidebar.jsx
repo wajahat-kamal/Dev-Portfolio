@@ -3,7 +3,7 @@ import React from "react";
 
 export const SocialSidebar = () => {
   return (
-    <div className="fixed bottom-0 left-0 hidden lg:flex flex-col items-center px-10 z-50">
+    <div className="fixed bottom-0 left-0 hidden md:flex flex-col items-center px-10 z-50">
       {/* Icons */}
       <div className="flex flex-col items-center space-y-4">
         {/* GitHub */}

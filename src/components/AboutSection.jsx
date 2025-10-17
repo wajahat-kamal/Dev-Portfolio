@@ -59,7 +59,7 @@ export const AboutSection = () => {
       </div>
 
       {/* ====== Full-Width Skills Section Below ====== */}
-      <div className="mt-5 w-[93%] border-t border-gray-700/30 pt-4">
+      <div className="mt-5 w-[93%] md:w-[80%] lg:w-[75%] border-t border-gray-700/30 pt-4">
         <h3 className="text-center text-sm text-gray-400 fira-code">
           Technologies I work with:
         </h3>
