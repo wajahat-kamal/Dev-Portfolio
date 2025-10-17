@@ -28,7 +28,7 @@ const ProjectCard = ({ project }) => {
         </div>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mt-3">
+        {/* <div className="flex flex-wrap gap-2 mt-3">
           {project.tags.map((tag, index) => (
             <span
               key={index}
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }) => {
               #{tag}
             </span>
           ))}
-        </div>
+        </div> */}
 
         {/* Footer */}
         <div className="flex items-center justify-between mt-3 border-t border-white/10 py-2">

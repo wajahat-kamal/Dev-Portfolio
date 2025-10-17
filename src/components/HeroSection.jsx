@@ -17,7 +17,7 @@ const HeroSection = () => {
     >
       <div className="container max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 z-10">
         {/* ---------- Left Content ---------- */}
-        <div className="flex-1 text-center lg:text-start space-y-2 md:space-y-4">
+        <div className="flex-1 text-center space-y-2 md:space-y-4">
           {/* Heading */}
           <h1 className="text-[26px] sm:text-4xl md:text-6xl font-extrabold tracking-tight leading-snug">
             <span className="block text-gray-600 dark:text-gray-400 text-lg sm:text-xl md:text-3xl">
@@ -34,15 +34,15 @@ const HeroSection = () => {
 
           {/* Typing Effect */}
           <div
-            className="flex justify-center lg:justify-start 
+            className="flex justify-center 
              text-base sm:text-xl md:text-3xl lg:text-4xl font-bold 
              font-mono tracking-wide"
           >
             <TypingEffect
               text={[
                 "Full Stack Developer",
-                "React Enthusiast",
-                "JavaScript Coder",
+                // "React Enthusiast",
+                // "JavaScript Coder",
               ]}
               typingSpeed={75}
               pauseDuration={1500}
@@ -51,7 +51,7 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-6">
             {/* View My Resume */}
             <a
               href="/resume.pdf"
@@ -78,36 +78,18 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-        <div
-          className="hidden lg:flex justify-center items-center w-full md:w-72 h-80 bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40  shadow-lg shadow-purple-500/30 transition-all duration-500 
-                 hover:scale-105 hover:shadow-purple-500/50 group"
-        >
-          <div className="relative">
-            <img
-              src={portfolioImg}
-              alt="Wajahat Kamal"
-              className="w-44 sm:w-56 md:w-64 lg:w-72 h-auto
-                "
-            />
 
-            {/* Gradient Glow Overlay */}
-            <div
-              className="absolute inset-0 rounded-xl bg-gradient-to-tr from-purple-500/20 to-blue-400/20 
-                    opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"
-            ></div>
-          </div>
-        </div>
-        <div className="lg:hidden flex justify-center items-center w-full sm:w-80 md:w-72 lg:w-80 h-auto bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40 shadow-lg shadow-purple-500/30 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/50 group">
+        <div className="md:hidden flex justify-center items-center w-full sm:w-80 md:w-72 lg:w-80 h-auto bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40 shadow-lg shadow-purple-500/30 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/50 group">
           <div className="relative">
             <img
               src={portfolioImg}
               alt="Wajahat Kamal"
               className="w-52 sm:w-60 md:w-64 lg:w-72 h-auto rounded-lg object-cover transition-transform duration-500"
             />
-            {/* Gradient Glow Overlay */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-purple-500/20 to-blue-400/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
           </div>
-        </div>
+        </div> 
+
       </div>
 
       {/* ---------- Scroll Down Indicator ---------- */}

@@ -44,7 +44,7 @@ export const projects = [
     id: 3,
     title: "HOMIFY",
     description:
-      "Homify is a modern real estate website built with React.js and Tailwind CSS, featuring a clean UI, smooth animations, and an easy way to connect with me for collaborations or inquiries.",
+      "Homify is a modern real estate website built with React.js and Tailwind CSS, featuring a clean UI, smooth animations, and an easy way to connect with me.",
     image: wkHomifyImg,
     tags: ["React JS", "Tailwind CSS"],
     demoURL: "https://homify-wk.vercel.app/",
@@ -66,7 +66,7 @@ export const projects = [
 
 // Skills Section
 export const skills = [
-  { name: "Next.js", image: nextjsIcon, category: "Full Stack"},
+  { name: "Next.js", image: nextjsIcon, category: "Full Stack" },
   { name: "Mongo DB", image: mongodbIcon, category: "Database" },
   {
     name: "Express JS",
@@ -75,10 +75,10 @@ export const skills = [
   },
   { name: "Node.js", image: nodejsIcon, category: "Backend" },
   { name: "React", image: reactIcon, category: "Frontend" },
-  { 
+  {
     name: "TypeScript",
     image: typescriptIcon,
-    category: "Frontend"
+    category: "Frontend",
   },
   {
     name: "JavaScript",
