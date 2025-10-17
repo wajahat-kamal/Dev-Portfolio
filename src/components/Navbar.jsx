@@ -31,7 +31,7 @@ const Navbar = () => {
           {/* -------- Logo -------- */}
           <a
             href="#"
-            className="flex flex-row justify-center items-center gap-1 mt-4"
+            className="flex flex-row justify-center items-center gap-1 mt-0 md:mt-3"
           >
             <div className="relative h-11 w-12 opacity-100">
               <span
@@ -79,7 +79,7 @@ const Navbar = () => {
 
           {/* -------- Desktop Menu -------- */}
           <div className="hidden md:flex items-center space-x-10">
-            {navLinks.map((link) => (
+            {navLinks.map((link, index) => (
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
@@ -92,7 +92,7 @@ const Navbar = () => {
                   }
                 `}
               >
-                {link}
+                {index + 1}. {link}
                 <span
                   className={`absolute left-0 -bottom-1 h-[2px] w-full bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 transition-transform duration-300 origin-left scale-x-0 ${
                     activeLink === link
@@ -109,7 +109,7 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="md:hidden text-gray-200 hover:text-white transition-colors duration-200 z-[60]"
           >
-            {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
+            {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
           </button>
         </div>
       </div>
