@@ -37,13 +37,13 @@ function Resume() {
         </header>
 
         {/* Content */}
-        <main className="p-8 sm:p-12 space-y-12">
+        <main className="p-4 sm:p-12 space-y-12">
           {/* About */}
           <section>
             <h2 className="text-2xl font-semibold text-purple-500 mb-4 border-b-4 border-purple-500 inline-block pb-1">
               About Me
             </h2>
-            <p className="text-gray-600 text-base sm:text-[15px] text-justify">
+            <p className="text-gray-600 text-base sm:text-[12px] text-center">
               Hey! I'm Wajahat Kamal, a passionate Full Stack Developer who loves
               building modern, responsive, and high-performance web applications
               using React, Node.js, and Next.js. I enjoy turning ideas into
