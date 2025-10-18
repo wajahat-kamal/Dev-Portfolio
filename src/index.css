@@ -250,3 +250,15 @@
   animation: slide-reverse 35s linear infinite;
 }
 
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.animate-pulse {
+  animation: pulse-subtle infinite;
+}

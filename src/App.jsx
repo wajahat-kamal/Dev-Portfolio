@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PageLoader from "./components/PageLoader";
 import { Home } from "./pages/Home";
 import { NotFound } from "./pages/NotFound";
+import Resume from "./pages/Resume";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -24,6 +25,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route index element={<Home />} />
+              <Route path="/resume" element={<Resume />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>
