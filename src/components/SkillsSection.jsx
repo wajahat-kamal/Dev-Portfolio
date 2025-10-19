@@ -39,6 +39,7 @@ const SkillCard = ({ skill }) => (
       <img
         src={skill.image}
         alt={skill.name}
+        loading="lazy"
         className="w-7 h-7 object-contain"
       />
     </div>
