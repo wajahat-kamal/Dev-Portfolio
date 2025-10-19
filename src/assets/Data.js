@@ -3,6 +3,7 @@ import wkGlobifyImg from "./projects/wk-Globify.png";
 import wkShoesStoreImg from "./projects/WK-Shoes-Store.png";
 import wkChatbotImg from "./projects/wk-chatify.png";
 import wkHomifyImg from "./projects/wk-homify.png";
+import wkCartifyImg from "./projects/wk-cartify.png";
 
 // Import skill icons
 import nextjsIcon from "./skills/nextjs-icon.svg";
@@ -20,6 +21,16 @@ import html5Icon from "./skills/html5-icon.svg";
 export const projects = [
   {
     id: 1,
+    title: "CARTIFY",
+    description: "A modern and responsive e-commerce web app built with Next.js and Tailwind CSS. It features a smooth shopping experience, dynamic cart management, and a clean, minimalist design for effortless product browsing.",
+    image: wkCartifyImg,
+    tags: ["Next.js", "Tailwind CSS"],
+    demoURL: "https://cartify-wk.vercel.app",
+    githubURL: "https://github.com/wajahat-kamal/CARTIFY/",
+    date: "In Progress"
+  },  
+  {
+    id: 2,
     title: "GLOBIFY",
     description:
       "AI-powered MERN stack blog built with Tailwind CSS for smart content creation, seamless image optimization, and a modern, fully responsive UI.",
@@ -30,7 +41,7 @@ export const projects = [
     date: "2025 Sept 18",
   },
   {
-    id: 2,
+    id: 3,
     title: "CHATIFY",
     description:
       "I built a responsive and interactive chatbot using MERN stack, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
@@ -41,7 +52,7 @@ export const projects = [
     date: "2025 October 2",
   },
   {
-    id: 3,
+    id: 4,
     title: "HOMIFY",
     description:
       "Homify is a modern real estate website built with React.js and Tailwind CSS, featuring a clean UI, smooth animations, and an easy way to connect with me.",
@@ -52,7 +63,7 @@ export const projects = [
     date: "2025 October 6",
   },
   {
-    id: 4,
+    id: 5,
     title: "WK Shoes Store",
     description:
       "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
