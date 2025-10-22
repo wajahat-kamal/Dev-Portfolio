@@ -19,16 +19,16 @@ import html5Icon from "./skills/html5-icon.svg";
 
 // Projects Section
 export const projects = [
-  {
-    id: 1,
-    title: "CARTIFY",
-    description: "A modern and responsive e-commerce web app built with Next.js and Tailwind CSS. It features a smooth shopping experience, dynamic cart management, and a clean, minimalist design for effortless product browsing.",
-    image: wkCartifyImg,
-    tags: ["Next.js", "Tailwind CSS"],
-    demoURL: "https://cartify-wk.vercel.app",
-    githubURL: "https://github.com/wajahat-kamal/CARTIFY/",
-    date: "In Progress"
-  },  
+  // {
+  //   id: 1,
+  //   title: "CARTIFY",
+  //   description: "A modern and responsive e-commerce web app built with Next.js and Tailwind CSS. It features a smooth shopping experience, dynamic cart management, and a clean, minimalist design for effortless product browsing.",
+  //   image: wkCartifyImg,
+  //   tags: ["Next.js", "Tailwind CSS"],
+  //   demoURL: "https://cartify-wk.vercel.app",
+  //   githubURL: "https://github.com/wajahat-kamal/CARTIFY/",
+  //   date: "In Progress"
+  // },  
   {
     id: 2,
     title: "GLOBIFY",
