@@ -26,53 +26,48 @@ const ProjectCard = ({ project }) => {
           <p className="text-gray-300 text-[9px] sm:text-sm leading-relaxed line-clamp-3">
             {project.description}
           </p>
-
         </div>
 
         {/* Footer */}
-<div className="flex items-center justify-between mt-4 border-t border-white/10 pt-3">
-  {/* Date */}
-  <span className="text-[10px] sm:text-[11px] text-blue-400 font-medium bg-blue-500/10 px-3 py-1 rounded-full border border-blue-400/20 shadow-sm shadow-blue-500/20">
-    {project.date}
-  </span>
+        <div className="flex items-center justify-between mt-4 border-t border-white/10 pt-3">
+          {/* Date */}
+          <span className="text-[10px] sm:text-[11px] text-blue-400 font-medium bg-blue-500/10 px-3 py-1 rounded-full border border-blue-400/20 shadow-sm shadow-blue-500/20">
+            {project.date}
+          </span>
 
-  {/* Tags */}
-  <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/5 px-3 py-1.5 rounded-full backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
-    {project.tags.map((tag, index) => (
-      <div
-        key={index}
-        className="relative group"
-      >
-        <img
-          src={tag}
-          alt="tech icon"
-          className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
-        />
-      </div>
-    ))}
-  </div>
+          {/* Tags */}
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/20 px-3 py-1.5 rounded-full backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
+            {project.tags.map((tag, index) => (
+              <div key={index} className="relative group">
+                <img
+                  src={tag}
+                  alt="tech icon"
+                  className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
+                />
+              </div>
+            ))}
+          </div>
 
-  {/* Links */}
-  <div className="flex gap-2 sm:gap-3">
-    <a
-      href={project.demoURL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-1.5 sm:p-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-110 transition-transform hover:shadow-md hover:shadow-purple-500/30"
-    >
-      <ExternalLink size={14} className="sm:w-4 sm:h-4" />
-    </a>
-    <a
-      href={project.githubURL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 text-gray-200 hover:text-white transition-all hover:scale-110 hover:shadow-md hover:shadow-blue-500/30"
-    >
-      <Github size={14} className="sm:w-4 sm:h-4" />
-    </a>
-  </div>
-</div>
-
+          {/* Links */}
+          <div className="flex gap-2">
+            <a
+              href={project.demoURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 sm:p-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-110 transition-transform hover:shadow-md hover:shadow-purple-500/30"
+            >
+              <ExternalLink size={14} className="sm:w-4 sm:h-4" />
+            </a>
+            <a
+              href={project.githubURL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 text-gray-200 hover:text-white transition-all hover:scale-110 hover:shadow-md hover:shadow-blue-500/30"
+            >
+              <Github size={14} className="sm:w-4 sm:h-4" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
