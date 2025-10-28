@@ -31,7 +31,7 @@ const Navbar = () => {
           {/* -------- Logo -------- */}
           <a
             href="#"
-            className="flex flex-row justify-center items-center gap-1 mt-0 md:mt-3"
+            className="flex flex-row justify-center items-center gap-0 mt-0 md:mt-3"
           >
             <div className="relative h-11 w-12 opacity-100">
               <span
@@ -75,6 +75,9 @@ const Navbar = () => {
                 }}
               ></div>
             </div>
+            <h1 className="fira-code text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-purple-600">
+              {"<Portfolio/>"}
+            </h1>
           </a>
 
           {/* -------- Desktop Menu -------- */}
