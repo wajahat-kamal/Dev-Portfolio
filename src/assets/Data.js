@@ -1,5 +1,6 @@
 // Import project images
 import wkGlobifyImg from "./projects/wk-Globify.png";
+import wkShoesStoreImg from "./projects/WK-Shoes-Store.png";
 import wkChatbotImg from "./projects/wk-chatify.png";
 import wkHomifyImg from "./projects/wk-homify.png";
 import wkFoodifyImg from "./projects/wk-foodify.png";
@@ -77,6 +78,17 @@ export const projects = [
     demoURL: "https://homify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/HOMIFY/",
     date: "2025 October 6",
+  },
+  {
+    id: 5,
+    title: "WK Shoes Store",
+    description:
+      "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
+    image: wkShoesStoreImg,
+    tags: [reactIcon, tailwindcssIcon],
+    demoURL: "https://wk-shoes-store.vercel.app/",
+    githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
+    date: "2025 July 5",
   },
 ];
 

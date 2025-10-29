@@ -75,7 +75,7 @@ const Navbar = () => {
                 }}
               ></div>
             </div>
-            <h1 className="fira-code text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-purple-600">
+            <h1 className="fira-code text-xl md:text-[28px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-purple-600">
               {"<Portfolio/>"}
             </h1>
           </a>
