@@ -8,7 +8,7 @@ import wkFoodifyImg from "./projects/wk-foodify.png";
 // Import skill icons
 import nextjsIcon from "./skills/nextjs-icon.svg";
 import mongodbIcon from "./skills/mongodb-icon.svg";
-import expressjsIcon from "./skills/expressjs-icon.svg";
+import expressjsIcon from "./skills/express-icon.png";
 import nodejsIcon from "./skills/Nodejs-icon.svg";
 import reactIcon from "./skills/React-icon.svg";
 import typescriptIcon from "./skills/typescript-icon.svg";
