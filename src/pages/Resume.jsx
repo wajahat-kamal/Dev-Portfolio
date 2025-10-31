@@ -2,6 +2,24 @@ import React from "react";
 import { Mail, Globe, MapPin } from "lucide-react";
 
 function Resume() {
+  const projectsData = [
+    {
+      title: "Foodify – Restaurant Web App",
+      description:
+        "A fully responsive full-stack restaurant web application built with Next.js, MongoDB, and Tailwind CSS. Features include a dynamic menu, and admin-based food management for seamless user experience.",
+    },
+    {
+      title: "AI-Powered MERN Blog",
+      description:
+        "An intelligent blogging platform built using the MERN Stack and Tailwind CSS. It integrates AI tools for smart content creation, image optimization, and offers a sleek, mobile-friendly design.",
+    },
+    {
+      title: "AI Chatbot – Google Gemini API",
+      description:
+        "A real-time AI chatbot developed with the MERN Stack and Google Gemini API. Provides natural conversational responses, context awareness, and a clean, interactive chat interface.",
+    },
+  ];
+
   return (
     <div className="bg-gray-50 text-gray-800 font-sans p-6 sm:p-10 leading-relaxed">
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
@@ -44,12 +62,13 @@ function Resume() {
               About Me
             </h2>
             <p className="text-gray-600 text-base sm:text-[12px] text-center">
-              Hey! I'm Wajahat Kamal, a passionate Full Stack Developer who loves
-              building modern, responsive, and high-performance web applications
-              using React, Node.js, and Next.js. I enjoy turning ideas into
-              interactive digital experiences that are both visually appealing and
-              user-friendly. My goal is to write clean, efficient code and
-              continuously learn new technologies to grow as a developer.
+              Hey! I'm Wajahat Kamal, a passionate Full Stack Developer who
+              loves building modern, responsive, and high-performance web
+              applications using React, Node.js, and Next.js. I enjoy turning
+              ideas into interactive digital experiences that are both visually
+              appealing and user-friendly. My goal is to write clean, efficient
+              code and continuously learn new technologies to grow as a
+              developer.
             </p>
           </section>
 
@@ -88,38 +107,16 @@ function Resume() {
             </h2>
 
             <div className="space-y-6">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800">
-                  AI-Powered MERN Blog
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Built an intelligent blog platform with MERN Stack and Tailwind
-                  CSS, enabling smart content creation, image optimization, and a
-                  modern responsive UI.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800">
-                  AI Chatbot (Google Gemini API)
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Developed a real-time AI chatbot using MERN Stack, Tailwind CSS,
-                  and Google Gemini API, featuring natural language responses and
-                  an interactive chat interface.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-semibold text-gray-800">
-                  Homify – Real Estate Platform
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  Created a clean, modern real estate website using React.js and
-                  Tailwind CSS, focused on a sleek design, smooth navigation, and
-                  a fully responsive layout.
-                </p>
-              </div>
+              {projectsData.map((project, index) => (
+                <div key={index}>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm sm:text-base text-center">
+                    {project.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </section>
 
