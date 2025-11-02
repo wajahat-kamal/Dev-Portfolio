@@ -243,11 +243,11 @@
 }
 
 .animate-slide {
-  animation: slide 35s linear infinite;
+  animation: slide 20s linear infinite;
 }
 
 .animate-slide-reverse {
-  animation: slide-reverse 35s linear infinite;
+  animation: slide-reverse 20s linear infinite;
 }
 
 

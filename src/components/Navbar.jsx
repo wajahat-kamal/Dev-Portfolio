@@ -148,7 +148,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="flex flex-col justify-center items-center gap-3 pb-8">
+        <div className="flex flex-col justify-center items-center gap-3 pb-16">
           <div className="flex flex-row items-center space-x-4">
             {/* GitHub */}
             <a
