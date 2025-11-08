@@ -27,7 +27,7 @@ export const projects = [
     description:
       "A modern and responsive restaurant full stack web app built with Next.js and Tailwind CSS. It features an elegant menu display, smooth ordering experience, and dynamic food management.",
     image: wkFoodifyImg,
-    tags: [nextjsIcon, reactIcon, tailwindcssIcon, mongodbIcon],
+    tags: [nextjsIcon, reactIcon, typescriptIcon, tailwindcssIcon, mongodbIcon],
     demoURL: "https://foodify-wk.vercel.app",
     githubURL: "https://github.com/wajahat-kamal/FOODIFY/",
     date: "2025 Octuber 28",
@@ -74,7 +74,7 @@ export const projects = [
     description:
       "Homify is a modern real estate website built with React.js and Tailwind CSS, featuring a clean UI, smooth animations, and an easy way to connect with me.",
     image: wkHomifyImg,
-    tags: [reactIcon, tailwindcssIcon],
+    tags: [ nextjsIcon, reactIcon, tailwindcssIcon],
     demoURL: "https://homify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/HOMIFY/",
     date: "2025 October 6",
