@@ -18,7 +18,7 @@ export const SocialSidebar = () => {
 
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/wajahat-kamal/"
           target="_blank"
           rel="noreferrer"
           className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
