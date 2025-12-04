@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-2 w-full md:w-[45%]">
       {/* Image */}
-      <div className="relative w-full h-40 sm:h-58 overflow-hidden">
+      <div className="relative w-full h-30 sm:h-58 overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
@@ -36,13 +36,13 @@ const ProjectCard = ({ project }) => {
           </h3>
 
           {/* Description */}
-          <p className="text-gray-300 text-[9px] sm:text-sm leading-relaxed line-clamp-3">
+          <p className="text-gray-300 text-[8px] sm:text-sm leading-relaxed line-clamp-3">
             {project.description}
           </p>
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between mt-4 border-t border-white/10 pt-3">
+        <div className="flex items-center justify-between mt-2 border-t border-white/10 pt-2">
           {/* Date */}
           <span className="text-[10px] sm:text-[11px] text-blue-400 font-medium bg-blue-500/10 px-3 py-1 rounded-full border border-blue-400/20 shadow-sm shadow-blue-500/20">
             {project.date}
