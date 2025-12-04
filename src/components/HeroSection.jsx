@@ -7,7 +7,6 @@ import {
   Send,
 } from "lucide-react";
 import TypingEffect from "./TypingEffect";
-import portfolioImg from "../assets/portfolioimg.jpg";
 
 const HeroSection = () => {
   return (
@@ -78,17 +77,6 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-
-        <div className="md:hidden flex justify-center items-center w-full sm:w-80 md:w-72 lg:w-80 h-auto bg-[#F2ECE0] rounded-xl border-4 border-purple-500/40 shadow-lg shadow-purple-500/30 transition-all duration-500 hover:scale-105 hover:shadow-purple-500/50 group">
-          <div className="relative">
-            <img
-              src={portfolioImg}
-              alt="Wajahat Kamal"
-              className="w-52 sm:w-60 md:w-64 lg:w-72 h-auto rounded-lg object-cover transition-transform duration-500"
-            />
-            <div className="absolute inset-0 rounded-xl bg-gradient-to-tr from-purple-500/20 to-blue-400/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
-          </div>
-        </div> 
 
       </div>
 
