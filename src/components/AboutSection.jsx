@@ -22,7 +22,7 @@ export const AboutSection = () => {
           </h2>
 
           {/* ====== Paragraph ====== */}
-          <p className="text-gray-300 text-[14px] sm:text-[17px] leading-relaxed tracking-wide fira-code">
+          <p className="text-gray-300 text-[14px] sm:text-[15px] leading-relaxed fira-code">
             Hey! I'm{" "}
             <span className="font-semibold text-cyan-400">Wajahat Kamal</span>,
             a passionate{" "}
@@ -32,61 +32,7 @@ export const AboutSection = () => {
             interactive digital experiences that are both visually appealing and
             user-friendly. My goal is to write clean, efficient code and keep
             learning new technologies to grow as a developer.
-      
           </p>
-        </div>
-
-        {/* ====== Social Links + Email ====== */}
-        <div className="flex flex-col justify-center items-center gap-3 pb-16">
-          <div className="flex flex-row items-center space-x-4">
-            {/* GitHub */}
-            <a
-              href="https://github.com/wajahat-kamal"
-              target="_blank"
-              rel="noreferrer"
-              className="text-gray-400 hover:text-purple-500 transition-colors duration-300"
-            >
-              <Github className="w-6 h-6 cursor-pointer" />
-            </a>
-
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/in/wajahat-kamal/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
-            >
-              <Linkedin className="w-6 h-6 cursor-pointer" />
-            </a>
-
-            {/* Instagram */}
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-gray-400 hover:text-blue-500 transition-colors duration-300"
-            >
-              <Instagram className="w-6 h-6 cursor-pointer" />
-            </a>
-          </div>
-
-          {/* Email */}
-          <a
-            href="mailto:wajahatkamal3.0@gmail.com"
-            className="text-gray-400 mr-4 hover:text-transparent bg-clip-text 
-                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code tracking-wider text-[13px] transition-all duration-300 hover:-translate-y-1"
-          >
-            <span className="font-semibold">
-              wajahatkamal3.0
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code">
-                @
-              </span>
-              gmail
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code">
-                .com
-              </span>
-            </span>
-          </a>
         </div>
       </div>
 
