@@ -66,7 +66,8 @@ const HeroSection = () => {
 
             {/* Let's Connect */}
             <a
-              href="#contact"
+              href="https://www.linkedin.com/in/wajahat-kamal/"
+              target="_blank"
               className="flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold text-white 
                    rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 shadow-md 
                    hover:shadow-purple-500/30 
@@ -77,7 +78,6 @@ const HeroSection = () => {
             </a>
           </div>
         </div>
-
       </div>
 
       {/* ---------- Scroll Down Indicator ---------- */}

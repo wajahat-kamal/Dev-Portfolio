@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import SkillsSection from "./SkillsSection";
-import { Github, Instagram, Linkedin } from "lucide-react";
 
 export const AboutSection = () => {
   return (
