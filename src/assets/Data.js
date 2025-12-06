@@ -54,13 +54,12 @@ export const projects = [
     id: 3,
     title: "CHATIFY",
     description:
-      "I built a responsive and interactive chatbot using MERN stack, Tailwind CSS, and the Google Gemini API for smart, real-time conversations.",
+      "I built a responsive and interactive full stack chatbot using Next.js, Tailwind CSS, and the OpenAI API for smart, real-time conversations.",
     image: wkChatbotImg,
     tags: [
       mongodbIcon,
       reactIcon,
-      expressjsIcon,
-      nodejsIcon,
+      nextjsIcon,
       tailwindcssIcon,
       geminiIcon,
     ],
