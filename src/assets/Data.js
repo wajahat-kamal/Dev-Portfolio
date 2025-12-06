@@ -23,17 +23,6 @@ import geminiIcon from "./skills/gemini-icon.svg";
 export const projects = [
   {
     id: 1,
-    title: "FOODIFY",
-    description:
-      "A modern and responsive restaurant full stack web app built with Next.js and Tailwind CSS. It features an elegant menu display, smooth ordering experience, and dynamic food management.",
-    image: wkFoodifyImg,
-    tags: [nextjsIcon, reactIcon, typescriptIcon, tailwindcssIcon, mongodbIcon],
-    demoURL: "https://foodify-wk.vercel.app",
-    githubURL: "https://github.com/wajahat-kamal/FOODIFY/",
-    date: "2025 Octuber 28",
-  },
-  {
-    id: 2,
     title: "GLOBIFY",
     description:
       "AI-powered MERN stack blog built with Tailwind CSS for smart content creation, seamless image optimization, and a modern, fully responsive UI.",
@@ -51,7 +40,7 @@ export const projects = [
     date: "2025 Sept 18",
   },
   {
-    id: 3,
+    id: 2,
     title: "CHATIFY",
     description:
       "I built a responsive and interactive full stack chatbot using Next.js, Tailwind CSS, and the OpenAI API for smart, real-time conversations.",
@@ -65,7 +54,18 @@ export const projects = [
     ],
     demoURL: "https://chatify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/CHATIFY/",
-    date: "2025 October 2",
+    date: "2025 December 7",
+  },
+  {
+    id: 3,
+    title: "FOODIFY",
+    description:
+      "A modern and responsive restaurant full stack web app built with Next.js and Tailwind CSS. It features an elegant menu display, smooth ordering experience, and dynamic food management.",
+    image: wkFoodifyImg,
+    tags: [nextjsIcon, reactIcon, typescriptIcon, tailwindcssIcon, mongodbIcon],
+    demoURL: "https://foodify-wk.vercel.app",
+    githubURL: "https://github.com/wajahat-kamal/FOODIFY/",
+    date: "2025 Octuber 28",
   },
   {
     id: 4,
