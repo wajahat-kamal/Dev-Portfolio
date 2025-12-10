@@ -1,11 +1,4 @@
-import {
-  ArrowDown,
-  Download,
-  FileText,
-  Github,
-  Linkedin,
-  Send,
-} from "lucide-react";
+import { ArrowDown, FileText, Send } from "lucide-react";
 import TypingEffect from "./TypingEffect";
 
 const HeroSection = () => {
@@ -69,12 +62,26 @@ const HeroSection = () => {
               href="https://www.linkedin.com/in/wajahat-kamal/"
               target="_blank"
               className="flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold text-white 
-                   rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 shadow-md 
-                   hover:shadow-purple-500/30 
-                   transition-all duration-300 hover:scale-105 fira-code"
+             rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 shadow-md 
+             hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 fira-code"
             >
               <Send className="w-4 h-4" />
-              Let’s Connect
+              Connect on
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 34 34"
+                className="w-4 h-4"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2,0H32a2,2,0,0,1,2,2V32a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z"
+                  fill="#0A66C2"
+                />
+                <path
+                  d="M8,13H12V27H8ZM10,7A2.3,2.3,0,1,1,7.7,9.3,2.29,2.29,0,0,1,10,7ZM14,13h4v1.9h0.1a4.41,4.41,0,0,1,4-2.1c4.3,0,5.1,2.7,5.1,6.2V27H23V19.3c0-1.8,0-4.1-2.5-4.1s-2.9,1.9-2.9,3.9V27H14Z"
+                  fill="#fff"
+                />
+              </svg>
             </a>
           </div>
         </div>
