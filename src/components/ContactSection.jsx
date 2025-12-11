@@ -131,6 +131,10 @@ export const ContactSection = () => {
             </div>
 
             {/* Submit Button */}
+            <div className="w-full h-full">
+
+            <a href="https://linkedin.com/in/wajahat-kamal/" className="bg-gradient-to-r from-blue-400 to-purple-500"><Linkedin/></a>
+
             <button
               type="submit"
               disabled={status.loading}
@@ -141,6 +145,11 @@ export const ContactSection = () => {
               {status.loading ? "Sending..." : "Send Message"}
               {!status.loading && <Send className="w-5 h-5" />}
             </button>
+            <a href="https://linkedin.com/in/wajahat-kamal/" className="bg-gradient-to-r from-blue-400 to-purple-500"><Linkedin/></a>
+
+
+            </div>
+
 
             {/* Status Message */}
             {status.message && (
