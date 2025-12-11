@@ -131,25 +131,33 @@ export const ContactSection = () => {
             </div>
 
             {/* Submit Button */}
-            <div className="w-full h-full">
+            <div className="w-full flex flex-row justify-center items-center gap-2">
+              <a
+                href="https://linkedin.com/in/wajahat-kamal/"
+                target="_blank"
+                className="bg-blue-400 h-10 p-2 rounded-md hover:scale-[1.02] transition-all duration-300"
+              >
+                <Linkedin />
+              </a>
 
-            <a href="https://linkedin.com/in/wajahat-kamal/" className="bg-gradient-to-r from-blue-400 to-purple-500"><Linkedin/></a>
-
-            <button
-              type="submit"
-              disabled={status.loading}
-              className={`w-full flex items-center justify-center gap-2 py-3 rounded-md font-semibold text-white 
+              <button
+                type="submit"
+                disabled={status.loading}
+                className={`w-80 flex items-center justify-center gap-1  h-10 rounded-md font-semibold text-white md:text-lg text-[13px]
               bg-gradient-to-r from-blue-400 to-purple-500 hover:scale-[1.02] transition-all duration-300
               ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
-            >
-              {status.loading ? "Sending..." : "Send Message"}
-              {!status.loading && <Send className="w-5 h-5" />}
-            </button>
-            <a href="https://linkedin.com/in/wajahat-kamal/" className="bg-gradient-to-r from-blue-400 to-purple-500"><Linkedin/></a>
-
-
+              >
+                {status.loading ? "Sending..." : "Send Message"}
+                {!status.loading && <Send className="w-3 h-3 md:w-4 md:h-4" />}
+              </button>
+              <a
+                href="https://github.com/wajahat-kamal/"
+                target="_blank"
+                className="bg-purple-500 h-10 p-2 rounded-md hover:scale-[1.02] transition-all duration-300"
+              >
+                <Github />
+              </a>
             </div>
-
 
             {/* Status Message */}
             {status.message && (
