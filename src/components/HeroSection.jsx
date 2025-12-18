@@ -59,7 +59,7 @@ const HeroSection = () => {
 
             {/* Let's Connect */}
             <a
-              href="/#contact"
+              href="https://linkedin.com/in/wajahat-kamal/"
               className="flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold text-white 
              rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 shadow-md 
              hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 fira-code"
