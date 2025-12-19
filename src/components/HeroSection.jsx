@@ -1,4 +1,4 @@
-import { ArrowDown, FileText, Send } from "lucide-react";
+import { ArrowDown, FileText, LinkedinIcon } from "lucide-react";
 import TypingEffect from "./TypingEffect";
 
 const HeroSection = () => {
@@ -64,8 +64,8 @@ const HeroSection = () => {
              rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 shadow-md 
              hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 fira-code"
             >
-              <Send className="w-4 h-4" />
               Let's Connect
+              <LinkedinIcon className="w-4 h-4" />
             </a>
           </div>
         </div>
