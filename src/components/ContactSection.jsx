@@ -135,27 +135,28 @@ export const ContactSection = () => {
               <a
                 href="https://linkedin.com/in/wajahat-kamal/"
                 target="_blank"
-                className="bg-blue-400 h-10 p-2 rounded-md hover:scale-[1.02] transition-all duration-300"
+                className="bg-blue-400 h-8 w-8 sm:h-10 sm:w-10 p-1 sm:p-2 rounded-md hover:scale-[1.02] transition-all duration-300 flex items-center justify-center"
               >
-                <Linkedin />
+                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
 
               <button
                 type="submit"
                 disabled={status.loading}
-                className={`w-80 flex items-center justify-center gap-1  h-10 rounded-md font-semibold text-white md:text-lg text-[13px]
-              bg-gradient-to-r from-blue-400 to-purple-500 hover:scale-[1.02] transition-all duration-300
-              ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
+                className={`w-60 sm:w-80 h-9 sm:h-10 flex items-center justify-center gap-1 rounded-md font-semibold text-white text-[12px] sm:text-[13px] md:text-lg
+    bg-gradient-to-r from-blue-400 to-purple-500 hover:scale-[1.02] transition-all duration-300
+    ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
               >
                 {status.loading ? "Sending..." : "Send Message"}
-                {!status.loading && <Send className="w-3 h-3 md:w-4 md:h-4" />}
+                {!status.loading && <Send className="w-3 h-3 sm:w-4 sm:h-4" />}
               </button>
+
               <a
                 href="https://github.com/wajahat-kamal/"
                 target="_blank"
-                className="bg-purple-500 h-10 p-2 rounded-md hover:scale-[1.02] transition-all duration-300"
+                className="bg-purple-500 h-8 w-8 sm:h-10 sm:w-10 p-1 sm:p-2 rounded-md hover:scale-[1.02] transition-all duration-300 flex items-center justify-center"
               >
-                <Github />
+                <Github className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </div>
 

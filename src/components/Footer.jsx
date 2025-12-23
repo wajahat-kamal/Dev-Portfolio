@@ -5,7 +5,7 @@ export const Footer = () => {
       {/* Left Section */}
       <div className="text-center">
         <p className="text-xs sm:text-sm">
-          &copy; {new Date().getFullYear()} Wajahat Kamal 28-July. All rights reserved.
+          &copy; {new Date().getFullYear()} Wajahat Kamal 27-July. All rights reserved.
         </p>
         <p className="text-xs sm:text-sm">
           Built with{" "}
