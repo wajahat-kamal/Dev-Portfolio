@@ -48,7 +48,7 @@ const HeroSection = () => {
               href="/resume"
               target="_blank"
               className="flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold text-white 
-                   rounded-lg bg-primary shadow-md 
+                   rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 shadow-md 
                    hover:shadow-purple-500/30
                    transition-all duration-300 hover:scale-105 fira-code"
             >
@@ -60,7 +60,7 @@ const HeroSection = () => {
             <a
               href="https://linkedin.com/in/wajahat-kamal/"
               className="flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold text-white 
-             rounded-lg bg-primary shadow-md 
+             rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 shadow-md 
              hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 fira-code"
             >
               Let's Connect

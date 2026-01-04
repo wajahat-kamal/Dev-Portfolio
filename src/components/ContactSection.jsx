@@ -40,7 +40,7 @@ export const ContactSection = () => {
       <div className="grid md:grid-cols-2 gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl p-10 shadow-xl">
         {/* ================= LEFT ================= */}
         <div>
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-primary">
             Get in Touch
           </h2>
 
@@ -60,7 +60,7 @@ export const ContactSection = () => {
                 key={i}
                 className="flex items-center gap-4 text-sm text-zinc-600 dark:text-zinc-400"
               >
-                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-200 dark:border-zinc-700">
+                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 borderborder-zinc-700">
                   <Icon className="w-5 h-5 text-blue-500" />
                 </div>
                 {text}
@@ -95,7 +95,7 @@ export const ContactSection = () => {
                 type={field === "email" ? "email" : "text"}
                 placeholder={`Enter your ${field}`}
                 className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
-                bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+                bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
               />
             </div>
           ))}
@@ -108,7 +108,7 @@ export const ContactSection = () => {
               rows={4}
               placeholder="Write your message..."
               className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
-              bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 00 outline-none"
             />
           </div>
 
