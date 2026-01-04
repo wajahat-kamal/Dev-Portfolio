@@ -6,7 +6,11 @@ import {
   XCircle,
   Github,
   Linkedin,
-  Instagram,
+  InstagramIcon,
+  FacebookIcon,
+  MapPin,
+  Phone,
+  Mail,
 } from "lucide-react";
 
 export const ContactSection = () => {
@@ -16,167 +20,119 @@ export const ContactSection = () => {
     loading: false,
   });
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setStatus({ message: "Sending...", success: false, loading: true });
-
-    const formData = new FormData(event.target);
-    formData.append("access_key", "0e7ca1ec-6d30-4126-9b84-edf6c2d9164b");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setStatus({
-        message: "Message sent successfully!",
-        success: true,
-        loading: false,
-      });
-      event.currentTarget.reset();
-    } else {
-      setStatus({
-        message: data.message || "Something went wrong.",
-        success: false,
-        loading: false,
-      });
-    }
-  };
+  const CONTACT_LINKS = [
+    {
+      icon: <Github className="w-5 h-5" />,
+      url: "https://github.com/wajahat-kamal",
+    },
+    {
+      icon: <Linkedin className="w-5 h-5" />,
+      url: "https://linkedin.com/in/wajahat-kamal",
+    },
+    {
+      icon: <InstagramIcon className="w-5 h-5" />,
+      url: "#",
+    },
+  ];
 
   return (
-    <section
-      id="contact"
-      className="relative flex items-center justify-center px-4 py-16 text-white"
-    >
-      <div className="container mx-auto max-w-5xl">
-        {/* ====== Heading ====== */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl font-extrabold relative inline-block">
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent">
-              Contact Me
-            </span>
-            <span className="absolute bottom-[-8px] left-1/2 -translate-x-1/2 w-24 h-[2px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></span>
+    <section className="mx-auto max-w-[990px] px-4 py-20">
+      <div className="grid md:grid-cols-2 gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl p-10 shadow-xl">
+        {/* ================= LEFT ================= */}
+        <div>
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+            Get in Touch
           </h2>
 
-          <p className="text-gray-400 mt-5 text-sm sm:text-base max-w-lg mx-auto leading-relaxed">
-            I’m open to new opportunities and collaborations. Send a message and
-            I’ll get back to you as soon as possible!
+          <p className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+            Have a project in mind or need help with development? Let’s build
+            something modern and impactful together.
           </p>
+
+          {/* Contact Info */}
+          <ul className="mt-10 space-y-6">
+            {[
+              { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
+              { icon: Phone, text: "+923102561812" },
+              { icon: MapPin, text: "Karachi, Pakistan" },
+            ].map(({ icon: Icon, text }, i) => (
+              <li
+                key={i}
+                className="flex items-center gap-4 text-sm text-zinc-600 dark:text-zinc-400"
+              >
+                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-200 dark:border-zinc-700">
+                  <Icon className="w-5 h-5 text-blue-500" />
+                </div>
+                {text}
+              </li>
+            ))}
+          </ul>
+
+          {/* Social Icons */}
+          <div className="mt-10 flex gap-4">
+            {CONTACT_LINKS.map((item, i) => (
+              <a
+                key={i}
+                href={item.url}
+                target="_blank"
+                className="h-11 w-11 rounded-full flex items-center justify-center
+                bg-zinc-900 text-white hover:scale-110 transition"
+              >
+                {item.icon}
+              </a>
+            ))}
+          </div>
         </div>
 
-        {/* ====== Layout Container ====== */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
-          {/* ====== Contact Form ====== */}
-          <form
-            onSubmit={onSubmit}
-            className="w-full lg:w-1/2 space-y-4 bg-gradient-to-b from-gray-900/90 via-gray-950/90 to-black/90 
-                     border border-gray-800 rounded-xl p-6 shadow-md 
-                     hover:border-blue-500/70 hover:shadow-blue-500/20 transition-all duration-300"
+        {/* ================= RIGHT (FORM) ================= */}
+        <form className="text-left rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 p-8 backdrop-blur-xl space-y-6">
+          {["name", "email"].map((field) => (
+            <div key={field}>
+              <label className="text-xs uppercase tracking-wide text-zinc-500">
+                {field}
+              </label>
+              <input
+                type={field === "email" ? "email" : "text"}
+                placeholder={`Enter your ${field}`}
+                className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
+                bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+              />
+            </div>
+          ))}
+
+          <div>
+            <label className="text-xs uppercase tracking-wide text-zinc-500">
+              Message
+            </label>
+            <textarea
+              rows={4}
+              placeholder="Write your message..."
+              className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
+              bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none"
+            />
+          </div>
+
+          {/* Actions */}
+          <button
+            type="submit"
+            className="w-full rounded-xl py-3 text-sm font-semibold text-white
+            bg-gradient-to-r from-blue-500 to-purple-500 hover:scale-[1.02] transition"
           >
-            {/* Name */}
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-start text-sm font-medium text-gray-300 mb-1"
-              >
-                Your Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                required
-                placeholder="Enter your name"
-                className="w-full bg-transparent border border-gray-700 text-white rounded-md px-3 py-2 text-sm focus:outline-none focus:border-blue-400 transition-all"
-              />
+            Send Message
+            <Send className="inline ml-2 w-4 h-4" />
+          </button>
+
+          {status.message && (
+            <div
+              className={`flex items-center justify-center gap-2 text-sm ${
+                status.success ? "text-green-500" : "text-red-500"
+              }`}
+            >
+              {status.success ? <CheckCircle /> : <XCircle />}
+              {status.message}
             </div>
-
-            {/* Email */}
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-start text-sm font-medium text-gray-300 mb-1"
-              >
-                Your Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="Enter your email"
-                className="w-full bg-transparent border border-gray-700 text-white rounded-md px-3 py-2 text-sm focus:outline-none focus:border-blue-400 transition-all"
-              />
-            </div>
-
-            {/* Message */}
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-start text-sm font-medium text-gray-300 mb-1"
-              >
-                Your Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                rows={4}
-                required
-                placeholder="Write your message..."
-                className="w-full bg-transparent border border-gray-700 text-white rounded-md px-3 py-2 text-sm focus:outline-none focus:border-blue-400 transition-all"
-              ></textarea>
-            </div>
-
-            {/* Submit Button */}
-            <div className="w-full flex flex-row justify-center items-center gap-2">
-              <a
-                href="https://linkedin.com/in/wajahat-kamal/"
-                target="_blank"
-                className="bg-blue-400 h-8 w-8 sm:h-10 sm:w-10 p-1 sm:p-2 rounded-md hover:scale-[1.02] transition-all duration-300 flex items-center justify-center"
-              >
-                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-
-              <button
-                type="submit"
-                disabled={status.loading}
-                className={`w-60 sm:w-80 h-9 sm:h-10 flex items-center justify-center gap-1 rounded-md font-semibold text-white text-[12px] sm:text-[13px] md:text-lg
-    bg-gradient-to-r from-blue-400 to-purple-500 hover:scale-[1.02] transition-all duration-300
-    ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
-              >
-                {status.loading ? "Sending..." : "Send Message"}
-                {!status.loading && <Send className="w-3 h-3 sm:w-4 sm:h-4" />}
-              </button>
-
-              <a
-                href="https://github.com/wajahat-kamal/"
-                target="_blank"
-                className="bg-purple-500 h-8 w-8 sm:h-10 sm:w-10 p-1 sm:p-2 rounded-md hover:scale-[1.02] transition-all duration-300 flex items-center justify-center"
-              >
-                <Github className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-            </div>
-
-            {/* Status Message */}
-            {status.message && (
-              <div
-                className={`mt-3 flex items-center justify-center gap-2 text-sm transition-all duration-300 ${
-                  status.success ? "text-green-400" : "text-red-400"
-                }`}
-              >
-                {status.success ? (
-                  <CheckCircle className="w-5 h-5 animate-bounce" />
-                ) : (
-                  <XCircle className="w-5 h-5" />
-                )}
-                <span>{status.message}</span>
-              </div>
-            )}
-          </form>
-        </div>
+          )}
+        </form>
       </div>
     </section>
   );
