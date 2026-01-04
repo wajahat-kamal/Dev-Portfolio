@@ -62,7 +62,7 @@ const Navbar = () => {
 
                   <span
                     className={`absolute left-0 -bottom-1 h-0.5 w-full
-                      bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600
+                      bg-primary
                       origin-left transform transition-transform duration-300
                       ${isActive ? "scale-x-100" : "scale-x-0"}
                     `}
@@ -107,9 +107,7 @@ const Navbar = () => {
                   onClick={() => handleNavClick(label)}
                   className="flex items-center gap-3 rounded-md px-3 py-2 text-sm transition text-gray-200 hover:text-white"
                 >
-                  <Icon
-                    className="w-4 h-4"
-                  />
+                  <Icon className="w-4 h-4" />
                   {label}
                 </a>
               );

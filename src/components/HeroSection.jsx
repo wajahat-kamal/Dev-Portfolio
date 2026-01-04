@@ -17,8 +17,7 @@ const HeroSection = () => {
             </span>
             <span
               className="
-                       text-transparent bg-clip-text 
-                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 fira-code tracking-wide animate-gradient-move"
+                       text-primary fira-code tracking-wide animate-gradient-move"
             >
               Wajahat Kamal
             </span>
@@ -26,7 +25,7 @@ const HeroSection = () => {
 
           {/* Typing Effect */}
           <div
-            className="flex justify-center 
+            className="flex justify-center text-primary
              text-base sm:text-xl md:text-3xl lg:text-4xl font-bold 
              font-mono tracking-wide"
           >
@@ -49,7 +48,7 @@ const HeroSection = () => {
               href="/resume"
               target="_blank"
               className="flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold text-white 
-                   rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 shadow-md 
+                   rounded-lg bg-primary shadow-md 
                    hover:shadow-purple-500/30
                    transition-all duration-300 hover:scale-105 fira-code"
             >
@@ -61,7 +60,7 @@ const HeroSection = () => {
             <a
               href="https://linkedin.com/in/wajahat-kamal/"
               className="flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold text-white 
-             rounded-lg bg-gradient-to-r from-blue-400 to-purple-500 shadow-md 
+             rounded-lg bg-primary shadow-md 
              hover:shadow-purple-500/30 transition-all duration-300 hover:scale-105 fira-code"
             >
               Let's Connect
