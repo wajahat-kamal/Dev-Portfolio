@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
@@ -169,7 +170,6 @@
          hover:scale-105;
 }
 
-
 @utility star {
   @apply absolute rounded-full bg-white;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
@@ -223,7 +223,6 @@
   font-family: "Source Code Pro", monospace;
 }
 
-
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -250,11 +249,16 @@
   animation: slide-reverse 20s linear infinite;
 }
 
-
 @keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .animate-gradient {
@@ -262,3 +266,22 @@
   animation: gradient 4s ease infinite;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #585656;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6a6a6a;
+}
