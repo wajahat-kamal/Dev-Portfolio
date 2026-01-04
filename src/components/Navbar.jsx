@@ -88,14 +88,14 @@ const Navbar = () => {
       {isOpen && (
         <div
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 bg-black/40 backdrop-blur-sm md:hidden z-40"
+          className="fixed inset-0 md:hidden z-40"
         />
       )}
 
       {/* ================= Mobile Menu ================= */}
       {isOpen && (
         <aside
-          className="fixed top-20 right-1 w-52 rounded-xl bg-black/70 border border-white/10
+          className="fixed top-20 right-3 w-48 rounded-xl bg-black/70 border border-white/10
           backdrop-blur-xl shadow-lg md:hidden z-50"
         >
           <div className="flex flex-col gap-2 p-4">
