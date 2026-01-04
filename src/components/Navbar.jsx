@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Home, User, FolderGit2, Mail } from "lucide-react";
 
-const navLinks = ["Home", "About", "Projects", "Contact"];
+const navLinks = [
+  { label: "Home", icon: Home },
+  { label: "About", icon: User },
+  { label: "Projects", icon: FolderGit2 },
+  { label: "Contact", icon: Mail },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,24 +43,30 @@ const Navbar = () => {
           {/* -------- Desktop Menu -------- */}
           <div className="hidden md:flex items-center gap-x-6 text-sm">
             {navLinks.map((link) => {
-              const isActive = activeLink === link;
+              const isActive = activeLink === link.label;
 
               return (
                 <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
-                  onClick={() => handleNavClick(link)}
+                  key={link.label}
+                  href={`#${link.label.toLowerCase()}`}
+                  onClick={() => handleNavClick(link.label)}
                   aria-current={isActive ? "page" : undefined}
                   className={`group relative font-mono font-medium transition-colors duration-300
-                    ${isActive ? "text-white" : "text-zinc-400 hover:text-white"}
+                    ${
+                      isActive ? "text-white" : "text-zinc-400 hover:text-white"
+                    }
                   `}
                 >
-                  {link}
+                  {link.label}
                   <span
                     className={`absolute left-0 -bottom-1 h-0.5 w-full
                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600
                       origin-left transform transition-transform duration-300
-                      ${isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"}
+                      ${
+                        isActive
+                          ? "scale-x-100"
+                          : "scale-x-0 group-hover:scale-x-100"
+                      }
                     `}
                   />
                 </a>
@@ -84,29 +96,30 @@ const Navbar = () => {
 
       {/* -------- Mobile Slide Menu -------- */}
       <aside
-        className={`fixed top-20 right-4 w-52 rounded-xl bg-black/70 border border-white/10
+        className={`fixed top-20 right-4 w-42 rounded-xl bg-black/70 border border-white/10
           backdrop-blur-xl shadow-lg transform transition-transform duration-300 ease-in-out md:hidden z-50
           ${isOpen ? "translate-x-0" : "translate-x-full"}
         `}
       >
-        <div className="flex flex-col gap-2 p-4">
+        <div className="flex flex-col gap-2 p-4 text-left">
           {navLinks.map((link) => {
-            const isActive = activeLink === link;
+            const isActive = activeLink === link.label;
 
             return (
               <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
-                onClick={() => handleNavClick(link)}
+                key={link.label}
+                href={`#${link.label.toLowerCase()}`}
+                onClick={() => handleNavClick(link.label)}
                 className={`rounded-md px-3 py-2 text-sm transition
                   ${
                     isActive
                       ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
-                      : "text-gray-200 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-blue-500 hover:via-purple-400 hover:to-purple-600"
+                      : "text-gray-200"
                   }
                 `}
               >
-                {link}
+                <link.icon className="w-4 h-4"/>
+                {link.label}
               </a>
             );
           })}
