@@ -64,11 +64,7 @@ const Navbar = () => {
                     className={`absolute left-0 -bottom-1 h-0.5 w-full
                       bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600
                       origin-left transform transition-transform duration-300
-                      ${
-                        isActive
-                          ? "scale-x-100"
-                          : "scale-x-0 group-hover:scale-x-100"
-                      }
+                      ${isActive ? "scale-x-100" : "scale-x-0"}
                     `}
                   />
                 </a>
@@ -99,27 +95,21 @@ const Navbar = () => {
       {/* ================= Mobile Menu ================= */}
       {isOpen && (
         <aside
-          className="fixed top-20 right-4 w-52 rounded-xl bg-black/70 border border-white/10
+          className="fixed top-20 right-1 w-52 rounded-xl bg-black/70 border border-white/10
           backdrop-blur-xl shadow-lg md:hidden z-50"
         >
           <div className="flex flex-col gap-2 p-4">
             {navLinks.map(({ label, icon: Icon }) => {
-              const isActive = activeLink === label;
-
               return (
                 <a
                   key={label}
                   href={`#${label.toLowerCase()}`}
                   onClick={() => handleNavClick(label)}
-                  className={`flex items-center gap-3 rounded-md px-3 py-2 text-sm transition
-                    ${
-                      isActive
-                        ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600"
-                        : "text-gray-200 hover:text-white"
-                    }
-                  `}
+                  className="flex items-center gap-3 rounded-md px-3 py-2 text-sm transition text-gray-200 hover:text-white"
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon
+                    className="w-4 h-4"
+                  />
                   {label}
                 </a>
               );
