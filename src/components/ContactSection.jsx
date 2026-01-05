@@ -60,16 +60,13 @@ export const ContactSection = () => {
           success: true,
           loading: false,
         });
-      console.log(data.message);
-        // event.currentTarget.reset();
+        event.target.reset();
       } else {
         setStatus({
           message: data.message || "Message not sent",
           success: false,
           loading: false,
         });
-      console.log(data.message);
-
       }
     } catch (error) {
       setStatus({
@@ -77,8 +74,6 @@ export const ContactSection = () => {
         success: false,
         loading: false,
       });
-      console.log(error);
-      
     }
   };
 
