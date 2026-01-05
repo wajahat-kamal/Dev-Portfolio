@@ -60,13 +60,16 @@ export const ContactSection = () => {
           success: true,
           loading: false,
         });
-        event.currentTarget.reset();
+      console.log(data.message);
+        // event.currentTarget.reset();
       } else {
         setStatus({
           message: data.message || "Message not sent",
           success: false,
           loading: false,
         });
+      console.log(data.message);
+
       }
     } catch (error) {
       setStatus({
@@ -74,6 +77,8 @@ export const ContactSection = () => {
         success: false,
         loading: false,
       });
+      console.log(error);
+      
     }
   };
 
@@ -127,7 +132,7 @@ export const ContactSection = () => {
         {/* ================= RIGHT (FORM) ================= */}
         <form
           onSubmit={onSubmit}
-          className="text-left rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 p-8 backdrop-blur-xl space-y-6"
+          className="text-left rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 p-4 backdrop-blur-xl space-y-6"
         >
           <input type="hidden" name="subject" value="New Contact Message" />
 
