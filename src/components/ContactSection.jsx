@@ -13,12 +13,6 @@ import {
 } from "lucide-react";
 
 export const ContactSection = () => {
-  const [status, setStatus] = React.useState({
-    message: "",
-    success: false,
-    loading: false,
-  });
-
   const CONTACT_LINKS = [
     {
       icon: <Github className="w-5 h-5" />,
@@ -34,31 +28,42 @@ export const ContactSection = () => {
     },
   ];
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    setStatus({ message: "Sending message...", success: false, loading: true });
+  const [status, setStatus] = React.useState({
+    message: "",
+    success: false,
+    loading: false,
+  });
 
-    const formData = new FormData(e.currentTarget);
-    formData.append("access_key", "0e7ca1ec-6d30-4126-9b84-edf6c2d9164b"); // 🔴 replace
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    setStatus({
+      message: "Sending...",
+      success: false,
+      loading: true,
+    });
+
+    const formData = new FormData(event.currentTarget);
+    formData.append("access_key", "8994b3ed-62f4-4304-b95f-68cd476fa722");
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       });
 
-      const data = await res.json();
+      const data = await response.json();
 
       if (data.success) {
         setStatus({
-          message: "Message sent successfully!",
+          message: "Message sent successfully",
           success: true,
           loading: false,
         });
-        e.currentTarget.reset();
+        event.currentTarget.reset();
       } else {
         setStatus({
-          message: data.message || "Something went wrong.",
+          message: data.message || "Message not sent",
           success: false,
           loading: false,
         });
