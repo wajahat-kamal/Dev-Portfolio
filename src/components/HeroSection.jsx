@@ -51,8 +51,8 @@ export default function HeroSection() {
           className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-400"
         >
           I build clean, modern, and high-performance web interfaces using
-          React, Tailwind CSS, and JavaScript. Focused on user experience and
-          scalable frontend architecture.
+          MERN stack and Next.js. Focused on user experience and
+          scalable architecture.
         </motion.p>
 
         {/* CTA Buttons */}
