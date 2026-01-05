@@ -9,7 +9,7 @@ export const AboutSection = () => {
       className="relative flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 py-12"
     >
       {/* ====== Image + Text Container ====== */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-6xl mt-10">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-6xl mt-10">
         {/* ====== Text Content ====== */}
         <div className="md:max-w-xl lg:max-w-[650px] w-full text-center md:text-left space-y-4 px-2 sm:px-4">
           {/* ====== Heading ====== */}
@@ -32,6 +32,45 @@ export const AboutSection = () => {
             user-friendly. My goal is to write clean, efficient code and keep
             learning new technologies to grow as a developer.
           </p>
+        </div>
+
+        <div className="bg-white dark:bg-zinc-900 text-black dark:text-white border border-zinc-300 dark:border-zinc-700 shadow-lg rounded-xl w-full sm:w-[150px]">
+          <div className="flex flex-col items-start justify-start p-4 gap-2">
+            {/* LinkedIn Button */}
+            <div>
+              <div className="w-16 h-16 -mb-10 overflow-hidden">
+                <img
+                  src="../assets/linkedin-logo.png"
+                  alt="Linkedin Icon"
+                  className="object-cover"
+                />
+              </div>
+              <a
+                href="https://www.linkedin.com/in/wajahat-kamal/"
+                target="_blank"
+                className="mt-1 px-4 py-1.5 border border-blue-600 dark:border-gray-400 text-blue-600 rounded-full text-xs font-semibold hover:bg-zinc-800 hover:text-zinc-100 transition-colors"
+              >
+                View profile
+              </a>
+            </div>
+
+            <div>
+              <div className="w-16 h-16 -mb-10 overflow-hidden">
+                <img
+                  src="../assets/linkedin-logo.png"
+                  alt="Linkedin Icon"
+                  className="object-cover"
+                />
+              </div>
+              <a
+                href="https://www.linkedin.com/in/wajahat-kamal/"
+                target="_blank"
+                className="mt-1 px-4 py-1.5 border border-blue-600 dark:border-gray-400 text-blue-600 rounded-full text-xs font-semibold hover:bg-zinc-800 hover:text-zinc-100 transition-colors"
+              >
+                View profile
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
