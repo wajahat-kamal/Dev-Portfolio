@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
-
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
 
-  --color-primary: #677BFB;
-  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary: #677bfb;
+  --color-primary-foreground: linear-gradient(
+    to right,
+    #60a5fa,
+    #67e8f9,
+    #a855f7
+  );
 
   --color-card: hsl(var(--card));
 

@@ -7,7 +7,6 @@ import {
   Github,
   Linkedin,
   InstagramIcon,
-  FacebookIcon,
   MapPin,
   Phone,
   Mail,
@@ -35,12 +34,50 @@ export const ContactSection = () => {
     },
   ];
 
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ message: "Sending message...", success: false, loading: true });
+
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", "0e7ca1ec-6d30-4126-9b84-edf6c2d9164b"); // 🔴 replace
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setStatus({
+          message: "Message sent successfully!",
+          success: true,
+          loading: false,
+        });
+        e.currentTarget.reset();
+      } else {
+        setStatus({
+          message: data.message || "Something went wrong.",
+          success: false,
+          loading: false,
+        });
+      }
+    } catch (error) {
+      setStatus({
+        message: "Network error. Please try again.",
+        success: false,
+        loading: false,
+      });
+    }
+  };
+
   return (
-    <section className="mx-auto max-w-[990px] px-4 py-20">
+    <section className="mx-auto max-w-[990px] px-4 py-20" id="contact">
       <div className="grid md:grid-cols-2 gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl p-10 shadow-xl">
         {/* ================= LEFT ================= */}
         <div>
-          <h2 className="text-4xl font-bold text-primary">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
             Get in Touch
           </h2>
 
@@ -49,7 +86,6 @@ export const ContactSection = () => {
             something modern and impactful together.
           </p>
 
-          {/* Contact Info */}
           <ul className="mt-10 space-y-6">
             {[
               { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
@@ -60,7 +96,7 @@ export const ContactSection = () => {
                 key={i}
                 className="flex items-center gap-4 text-sm text-zinc-600 dark:text-zinc-400"
               >
-                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 borderborder-zinc-700">
+                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-200 dark:border-zinc-700">
                   <Icon className="w-5 h-5 text-blue-500" />
                 </div>
                 {text}
@@ -68,7 +104,6 @@ export const ContactSection = () => {
             ))}
           </ul>
 
-          {/* Social Icons */}
           <div className="mt-10 flex gap-4">
             {CONTACT_LINKS.map((item, i) => (
               <a
@@ -85,41 +120,63 @@ export const ContactSection = () => {
         </div>
 
         {/* ================= RIGHT (FORM) ================= */}
-        <form className="text-left rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 p-8 backdrop-blur-xl space-y-6">
-          {["name", "email"].map((field) => (
-            <div key={field}>
-              <label className="text-xs uppercase tracking-wide text-zinc-500">
-                {field}
-              </label>
-              <input
-                type={field === "email" ? "email" : "text"}
-                placeholder={`Enter your ${field}`}
-                className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
-                bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
-              />
-            </div>
-          ))}
+        <form
+          onSubmit={onSubmit}
+          className="text-left rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 p-8 backdrop-blur-xl space-y-6"
+        >
+          <input type="hidden" name="subject" value="New Contact Message" />
+
+          <div>
+            <label className="text-xs uppercase tracking-wide text-zinc-500">
+              Name
+            </label>
+            <input
+              name="name"
+              required
+              type="text"
+              placeholder="Enter your name"
+              className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
+              bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 outline-none"
+            />
+          </div>
+
+          <div>
+            <label className="text-xs uppercase tracking-wide text-zinc-500">
+              Email
+            </label>
+            <input
+              name="email"
+              required
+              type="email"
+              placeholder="Enter your email"
+              className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
+              bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 outline-none"
+            />
+          </div>
 
           <div>
             <label className="text-xs uppercase tracking-wide text-zinc-500">
               Message
             </label>
             <textarea
+              name="message"
+              required
               rows={4}
               placeholder="Write your message..."
               className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
-              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 00 outline-none"
+              bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 outline-none"
             />
           </div>
 
-          {/* Actions */}
           <button
             type="submit"
-            className="w-full rounded-xl py-3 text-sm font-semibold text-white
-            bg-gradient-to-r from-blue-500 to-purple-500 hover:scale-[1.02] transition"
+            disabled={status.loading}
+            className={`w-full rounded-xl py-3 text-sm font-semibold text-white
+            bg-gradient-to-r from-blue-500 to-purple-500 hover:scale-[1.02] transition
+            ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
           >
-            Send Message
-            <Send className="inline ml-2 w-4 h-4" />
+            {status.loading ? "Sending..." : "Send Message"}
+            {!status.loading && <Send className="inline ml-2 w-4 h-4" />}
           </button>
 
           {status.message && (
