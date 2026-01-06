@@ -1,6 +1,6 @@
 // src/components/Loader.jsx
 import React from "react";
-import loaderSvg from "../assets/loader-svg.svg";
+import loaderSvg from "../assets/icons/loader-svg.svg";
 
 const PageLoader = () => {
   return (

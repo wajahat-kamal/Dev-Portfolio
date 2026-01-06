@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import SkillsSection from "./SkillsSection";
-import liLogo from "../assets/linkedin-logo.png";
-import giLogo from "../assets/github-logo.png";
+import liLogo from "../assets/icons/linkedin-logo.png";
+import giLogo from "../assets/icons/github-logo.png";
 import { ExternalLink } from "lucide-react";
 
 export const AboutSection = () => {
