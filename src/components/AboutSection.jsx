@@ -36,8 +36,9 @@ export const AboutSection = () => {
             learning new technologies to grow as a developer.
           </p>
         </div>
+
         <div
-          className="w-full sm:w-[160px] rounded-2xl
+          className="w-[200px] sm:w-[160px] rounded-2xl
              bg-zinc-900/90 backdrop-blur
              border border-zinc-700
              shadow-xl p-3"
@@ -52,7 +53,7 @@ export const AboutSection = () => {
             Profiles
           </h1>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-2">
             {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/wajahat-kamal/"
@@ -70,7 +71,7 @@ export const AboutSection = () => {
               <img
                 src={liLogo}
                 alt="LinkedIn"
-                className="h-11 w-[80%] object-contain
+                className="h-11 md:w-[80%] w-[55%] object-contain
                    transition-transform duration-300
                    group-hover:scale-105"
               />
