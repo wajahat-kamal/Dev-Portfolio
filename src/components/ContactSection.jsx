@@ -79,7 +79,7 @@ export const ContactSection = () => {
 
   return (
     <section className="mx-auto max-w-[990px] px-4 py-20" id="contact">
-      <div className="grid md:grid-cols-2 gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl p-10 shadow-xl">
+      <div className="grid md:grid-cols-2 gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl md:p-10 p-5 shadow-xl">
         {/* ================= LEFT ================= */}
         <div>
           <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
