@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import SkillsSection from "./SkillsSection";
+import liLogo  from "../assets/linkedin-logo.png"
+import giLogo  from "../assets/github-logo.png"
 
 export const AboutSection = () => {
   return (
@@ -40,7 +42,7 @@ export const AboutSection = () => {
             <div>
               <div className="w-16 h-16 -mb-10 overflow-hidden">
                 <img
-                  src="../assets/linkedin-logo.png"
+                  src={liLogo}
                   alt="Linkedin Icon"
                   className="object-cover"
                 />
@@ -57,7 +59,7 @@ export const AboutSection = () => {
             <div>
               <div className="w-16 h-16 -mb-10 overflow-hidden">
                 <img
-                  src="../assets/linkedin-logo.png"
+                  src={giLogo}
                   alt="Linkedin Icon"
                   className="object-cover"
                 />
