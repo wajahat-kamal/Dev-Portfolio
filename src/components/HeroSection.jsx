@@ -1,6 +1,7 @@
 "use client";
 import { ArrowRight, Mail } from "lucide-react";
 import { motion } from "framer-motion";
+import TypingEffect from "./TypingEffect";
 
 export default function HeroSection() {
   return (
@@ -10,7 +11,7 @@ export default function HeroSection() {
         <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-purple-500/20 blur-3xl" />
       </div>
 
-      <div className="mx-auto max-w-6xl px-6 text-center">
+      <div className="mx-auto max-w-6xl px-6 text-center mt-25">
         {/* Intro */}
         <motion.p
           initial={{ opacity: 0, y: 10 }}
@@ -38,9 +39,20 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="mt-4 text-2xl md:text-3xl font-medium text-zinc-600 dark:text-zinc-400"
+          className="mt-4 text-2xl md:text-4xl font-medium text-zinc-600 dark:text-zinc-400"
         >
-          Full Stack Developer
+          {/* Typing Effect */}
+          <TypingEffect
+            text={["Full Stack Developer"]}
+            typingSpeed={80}
+            deletingSpeed={40}
+            pauseDuration={2000}
+            initialDelay={500}
+            loop={true}
+            showCursor={true}
+            cursorCharacter="|"
+            cursorClassName="text-blue-400"
+          />
         </motion.h2>
 
         {/* Description */}
@@ -48,11 +60,11 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-400"
+          className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-400"
         >
-          I build clean, modern, and high-performance web interfaces using
-          MERN stack and Next.js. Focused on user experience and
-          scalable architecture.
+          I build clean, modern, and high-performance web interfaces using MERN
+          stack and Next.js. Focused on user experience and scalable
+          architecture.
         </motion.p>
 
         {/* CTA Buttons */}
