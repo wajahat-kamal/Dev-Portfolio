@@ -3,6 +3,7 @@ import React from "react";
 import SkillsSection from "./SkillsSection";
 import liLogo from "../assets/linkedin-logo.png";
 import giLogo from "../assets/github-logo.png";
+import { ExternalLink } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -35,52 +36,68 @@ export const AboutSection = () => {
             learning new technologies to grow as a developer.
           </p>
         </div>
-
         <div
-          className="w-full sm:w-[160px] rounded-2xl 
-                bg-zinc-900 backdrop-blur 
-                border border-zinc-700 
-                shadow-xl p-3"
+          className="w-full sm:w-[160px] rounded-2xl
+             bg-zinc-900/90 backdrop-blur
+             border border-zinc-700
+             shadow-xl p-3"
         >
-          <h1>{/*add lucide react icon and heading*/}</h1>
+          {/* Heading */}
+          <h1
+            className="mb-3 flex items-center justify-start gap-2
+                 text-xs font-semibold uppercase tracking-wider
+                 text-zinc-400"
+          >
+            <ExternalLink className="w-4 h-4" />
+            Profiles
+          </h1>
+
           <div className="flex flex-col gap-4">
             {/* LinkedIn */}
-            <div className="flex flex-col items-center gap-2">
-              <a
+            <a
               href="https://www.linkedin.com/in/wajahat-kamal/"
-                target="_blank"
-                className="w-[95%] h-11 rounded-lg 
-                      bg-zinc-800 
-                      border border-zinc-700 
-                      shadow-sm flex items-center justify-center"
-              >
-                <img
-                  src={liLogo}
-                  alt="LinkedIn"
-                  className="w-[70%] h-11 object-contain"
-                />
-              </a>
-
-            </div>
+              target="_blank"
+              className="group w-full h-11 rounded-lg
+                 bg-zinc-800
+                 border border-zinc-700
+                 shadow-sm
+                 flex items-center justify-center
+                 transition-all duration-300
+                 hover:-translate-y-0.5
+                 hover:border-blue-500/50
+                 hover:shadow-blue-500/20"
+            >
+              <img
+                src={liLogo}
+                alt="LinkedIn"
+                className="h-11 w-[80%] object-contain
+                   transition-transform duration-300
+                   group-hover:scale-105"
+              />
+            </a>
 
             {/* GitHub */}
-            <div className="flex flex-col items-center gap-2">
-              <a
-               href="https://github.com/wajahat-kamal"
-                target="_blank"
-                className="w-[95%] h-11 rounded-lg 
-                 bg-zinc-800 
-                 border border-zinc-700 
-                 shadow-sm flex items-center justify-center"
-              >
-                <img
-                  src={giLogo}
-                  alt="GitHub"
-                  className="w-full h-11 object-contain"
-                />
-              </a>
-
-            </div>
+            <a
+              href="https://github.com/wajahat-kamal"
+              target="_blank"
+              className="group w-full h-11 rounded-lg
+                 bg-zinc-800
+                 border border-zinc-700
+                 shadow-sm
+                 flex items-center justify-center
+                 transition-all duration-300
+                 hover:-translate-y-0.5
+                 hover:border-zinc-500
+                 hover:shadow-zinc-500/20"
+            >
+              <img
+                src={giLogo}
+                alt="GitHub"
+                className="h-13 w-full object-contain
+                   transition-transform duration-300
+                   group-hover:scale-105"
+              />
+            </a>
           </div>
         </div>
       </div>
