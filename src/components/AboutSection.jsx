@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import SkillsSection from "./SkillsSection";
-import liLogo  from "../assets/linkedin-logo.png"
-import giLogo  from "../assets/github-logo.png"
+import liLogo from "../assets/linkedin-logo.png";
+import giLogo from "../assets/github-logo.png";
 
 export const AboutSection = () => {
   return (
@@ -36,38 +36,64 @@ export const AboutSection = () => {
           </p>
         </div>
 
-        <div className="bg-white dark:bg-zinc-900 text-black dark:text-white border border-zinc-300 dark:border-zinc-700 shadow-lg rounded-xl w-full sm:w-[150px]">
-          <div className="flex flex-col items-start justify-start p-4 gap-2">
-            {/* LinkedIn Button */}
-            <div>
-              <div className="w-16 h-16 -mb-10 overflow-hidden">
+        <div
+          className="w-full sm:w-[170px] rounded-2xl 
+                bg-zinc-900 backdrop-blur 
+                border border-zinc-700 
+                shadow-xl p-3"
+        >
+          <div className="flex flex-col gap-6">
+            {/* LinkedIn */}
+            <div className="flex flex-col items-center gap-3">
+              <div
+                className="w-[95%] h-12 rounded-lg 
+                      bg-zinc-800 
+                      border border-zinc-700 
+                      shadow-sm flex items-center justify-center"
+              >
                 <img
                   src={liLogo}
-                  alt="Linkedin Icon"
-                  className="object-cover"
+                  alt="LinkedIn"
+                  className="w-[90%] h-12 object-contain"
                 />
               </div>
+
               <a
                 href="https://www.linkedin.com/in/wajahat-kamal/"
                 target="_blank"
-                className="mt-1 px-4 py-1.5 border border-blue-600 dark:border-gray-400 text-blue-600 rounded-full text-xs font-semibold hover:bg-zinc-800 hover:text-zinc-100 transition-colors"
+                rel="noopener noreferrer"
+                className="px-4 py-1.5 text-xs font-semibold rounded-full
+                   border border-blue-500 text-blue-400
+                   hover:bg-blue-500 hover:text-white
+                   transition-all duration-200"
               >
                 View profile
               </a>
             </div>
 
-            <div>
-              <div className="w-16 h-16 -mb-10 overflow-hidden">
+            {/* GitHub */}
+            <div className="flex flex-col items-center gap-3">
+              <div
+                className="w-[95%] h-12 rounded-lg 
+                 bg-zinc-800 
+                 border border-zinc-700 
+                 shadow-sm flex items-center justify-center"
+              >
                 <img
                   src={giLogo}
-                  alt="Linkedin Icon"
-                  className="object-cover"
+                  alt="GitHub"
+                  className="w-full h-12 object-contain"
                 />
               </div>
+
               <a
-                href="https://www.linkedin.com/in/wajahat-kamal/"
+                href="https://github.com/wajahat-kamal"
                 target="_blank"
-                className="mt-1 px-4 py-1.5 border border-blue-600 dark:border-gray-400 text-blue-600 rounded-full text-xs font-semibold hover:bg-zinc-800 hover:text-zinc-100 transition-colors"
+                rel="noopener noreferrer"
+                className="px-4 py-1.5 text-xs font-semibold rounded-full
+                   border border-zinc-500 text-zinc-300
+                   hover:bg-zinc-700 hover:text-white
+                   transition-all duration-200"
               >
                 View profile
               </a>
