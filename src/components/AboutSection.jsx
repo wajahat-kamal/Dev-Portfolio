@@ -37,16 +37,16 @@ export const AboutSection = () => {
         </div>
 
         <div
-          className="w-full sm:w-[170px] rounded-2xl 
+          className="w-full sm:w-[140px] rounded-2xl 
                 bg-zinc-900 backdrop-blur 
                 border border-zinc-700 
                 shadow-xl p-3"
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4">
             {/* LinkedIn */}
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-2">
               <div
-                className="w-[95%] h-12 rounded-lg 
+                className="w-[95%] h-10 rounded-lg 
                       bg-zinc-800 
                       border border-zinc-700 
                       shadow-sm flex items-center justify-center"
@@ -54,7 +54,7 @@ export const AboutSection = () => {
                 <img
                   src={liLogo}
                   alt="LinkedIn"
-                  className="w-[90%] h-12 object-contain"
+                  className="w-[70%] h-10 object-contain"
                 />
               </div>
 
@@ -62,7 +62,7 @@ export const AboutSection = () => {
                 href="https://www.linkedin.com/in/wajahat-kamal/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-1.5 text-xs font-semibold rounded-full
+                className="px-3 py-1 text-xs rounded-full
                    border border-blue-500 text-blue-400
                    hover:bg-blue-500 hover:text-white
                    transition-all duration-200"
@@ -72,9 +72,9 @@ export const AboutSection = () => {
             </div>
 
             {/* GitHub */}
-            <div className="flex flex-col items-center gap-3">
+            <div className="flex flex-col items-center gap-2">
               <div
-                className="w-[95%] h-12 rounded-lg 
+                className="w-[95%] h-10 rounded-lg 
                  bg-zinc-800 
                  border border-zinc-700 
                  shadow-sm flex items-center justify-center"
@@ -82,7 +82,7 @@ export const AboutSection = () => {
                 <img
                   src={giLogo}
                   alt="GitHub"
-                  className="w-full h-12 object-contain"
+                  className="w-full h-10 object-contain"
                 />
               </div>
 
@@ -90,7 +90,7 @@ export const AboutSection = () => {
                 href="https://github.com/wajahat-kamal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-1.5 text-xs font-semibold rounded-full
+                className="px-3 py-1 text-xs rounded-full
                    border border-zinc-500 text-zinc-300
                    hover:bg-zinc-700 hover:text-white
                    transition-all duration-200"
