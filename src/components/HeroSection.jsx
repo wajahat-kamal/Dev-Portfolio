@@ -5,7 +5,7 @@ import TypingEffect from "./TypingEffect";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-28 min-h-[91dvh] flex justify-center items-center">
+    <section id='home' className="relative overflow-hidden py-28 min-h-[91dvh] flex justify-center items-center">
       {/* Background gradient blur */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-blue-500/20 via-cyan-400/20 to-purple-500/20 blur-3xl" />

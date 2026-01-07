@@ -171,7 +171,7 @@ const TypingEffect = ({
       className: `inline-block whitespace-pre-wrap tracking-tight ${className}`,
       ...props,
     },
-    <span className="text-primary">
+    <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent">
       {displayedText}
     </span>,
     showCursor && (

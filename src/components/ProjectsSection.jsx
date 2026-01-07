@@ -24,7 +24,7 @@ export const ProjectsSection = () => {
 
         <div className="text-center mt-6">
           <a
-            className="cosmic-button w-fit flex items-center mx-auto gap-2"
+            className="bg-gradient-to-r from-blue-500 to-purple-500 cosmic-button font-semibold rounded-xl w-fit flex items-center mx-auto gap-2"
             target="_blank"
             href="https://github.com/wajahat-kamal"
           >
