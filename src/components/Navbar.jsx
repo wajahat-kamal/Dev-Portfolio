@@ -33,7 +33,7 @@ const Navbar = () => {
       <motion.header
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
         viewport={{ once: true }}
         className="w-full max-w-[950px] rounded-full bg-white/35 dark:bg-white/5 px-6 shadow-lg backdrop-blur-sm"
       >

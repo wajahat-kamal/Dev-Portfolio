@@ -1,10 +1,18 @@
-import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { Github, ArrowRight } from "lucide-react";
 import { projects } from "../assets/Data.js";
 import ProjectCard from "./ProjectCard.jsx";
+import { motion } from "framer-motion";
 
 export const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-18 px-4 relative">
+    <motion.section
+      id="projects"
+      className="py-18 px-4 relative"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      // viewport={{ once: true }}
+    >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-7 relative">
           <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide">
@@ -32,6 +40,6 @@ export const ProjectsSection = () => {
           </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
