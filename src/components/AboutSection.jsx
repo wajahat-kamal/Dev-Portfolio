@@ -21,8 +21,8 @@ export const AboutSection = () => {
         {/* ====== Text Content ====== */}
         <motion.div
           className="md:max-w-xl lg:max-w-[650px] w-full text-center md:text-left space-y-4 px-3 md:px-0"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
         >
@@ -49,8 +49,8 @@ export const AboutSection = () => {
         {/* ====== Profile Card ====== */}
         <motion.div
           className="w-[200px] sm:w-[160px] rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-700 shadow-xl p-3"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true }}
         >
@@ -68,7 +68,7 @@ export const AboutSection = () => {
               <img
                 src={liLogo}
                 alt="LinkedIn"
-                className="h-10 md:w-[80%] w-[55%] object-contain group-hover:scale-105 transition-transform duration-300"
+                className="h-10 md:w-[70%] w-[55%] object-contain group-hover:scale-105 transition-transform duration-300"
               />
             </a>
 
