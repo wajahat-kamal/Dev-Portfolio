@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, Home, User, FolderGit2, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 const navLinks = [
   { label: "Home", icon: Home },
@@ -29,7 +30,13 @@ const Navbar = () => {
   return (
     <div className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
       {/* ================= Header ================= */}
-      <header className="w-full max-w-[950px] rounded-full bg-white/35 dark:bg-white/5 px-6 shadow-lg backdrop-blur-sm">
+      <motion.header
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="w-full max-w-[950px] rounded-full bg-white/35 dark:bg-white/5 px-6 shadow-lg backdrop-blur-sm"
+      >
         <nav className="flex items-center justify-between py-3 text-white">
           {/* -------- Logo -------- */}
           <a
@@ -82,7 +89,7 @@ const Navbar = () => {
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </nav>
-      </header>
+      </motion.header>
 
       {/* ================= Mobile Overlay ================= */}
       {isOpen && (
