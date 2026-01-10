@@ -7,11 +7,11 @@ export const ProjectsSection = () => {
   return (
     <motion.section
       id="projects"
-      className="py-18 px-4 relative"
+      className="py-18 pt-32 px-4 relative"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      // viewport={{ once: true }}
+      viewport={{ once: true }}
     >
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-7 relative">
@@ -25,8 +25,8 @@ export const ProjectsSection = () => {
           crafted with attention to detail, performance, and user experience.
         </p>
         <div className="flex flex-wrap justify-center gap-4 max-sm:gap-4">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+          {projects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
 

@@ -1,9 +1,24 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
+import { motion } from "framer-motion";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
+  const cardAnimation = () => {
+    if (project.id === 1 || project.id === 3) {
+      return { x: -15 };
+    } else {
+      return { x: 15 };
+    }
+  };
+
   return (
-    <div className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-2 w-full md:w-[45%]">
+    <motion.div
+      initial={{ opacity: 0, y: 10, scale: 0.98, ...cardAnimation() }}
+      whileInView={{ opacity: 1, y: 0, scale: 1, x: 0 }}
+      transition={{ duration: 0.3, ease: "easeOut", delay: index * 0.15 }}
+      viewport={{ once: true }}
+      className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-1 hover:scale-105 w-full md:w-[45%]"
+    >
       {/* Image */}
       <div className="relative w-full h-30 sm:h-58 overflow-hidden">
         <img
@@ -69,7 +84,7 @@ const ProjectCard = ({ project }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
