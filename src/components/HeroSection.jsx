@@ -60,7 +60,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-zinc-400"
+          className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-zinc-400"
         >
           I build clean, modern, and high-performance web interfaces using MERN
           stack and Next.js. Focused on user experience and scalable
@@ -72,7 +72,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
-          className="mt-10 flex flex-wrap items-center justify-center gap-4"
+          className="mt-5 flex flex-wrap items-center justify-center gap-4"
         >
           <a
             href="#projects"
