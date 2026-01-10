@@ -7,7 +7,7 @@ export const ProjectsSection = () => {
   return (
     <motion.section
       id="projects"
-      className="py-18 pt-32 px-4 relative"
+      className="pt-20 md:pt-32 px-4 relative"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}

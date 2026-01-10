@@ -78,8 +78,8 @@ export const ContactSection = () => {
   };
 
   return (
-    <section className="mx-auto max-w-[990px] px-4 py-20" id="contact">
-      <div className="grid md:grid-cols-2 gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl md:p-10 p-5 shadow-xl">
+    <section className="mx-auto max-w-[990px] px-4 py-22" id="contact">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl md:p-10 p-5 shadow-xl">
         {/* ================= LEFT ================= */}
         <div>
           <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
@@ -91,7 +91,7 @@ export const ContactSection = () => {
             something modern and impactful together.
           </p>
 
-          <ul className="mt-10 space-y-6">
+          <ul className="mt-6 space-y-4">
             {[
               { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
               { icon: Phone, text: "+923102561812" },
@@ -109,7 +109,7 @@ export const ContactSection = () => {
             ))}
           </ul>
 
-          <div className="mt-10 flex gap-4">
+          <div className="mt-6 flex gap-4">
             {CONTACT_LINKS.map((item, i) => (
               <a
                 key={i}
@@ -127,7 +127,7 @@ export const ContactSection = () => {
         {/* ================= RIGHT (FORM) ================= */}
         <form
           onSubmit={onSubmit}
-          className="text-left rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 p-4 backdrop-blur-xl space-y-6"
+          className="text-left rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 p-4 backdrop-blur-xl space-y-4"
         >
           <input type="hidden" name="subject" value="New Contact Message" />
 
