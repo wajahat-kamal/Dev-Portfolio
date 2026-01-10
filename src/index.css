@@ -5,7 +5,7 @@
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
 
-  --color-primary: #677bfb;
+  --color-primary: #53cdfa;
   --color-primary-foreground: linear-gradient(
     to right,
     #60a5fa,

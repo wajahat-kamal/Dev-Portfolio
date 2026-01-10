@@ -17,7 +17,7 @@ const ProjectCard = ({ project, index }) => {
       whileInView={{ opacity: 1, y: 0, scale: 1, x: 0 }}
       transition={{ duration: 0.3, ease: "easeOut", delay: index * 0.15 }}
       viewport={{ once: true }}
-      className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-1 hover:scale-105 w-full md:w-[45%]"
+      className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-1 w-full md:w-[45%]"
     >
       {/* Image */}
       <div className="relative w-full h-30 sm:h-58 overflow-hidden">
