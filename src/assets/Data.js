@@ -41,23 +41,6 @@ export const projects = [
   },
   {
     id: 2,
-    title: "CHATIFY",
-    description:
-      "I built a responsive and interactive full stack chatbot using Next.js, Tailwind CSS, and the OpenAI API for smart, real-time conversations.",
-    image: wkChatbotImg,
-    tags: [
-      mongodbIcon,
-      reactIcon,
-      nextjsIcon,
-      tailwindcssIcon,
-      geminiIcon,
-    ],
-    demoURL: "https://chatify-wk.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/CHATIFY/",
-    date: "2025 December 7",
-  },
-  {
-    id: 3,
     title: "FOODIFY",
     description:
       "A modern and responsive restaurant full stack web app built with Next.js and Tailwind CSS. It features an elegant menu display, smooth ordering experience, and dynamic food management.",
@@ -68,27 +51,27 @@ export const projects = [
     date: "2025 Octuber 28",
   },
   {
-    id: 4,
+    id: 3,
     title: "HOMIFY",
     description:
       "Homify is a modern real estate website built with React.js and Tailwind CSS, featuring a clean UI, smooth animations, and an easy way to connect with me.",
     image: wkHomifyImg,
-    tags: [ nextjsIcon, reactIcon, tailwindcssIcon],
+    tags: [nextjsIcon, reactIcon, tailwindcssIcon],
     demoURL: "https://homify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/HOMIFY/",
     date: "2025 October 6",
   },
-  // {
-  //   id: 5,
-  //   title: "WK Shoes Store",
-  //   description:
-  //     "A modern online shoes store built with ReactJS and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
-  //   image: wkShoesStoreImg,
-  //   tags: [reactIcon, tailwindcssIcon],
-  //   demoURL: "https://wk-shoes-store.vercel.app/",
-  //   githubURL: "https://github.com/wajahat-kamal/WK-Shoes-Store.git",
-  //   date: "2025 July 5",
-  // },
+  {
+    id: 4,
+    title: "SHOEIFY",
+    description:
+      "A modern online shoes store built with React, TypeScript, TailwindCSS, and Redux, offering stylish, durable, and comfortable footwear for every step.",
+    image: wkShoesStoreImg,
+    tags: [reactIcon, typescriptIcon, tailwindcssIcon],
+    // demoURL: "https://shoeify-wk.vercel.app/",
+    githubURL: "https://github.com/wajahat-kamal/Shoeify-React",
+    date: "Working",
+  },
 ];
 
 // Skills Section
