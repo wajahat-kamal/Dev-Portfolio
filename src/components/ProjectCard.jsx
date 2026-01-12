@@ -21,12 +21,21 @@ const ProjectCard = ({ project, index }) => {
     >
       {/* Image */}
       <div className="relative w-full h-30 sm:h-58 overflow-hidden">
-        <img
-          src={project.image}
-          alt={project.title}
-          loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            loading="lazy"
+            className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+          />
+        ) : (
+          <div className="w-full h-full flex justify-center items-center bg-gray-800 dark:bg-gray-900">
+            <h2 className="text-2xl font-bold text-white text-center px-4">
+              Currently Working on Project
+            </h2>
+          </div>
+        )}
+
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
 
         {/* Tags */}
