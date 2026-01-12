@@ -65,7 +65,7 @@ export const projects = [
     id: 4,
     title: "SHOEIFY",
     description:
-      "A modern online shoes store built with React, TypeScript, TailwindCSS, and Redux, offering stylish, durable, and comfortable footwear for every step.",
+      "A modern online shoes store built with React, TypeScript, and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
     image: wkShoesStoreImg,
     tags: [reactIcon, typescriptIcon, tailwindcssIcon],
     // demoURL: "https://shoeify-wk.vercel.app/",
