@@ -1,24 +1,43 @@
 import React from "react";
 import { skills } from "../assets/Data";
+import { motion, useAnimationFrame, useMotionValue } from "framer-motion";
 
 function SkillsSection() {
+  const x = useMotionValue(0);
+
+  const SPEED = 80;
+
+  useAnimationFrame((t, delta) => {
+    x.set(x.get() - (SPEED * delta) / 1000);
+
+    if (x.get() <= -window.innerWidth) {
+      x.set(0);
+    }
+  });
+
   return (
     <div className="w-full overflow-hidden py-6 relative">
       {/* ====== Infinite Sliding Animation ====== */}
       <div className="flex flex-col gap-3">
         {/* First Row */}
-        <div className="flex animate-slide gap-2 md:gap-3 w-max">
+        <motion.div
+          style={{ x }}
+          className="flex animate-slide gap-2 md:gap-3 w-max"
+        >
           {[...skills, ...skills].map((skill, index) => (
             <SkillCard key={index} skill={skill} />
           ))}
-        </div>
+        </motion.div>
 
         {/* Second Row - Opposite Direction for Variation */}
-        <div className="flex animate-slide-reverse gap-2 md:gap-3 w-max">
+        <motion.div
+          style={{ x }}
+          className="flex animate-slide-reverse gap-2 md:gap-3 w-max"
+        >
           {[...skills, ...skills].map((skill, index) => (
             <SkillCard key={index} skill={skill} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
