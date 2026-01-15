@@ -1,7 +1,6 @@
 // Import project images
 import wkGlobifyImg from "./projects/wk-Globify.png";
-import wkShoesStoreImg from "./projects/WK-Shoes-Store.png";
-import wkChatbotImg from "./projects/wk-chatify.png";
+import wkShoeifyImg from "./projects/wk-shoeify.png";
 import wkHomifyImg from "./projects/wk-homify.png";
 import wkFoodifyImg from "./projects/wk-foodify.png";
 
@@ -37,7 +36,7 @@ export const projects = [
     ],
     demoURL: "https://globify-wk.vercel.app",
     githubURL: "https://github.com/wajahat-kamal/GLOBIFY/",
-    date: "2025 Sept 18",
+    date: "18 Sept 2025",
   },
   {
     id: 2,
@@ -48,7 +47,7 @@ export const projects = [
     tags: [nextjsIcon, reactIcon, typescriptIcon, tailwindcssIcon, mongodbIcon],
     demoURL: "https://foodify-wk.vercel.app",
     githubURL: "https://github.com/wajahat-kamal/FOODIFY/",
-    date: "2025 Octuber 28",
+    date: "1 December 2025",
   },
   {
     id: 3,
@@ -59,18 +58,18 @@ export const projects = [
     tags: [nextjsIcon, reactIcon, tailwindcssIcon],
     demoURL: "https://homify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/HOMIFY/",
-    date: "2025 October 6",
+    date: "6 October 2025",
   },
   {
     id: 4,
     title: "SHOEIFY",
     description:
       "A modern online shoes store built with React, TypeScript, and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
-    image: null,
+    image: wkShoeifyImg,
     tags: [reactIcon, typescriptIcon, tailwindcssIcon],
-    // demoURL: "https://shoeify-wk.vercel.app/",
+    demoURL: "https://shoeify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/Shoeify-React",
-    date: "Working",
+    date: "10 Jan 2026",
   },
 ];
 
