@@ -39,7 +39,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="mt-4 text-2xl md:text-4xl font-medium text-zinc-600 dark:text-zinc-400"
+          className="mt-4 text-2xl md:text-[40px] font-medium text-zinc-600 dark:text-zinc-400"
         >
           {/* Typing Effect */}
           <TypingEffect
