@@ -10,6 +10,7 @@ import mongodbIcon from "./skills/mongodb-icon.svg";
 import expressjsIcon from "./skills/express-icon.png";
 import nodejsIcon from "./skills/Nodejs-icon.svg";
 import reactIcon from "./skills/React-icon.svg";
+import reduxIcon from "./skills/redux-icon.svg";
 import typescriptIcon from "./skills/typescript-icon.svg";
 import javascriptIcon from "./skills/javascript-icon.svg";
 import tailwindcssIcon from "./skills/tailwindcss-icon.svg";
@@ -66,7 +67,7 @@ export const projects = [
     description:
       "A modern online shoes store built with React, TypeScript, and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
     image: wkShoeifyImg,
-    tags: [reactIcon, typescriptIcon, tailwindcssIcon],
+    tags: [reactIcon, typescriptIcon, tailwindcssIcon, reduxIcon],
     demoURL: "https://shoeify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/Shoeify-React",
     date: "10 Jan 2026",
@@ -84,6 +85,7 @@ export const skills = [
   },
   { name: "Node.js", image: nodejsIcon, category: "Backend" },
   { name: "React", image: reactIcon, category: "Frontend" },
+  { name: "Redux", image: reduxIcon, category: "Frontend" },
   {
     name: "TypeScript",
     image: typescriptIcon,
