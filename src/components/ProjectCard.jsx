@@ -20,7 +20,7 @@ const ProjectCard = ({ project, index }) => {
       className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-1 w-full md:w-[45%]"
     >
       {/* Image */}
-      <div className="relative w-full h-30 sm:h-58 overflow-hidden">
+      <div className="relative w-full h-30 sm:h-56 overflow-hidden">
         {project.image ? (
           <img
             src={project.image}
@@ -39,7 +39,7 @@ const ProjectCard = ({ project, index }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
 
         {/* Tags */}
-        <div className="absolute -bottom-0.5 right-0 w-full flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/20 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
+        <div className="absolute -bottom-0.5 right-0 w-full flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
           {project.tags.map((tag, index) => (
             <div key={index} className="relative group">
               <img

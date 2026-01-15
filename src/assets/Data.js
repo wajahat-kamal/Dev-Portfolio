@@ -59,7 +59,7 @@ export const projects = [
     tags: [nextjsIcon, reactIcon, tailwindcssIcon],
     demoURL: "https://homify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/HOMIFY/",
-    date: "6 October 2025",
+    date: "10 October 2025",
   },
   {
     id: 4,
@@ -70,7 +70,7 @@ export const projects = [
     tags: [reactIcon, typescriptIcon, tailwindcssIcon, reduxIcon],
     demoURL: "https://shoeify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/Shoeify-React",
-    date: "10 Jan 2026",
+    date: "15 Jan 2026",
   },
 ];
 
