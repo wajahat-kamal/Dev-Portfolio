@@ -79,7 +79,7 @@ export const ContactSection = () => {
 
   return (
     <section className="mx-auto max-w-[990px] px-4 py-22" id="contact">
-      <div className="grid md:grid-cols-2 gap-8 md:gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-white/60 dark:bg-zinc-900/40 backdrop-blur-xl md:p-10 p-5 shadow-xl">
+      <div className="grid md:grid-cols-2 gap-8 md:gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-[#0A0F1C] backdrop-blur-xl md:p-10 p-5 shadow-xl">
         {/* ================= LEFT ================= */}
         <div>
           <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
@@ -99,9 +99,9 @@ export const ContactSection = () => {
             ].map(({ icon: Icon, text }, i) => (
               <li
                 key={i}
-                className="flex items-center gap-4 text-sm text-zinc-600 dark:text-zinc-400"
+                className="flex items-center gap-4 text-sm text-zinc-400"
               >
-                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-200 dark:border-zinc-700">
+                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-700">
                   <Icon className="w-5 h-5 text-blue-500" />
                 </div>
                 {text}
@@ -115,8 +115,8 @@ export const ContactSection = () => {
                 key={i}
                 href={item.url}
                 target="_blank"
-                className="h-11 w-11 rounded-full flex items-center justify-center
-                bg-zinc-900 text-white hover:scale-110 transition"
+                className="h-11 w-11 rounded-full flex items-center justify-center  border border-zinc-700
+              bg-gradient-to-br from-blue-500/10 to-purple-500/10 text-blue-500 hover:scale-110 transition"
               >
                 {item.icon}
               </a>
@@ -127,7 +127,7 @@ export const ContactSection = () => {
         {/* ================= RIGHT (FORM) ================= */}
         <form
           onSubmit={onSubmit}
-          className="text-left rounded-2xl bg-white/80 dark:bg-zinc-900/70 border border-zinc-200 dark:border-zinc-800 p-4 backdrop-blur-xl space-y-4"
+          className="text-left rounded-2xl bg-[#0c101b] border border-zinc-200 dark:border-zinc-800 p-4 backdrop-blur-xl space-y-4"
         >
           <input type="hidden" name="subject" value="New Contact Message" />
 
