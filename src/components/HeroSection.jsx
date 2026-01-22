@@ -69,7 +69,7 @@ export default function HeroSection() {
         <motion.h2
           {...fadeUp}
           transition={{ delay: 0.3 }}
-          className="mt-4 text-2xl font-medium text-zinc-600 dark:text-zinc-400 md:text-5xl"
+          className="mt-4 text-2xl sm:text-4xl font-medium text-zinc-600 dark:text-zinc-400 md:text-5xl"
         >
           <TypingEffect
             text={["Full Stack Developer"]}
@@ -88,7 +88,7 @@ export default function HeroSection() {
         <motion.p
           {...fadeUp}
           transition={{ delay: 0.4 }}
-          className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-zinc-300"
+          className="mx-auto mt-4 max-w-sm md:max-w-xl text-sm leading-relaxed text-zinc-300"
         >
           I build clean, modern, and high-performance web interfaces using MERN
           stack and Next.js. Focused on user experience and scalable
