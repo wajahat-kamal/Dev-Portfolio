@@ -17,9 +17,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-lg uppercase tracking-widest text-zinc-400"
+          className="text-xl uppercase tracking-widest text-zinc-100"
         >
-          Hey, I’m
+          Hi, I’m
         </motion.p>
 
         {/* Name */}
@@ -27,9 +27,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-4xl font-bold tracking-tight sm:text-6xl"
+          className="text-4xl font-bold tracking-tight sm:text-7xl"
         >
-          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#BB86FC] via-[#53DAFA] to-[#3471EB] bg-clip-text text-transparent">
             Wajahat Kamal
           </span>
         </motion.h1>
@@ -39,7 +39,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="mt-4 text-2xl md:text-[40px] font-medium text-zinc-600 dark:text-zinc-400"
+          className="mt-4 text-2xl md:text-5xl font-medium text-zinc-600 dark:text-zinc-400"
         >
           {/* Typing Effect */}
           <TypingEffect
