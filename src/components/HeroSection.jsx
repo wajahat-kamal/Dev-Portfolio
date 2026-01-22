@@ -88,11 +88,16 @@ export default function HeroSection() {
         <motion.p
           {...fadeUp}
           transition={{ delay: 0.4 }}
-          className="mx-auto mt-4 max-w-sm md:max-w-xl text-xs sm:text-sm leading-relaxed text-zinc-300"
+          className="mx-auto mt-4 max-w-sm md:max-w-xl text-sm leading-relaxed text-zinc-300"
         >
-          I build clean, modern, and high-performance web interfaces using MERN
-          stack and Next.js. Focused on user experience and scalable
-          architecture.
+          <span className="hidden md:block text-zinc-300">
+            I build clean, modern, and fast web interfaces using MERN stack and Next.js,
+            focusing on user experience and making apps easy to scale.
+          </span>
+
+          <span className="block md:hidden text-zinc-300">
+            I build fast, modern web apps with MERN & Next.js, focusing on user experience and scalability.
+          </span>
         </motion.p>
 
         {/* CTA */}
