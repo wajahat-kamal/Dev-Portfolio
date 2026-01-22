@@ -39,7 +39,7 @@ export const AboutSection = () => {
             a passionate{" "}
             <span className="text-purple-400">Full Stack Developer</span> who
             loves building modern, responsive, and high-performance web
-            applications using the MERN Stack. I enjoy turning ideas into
+            applications using the MERN Stack and Next.js. I enjoy turning ideas into
             interactive digital experiences that are both visually appealing and
             user-friendly. My goal is to write clean, efficient code and keep
             learning new technologies to grow as a developer.
