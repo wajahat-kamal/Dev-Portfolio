@@ -99,24 +99,33 @@ export default function HeroSection() {
         <motion.div
           {...fadeUp}
           transition={{ delay: 0.5 }}
-          className="mt-6 flex flex-wrap items-center justify-center gap-4"
+          className="mt-8 flex flex-wrap justify-center gap-4"
         >
+          {/* Primary CTA */}
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:scale-[1.05] hover:shadow-xl"
+            className="group relative inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 
+               px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 
+               hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
           >
             View Projects
-            <ArrowRight className="h-4 w-4" />
+            <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </a>
 
+          {/* Secondary CTA */}
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-xl border border-zinc-300 px-6 py-3 text-sm font-medium text-zinc-700 transition hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800"
+            className="group inline-flex items-center gap-2 rounded-2xl border border-zinc-300 
+               px-6 py-3 text-sm font-medium text-zinc-700 transition-all duration-300 
+               hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 
+               focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2"
           >
             Contact Me
-            <Mail className="h-4 w-4" />
+            <Mail className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
           </a>
         </motion.div>
+
+
       </div>
     </section>
   );
