@@ -17,9 +17,9 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-xl uppercase tracking-widest text-zinc-100"
+          className="text-xl  tracking-widest text-zinc-100"
         >
-          Hi, I’m
+          Hey, I'm
         </motion.p>
 
         {/* Name */}
@@ -60,7 +60,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-zinc-400"
+          className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-zinc-300"
         >
           I build clean, modern, and high-performance web interfaces using MERN
           stack and Next.js. Focused on user experience and scalable
