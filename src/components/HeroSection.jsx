@@ -88,7 +88,7 @@ export default function HeroSection() {
         <motion.p
           {...fadeUp}
           transition={{ delay: 0.4 }}
-          className="mx-auto mt-4 max-w-sm md:max-w-xl text-sm leading-relaxed text-zinc-300"
+          className="mx-auto mt-4 max-w-sm md:max-w-xl text-xs sm:text-sm leading-relaxed text-zinc-300"
         >
           I build clean, modern, and high-performance web interfaces using MERN
           stack and Next.js. Focused on user experience and scalable
