@@ -20,7 +20,7 @@ export default function HeroSection() {
         <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-blue-500/25 via-cyan-400/25 to-purple-500/25 blur-3xl" />
       </div>
 
-      <div className="mx-auto mt-20 max-w-6xl px-6 text-center">
+      <div className="mx-auto md:mt-15 mt-30 max-w-6xl px-6 text-center">
         {/* Availability badge */}
         <span
           className="inline-flex items-center rounded-full border border-purple-500/30 bg-gradient-to-r from-purple-900/50 to-cyan-900/50 px-4 py-1.5 text-sm text-zinc-100"
@@ -47,7 +47,7 @@ export default function HeroSection() {
         <motion.p
           {...fadeUp}
           transition={{ delay: 0.1 }}
-          className="mt-6 text-xl tracking-widest text-zinc-100"
+          className="mt-4 text-xl tracking-widest text-zinc-100"
         >
           Hey, I'm
         </motion.p>
@@ -104,7 +104,7 @@ export default function HeroSection() {
         <motion.div
           {...fadeUp}
           transition={{ delay: 0.5 }}
-          className="mt-8 flex flex-wrap justify-center gap-4"
+          className="mt-5 flex flex-wrap justify-center gap-4"
         >
           {/* Primary CTA */}
           <a
