@@ -23,7 +23,7 @@ export default function HeroSection() {
       <div className="mx-auto mt-20 max-w-6xl px-6 text-center">
         {/* Availability badge */}
         <span
-          className="inline-flex items-center rounded-full border border-purple-500/30 bg-gradient-to-r from-purple-900/50 to-cyan-900/50 px-4 py-2 text-sm text-zinc-100"
+          className="inline-flex items-center rounded-full border border-purple-500/30 bg-gradient-to-r from-purple-900/50 to-cyan-900/50 px-4 py-1.5 text-sm text-zinc-100"
           style={{
             boxShadow: "0 0 32px rgba(168, 85, 247, 0.42)",
           }}
