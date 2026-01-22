@@ -48,39 +48,37 @@ const Navbar = () => {
           </a>
 
           {/* -------- Desktop Menu -------- */}
-          <div className="hidden md:flex items-center gap-x-6 text-sm">
+          <div className="hidden md:flex items-center gap-x-5 text-sm">
             {navLinks.map(({ label, icon: Icon }) => {
               const isActive = activeLink === label;
 
               return (
-                <>
-                  <a
-                    key={label}
-                    href={`#${label.toLowerCase()}`}
-                    onClick={() => handleNavClick(label)}
-                    aria-current={isActive ? "page" : undefined}
-                    className={`group relative flex items-center gap-2 font-mono font-medium transition-colors duration-300
+                <a
+                  key={label}
+                  href={`#${label.toLowerCase()}`}
+                  onClick={() => handleNavClick(label)}
+                  aria-current={isActive ? "page" : undefined}
+                  className={`group relative flex items-center gap-2 font-mono font-medium transition-colors duration-300
                     ${isActive ? "text-white" : "text-zinc-400 hover:text-white"
-                      }
+                    }
                   `}
-                  >
-                    <Icon className="w-4 h-4" />
-                    {label}
+                >
+                  <Icon className="w-4 h-4" />
+                  {label}
 
-                    <span
-                      className={`absolute left-0 -bottom-1 h-0.5 w-full
+                  <span
+                    className={`absolute left-0 -bottom-1 h-0.5 w-full
                       bg-primary
                       origin-left transform transition-transform duration-300
                       ${isActive ? "scale-x-100" : "scale-x-0"}
                     `}
-                    />
-                  </a>
-                  
-                </>
+                  />
+                </a>
               );
             })}
-            <div>
-              <Linkedin />
+            <div className="flex justify-center items-center flex-row">
+              <div className="mr-4 w-0.5 h-7 bg-zinc-400"/>
+              <Linkedin className="text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer"/>
             </div>
           </div>
 
