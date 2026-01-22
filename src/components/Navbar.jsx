@@ -77,8 +77,10 @@ const Navbar = () => {
               );
             })}
             <div className="flex justify-center items-center flex-row">
-              <div className="mr-4 w-0.5 h-7 bg-zinc-400"/>
-              <Linkedin className="text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer"/>
+              <div className="mr-4 w-0.5 h-7 bg-zinc-400" />
+              <a href="https://linkedin.com/in/wajahat-kamal/" t>
+                <Linkedin className="text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer" />
+              </a>
             </div>
           </div>
 
