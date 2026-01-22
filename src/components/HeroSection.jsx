@@ -31,7 +31,7 @@ export default function HeroSection() {
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
-          className={className}
+          className="mr-2 h-4 w-4 text-purple-400"
         >
             <path
               fillRule="evenodd"
@@ -59,11 +59,7 @@ export default function HeroSection() {
           className="text-4xl font-bold tracking-tight sm:text-7xl"
         >
           <span
-            className="bg-gradient-to-r from-[#BB86FC] via-[#53DAFA] to-[#3471EB] bg-clip-text text-transparent"
-          // style={{
-          //   textShadow:
-          //     "0 2px 12px rgba(187,134,252,.55), 0 6px 28px rgba(83,218,250,.35)",
-          // }}
+            className="bg-gradient-to-r from-[#b379fa] via-[#3fb8d3] to-[#3471EB] bg-clip-text text-transparent"
           >
             Wajahat Kamal
           </span>
