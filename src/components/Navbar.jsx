@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Home, User, FolderGit2, Mail } from "lucide-react";
+import { Menu, X, Home, User, FolderGit2, Mail, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navLinks = [
@@ -53,30 +53,35 @@ const Navbar = () => {
               const isActive = activeLink === label;
 
               return (
-                <a
-                  key={label}
-                  href={`#${label.toLowerCase()}`}
-                  onClick={() => handleNavClick(label)}
-                  aria-current={isActive ? "page" : undefined}
-                  className={`group relative flex items-center gap-2 font-mono font-medium transition-colors duration-300
-                    ${
-                      isActive ? "text-white" : "text-zinc-400 hover:text-white"
-                    }
+                <>
+                  <a
+                    key={label}
+                    href={`#${label.toLowerCase()}`}
+                    onClick={() => handleNavClick(label)}
+                    aria-current={isActive ? "page" : undefined}
+                    className={`group relative flex items-center gap-2 font-mono font-medium transition-colors duration-300
+                    ${isActive ? "text-white" : "text-zinc-400 hover:text-white"
+                      }
                   `}
-                >
-                  <Icon className="w-4 h-4" />
-                  {label}
+                  >
+                    <Icon className="w-4 h-4" />
+                    {label}
 
-                  <span
-                    className={`absolute left-0 -bottom-1 h-0.5 w-full
+                    <span
+                      className={`absolute left-0 -bottom-1 h-0.5 w-full
                       bg-primary
                       origin-left transform transition-transform duration-300
                       ${isActive ? "scale-x-100" : "scale-x-0"}
                     `}
-                  />
-                </a>
+                    />
+                  </a>
+                  
+                </>
               );
             })}
+            <div>
+              <Linkedin />
+            </div>
           </div>
 
           {/* -------- Mobile Toggle -------- */}
