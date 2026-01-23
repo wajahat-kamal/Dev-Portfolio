@@ -42,7 +42,7 @@ export const AboutSection = () => {
             applications using the MERN Stack and Next.js. I enjoy turning ideas into
             interactive digital experiences that are both visually appealing and
             user-friendly. My goal is to write clean, efficient code and keep
-            learning new technologies to grow as a developer. and currently i'm exploring Frappe / 
+            learning new technologies to grow as a developer. and currently i'm exploring Frappe / ERPNext
           </p>
         </motion.div>
 
