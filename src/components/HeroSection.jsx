@@ -40,7 +40,7 @@ export default function HeroSection() {
             />
           </svg>
 
-          Available for Fre Work
+          Available for Work
         </span>
 
         {/* Intro */}
