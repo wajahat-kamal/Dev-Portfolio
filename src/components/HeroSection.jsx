@@ -40,7 +40,7 @@ export default function HeroSection() {
             />
           </svg>
 
-          Available for Freelance Work
+          Available for Fre Work
         </span>
 
         {/* Intro */}
