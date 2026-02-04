@@ -13,6 +13,7 @@ import reactIcon from "./skills/React-icon.svg";
 import reduxIcon from "./skills/redux-icon.svg";
 import typescriptIcon from "./skills/typescript-icon.svg";
 import javascriptIcon from "./skills/javascript-icon.svg";
+import pythonIcon from "./skills/python-icon.png"
 import tailwindcssIcon from "./skills/tailwindcss-icon.svg";
 import css3Icon from "./skills/css3-icon.svg";
 import html5Icon from "./skills/html5-icon.svg";
@@ -97,7 +98,7 @@ export const skills = [
     category: "Frontend",
   },
   {
-    name: "Python"
+    name: "Python",
     image: pythonIcon,
   },
   {
