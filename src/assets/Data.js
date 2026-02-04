@@ -100,6 +100,7 @@ export const skills = [
   {
     name: "Python",
     image: pythonIcon,
+    category: "Backend"
   },
   {
     name: "Tailwind",
