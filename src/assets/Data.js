@@ -97,11 +97,11 @@ export const skills = [
     image: javascriptIcon,
     category: "Frontend",
   },
-  {
-    name: "Python",
-    image: pythonIcon,
-    category: "Backend"
-  },
+  // {
+  //   name: "Python",
+  //   image: pythonIcon,
+  //   category: "Backend"
+  // },
   {
     name: "Tailwind",
     image: tailwindcssIcon,
