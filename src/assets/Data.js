@@ -97,6 +97,7 @@ export const skills = [
     category: "Frontend",
   },
   {
+    name: "Python"
     
   },
   {
