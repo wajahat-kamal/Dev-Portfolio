@@ -97,6 +97,9 @@ export const skills = [
     category: "Frontend",
   },
   {
+    
+  },
+  {
     name: "Tailwind",
     image: tailwindcssIcon,
     category: "Frontend",
