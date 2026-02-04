@@ -98,7 +98,7 @@ export const skills = [
   },
   {
     name: "Python"
-    
+    image: pythonIcon,
   },
   {
     name: "Tailwind",
