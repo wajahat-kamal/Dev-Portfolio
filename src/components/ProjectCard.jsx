@@ -20,7 +20,7 @@ const ProjectCard = ({ project, index }) => {
       className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-1 w-full md:w-[45%]"
     >
       {/* Image */}
-      <div className="relative w-full h-30 sm:h-56 overflow-hidden">
+      <div className="relative w-full h-32 sm:h-56 overflow-hidden">
         {project.image ? (
           <img
             src={project.image}
