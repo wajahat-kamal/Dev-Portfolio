@@ -5,6 +5,7 @@ import SkillsSection from "./SkillsSection";
 import liLogo from "../assets/icons/linkedin-logo.png";
 import giLogo from "../assets/icons/github-logo.png";
 import { ExternalLink } from "lucide-react";
+import LinkedInBadge from "./LinkedInBadge";
 
 export const AboutSection = () => {
   return (
@@ -59,7 +60,7 @@ export const AboutSection = () => {
             Profiles
           </h1>
 
-          <div className="flex flex-col gap-2">
+          {/* <div className="flex flex-col gap-2">
             <a
               href="https://www.linkedin.com/in/wajahat-kamal/"
               target="_blank"
@@ -83,7 +84,8 @@ export const AboutSection = () => {
                 className="h-12 w-full object-contain group-hover:scale-105 transition-transform duration-300"
               />
             </a>
-          </div>
+          </div> */}
+          <LinkedInBadge/>
         </motion.div>
       </div>
 
