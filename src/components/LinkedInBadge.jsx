@@ -2,9 +2,18 @@ import { useEffect } from "react";
 
 const LinkedInBadge = () => {
   useEffect(() => {
-    if (window.LI) {
-      window.LI.ProfileBadge.init();
-    }
+    // remove old script if exists
+    const oldScript = document.getElementById("linkedin-badge-script");
+    if (oldScript) oldScript.remove();
+
+    // create new script
+    const script = document.createElement("script");
+    script.src = "https://platform.linkedin.com/badges/js/profile.js";
+    script.async = true;
+    script.defer = true;
+    script.id = "linkedin-badge-script";
+
+    document.body.appendChild(script);
   }, []);
 
   return (
@@ -16,6 +25,7 @@ const LinkedInBadge = () => {
       data-type="VERTICAL"
       data-vanity="wajahat-kamal-118b01372"
       data-version="v1"
+      style={{ minHeight: "250px" }}
     ></div>
   );
 };
