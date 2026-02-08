@@ -63,16 +63,21 @@ export const AboutSection = () => {
             <a
               href="https://www.linkedin.com/in/wajahat-kamal/"
               target="_blank"
-              className="group w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm flex items-center justify-center hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
+              className="group w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
             >
               <img
                 src={liLogo}
                 alt="LinkedIn"
-                className="h-10 md:w-[70%] w-[55%] object-contain group-hover:scale-105 transition-transform duration-300"
+                className="h-4 md:w-40 w-20 object-contain group-hover:scale-105 transition-transform duration-300"
               />
+              <div>
+                <img src="" alt="" />
+                <h1></h1>
+                <p></p>
+              </div>
             </a>
 
-            <a
+            {/* <a
               href="https://github.com/wajahat-kamal"
               target="_blank"
               className="group w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm flex items-center justify-center hover:-translate-y-0.5 hover:border-zinc-500 hover:shadow-zinc-500/20 transition-all duration-300"
@@ -82,7 +87,7 @@ export const AboutSection = () => {
                 alt="GitHub"
                 className="h-12 w-full object-contain group-hover:scale-105 transition-transform duration-300"
               />
-            </a>
+            </a> */}
           </div>
         </motion.div>
       </div>
