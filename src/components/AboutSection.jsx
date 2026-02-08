@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import SkillsSection from "./SkillsSection";
 import liLogo from "../assets/icons/linkedin-logo.png";
 import giLogo from "../assets/icons/github-logo.png";
-import wajImage from "../assets/icons/wk-image.png";
+import wajImage from "../assets/icons/wk-image.jpg";
 
 import { ExternalLink } from "lucide-react";
 
