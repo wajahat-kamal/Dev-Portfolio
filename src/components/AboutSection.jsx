@@ -50,7 +50,7 @@ export const AboutSection = () => {
 
         {/* ====== Profile Card ====== */}
         <motion.div
-          className="w-[200px] sm:w-[300px] rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-700 shadow-xl p-3"
+          className="w-[240px] sm:w-[300px] rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-700 shadow-xl p-3"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
@@ -61,11 +61,11 @@ export const AboutSection = () => {
             Profiles
           </h1>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-1">
             <a
               href="https://www.linkedin.com/in/wajahat-kamal/"
               target="_blank"
-              className="group w-full px-1 py-2 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
+              className="group w-full p-1 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
             >
 
               <div className="flex justify-center items-center flex-row">
@@ -85,7 +85,7 @@ export const AboutSection = () => {
             <a
               href="https://github.com/wajahat-kamal"
               target="_blank"
-              className="group w-full px-1 py-2 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
+              className="group w-full p-1 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
             >
               <div className="flex justify-center items-center flex-row">
                 <img src={wajImage} className="h-15 w-15 rounded-full" alt="" />
@@ -93,7 +93,7 @@ export const AboutSection = () => {
                   <img
                     src={giLogo}
                     alt="Github"
-                    className="h-4 w-14"
+                    className="h-4 w-13"
                   />
                   <h1 className="text-md font-semibold">Wajahat Kamal</h1>
                   <p className="text-xs">Full Stack Developer</p>
