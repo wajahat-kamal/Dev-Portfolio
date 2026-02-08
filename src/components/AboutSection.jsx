@@ -50,7 +50,7 @@ export const AboutSection = () => {
 
         {/* ====== Profile Card ====== */}
         <motion.div
-          className="w-[200px] sm:w-[300px] rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-700 shadow-xl p-3"
+          className="w-[200px] sm:w-[300px] rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-700 shadow-xl py-3 px-2"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
@@ -65,16 +65,18 @@ export const AboutSection = () => {
             <a
               href="https://www.linkedin.com/in/wajahat-kamal/"
               target="_blank"
-              className="group w-full p-1 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
+              className="group w-full px-1 py-2 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
             >
-              {/* <img
-                src={liLogo}
-                alt="LinkedIn"
-                className="h-4 md:w-40 w-20 object-contain group-hover:scale-105 transition-transform duration-300"
-              /> */}
+
               <div className="flex justify-center items-center flex-row">
-                <img src={wajImage} className="h-13 w-13 rounded-full" alt="" />
+                <img src={wajImage} className="h-14 w-14 rounded-full" alt="" />
                 <div className="flex flex-col text-start ml-1">
+                  <img
+                    src={liLogo}
+                    alt="LinkedIn"
+                    className="h-3 w-15"
+                    // className="h-4 md:w-40 w-20 object-contain group-hover:scale-105 transition-transform duration-300"
+                  />
                   <h1 className="text-md font-semibold">Wajahat Kamal</h1>
                   <p className="text-xs">Full Stack Web Developer</p>
                   {/* <p className="text-xs">Full Stack Web Developer | MERN & Next.js | JavaScript & TypeScript | Exploring Frappe & ERPNext</p> */}
