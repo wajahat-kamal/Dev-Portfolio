@@ -93,7 +93,7 @@ export const AboutSection = () => {
                   <img
                     src={giLogo}
                     alt="Github"
-                    className="h-4 w-20"
+                    className="h-4 w-14"
                   />
                   <h1 className="text-md font-semibold">Wajahat Kamal</h1>
                   <p className="text-xs">Full Stack Developer</p>
