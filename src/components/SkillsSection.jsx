@@ -3,7 +3,7 @@ import { skills } from "../assets/Data";
 
 function SkillsSection() {
   return (
-    <div className="w-full overflow-hidden py-6 relative">
+    <div className="w-full overflow-hidden py-4 relative">
       {/* ====== Infinite Sliding Animation ====== */}
       <div className="flex flex-col gap-3">
         {/* First Row */}

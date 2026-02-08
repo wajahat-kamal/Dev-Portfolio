@@ -106,7 +106,7 @@ export const AboutSection = () => {
 
       {/* ====== Skills Section ====== */}
       <motion.div
-        className="mt-5 w-[93%] md:w-[80%] lg:w-[71%] border-t border-gray-700/30 pt-4"
+        className="mt-1 w-[93%] md:w-[80%] lg:w-[71%] border-t border-gray-700/30 pt-2"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
