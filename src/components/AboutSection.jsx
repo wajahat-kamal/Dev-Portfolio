@@ -82,17 +82,24 @@ export const AboutSection = () => {
               </div>
             </a>
 
-            {/* <a
+            <a
               href="https://github.com/wajahat-kamal"
               target="_blank"
-              className="group w-full h-10 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm flex items-center justify-center hover:-translate-y-0.5 hover:border-zinc-500 hover:shadow-zinc-500/20 transition-all duration-300"
+              className="group w-full px-1 py-2 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
             >
-              <img
-                src={giLogo}
-                alt="GitHub"
-                className="h-12 w-full object-contain group-hover:scale-105 transition-transform duration-300"
-              />
-            </a> */}
+              <div className="flex justify-center items-center flex-row">
+                <img src={wajImage} className="h-15 w-15 rounded-full" alt="" />
+                <div className="flex flex-col text-start ml-2">
+                  <img
+                    src={giLogo}
+                    alt="Github"
+                    className="h-3 w-15"
+                  />
+                  <h1 className="text-md font-semibold">Wajahat Kamal</h1>
+                  <p className="text-xs">Full Stack Developer</p>
+                </div>
+              </div>
+            </a>
           </div>
         </motion.div>
       </div>
