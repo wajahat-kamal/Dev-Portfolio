@@ -50,7 +50,7 @@ export const AboutSection = () => {
 
         {/* ====== Profile Card ====== */}
         <motion.div
-          className="w-[200px] sm:w-[300px] rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-700 shadow-xl py-3 px-2"
+          className="w-[200px] sm:w-[300px] rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-700 shadow-xl p-3"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
@@ -69,17 +69,15 @@ export const AboutSection = () => {
             >
 
               <div className="flex justify-center items-center flex-row">
-                <img src={wajImage} className="h-14 w-14 rounded-full" alt="" />
-                <div className="flex flex-col text-start ml-1">
+                <img src={wajImage} className="h-15 w-15 rounded-full" alt="" />
+                <div className="flex flex-col text-start ml-2">
                   <img
                     src={liLogo}
                     alt="LinkedIn"
                     className="h-3 w-15"
-                    // className="h-4 md:w-40 w-20 object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                   <h1 className="text-md font-semibold">Wajahat Kamal</h1>
-                  <p className="text-xs">Full Stack Web Developer</p>
-                  {/* <p className="text-xs">Full Stack Web Developer | MERN & Next.js | JavaScript & TypeScript | Exploring Frappe & ERPNext</p> */}
+                  <p className="text-xs">Full Stack Developer</p>
                 </div>
               </div>
             </a>
