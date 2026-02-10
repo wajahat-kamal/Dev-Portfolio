@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Menu, X, Home, User, FolderGit2, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import linkedinLogo from "../assets/icons/linkedin-icon.webp"
-import githubLogo from "../assets/icons/github-icon.png"
 
 
 const navLinks = [
