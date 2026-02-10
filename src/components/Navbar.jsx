@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Home, User, FolderGit2, Mail, Linkedin } from "lucide-react";
+import { Menu, X, Home, User, FolderGit2, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import linkedinLogo from "../assets/icons/linkedin-icon.webp"
+import githubLogo from "../assets/icons/github-icon.png"
+
 
 const navLinks = [
   { label: "Home", icon: Home },
@@ -80,7 +82,10 @@ const Navbar = () => {
             <div className="flex justify-center items-center flex-row">
               <div className="mr-4 w-0.5 h-7 bg-zinc-400" />
               <a href="https://linkedin.com/in/wajahat-kamal/" target="_blank">
-                <img src={linkedinLogo} className="text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer" />
+                <img src={linkedinLogo} className="w-7 h-7 text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer" />
+              </a>
+              <a href="https://linkedin.com/in/wajahat-kamal/" target="_blank">
+                <img src={githubLogo} className="w-7 h-7 text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer" />
               </a>
             </div>
           </div>
