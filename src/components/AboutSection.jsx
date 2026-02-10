@@ -2,11 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SkillsSection from "./SkillsSection";
-import liLogo from "../assets/icons/linkedin-logo.png";
-import giLogo from "../assets/icons/github-logo.png";
-import wajImage from "../assets/icons/wk-image.jpg";
-
-import { ExternalLink } from "lucide-react";
+import wkImage from "../assets/icons/wk-image.jpg";
 
 export const AboutSection = () => {
   return (
@@ -50,63 +46,19 @@ export const AboutSection = () => {
 
         {/* ====== Profile Card ====== */}
         <motion.div
-          className="w-[240px] sm:w-[300px] rounded-2xl bg-zinc-900/90 backdrop-blur border border-zinc-700 shadow-xl p-3"
+          className="w-[240px] sm:w-[300px] rounded-2xl bg-zinc-9000 shadow-xl pb-2"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <h1 className="mb-3 flex items-center justify-start gap-2 text-xs font-semibold uppercase tracking-wider text-zinc-400">
-            <ExternalLink className="w-4 h-4" />
-            Profiles
-          </h1>
-
-          <div className="flex flex-col gap-1.5">
-            <a
-              href="https://www.linkedin.com/in/wajahat-kamal/"
-              target="_blank"
-              className="group w-full p-1 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
-            >
-
-              <div className="flex justify-center items-center flex-row">
-                <img src={wajImage} className="h-15 w-15 rounded-full" alt="" />
-                <div className="flex flex-col text-start ml-2">
-                  <img
-                    src={liLogo}
-                    alt="LinkedIn"
-                    className="h-3 w-15"
-                  />
-                  <h1 className="text-md font-semibold">Wajahat Kamal</h1>
-                  <p className="text-xs">Full Stack Developer</p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="https://github.com/wajahat-kamal"
-              target="_blank"
-              className="group w-full p-1 rounded-lg bg-zinc-800 border border-zinc-700 shadow-sm hover:-translate-y-0.5 hover:border-blue-500/50 hover:shadow-blue-500/20 transition-all duration-300"
-            >
-              <div className="flex justify-center items-center flex-row">
-                <img src={wajImage} className="h-15 w-15 rounded-full" alt="" />
-                <div className="flex flex-col text-start ml-2">
-                  <img
-                    src={giLogo}
-                    alt="Github"
-                    className="h-4 w-13"
-                  />
-                  <h1 className="text-md font-semibold">Wajahat Kamal</h1>
-                  <p className="text-xs">Full Stack Developer</p>
-                </div>
-              </div>
-            </a>
-          </div>
+         <img src={wkImage} alt="Wajahat Kamal" className="rounded-xl h-50" />
         </motion.div>
       </div>
 
       {/* ====== Skills Section ====== */}
       <motion.div
-        className="mt-1 w-[93%] md:w-[80%] lg:w-[71%] border-t border-gray-700/30 pt-2"
+        className="mt-1 w-[93%] md:w-[80%] lg:w-[71%] border-t border-gray-700/30"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
