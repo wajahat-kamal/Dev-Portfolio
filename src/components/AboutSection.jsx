@@ -15,10 +15,10 @@ export const AboutSection = () => {
       viewport={{ once: true }}
     >
       {/* ====== Image + Text Container ====== */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-4xl mt-10">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mt-10">
         {/* ====== Text Content ====== */}
         <motion.div
-          className="w-[90%] text-center space-y-4 px-3 md:px-0 mb-6"
+          className="w-[90%] text-center space-y-4  mb-6"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -31,7 +31,7 @@ export const AboutSection = () => {
             <span className="absolute -bottom-2 left-1/2 md:left-78.5 -translate-x-1/2 md:translate-x-0 w-44 h-[2px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.6)]"></span>
           </h2>
 
-          <p className="text-gray-300 text-[12px] sm:text-[15px] leading-relaxed fira-code">
+          <p className="text-gray-300 text-[11px] sm:text-[15px] leading-relaxed fira-code">
             Hey! I'm{" "}
             <span className="font-semibold text-cyan-400">Wajahat Kamal</span>,
             a passionate{" "}
@@ -44,23 +44,11 @@ export const AboutSection = () => {
           </p>
         </motion.div>
 
-        {/* ====== Profile Card ====== */}
-        {/* <motion.div
-          className="w-[240px] sm:w-[300px] rounded-2xl bg-zinc-900 shadow-xl pb-2"
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          viewport={{ once: true }}
-          // whileHover={{ scale: 1.05, transition: { duration: 0.3 } }} // <-- hover effect
-        >
-          <img src={wkImage} alt="Wajahat Kamal" className="rounded-xl h-55 w-full object-cover" />
-        </motion.div> */}
-
       </div>
 
       {/* ====== Skills Section ====== */}
       <motion.div
-        className="mt-1 w-[93%] md:w-[80%] lg:w-[71%] border-t border-gray-700/30"
+        className="pt-2 w-[93%] md:w-[80%] lg:w-[71%] border-t border-gray-700/30"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
