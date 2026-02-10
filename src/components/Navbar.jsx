@@ -84,9 +84,6 @@ const Navbar = () => {
               <a href="https://linkedin.com/in/wajahat-kamal/" target="_blank">
                 <img src={linkedinLogo} className="w-7 h-7 text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer" />
               </a>
-              <a href="https://github.com/wajahat-kamal/" target="_blank">
-                <img src={githubLogo} className="w-7 h-7 rounded-[3px] text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer" />
-              </a>
             </div>
           </div>
 
