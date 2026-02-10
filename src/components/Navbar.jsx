@@ -87,7 +87,7 @@ const Navbar = () => {
           </div>
 
           {/* -------- Mobile Toggle + LinkedIn -------- */}
-          <div className="flex items-center gap-3 md:hidden">
+          <div className="flex items-center gap-1 md:hidden">
             <a
               href="https://linkedin.com/in/wajahat-kamal/"
               target="_blank"
@@ -96,7 +96,7 @@ const Navbar = () => {
               <img
                 src={linkedinLogo}
                 alt="LinkedIn"
-                className="w-7 h-7 text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer"
+                className="w-6 h-6 text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer"
               />
             </a>
 
