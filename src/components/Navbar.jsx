@@ -78,24 +78,38 @@ const Navbar = () => {
                 </a>
               );
             })}
+            <div className=" w-0.5 h-8 bg-zinc-400" />
             <div className="flex justify-center items-center flex-row gap-2">
-              <div className=" w-0.5 h-8 bg-zinc-400" />
               <a href="https://linkedin.com/in/wajahat-kamal/" target="_blank">
                 <img src={linkedinLogo} className="w-7 h-7 text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer" />
               </a>
             </div>
           </div>
 
+          {/* -------- Mobile Toggle + LinkedIn -------- */}
+          <div className="flex items-center gap-3 md:hidden">
+            <a
+              href="https://linkedin.com/in/wajahat-kamal/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={linkedinLogo}
+                alt="LinkedIn"
+                className="w-7 h-7 text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer"
+              />
+            </a>
 
-          {/* -------- Mobile Toggle -------- */}
-          <button
-            onClick={handleToggle}
-            aria-label="Toggle menu"
-            aria-expanded={isOpen}
-            className="md:hidden text-gray-200 hover:text-white transition-colors z-[60]"
-          >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+            <button
+              onClick={handleToggle}
+              aria-label="Toggle menu"
+              aria-expanded={isOpen}
+              className="text-gray-200 hover:text-white transition-colors z-[60]"
+            >
+              {isOpen ? <X size={32} /> : <Menu size={32} />}
+            </button>
+          </div>
+
         </nav>
       </motion.header>
 
@@ -128,9 +142,11 @@ const Navbar = () => {
               );
             })}
           </div>
+
         </aside>
       )}
     </div>
+
   );
 };
 
