@@ -29,7 +29,7 @@ const SkillCard = ({ skill }) => (
   <div
     className="group flex flex-col items-center justify-center gap-1 rounded-lg border border-gray-700/40 
                bg-gray-800/40 backdrop-blur-md shadow-sm p-1.5 transition-all duration-300 
-               hover:scale-105 hover:shadow-md hover:border-blue-500/60 hover:bg-gray-800/60 min-w-16"
+               hover:scale-105 hover:shadow-md hover:border-blue-500/60 hover:bg-gray-800/60 min-w-16 cursor-pointer"
   >
     <div
       className="w-12 h-12 flex items-center justify-center bg-white rounded-md shadow-sm 
