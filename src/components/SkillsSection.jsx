@@ -32,21 +32,21 @@ const SkillCard = ({ skill }) => (
                hover:scale-105 hover:shadow-md hover:border-blue-500/60 hover:bg-gray-800/60 min-w-16"
   >
     <div
-      className="w-10 h-10 flex items-center justify-center bg-white rounded-md shadow-sm 
+      className="w-12 h-12 flex items-center justify-center bg-white rounded-md shadow-sm 
                   group-hover:shadow-blue-500/30 transition-all duration-300"
     >
       <img
         src={skill.image}
         alt={skill.name}
         loading="lazy"
-        className="w-7 h-7 object-contain"
+        className="w-9 h-9 object-contain"
       />
     </div>
     <div className="text-center">
       <h4 className="text-[11px] font-semibold text-white tracking-wide">
         {skill.name}
       </h4>
-      <p className="text-[9px] text-gray-400 italic">{skill.category}</p>
+      {/* <p className="text-[9px] text-gray-400 italic">{skill.category}</p> */}
     </div>
   </div>
 );
