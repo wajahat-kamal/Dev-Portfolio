@@ -76,35 +76,18 @@ export const projects = [
 
 // Skills Section
 export const skills = [
-  { name: "Next.js", image: nextjsIcon, category: "Full Stack" },
-  { name: "Mongo DB", image: mongodbIcon, category: "Database" },
+  { name: "Next.js", image: nextjsIcon },
+  { name: "Mongo DB", image: mongodbIcon },
   {
     name: "Express JS",
-    image: expressjsIcon,
-    category: "Backend",
+    image: expressjsIcon
   },
-  { name: "Node.js", image: nodejsIcon, category: "Backend" },
-  { name: "React", image: reactIcon, category: "Frontend" },
-  {
-    name: "TypeScript",
-    image: typescriptIcon,
-    category: "Frontend",
-  },
-  {
-    name: "JavaScript",
-    image: javascriptIcon,
-    category: "Frontend",
-  },
-  {
-    name: "Python",
-    image: pythonIcon,
-    category: "Backend"
-  },
-  {
-    name: "Tailwind",
-    image: tailwindcssIcon,
-    category: "Frontend",
-  },
-  { name: "CSS3", image: css3Icon, category: "Frontend" },
-  { name: "HTML5", image: html5Icon, category: "Frontend" },
+  { name: "Node.js", image: nodejsIcon },
+  { name: "React", image: reactIcon },
+  { name: "TypeScript", image: typescriptIcon },
+  { name: "JavaScript", image: javascriptIcon },
+  { name: "Python", image: pythonIcon },
+  { name: "Tailwind", image: tailwindcssIcon },
+  { name: "CSS3", image: css3Icon },
+  { name: "HTML5", image: html5Icon },
 ];
