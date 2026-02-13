@@ -78,16 +78,13 @@ export const projects = [
 export const skills = [
   { name: "Next.js", image: nextjsIcon },
   { name: "Mongo DB", image: mongodbIcon },
-  {
-    name: "Express JS",
-    image: expressjsIcon
-  },
+  { name: "Express JS", image: expressjsIcon },
   { name: "Node.js", image: nodejsIcon },
   { name: "React", image: reactIcon },
+  { name: "Tailwind", image: tailwindcssIcon },
+  { name: "Python", image: pythonIcon },
   { name: "TypeScript", image: typescriptIcon },
   { name: "JavaScript", image: javascriptIcon },
-  { name: "Python", image: pythonIcon },
-  { name: "Tailwind", image: tailwindcssIcon },
   { name: "CSS3", image: css3Icon },
   { name: "HTML5", image: html5Icon },
 ];
