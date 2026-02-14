@@ -54,7 +54,7 @@ export const projects = [
     id: 3,
     title: "HOMIFY",
     description:
-      "Homify is a modern real estate website built with React.js and Tailwind CSS, featuring a clean UI, smooth animations, and an easy way to connect with me.",
+     "Homify is a modern real estate site built with Next.js, React.js, and Tailwind CSS, featuring a clean UI, smooth animations, and seamless user interaction.",
     image: wkHomifyImg,
     tags: [nextjsIcon, reactIcon, tailwindcssIcon],
     demoURL: "https://homify-wk.vercel.app/",
