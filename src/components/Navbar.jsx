@@ -80,7 +80,7 @@ const Navbar = () => {
             })}
             <div className=" w-0.5 h-8 bg-zinc-400" />
             <div className="flex justify-center items-center flex-row gap-2">
-              <a href="https://linkedin.com/in/wajahat-kamal/" target="_blank">
+              <a href="https://linkedin.com/in/wajahat-kamal/" target="_blank" className="hover:scale-105">
                 <img src={linkedinLogo} className="w-7 h-7 text-zinc-400 hover:text-white transition-colors duration-300 cursor-pointer" />
               </a>
             </div>

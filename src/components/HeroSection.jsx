@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div className="mx-auto mt-15 max-w-6xl px-6 text-center">
         {/* Availability badge */}
         <span
-          className="inline-flex items-center rounded-full border border-purple-500/30 bg-gradient-to-r from-purple-900/50 to-cyan-900/50 px-6 py-1.5 text-sm text-zinc-100"
+          className="inline-flex items-center rounded-full border border-(--color-primary) bg-(--color-primary)/20 px-6 py-1.5 text-sm text-zinc-100"
           style={{
             boxShadow: "0 0 32px rgba(168, 85, 247, 0.42)",
           }}
@@ -26,7 +26,7 @@ export default function HeroSection() {
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
-          className="mr-2 h-4 w-4 text-purple-400"
+          className="mr-2 h-4 w-4 text-(--color-primary)"
         >
             <path
               fillRule="evenodd"
@@ -54,7 +54,7 @@ export default function HeroSection() {
           className="text-4xl font-bold tracking-tight sm:text-7xl"
         >
           <span
-            className="bg-gradient-to-r from-[#b379fa] via-[#3fb8d3] to-[#3471EB] bg-clip-text text-transparent"
+            className="bg-(--color-primary) bg-clip-text text-transparent"
           >
             Wajahat Kamal
           </span>
@@ -104,7 +104,7 @@ export default function HeroSection() {
           {/* Primary CTA */}
           <a
             href="#projects"
-            className="group relative inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 
+            className="group relative inline-flex items-center gap-2 rounded-2xl bg-(--color-primary) 
                px-6 py-3 text-sm font-semibold text-white shadow-lg transition-transform duration-300 
                hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2"
           >
