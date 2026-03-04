@@ -4,21 +4,11 @@ import { skills } from "../assets/Data";
 function SkillsSection() {
   return (
     <div className="w-full overflow-hidden py-4 relative">
-      {/* ====== Infinite Sliding Animation ====== */}
-      <div className="flex flex-col gap-3">
-        {/* First Row */}
-        <div className="flex animate-slide gap-2 md:gap-3 w-max">
-          {[...skills, ...skills].map((skill, index) => (
-            <SkillCard key={index} skill={skill} />
-          ))}
-        </div>
-
-        {/* Second Row - Opposite Direction for Variation */}
-        <div className="flex animate-slide-reverse gap-2 md:gap-3 w-max">
-          {[...skills, ...skills].map((skill, index) => (
-            <SkillCard key={index} skill={skill} />
-          ))}
-        </div>
+      {/* First Row */}
+      <div className="flex justify-center flex-wrap gap-2">
+        {skills.map((skill, index) => (
+          <SkillCard key={index} skill={skill} />
+        ))}
       </div>
     </div>
   );
@@ -32,14 +22,14 @@ const SkillCard = ({ skill }) => (
                hover:scale-105 hover:shadow-md hover:border-blue-500/60 hover:bg-gray-800/60 min-w-16 cursor-pointer"
   >
     <div
-      className="w-12 h-12 flex items-center justify-center bg-white rounded-md shadow-sm 
+      className="w-14 h-14 flex items-center justify-center bg-white rounded-md shadow-sm 
                   group-hover:shadow-blue-500/30 transition-all duration-300"
     >
       <img
         src={skill.image}
         alt={skill.name}
         loading="lazy"
-        className="w-9 h-9 object-contain"
+        className="w-11 h-11 object-contain"
       />
     </div>
     <div className="text-center">

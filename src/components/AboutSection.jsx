@@ -1,8 +1,6 @@
-"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import SkillsSection from "./SkillsSection";
-import wkImage from "../assets/icons/wk-image.jpg";
 
 export const AboutSection = () => {
   return (
