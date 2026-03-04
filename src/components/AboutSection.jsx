@@ -25,17 +25,16 @@ export const AboutSection = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl sm:text-4xl font-extrabold text-center relative mb-4 fira-code">
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide drop-shadow-[0_0_5px_rgba(59,130,246,0.3)]">
+            <span className="text-primary tracking-wide drop-shadow-[0_0_5px_rgba(59,130,246,0.3)]">
               About Me
             </span>
-            <span className="absolute -bottom-2 left-1/2 md:left-78.5 -translate-x-1/2 md:translate-x-0 w-44 h-[2px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.6)]"></span>
+            <span className="absolute -bottom-2 left-1/2 md:left-78.5 -translate-x-1/2 md:translate-x-0 w-44 h-[2px] bg-primary rounded-full shadow-[0_0_10px_rgba(59,130,246,0.6)]"></span>
           </h2>
 
           <p className="text-gray-300 text-[11px] sm:text-[15px] leading-relaxed fira-code">
             Hey! I'm{" "}
             <span className="font-semibold text-primary">Wajahat Kamal</span>,
-            a passionate{" "}
-            <span className="text-primary">Full Stack Developer</span> who
+            a passionate Full Stack Developer who
             loves building modern, responsive, and high-performance web
             applications using the MERN Stack and Next.js. I enjoy turning ideas into
             interactive digital experiences that are both visually appealing and
