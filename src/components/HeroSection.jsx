@@ -15,11 +15,6 @@ export default function HeroSection() {
       id="home"
       className="relative flex min-h-[91dvh] items-center justify-center overflow-hidden py-28"
     >
-      {/* Background glow */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute left-1/2 top-1/2 h-[520px] w-[520px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-blue-500/25 via-cyan-400/25 to-purple-500/25 blur-3xl" />
-      </div>
-
       <div className="mx-auto mt-15 max-w-6xl px-6 text-center">
         {/* Availability badge */}
         <span
