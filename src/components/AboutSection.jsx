@@ -26,7 +26,7 @@ export const AboutSection = () => {
             <span className="text-primary tracking-wide drop-shadow-[0_0_5px_rgba(59,130,246,0.3)]">
               About Me
             </span>
-            <span className="absolute -bottom-2 left-1/2 md:left-78.5 -translate-x-1/2 md:translate-x-0 w-44 h-[2px] bg-primary rounded-full shadow-[0_0_10px_rgba(59,130,246,0.6)]"></span>
+            <span className="absolute -bottom-1 left-1/2 md:left-78.5 -translate-x-1/2 md:translate-x-0 w-44 h-[2px] bg-primary rounded-full shadow-[0_0_10px_rgba(59,130,246,0.6)]"></span>
           </h2>
 
           <p className="text-gray-300 text-[11px] sm:text-[15px] leading-relaxed fira-code">

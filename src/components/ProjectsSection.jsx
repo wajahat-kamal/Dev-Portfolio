@@ -14,13 +14,13 @@ export const ProjectsSection = () => {
       viewport={{ once: true }}
     >
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-7 relative">
-          <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-500 bg-clip-text text-transparent tracking-wide">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-6 relative">
+          <span className="text-primary tracking-wide">
             Projects
           </span>
-          <span className="absolute bottom-[-15px] left-1/2 -translate-x-1/2 w-36 h-[4px] bg-gradient-to-r from-blue-400 to-purple-500 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"></span>
+          <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-36 h-[2px] bg-primary rounded-full shadow-[0_0_12px_rgba(59,130,246,0.6)]"></span>
         </h2>
-        <p className="text-center text-gray-400 text-[13px] sm:text-sm md:text-basetext-muted-foreground mb-4 max-w-xl lg:max-w-2xl mx-auto leading-relaxed">
+        <p className="text-center text-gray-400 text-[13px] sm:text-[15px] md:text-basetext-muted-foreground mb-4 max-w-xl lg:max-w-2xl mx-auto leading-relaxed">
           Here are some of my recent projects. Each project was carefully
           crafted with attention to detail, performance, and user experience.
         </p>
