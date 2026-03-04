@@ -3,65 +3,35 @@
 @layer base {
   :root {
     --background: 210 40% 98%;
-
     --foreground: 222 47% 11%;
-
     --card: 0 0% 100%;
-
     --primary: 250 47% 60%;
-
     --primary-foreground: 210 40% 98%;
-
     --border: 214 32% 91%;
   }
-
   .dark {
     --background: 222 47% 4%;
-
     --foreground: 213 31% 91%;
-
     --card: 222 47% 8%;
-
     --primary: 250 65% 65%;
-
     --primary-foreground: 213 31% 91%;
-
     --border: 217 33% 20%;
   }
-
   * {
     @apply border-border;
   }
-
   html {
     @apply scroll-smooth;
   }
-
   body {
     @apply bg-background text-foreground transition-colors duration-300;
-
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-}
-
-
-
-@utility cosmic-button {
-  @apply px-6 py-2 rounded-full font-medium text-white 
-         bg-gradient-to-r from-blue-400 to-purple-500
-         transition-all duration-300 
-         hover:shadow-[0_0_20px_rgba(139,92,246,0.6)]
-         hover:scale-105;
 }
 
 @utility star {
   @apply absolute rounded-full bg-white;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
-}
-
-@utility meteor {
-  @apply absolute bg-gradient-to-r from-white via-white to-transparent rounded-full;
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
 #root {
@@ -70,84 +40,14 @@
   padding: 0;
   text-align: center;
 }
+
 .Typewriter__cursor {
   font-weight: bold;
   animation: blink 1s infinite;
 }
 
-@keyframes blink {
-  0%,
-  50% {
-    opacity: 1;
-  }
-  50.1%,
-  100% {
-    opacity: 0;
-  }
-}
-
-@layer utilities {
-  .animate-fade-in {
-    animation: fadeIn 0.7s ease-out forwards;
-  }
-  .animate-fade-in-delay-1 {
-    animation: fadeIn 0.7s ease-out 0.2s forwards;
-  }
-  .animate-fade-in-delay-2 {
-    animation: fadeIn 0.7s ease-out 0.4s forwards;
-  }
-  .animate-fade-in-delay-3 {
-    animation: fadeIn 0.7s ease-out 0.6s forwards;
-  }
-  .animate-fade-in-delay-4 {
-    animation: fadeIn 0.7s ease-out 0.8s forwards;
-  }
-}
 .fira-code {
   font-family: "Source Code Pro", monospace;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes slide-reverse {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.animate-slide {
-  animation: slide 20s linear infinite;
-}
-
-.animate-slide-reverse {
-  animation: slide-reverse 20s linear infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.animate-gradient {
-  background-size: 200% 200%;
-  animation: gradient 4s ease infinite;
 }
 
 ::-webkit-scrollbar {
