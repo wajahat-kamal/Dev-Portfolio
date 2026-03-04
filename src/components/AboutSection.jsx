@@ -33,9 +33,9 @@ export const AboutSection = () => {
 
           <p className="text-gray-300 text-[11px] sm:text-[15px] leading-relaxed fira-code">
             Hey! I'm{" "}
-            <span className="font-semibold text-cyan-400">Wajahat Kamal</span>,
+            <span className="font-semibold text-primary">Wajahat Kamal</span>,
             a passionate{" "}
-            <span className="text-purple-400">Full Stack Developer</span> who
+            <span className="text-primary">Full Stack Developer</span> who
             loves building modern, responsive, and high-performance web
             applications using the MERN Stack and Next.js. I enjoy turning ideas into
             interactive digital experiences that are both visually appealing and

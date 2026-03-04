@@ -32,14 +32,14 @@ export default function HeroSection() {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <span
-            className="inline-flex items-center rounded-full border border-(--color-primary) bg-(--color-primary)/20 px-6 py-1.5 text-sm text-zinc-100"
+            className="inline-flex items-center rounded-full border border-primary bg-primary/50 px-6 py-1.5 text-sm text-zinc-100"
             style={{ boxShadow: "0 0 32px rgba(168, 85, 247, 0.42)" }}
           >
             <svg
               viewBox="0 0 20 20"
               fill="currentColor"
               aria-hidden="true"
-              className="mr-2 h-4 w-4 text-(--color-primary)"
+              className="mr-2 h-4 w-4 text-primary"
             >
               <path
                 fillRule="evenodd"
@@ -66,7 +66,7 @@ export default function HeroSection() {
           transition={{ delay: 0.2, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="text-4xl font-bold tracking-tight sm:text-7xl"
         >
-          <span className="bg-(--color-primary) bg-clip-text text-transparent">
+          <span className="text-primary">
             Wajahat Kamal
           </span>
         </motion.h1>
@@ -114,15 +114,13 @@ export default function HeroSection() {
           {/* Primary CTA */}
           <a
             href="#projects"
-            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-2xl bg-(--color-primary) 
-               px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 
-               hover:scale-105 hover:shadow-xl
-               focus:outline-none focus:ring-2 focus:ring-(--color-primary) focus:ring-offset-2"
+            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-2xl bg-primary
+               px-6 py-3 text-sm font-semibold text-white transition-all duration-300 
+               hover:scale-105 
+               focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             style={{ ["--tw-shadow-color"]: "rgba(168,85,247,0.35)" }}
           >
-            {/* shimmer sweep on hover */}
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 to-transparent transition-transform duration-500 group-hover:translate-x-full" />
-            View Projects
+             View Projects
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </a>
 
