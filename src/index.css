@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #2563eb;
+}
+
 @utility star {
   @apply absolute rounded-full bg-white;
   box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
