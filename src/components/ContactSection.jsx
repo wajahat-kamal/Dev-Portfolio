@@ -264,7 +264,7 @@ export const ContactSection = () => {
             whileHover={!status.loading ? { scale: 1.02 } : {}}
             whileTap={!status.loading ? { scale: 0.97 } : {}}
             className={`w-full rounded-xl py-3 text-sm font-semibold text-white
-            bg-primary transition-opacity duration-200
+            bg-primary transition-opacity duration-200 cursor-pointer
             ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
           >
             {status.loading ? "Sending..." : "Send Message"}
