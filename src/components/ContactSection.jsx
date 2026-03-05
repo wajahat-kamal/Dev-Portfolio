@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Send,
   CheckCircle,
@@ -33,6 +33,12 @@ export const ContactSection = () => {
     success: false,
     loading: false,
   });
+
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: ""
+  })
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -186,9 +192,8 @@ export const ContactSection = () => {
 
           {status.message && (
             <div
-              className={`flex items-center justify-center gap-2 text-sm ${
-                status.success ? "text-green-500" : "text-red-500"
-              }`}
+              className={`flex items-center justify-center gap-2 text-sm ${status.success ? "text-green-500" : "text-red-500"
+                }`}
             >
               {status.success ? <CheckCircle /> : <XCircle />}
               {status.message}
