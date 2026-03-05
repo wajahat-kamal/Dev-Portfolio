@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import {
   Send,
   CheckCircle,
@@ -95,94 +96,151 @@ export const ContactSection = () => {
   };
 
   return (
-    <section className="mx-auto max-w-[990px] px-4 py-22" id="contact">
-      <div className="grid md:grid-cols-2 gap-8 md:gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-[#0A0F1C] backdrop-blur-xl md:p-10 p-5 shadow-xl">
+    <motion.section
+      className="mx-auto max-w-[990px] px-4 py-22"
+      id="contact"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: true }}
+    >
+      <motion.div
+        className="grid md:grid-cols-2 gap-8 md:gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-[#0A0F1C] backdrop-blur-xl md:p-10 p-5 shadow-xl"
+        initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+        whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+        viewport={{ once: true }}
+      >
         {/* ================= LEFT ================= */}
         <div>
-          <h2 className="text-4xl font-bold text-primary">
+          <motion.h2
+            className="text-4xl font-bold text-primary"
+            initial={{ opacity: 0, x: -24, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             Get in Touch
-          </h2>
+          </motion.h2>
 
-          <p className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-            Have a project in mind or need help with development? Let’s build
+          <motion.p
+            className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400"
+            initial={{ opacity: 0, x: -20, filter: "blur(4px)" }}
+            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1], delay: 0.28 }}
+            viewport={{ once: true }}
+          >
+            Have a project in mind or need help with development? Let's build
             something modern and impactful together.
-          </p>
+          </motion.p>
 
-          <ul className="mt-6 space-y-4">
+          <motion.ul
+            className="mt-6 space-y-4"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            variants={{
+              hidden: {},
+              show: { transition: { staggerChildren: 0.1, delayChildren: 0.35 } },
+            }}
+          >
             {[
               { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
               { icon: Phone, text: "+923102561812" },
               { icon: MapPin, text: "Karachi, Pakistan" },
             ].map(({ icon: Icon, text }, i) => (
-              <li
+              <motion.li
                 key={i}
                 className="flex items-center gap-4 text-sm text-zinc-400"
+                variants={{
+                  hidden: { opacity: 0, x: -18, filter: "blur(4px)" },
+                  show: { opacity: 1, x: 0, filter: "blur(0px)" },
+                }}
+                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               >
                 <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-700">
                   <Icon className="w-5 h-5 text-primary" />
                 </div>
                 {text}
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
 
-          <div className="mt-6 flex gap-4">
+          <motion.div
+            className="mt-6 flex gap-4"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            variants={{
+              hidden: {},
+              show: { transition: { staggerChildren: 0.08, delayChildren: 0.6 } },
+            }}
+          >
             {CONTACT_LINKS.map((item, i) => (
-              <a
+              <motion.a
                 key={i}
                 href={item.url}
                 target="_blank"
-                className="h-11 w-11 rounded-full flex items-center justify-center  border border-zinc-700
-              bg-gradient-to-br from-blue-500/10 to-purple-500/10 text-primary hover:scale-110 transition"
+                variants={{
+                  hidden: { opacity: 0, y: 12, scale: 0.85 },
+                  show: { opacity: 1, y: 0, scale: 1 },
+                }}
+                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ scale: 1.15, y: -2 }}
+                whileTap={{ scale: 0.92 }}
+                className="h-11 w-11 rounded-full flex items-center justify-center border border-zinc-700
+                bg-gradient-to-br from-blue-500/10 to-purple-500/10 text-primary transition-colors duration-300"
               >
                 {item.icon}
-              </a>
+              </motion.a>
             ))}
-          </div>
+          </motion.div>
         </div>
 
-        <form
+        {/* ================= FORM ================= */}
+        <motion.form
           onSubmit={onSubmit}
-          className="text-left rounded-2xl bg-[#0c101b] border border-zinc-800 p-4 backdrop-blur-xl space-y-4 "
+          className="text-left rounded-2xl bg-[#0c101b] border border-zinc-800 p-4 backdrop-blur-xl space-y-4"
+          initial={{ opacity: 0, x: 32, filter: "blur(8px)" }}
+          whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+          viewport={{ once: true }}
         >
           <input type="hidden" name="subject" value="New Contact Message" />
 
-          <div>
-            <label className="text-xs uppercase tracking-wide text-zinc-400">
-              Name
-            </label>
-            <input
-              required
-              type="text"
-              placeholder="Enter your name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
-              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
-            />
-          </div>
+          {[
+            { label: "Name", name: "name", type: "text", placeholder: "Enter your name", value: formData.name },
+            { label: "Email", name: "email", type: "email", placeholder: "Enter your email", value: formData.email },
+          ].map(({ label, name, type, placeholder, value }, i) => (
+            <motion.div
+              key={name}
+              initial={{ opacity: 0, y: 14, filter: "blur(4px)" }}
+              whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.35 + i * 0.08 }}
+              viewport={{ once: true }}
+            >
+              <label className="text-xs uppercase tracking-wide text-zinc-400">{label}</label>
+              <input
+                required
+                type={type}
+                placeholder={placeholder}
+                name={name}
+                value={value}
+                onChange={handleChange}
+                className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
+                bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none
+                transition-colors duration-200"
+              />
+            </motion.div>
+          ))}
 
-          <div>
-            <label className="text-xs uppercase tracking-wide text-zinc-400">
-              Email
-            </label>
-            <input
-              required
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
-              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
-            />
-          </div>
-
-          <div>
-            <label className="text-xs uppercase tracking-wide text-zinc-400">
-              Message
-            </label>
+          <motion.div
+            initial={{ opacity: 0, y: 14, filter: "blur(4px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.51 }}
+            viewport={{ once: true }}
+          >
+            <label className="text-xs uppercase tracking-wide text-zinc-400">Message</label>
             <textarea
               name="message"
               value={formData.message}
@@ -191,32 +249,42 @@ export const ContactSection = () => {
               rows={4}
               placeholder="Write your message..."
               className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
-              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
+              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none
+              transition-colors duration-200"
             />
-          </div>
+          </motion.div>
 
-          <button
+          <motion.button
             type="submit"
             disabled={status.loading}
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: 0.58 }}
+            viewport={{ once: true }}
+            whileHover={!status.loading ? { scale: 1.02 } : {}}
+            whileTap={!status.loading ? { scale: 0.97 } : {}}
             className={`w-full rounded-xl py-3 text-sm font-semibold text-white
-            bg-primary hover:scale-[1.02] transition
+            bg-primary transition-opacity duration-200
             ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
           >
             {status.loading ? "Sending..." : "Send Message"}
             {!status.loading && <Send className="inline ml-2 w-4 h-4" />}
-          </button>
+          </motion.button>
 
           {status.message && (
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 8, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
               className={`flex items-center justify-center gap-2 text-sm ${status.success ? "text-green-500" : "text-red-500"
                 }`}
             >
               {status.success ? <CheckCircle /> : <XCircle />}
               {status.message}
-            </div>
+            </motion.div>
           )}
-        </form>
-      </div>
-    </section>
+        </motion.form>
+      </motion.div>
+    </motion.section>
   );
 };
