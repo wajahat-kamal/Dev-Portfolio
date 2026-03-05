@@ -2,14 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import SkillsSection from "./SkillsSection";
 
-const fadeUp = (delay = 0) => ({
+export const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28, filter: "blur(6px)" },
   whileInView: { opacity: 1, y: 0, filter: "blur(0px)" },
   transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1], delay },
   viewport: { once: true },
 });
 
-const fadeLeft = (delay = 0) => ({
+export const fadeLeft = (delay = 0) => ({
   initial: { opacity: 0, x: -36, filter: "blur(6px)" },
   whileInView: { opacity: 1, x: 0, filter: "blur(0px)" },
   transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1], delay },
@@ -26,9 +26,8 @@ export const AboutSection = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true }}
     >
-      {/* ====== Image + Text Container ====== */}
+      
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl mt-10">
-        {/* ====== Text Content ====== */}
         <motion.div
           className="w-[90%] text-center space-y-4 mb-6"
           {...fadeLeft(0.1)}
@@ -51,7 +50,6 @@ export const AboutSection = () => {
             />
           </motion.h2>
 
-          {/* Paragraph — words fade in */}
           <motion.p
             className="text-gray-300 text-[11px] sm:text-[15px] leading-relaxed fira-code"
             {...fadeUp(0.25)}
