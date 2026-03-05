@@ -32,7 +32,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <span
-            className="inline-flex items-center rounded-full border border-primary bg-primary/50 px-6 py-1.5 text-sm text-zinc-100"
+            className="inline-flex items-center rounded-full border border-border-blue-400/20 bg-blue-500/20 px-6 py-1.5 text-sm text-primary"
             style={{ boxShadow: "0 0 32px rgba(168, 85, 247, 0.42)" }}
           >
             <svg

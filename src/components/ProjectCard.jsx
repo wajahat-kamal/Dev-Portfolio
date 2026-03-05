@@ -21,7 +21,7 @@ const ProjectCard = ({ project, index }) => {
       }}
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -5, transition: { duration: 0.25, ease: "easeOut" } }}
-      className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 hover:border-white/20 transition-shadow transition-colors duration-400 w-full md:w-[45%]"
+      className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 hover:border-white/20 transition-colors duration-400 w-full md:w-[45%]"
     >
       {/* Image */}
       <div className="relative w-full h-32 sm:h-56 overflow-hidden">
@@ -64,7 +64,7 @@ const ProjectCard = ({ project, index }) => {
       {/* Content */}
       <div className="py-2 px-4 flex flex-col justify-between">
         <div>
-          <h3 className="text-lg sm:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-400 to-purple-600 my-1">
+          <h3 className="text-lg sm:text-xl font-semibold text-primary my-1">
             {project.title}
           </h3>
 
@@ -75,7 +75,7 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Footer */}
         <div className="flex items-center justify-between mt-2 border-t border-white/10 pt-2">
-          <span className="text-[10px] sm:text-[11px] text-blue-400 font-medium bg-blue-500/10 px-3 py-1 rounded-full border border-blue-400/20 shadow-sm shadow-blue-500/20">
+          <span className="text-[10px] sm:text-[11px] text-primary font-medium bg-blue-500/10 px-3 py-1 rounded-full border border-blue-400/20 shadow-sm shadow-blue-500/20">
             {project.date}
           </span>
 
@@ -87,7 +87,7 @@ const ProjectCard = ({ project, index }) => {
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.92 }}
               transition={{ duration: 0.18 }}
-              className="p-1.5 sm:p-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:shadow-md hover:shadow-purple-500/30 transition-shadow duration-300"
+              className="p-1.5 sm:p-2 rounded-full bg-primary text-white hover:shadow-md hover:shadow-purple-500/30 transition-shadow duration-300"
             >
               <ExternalLink size={14} className="sm:w-4 sm:h-4" />
             </motion.a>
@@ -98,7 +98,7 @@ const ProjectCard = ({ project, index }) => {
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.92 }}
               transition={{ duration: 0.18 }}
-              className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
+              className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-primary text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
             >
               <Github size={14} className="sm:w-4 sm:h-4" />
             </motion.a>
