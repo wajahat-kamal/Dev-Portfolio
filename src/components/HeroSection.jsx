@@ -3,6 +3,7 @@
 import { ArrowRight, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import TypingEffect from "./TypingEffect";
+import ReactTypingEffect from "react-typing-effect";
 
 const fadeUp = {
   initial: { opacity: 0, y: 24, filter: "blur(6px)" },
@@ -15,7 +16,6 @@ export default function HeroSection() {
       id="home"
       className="relative flex min-h-[91dvh] items-center justify-center overflow-hidden py-28"
     >
-      {/* Subtle radial glow behind content using primary color */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
