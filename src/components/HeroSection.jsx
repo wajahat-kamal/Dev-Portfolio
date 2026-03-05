@@ -3,7 +3,6 @@
 import { ArrowRight, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import TypingEffect from "./TypingEffect";
-import ReactTypingEffect from "react-typing-effect";
 
 const fadeUp = {
   initial: { opacity: 0, y: 24, filter: "blur(6px)" },
@@ -86,7 +85,7 @@ export default function HeroSection() {
             loop
             showCursor
             cursorCharacter="|"
-            cursorClassName="text-blue-400"
+            cursorClassName="text-primary"
           />
         </motion.h2>
 
