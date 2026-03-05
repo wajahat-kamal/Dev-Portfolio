@@ -82,7 +82,7 @@ export const ContactSection = () => {
       <div className="grid md:grid-cols-2 gap-8 md:gap-14 rounded-3xl border border-zinc-200/60 dark:border-zinc-800/60 bg-[#0A0F1C] backdrop-blur-xl md:p-10 p-5 shadow-xl">
         {/* ================= LEFT ================= */}
         <div>
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-primary">
             Get in Touch
           </h2>
 
@@ -102,7 +102,7 @@ export const ContactSection = () => {
                 className="flex items-center gap-4 text-sm text-zinc-400"
               >
                 <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-700">
-                  <Icon className="w-5 h-5 text-blue-500" />
+                  <Icon className="w-5 h-5 text-primary" />
                 </div>
                 {text}
               </li>
@@ -116,7 +116,7 @@ export const ContactSection = () => {
                 href={item.url}
                 target="_blank"
                 className="h-11 w-11 rounded-full flex items-center justify-center  border border-zinc-700
-              bg-gradient-to-br from-blue-500/10 to-purple-500/10 text-blue-500 hover:scale-110 transition"
+              bg-gradient-to-br from-blue-500/10 to-purple-500/10 text-primary hover:scale-110 transition"
               >
                 {item.icon}
               </a>
@@ -141,7 +141,7 @@ export const ContactSection = () => {
               type="text"
               placeholder="Enter your name"
               className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
-              bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 outline-none"
+              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
             />
           </div>
 
@@ -155,7 +155,7 @@ export const ContactSection = () => {
               type="email"
               placeholder="Enter your email"
               className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
-              bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 outline-none"
+              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
             />
           </div>
 
@@ -169,7 +169,7 @@ export const ContactSection = () => {
               rows={4}
               placeholder="Write your message..."
               className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
-              bg-transparent px-4 py-2 text-sm focus:border-blue-500 focus:ring-1 outline-none"
+              bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
             />
           </div>
 
@@ -177,7 +177,7 @@ export const ContactSection = () => {
             type="submit"
             disabled={status.loading}
             className={`w-full rounded-xl py-3 text-sm font-semibold text-white
-            bg-gradient-to-r from-blue-500 to-purple-500 hover:scale-[1.02] transition
+            bg-primary hover:scale-[1.02] transition
             ${status.loading ? "opacity-70 cursor-not-allowed" : ""}`}
           >
             {status.loading ? "Sending..." : "Send Message"}
