@@ -31,7 +31,7 @@ export const ProjectsSection = () => {
         </motion.h2>
 
         <motion.p
-          className="text-center text-gray-400 text-[13px] sm:text-[15px] md:text-base mb-4 max-w-xl lg:max-w-2xl mx-auto leading-relaxed"
+          className="text-center text-gray-400 text-[13px] sm:text-[15px] mb-4 max-w-xl lg:max-w-2xl mx-auto leading-relaxed"
           {...fadeLeft(0.25)}
         >
           Here are some of my recent projects. Each project was carefully
@@ -54,22 +54,6 @@ export const ProjectsSection = () => {
           ))}
         </motion.div>
 
-        <motion.div
-          className="text-center mt-6"
-          initial={{ opacity: 0, y: 16, filter: "blur(4px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 0.5, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          viewport={{ once: true }}
-        >
-          <a
-            className="bg-primary font-semibold rounded-xl w-fit flex items-center mx-auto gap-2 group"
-            target="_blank"
-            href="https://github.com/wajahat-kamal"
-          >
-            Check My Github
-            <ArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
-        </motion.div>
       </motion.div>
     </motion.section>
   );
