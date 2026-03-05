@@ -59,10 +59,12 @@ export const ContactSection = () => {
 
     try {
       const response = await axios.post("https://api.web3forms.com/submit", {
-        access_key: "8994b3ed-62f4-4304-b95f-68cd476fa722",
+        access_key: import.meta.env.VITE_WEB3FORM_KEY,
         name: formData.name,
         email: formData.email,
-        message: formData.message
+        message: formData.message,
+        subject: "New Portfolio Contact Message",
+        from_name: formData.name,
       })
 
       if (response.data.success) {
@@ -183,7 +185,7 @@ export const ContactSection = () => {
             </label>
             <textarea
               name="message"
-              value={formData.email}
+              value={formData.message}
               onChange={handleChange}
               required
               rows={4}
