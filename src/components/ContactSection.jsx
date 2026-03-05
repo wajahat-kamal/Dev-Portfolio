@@ -11,6 +11,7 @@ import {
   Phone,
   Mail,
 } from "lucide-react";
+import axios from "axios";
 
 export const ContactSection = () => {
   const CONTACT_LINKS = [
@@ -34,11 +35,18 @@ export const ContactSection = () => {
     loading: false,
   });
 
-  const [form, setForm] = useState({
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
   })
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -49,24 +57,25 @@ export const ContactSection = () => {
       loading: true,
     });
 
-    const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "8994b3ed-62f4-4304-b95f-68cd476fa722");
-
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
-      });
+      const response = await axios.post("https://api.web3forms.com/submit", {
+        access_key: "8994b3ed-62f4-4304-b95f-68cd476fa722",
+        name: formData.name,
+        email: formData.email,
+        message: formData.message
+      })
 
-      const data = await response.json();
-
-      if (data.success) {
+      if (response.data.success) {
         setStatus({
           message: "Message sent successfully",
           success: true,
           loading: false,
         });
-        event.target.reset();
+        setFormData({
+          name: "",
+          email: "",
+          message: ""
+        })
       } else {
         setStatus({
           message: data.message || "Message not sent",
@@ -130,9 +139,7 @@ export const ContactSection = () => {
           </div>
         </div>
 
-        {/* ================= RIGHT (FORM) ================= */}
         <form
-          onSubmit={onSubmit}
           className="text-left rounded-2xl bg-[#0c101b] border border-zinc-800 p-4 backdrop-blur-xl space-y-4 "
         >
           <input type="hidden" name="subject" value="New Contact Message" />
@@ -142,10 +149,12 @@ export const ContactSection = () => {
               Name
             </label>
             <input
-              name="name"
               required
               type="text"
               placeholder="Enter your name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
               bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
             />
@@ -156,9 +165,11 @@ export const ContactSection = () => {
               Email
             </label>
             <input
-              name="email"
               required
               type="email"
+              name="email"
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Enter your email"
               className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
               bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
@@ -171,6 +182,8 @@ export const ContactSection = () => {
             </label>
             <textarea
               name="message"
+              value={formData.name}
+              onChange={handleChange}
               required
               rows={4}
               placeholder="Write your message..."
@@ -180,6 +193,7 @@ export const ContactSection = () => {
           </div>
 
           <button
+            onClick={onSubmit}
             type="submit"
             disabled={status.loading}
             className={`w-full rounded-xl py-3 text-sm font-semibold text-white
