@@ -127,7 +127,7 @@ export const ContactSection = () => {
         {/* ================= RIGHT (FORM) ================= */}
         <form
           onSubmit={onSubmit}
-          className="text-left rounded-2xl bg-[#0c101b] border border-zinc-800 p-4 backdrop-blur-xl space-y-4"
+          className="text-left rounded-2xl bg-[#0c101b] border border-zinc-800 p-4 backdrop-blur-xl space-y-4 "
         >
           <input type="hidden" name="subject" value="New Contact Message" />
 
@@ -140,7 +140,7 @@ export const ContactSection = () => {
               required
               type="text"
               placeholder="Enter your name"
-              className="mt-2 w-full rounded-lg border border-zinc-700
+              className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
               bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
             />
           </div>
@@ -154,7 +154,7 @@ export const ContactSection = () => {
               required
               type="email"
               placeholder="Enter your email"
-              className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
+              className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
               bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
             />
           </div>
@@ -168,7 +168,7 @@ export const ContactSection = () => {
               required
               rows={4}
               placeholder="Write your message..."
-              className="mt-2 w-full rounded-lg border border-zinc-300 dark:border-zinc-700
+              className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
               bg-transparent px-4 py-2 text-sm focus:border-primary focus:ring-1 outline-none"
             />
           </div>
