@@ -78,7 +78,7 @@ export const ContactSection = () => {
         })
       } else {
         setStatus({
-          message: data.message || "Message not sent",
+          message: response.data.message || "Message not sent",
           success: false,
           loading: false,
         });
@@ -140,6 +140,7 @@ export const ContactSection = () => {
         </div>
 
         <form
+          onSubmit={onSubmit}
           className="text-left rounded-2xl bg-[#0c101b] border border-zinc-800 p-4 backdrop-blur-xl space-y-4 "
         >
           <input type="hidden" name="subject" value="New Contact Message" />
@@ -168,7 +169,7 @@ export const ContactSection = () => {
               required
               type="email"
               name="email"
-              value={formData.name}
+              value={formData.email}
               onChange={handleChange}
               placeholder="Enter your email"
               className="mt-2 w-full rounded-lg border border-zinc-700 text-zinc-100
@@ -182,7 +183,7 @@ export const ContactSection = () => {
             </label>
             <textarea
               name="message"
-              value={formData.name}
+              value={formData.email}
               onChange={handleChange}
               required
               rows={4}
@@ -193,7 +194,6 @@ export const ContactSection = () => {
           </div>
 
           <button
-            onClick={onSubmit}
             type="submit"
             disabled={status.loading}
             className={`w-full rounded-xl py-3 text-sm font-semibold text-white
