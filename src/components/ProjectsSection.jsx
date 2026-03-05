@@ -45,13 +45,23 @@ export const ProjectsSection = () => {
           crafted with attention to detail, performance, and user experience.
         </motion.p>
 
-        <div className="flex flex-wrap justify-center gap-4 max-sm:gap-4">
+        <motion.div className="flex flex-wrap justify-center gap-4 max-sm:gap-4"
+          initial={{ opacity: 0, y: 40, filter: "blur(6px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+          viewport={{ once: true }}
+        >
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
-        </div>
+        </motion.div>
 
-        <div className="text-center mt-6">
+        <motion.div className="text-center mt-6"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
           <a
             className="bg-gradient-to-r from-blue-500 to-purple-500 cosmic-button font-semibold rounded-xl w-fit flex items-center mx-auto gap-2"
             target="_blank"
@@ -59,7 +69,7 @@ export const ProjectsSection = () => {
           >
             Check My Github <ArrowRight size={16} />
           </a>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.section>
   );
