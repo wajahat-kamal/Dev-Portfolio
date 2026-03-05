@@ -116,11 +116,11 @@ export default function HeroSection() {
             href="#projects"
             className="group relative inline-flex items-center gap-2 overflow-hidden rounded-2xl bg-primary
                px-6 py-3 text-sm font-semibold text-white transition-all duration-300 
-               hover:scale-105 
+               hover:scale-105
                focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
             style={{ ["--tw-shadow-color"]: "rgba(168,85,247,0.35)" }}
           >
-             View Projects
+            View Projects
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </a>
 
