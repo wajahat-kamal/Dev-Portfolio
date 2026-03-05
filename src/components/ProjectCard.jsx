@@ -3,21 +3,25 @@ import { ExternalLink, Github } from "lucide-react";
 import { motion } from "framer-motion";
 
 const ProjectCard = ({ project, index }) => {
-  const cardAnimation = () => {
-    if (project.id === 1 || project.id === 3) {
-      return { x: -15 };
-    } else {
-      return { x: 15 };
-    }
-  };
-
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10, scale: 0.98, ...cardAnimation() }}
-      whileInView={{ opacity: 1, y: 0, scale: 1, x: 0 }}
-      transition={{ duration: 0.3, ease: "easeOut", delay: index * 0.15 }}
-      viewport={{ once: true }}
-      className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 transition-all duration-500 hover:-translate-y-1 w-full md:w-[45%]"
+      variants={{
+        hidden: {
+          opacity: 0,
+          y: 32,
+          filter: "blur(8px)",
+          scale: 0.96,
+        },
+        show: {
+          opacity: 1,
+          y: 0,
+          filter: "blur(0px)",
+          scale: 1,
+        },
+      }}
+      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+      whileHover={{ y: -5, transition: { duration: 0.25, ease: "easeOut" } }}
+      className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 hover:border-white/20 transition-shadow transition-colors duration-400 w-full md:w-[45%]"
     >
       {/* Image */}
       <div className="relative w-full h-32 sm:h-56 overflow-hidden">
@@ -36,18 +40,23 @@ const ProjectCard = ({ project, index }) => {
           </div>
         )}
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
         {/* Tags */}
         <div className="absolute -bottom-0.5 right-0 w-full flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
-          {project.tags.map((tag, index) => (
-            <div key={index} className="relative group">
+          {project.tags.map((tag, i) => (
+            <motion.div
+              key={i}
+              whileHover={{ scale: 1.2, rotate: 6 }}
+              transition={{ duration: 0.2 }}
+              className="relative"
+            >
               <img
                 src={tag}
                 alt="tech icon"
-                className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 group-hover:opacity-100 transition-all duration-300 hover:scale-110"
+                className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 hover:opacity-100 transition-opacity duration-200"
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -59,7 +68,6 @@ const ProjectCard = ({ project, index }) => {
             {project.title}
           </h3>
 
-          {/* Description */}
           <p className="text-gray-300 text-[8px] sm:text-sm leading-relaxed line-clamp-3">
             {project.description}
           </p>
@@ -67,29 +75,33 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Footer */}
         <div className="flex items-center justify-between mt-2 border-t border-white/10 pt-2">
-          {/* Date */}
           <span className="text-[10px] sm:text-[11px] text-blue-400 font-medium bg-blue-500/10 px-3 py-1 rounded-full border border-blue-400/20 shadow-sm shadow-blue-500/20">
             {project.date}
           </span>
 
-          {/* Links */}
           <div className="flex gap-2">
-            <a
+            <motion.a
               href={project.demoURL}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 sm:p-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:scale-110 transition-transform hover:shadow-md hover:shadow-purple-500/30"
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.92 }}
+              transition={{ duration: 0.18 }}
+              className="p-1.5 sm:p-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:shadow-md hover:shadow-purple-500/30 transition-shadow duration-300"
             >
               <ExternalLink size={14} className="sm:w-4 sm:h-4" />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href={project.githubURL}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 text-gray-200 hover:text-white transition-all hover:scale-110 hover:shadow-md hover:shadow-blue-500/30"
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.92 }}
+              transition={{ duration: 0.18 }}
+              className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
             >
               <Github size={14} className="sm:w-4 sm:h-4" />
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>
