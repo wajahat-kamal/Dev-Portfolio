@@ -82,6 +82,7 @@ export const skills = [
   { name: "Express JS", image: expressjsIcon },
   { name: "Node.js", image: nodejsIcon },
   { name: "React", image: reactIcon },
+  { name: "Redux TK", image: reduxIcon },
   { name: "Tailwind", image: tailwindcssIcon },
   { name: "Python", image: pythonIcon },
   { name: "TypeScript", image: typescriptIcon },
