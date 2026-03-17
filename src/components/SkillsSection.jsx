@@ -6,7 +6,7 @@ function SkillsSection() {
   return (
     <div className="w-full overflow-hidden py-4 relative">
       <motion.div
-        className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-10 gap-2"
+        className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
