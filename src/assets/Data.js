@@ -10,6 +10,7 @@ import mongodbIcon from "./skills/mongodb-icon.svg";
 import expressjsIcon from "./skills/express-icon.png";
 import nodejsIcon from "./skills/Nodejs-icon.svg";
 import reactIcon from "./skills/React-icon.svg";
+import reduxIcon from "./skills/redux-icon.svg";
 import typescriptIcon from "./skills/typescript-icon.svg";
 import javascriptIcon from "./skills/javascript-icon.svg";
 import pythonIcon from "./skills/python-icon.png"
