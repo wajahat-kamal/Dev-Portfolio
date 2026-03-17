@@ -22,6 +22,17 @@ import geminiIcon from "./skills/gemini-icon.svg";
 // Projects Section
 export const projects = [
   {
+    id: 4,
+    title: "NextStep",
+    description:
+      "A responsive e-commerce shoe store built with Next.js, TypeScript, and Tailwind CSS. Includes dynamic routing, JSON-based product data, and a custom design system.",
+    image: wkNextStepImg,
+    tags: [nextjsIcon, reactIcon, typescriptIcon, tailwindcssIcon],
+    demoURL: "https://nextstep-wk.vercel.app/",
+    githubURL: "https://github.com/wajahat-kamal/NextStep-Nextjs",
+    date: "15 March 2026",
+  },
+  {
     id: 1,
     title: "GLOBIFY",
     description:
@@ -60,17 +71,6 @@ export const projects = [
     demoURL: "https://homify-wk.vercel.app/",
     githubURL: "https://github.com/wajahat-kamal/HOMIFY/",
     date: "10 October 2025",
-  },
-  {
-    id: 4,
-    title: "NextStep",
-    description:
-      "A responsive e-commerce shoe store built with Next.js, TypeScript, and Tailwind CSS. Includes dynamic routing, JSON-based product data, and a custom design system.",
-    image: wkNextStepImg,
-    tags: [nextjsIcon, reactIcon, typescriptIcon, tailwindcssIcon],
-    demoURL: "https://nextstep-wk.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/NextStep-Nextjs",
-    date: "15 Jan 2026",
   },
 ];
 
