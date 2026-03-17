@@ -1,6 +1,6 @@
 // Import project images
 import wkGlobifyImg from "./projects/wk-Globify.png";
-import wkShoeifyImg from "./projects/wk-shoeify.png";
+import wkNextStepImg from "./projects/wk-nextstep.png";
 import wkHomifyImg from "./projects/wk-homify.png";
 import wkFoodifyImg from "./projects/wk-foodify.png";
 
@@ -54,7 +54,7 @@ export const projects = [
     id: 3,
     title: "HOMIFY",
     description:
-     "Homify is a modern real estate site built with Next.js, React.js, and Tailwind CSS, featuring a clean UI, smooth animations, and seamless user interaction.",
+      "Homify is a modern real estate site built with Next.js, React.js, and Tailwind CSS, featuring a clean UI, smooth animations, and seamless user interaction.",
     image: wkHomifyImg,
     tags: [nextjsIcon, reactIcon, tailwindcssIcon],
     demoURL: "https://homify-wk.vercel.app/",
@@ -63,13 +63,13 @@ export const projects = [
   },
   {
     id: 4,
-    title: "SHOEIFY",
+    title: "NextStep",
     description:
-      "A modern online shoes store built with React, TypeScript, and TailwindCSS, offering stylish, durable, and comfortable footwear for every step.",
-    image: wkShoeifyImg,
-    tags: [reactIcon, typescriptIcon, tailwindcssIcon],
-    demoURL: "https://shoeify-wk.vercel.app/",
-    githubURL: "https://github.com/wajahat-kamal/Shoeify-React",
+      "A responsive e-commerce shoe store built with Next.js, TypeScript, and Tailwind CSS. Includes dynamic routing, JSON-based product data, and a custom design system.",
+    image: wkNextStepImg,
+    tags: [nextjsIcon, reactIcon, typescriptIcon, tailwindcssIcon],
+    demoURL: "https://nextstep-wk.vercel.app/",
+    githubURL: "https://github.com/wajahat-kamal/NextStep-Nextjs",
     date: "15 Jan 2026",
   },
 ];
