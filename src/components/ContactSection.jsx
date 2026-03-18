@@ -9,7 +9,6 @@ import {
   Linkedin,
   InstagramIcon,
   MapPin,
-  Phone,
   Mail,
 } from "lucide-react";
 import axios from "axios";
@@ -146,7 +145,6 @@ export const ContactSection = () => {
           >
             {[
               { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
-              { icon: Phone, text: "+923102561812" },
               { icon: MapPin, text: "Karachi, Pakistan" },
             ].map(({ icon: Icon, text }, i) => (
               <motion.li
