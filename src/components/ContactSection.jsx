@@ -146,6 +146,8 @@ export const ContactSection = () => {
             {[
               { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
               { icon: MapPin, text: "Karachi, Pakistan" },
+              { icon: Linkedin, text: "Wajahat Kamal", href: true },
+              { icon: Github, text: "Wajahat Kamal", href: true },
             ].map(({ icon: Icon, text }, i) => (
               <motion.li
                 key={i}
@@ -164,7 +166,7 @@ export const ContactSection = () => {
             ))}
           </motion.ul>
 
-          <motion.div
+          {/* <motion.div
             className="mt-6 flex gap-4"
             initial="hidden"
             whileInView="show"
@@ -192,7 +194,7 @@ export const ContactSection = () => {
                 {item.icon}
               </motion.a>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* ================= FORM ================= */}
