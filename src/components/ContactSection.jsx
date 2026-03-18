@@ -155,7 +155,7 @@ export const ContactSection = () => {
               <motion.a
                 key={i}
                 href={obj.url}
-                className="flex items-center gap-4 text-sm text-zinc-400"
+                className="flex items-center gap-4 text-sm text-zinc-400 hover:underline"
                 variants={{
                   hidden: { opacity: 0, x: -18, filter: "blur(4px)" },
                   show: { opacity: 1, x: 0, filter: "blur(0px)" },
