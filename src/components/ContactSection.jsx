@@ -15,6 +15,13 @@ import axios from "axios";
 
 export const ContactSection = () => {
 
+  const contactItems = [
+    { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
+    { icon: MapPin, text: "Karachi, Pakistan" },
+    { icon: Linkedin, text: "Wajahat Kamal", url: "https://linkedin.com/in/wajahat-kamal" },
+    { icon: Github, text: "Wajahat Kamal", url: "https://github.com/wajahat-kamal" },
+  ];
+
   const [status, setStatus] = React.useState({
     message: "",
     success: false,
@@ -129,45 +136,26 @@ export const ContactSection = () => {
               show: { transition: { staggerChildren: 0.1, delayChildren: 0.35 } },
             }}
           >
-            {[
-              { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
-              { icon: MapPin, text: "Karachi, Pakistan" },
-            ].map((obj, i) => (
-              <motion.li
-                key={i}
-                className="flex items-center gap-4 text-sm text-zinc-400"
-                variants={{
-                  hidden: { opacity: 0, x: -18, filter: "blur(4px)" },
-                  show: { opacity: 1, x: 0, filter: "blur(0px)" },
-                }}
-                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-700">
-                  <obj.icon className="w-5 h-5 text-primary" />
-                </div>
-                {obj.text}
-              </motion.li>
-            ))}
-            {[
-              { icon: Linkedin, text: "Wajahat Kamal", url: "https://linkedin.com/in/wajahat-kamal" },
-              { icon: Github, text: "Wajahat Kamal", url: "https://linkedin.com/in/wajahat-kamal" },
-            ].map((obj, i) => (
-              <motion.a
-                key={i}
-                href={obj.url}
-                className="flex items-center gap-4 text-sm text-zinc-400 hover:underline"
-                variants={{
-                  hidden: { opacity: 0, x: -18, filter: "blur(4px)" },
-                  show: { opacity: 1, x: 0, filter: "blur(0px)" },
-                }}
-                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-700">
-                  <obj.icon className="w-5 h-5 text-primary" />
-                </div>
-                {obj.text}
-              </motion.a>
-            ))}
+            {contactItems.map(({ icon: Icon, text, url }, i) => {
+              const Tag = url ? "motion.a" : "motion.li";
+              return (
+                <Tag
+                  key={i}
+                  {...(url && { href: url })}
+                  className="flex items-center gap-4 text-sm text-zinc-400 hover:underline"
+                  variants={{
+                    hidden: { opacity: 0, x: -18, filter: "blur(4px)" },
+                    show: { opacity: 1, x: 0, filter: "blur(0px)" },
+                  }}
+                  transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-700">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  {text}
+                </Tag>
+              )
+            })}
           </motion.ul>
         </div>
 
