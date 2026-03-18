@@ -14,20 +14,6 @@ import {
 import axios from "axios";
 
 export const ContactSection = () => {
-  const CONTACT_LINKS = [
-    {
-      icon: <Github className="w-5 h-5" />,
-      url: "https://github.com/wajahat-kamal",
-    },
-    {
-      icon: <Linkedin className="w-5 h-5" />,
-      url: "https://linkedin.com/in/wajahat-kamal",
-    },
-    {
-      icon: <InstagramIcon className="w-5 h-5" />,
-      url: "#",
-    },
-  ];
 
   const [status, setStatus] = React.useState({
     message: "",
@@ -146,9 +132,7 @@ export const ContactSection = () => {
             {[
               { icon: Mail, text: "wajahatkamal3.0@gmail.com" },
               { icon: MapPin, text: "Karachi, Pakistan" },
-              { icon: Linkedin, text: "Wajahat Kamal", href: true },
-              { icon: Github, text: "Wajahat Kamal", href: true },
-            ].map(({ icon: Icon, text }, i) => (
+            ].map((obj, i) => (
               <motion.li
                 key={i}
                 className="flex items-center gap-4 text-sm text-zinc-400"
@@ -159,42 +143,32 @@ export const ContactSection = () => {
                 transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               >
                 <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-700">
-                  <Icon className="w-5 h-5 text-primary" />
+                  <obj.icon className="w-5 h-5 text-primary" />
                 </div>
-                {text}
+                {obj.text}
               </motion.li>
             ))}
-          </motion.ul>
-
-          {/* <motion.div
-            className="mt-6 flex gap-4"
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            variants={{
-              hidden: {},
-              show: { transition: { staggerChildren: 0.08, delayChildren: 0.6 } },
-            }}
-          >
-            {CONTACT_LINKS.map((item, i) => (
+            {[
+              { icon: Linkedin, text: "Wajahat Kamal", url: "https://linkedin.com/in/wajahat-kamal" },
+              { icon: Github, text: "Wajahat Kamal", url: "https://linkedin.com/in/wajahat-kamal" },
+            ].map((obj, i) => (
               <motion.a
                 key={i}
-                href={item.url}
-                target="_blank"
+                href={obj.url}
+                className="flex items-center gap-4 text-sm text-zinc-400"
                 variants={{
-                  hidden: { opacity: 0, y: 12, scale: 0.85 },
-                  show: { opacity: 1, y: 0, scale: 1 },
+                  hidden: { opacity: 0, x: -18, filter: "blur(4px)" },
+                  show: { opacity: 1, x: 0, filter: "blur(0px)" },
                 }}
-                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                whileHover={{ scale: 1.15, y: -2 }}
-                whileTap={{ scale: 0.92 }}
-                className="h-11 w-11 rounded-full flex items-center justify-center border border-zinc-700
-                bg-gradient-to-br from-blue-500/10 to-purple-500/10 text-primary transition-colors duration-300"
+                transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               >
-                {item.icon}
+                <div className="h-11 w-11 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-zinc-700">
+                  <obj.icon className="w-5 h-5 text-primary" />
+                </div>
+                {obj.text}
               </motion.a>
             ))}
-          </motion.div> */}
+          </motion.ul>
         </div>
 
         {/* ================= FORM ================= */}
