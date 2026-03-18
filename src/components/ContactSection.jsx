@@ -137,12 +137,12 @@ export const ContactSection = () => {
             }}
           >
             {contactItems.map(({ icon: Icon, text, url }, i) => {
-              const Tag = url ? "motion.a" : "motion.li";
+              const Tag = url ? motion.a : motion.li;
               return (
                 <Tag
                   key={i}
                   {...(url && { href: url })}
-                  className="flex items-center gap-4 text-sm text-zinc-400 hover:underline"
+                  className={`flex items-center gap-4 text-sm text-zinc-400 ${url && "hover:font-semibold hover:text-primary"}`}
                   variants={{
                     hidden: { opacity: 0, x: -18, filter: "blur(4px)" },
                     show: { opacity: 1, x: 0, filter: "blur(0px)" },
@@ -154,7 +154,7 @@ export const ContactSection = () => {
                   </div>
                   {text}
                 </Tag>
-              )
+              );
             })}
           </motion.ul>
         </div>
