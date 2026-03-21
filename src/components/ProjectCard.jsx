@@ -75,28 +75,24 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Footer */}
         <div className="flex items-center justify-between mt-2 border-t border-white/10 pt-2">
-          <motion.a
-            href={project.demoURL}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.15 }}
-            whileTap={{ scale: 0.92 }}
-            transition={{ duration: 0.18 }}
-            className="p-1.5 sm:p-2 rounded-full bg-primary text-white hover:shadow-md hover:shadow-purple-500/30 transition-shadow duration-300"
-          >
-            <ExternalLink size={14} className="sm:w-4 sm:h-4" />
-          </motion.a>
-          <motion.a
+          <a
             href={project.githubURL}
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.15 }}
-            whileTap={{ scale: 0.92 }}
-            transition={{ duration: 0.18 }}
-            className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-primary text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
+            className="p-1.5 sm:p-2 flex items-center justify-center gap-1 rounded bg-white/10 hover:bg-primary hover:scale-102 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
           >
             <Github size={14} className="sm:w-4 sm:h-4" />
-          </motion.a>
+            <span className="text-sm">View Code</span>
+          </a>
+          <a
+            href={project.demoURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1.5 sm:p-2 rounded-full bg-primary text-white hover:shadow-md hover:shadow-purple-500/30 transition-shadow duration-300"
+          >
+            <ExternalLink size={14} className="sm:w-4 sm:h-4" />
+          </a>
+
         </div>
       </div>
     </motion.div>
