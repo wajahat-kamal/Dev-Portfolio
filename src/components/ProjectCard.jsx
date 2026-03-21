@@ -67,7 +67,7 @@ const ProjectCard = ({ project, index }) => {
             className="flex-1 h-9 flex items-center justify-center gap-1.5 rounded bg-white/10 hover:bg-primary hover:scale-105 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
           >
             <Github size={14} className="sm:w-4 sm:h-4" />
-            <span className="text-sm">View Code</span>
+            <span className="text-xs md:text-sm">View Code</span>
           </a>
 
           {/* Tags */}
@@ -96,7 +96,7 @@ const ProjectCard = ({ project, index }) => {
             className="flex-1 h-9 flex items-center justify-center gap-1.5 rounded bg-white/10 hover:bg-primary hover:scale-105 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
           >
             <ExternalLink size={14} className="sm:w-4 sm:h-4" />
-            <span className="text-sm">View Site</span>
+            <span className="text-xs md:text-sm">View Site</span>
           </a>
 
         </div>
