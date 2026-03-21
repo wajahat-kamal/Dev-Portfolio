@@ -56,24 +56,6 @@ const ProjectCard = ({ project, index }) => {
           </p>
         </div>
 
-        {/* Tags */}
-        <div className="w-full flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
-          {project.tags.map((tag, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ scale: 1.2, rotate: 6 }}
-              transition={{ duration: 0.2 }}
-              className="relative"
-            >
-              <img
-                src={tag}
-                alt="tech icon"
-                className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 hover:opacity-100 transition-opacity duration-200"
-              />
-            </motion.div>
-          ))}
-        </div>
-
         {/* Footer */}
         <div className="flex items-center justify-between mt-2 border-t border-white/10 pt-2">
           <a
@@ -85,6 +67,25 @@ const ProjectCard = ({ project, index }) => {
             <Github size={14} className="sm:w-4 sm:h-4" />
             <span className="text-sm">View Code</span>
           </a>
+
+          {/* Tags */}
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
+            {project.tags.map((tag, i) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.2, rotate: 6 }}
+                transition={{ duration: 0.2 }}
+                className="relative"
+              >
+                <img
+                  src={tag}
+                  alt="tech icon"
+                  className="w-4 h-4 sm:w-5 sm:h-5 opacity-80 hover:opacity-100 transition-opacity duration-200"
+                />
+              </motion.div>
+            ))}
+          </div>
+
           <a
             href={project.demoURL}
             target="_blank"
