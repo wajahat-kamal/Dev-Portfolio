@@ -21,7 +21,7 @@ const ProjectCard = ({ project, index }) => {
       }}
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -5, transition: { duration: 0.25, ease: "easeOut" } }}
-      className="group bg-[#0A0F1C] border border-white/10 rounded-xl overflow-hidden shadow-md hover:shadow-blue-500/20 hover:border-white/20 transition-colors duration-400 w-full md:w-[45%]"
+      className="group bg-[#0A0F1C] border border-white/10 rounded-lg overflow-hidden shadow-md hover:shadow-blue-500/20 hover:border-white/20 transition-colors duration-400 w-full md:w-[45%]"
     >
       {/* Image */}
       <div className="relative w-full h-38 sm:h-56 overflow-hidden">
@@ -42,8 +42,22 @@ const ProjectCard = ({ project, index }) => {
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
+      </div>
+
+      {/* Content */}
+      <div className="py-2 px-4 flex flex-col justify-between">
+        <div>
+          <h3 className="text-lg sm:text-xl font-semibold text-primary my-1">
+            {project.title}
+          </h3>
+
+          <p className="text-gray-300 text-[10px] sm:text-sm leading-relaxed line-clamp-3">
+            {project.description}
+          </p>
+        </div>
+
         {/* Tags */}
-        {/* <div className="absolute -bottom-0.5 right-0 w-full flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
+        <div className="w-full flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
           {project.tags.map((tag, i) => (
             <motion.div
               key={i}
@@ -58,19 +72,6 @@ const ProjectCard = ({ project, index }) => {
               />
             </motion.div>
           ))}
-        </div> */}
-      </div>
-
-      {/* Content */}
-      <div className="py-2 px-4 flex flex-col justify-between">
-        <div>
-          <h3 className="text-lg sm:text-xl font-semibold text-primary my-1">
-            {project.title}
-          </h3>
-
-          <p className="text-gray-300 text-[8px] sm:text-sm leading-relaxed line-clamp-3">
-            {project.description}
-          </p>
         </div>
 
         {/* Footer */}
