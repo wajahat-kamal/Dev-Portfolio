@@ -69,7 +69,7 @@ const ProjectCard = ({ project, index }) => {
           </a>
 
           {/* Tags */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 sm:py-2 backdrop-blur-md shadow-inner shadow-black/20">
             {project.tags.map((tag, i) => (
               <motion.div
                 key={i}
