@@ -43,7 +43,7 @@ const ProjectCard = ({ project, index }) => {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
         {/* Tags */}
-        <div className="absolute -bottom-0.5 right-0 w-full flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
+        {/* <div className="absolute -bottom-0.5 right-0 w-full flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 backdrop-blur-md border border-white/10 shadow-inner shadow-black/20">
           {project.tags.map((tag, i) => (
             <motion.div
               key={i}
@@ -58,7 +58,7 @@ const ProjectCard = ({ project, index }) => {
               />
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Content */}
@@ -75,34 +75,28 @@ const ProjectCard = ({ project, index }) => {
 
         {/* Footer */}
         <div className="flex items-center justify-between mt-2 border-t border-white/10 pt-2">
-          <span className="text-[10px] sm:text-[11px] text-primary font-medium bg-blue-500/10 px-3 py-1 rounded-full border border-blue-400/20 shadow-sm shadow-blue-500/20">
-            {project.date}
-          </span>
-
-          <div className="flex gap-2">
-            <motion.a
-              href={project.demoURL}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.15 }}
-              whileTap={{ scale: 0.92 }}
-              transition={{ duration: 0.18 }}
-              className="p-1.5 sm:p-2 rounded-full bg-primary text-white hover:shadow-md hover:shadow-purple-500/30 transition-shadow duration-300"
-            >
-              <ExternalLink size={14} className="sm:w-4 sm:h-4" />
-            </motion.a>
-            <motion.a
-              href={project.githubURL}
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.15 }}
-              whileTap={{ scale: 0.92 }}
-              transition={{ duration: 0.18 }}
-              className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-primary text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
-            >
-              <Github size={14} className="sm:w-4 sm:h-4" />
-            </motion.a>
-          </div>
+          <motion.a
+            href={project.demoURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 0.92 }}
+            transition={{ duration: 0.18 }}
+            className="p-1.5 sm:p-2 rounded-full bg-primary text-white hover:shadow-md hover:shadow-purple-500/30 transition-shadow duration-300"
+          >
+            <ExternalLink size={14} className="sm:w-4 sm:h-4" />
+          </motion.a>
+          <motion.a
+            href={project.githubURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 0.92 }}
+            transition={{ duration: 0.18 }}
+            className="p-1.5 sm:p-2 rounded-full bg-white/10 hover:bg-primary text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
+          >
+            <Github size={14} className="sm:w-4 sm:h-4" />
+          </motion.a>
         </div>
       </div>
     </motion.div>
