@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Wajahat Kamal | Full Stack Developer</title>
+        <title>Wajahat Kamal | Full Stack Developer Portfolio</title>
         <meta name="description" content="Full Stack Developer specializing in React, Next.js, Node.js. Available for freelance and full-time opportunities." />
         <meta name="keywords" content="Full Stack Developer, React Developer, Node.js, Next.js, Wajahat Kamal" />
         <meta property="og:url" content="https://wajahat-kamal.vercel.app" />
