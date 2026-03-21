@@ -142,7 +142,7 @@ export const ContactSection = () => {
                 <Tag
                   key={i}
                   {...(url && { href: url })}
-                  className={`flex items-center gap-4 text-sm text-zinc-400 ${url && "hover:text-primary duration-75 transition-all"}`}
+                  className={`flex items-center gap-4 text-sm text-zinc-400 ${url && "font-semibold hover:text-primary duration-100 transition-all"}`}
                   variants={{
                     hidden: { opacity: 0, x: -18, filter: "blur(4px)" },
                     show: { opacity: 1, x: 0, filter: "blur(0px)" },
