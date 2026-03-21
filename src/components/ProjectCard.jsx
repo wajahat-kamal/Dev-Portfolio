@@ -45,7 +45,7 @@ const ProjectCard = ({ project, index }) => {
       </div>
 
       {/* Content */}
-      <div className="py-2 px-4 flex flex-col justify-between">
+      <div className="md:py-2 md:px-4 py-1 px-2 flex flex-col justify-between">
         <div>
           <h3 className="text-lg sm:text-xl font-semibold text-primary my-1">
             {project.title}
@@ -69,7 +69,7 @@ const ProjectCard = ({ project, index }) => {
           </a>
 
           {/* Tags */}
-          <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2 bg-white/10 px-3 py-1.5 sm:py-2 backdrop-blur-md rounded">
+          <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2 bg-white/10 sm:px-3 py-1.5 px-2 sm:py-2 backdrop-blur-md rounded">
             {project.tags.map((tag, i) => (
               <motion.div
                 key={i}
