@@ -57,19 +57,19 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         {/* Footer */}
-        <div className="flex items-center justify-between mt-2 border-t border-white/10 pt-2">
+        <div className="flex items-center justify-between gap-1 mt-2 border-t border-white/10 pt-2">
           <a
             href={project.githubURL}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 sm:p-2 px-3 flex items-center justify-center gap-1 rounded bg-white/10 hover:bg-primary hover:scale-102 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
+            className="w-27 h-9 flex items-center justify-center gap-1 rounded bg-white/10 hover:bg-primary hover:scale-102 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
           >
             <Github size={14} className="sm:w-4 sm:h-4" />
             <span className="text-sm">View Code</span>
           </a>
 
           {/* Tags */}
-          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white/10 px-3 py-1.5 sm:py-2 backdrop-blur-md shadow-inner shadow-black/20">
+          <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-2 bg-white/10 px-3 py-1.5 sm:py-2 backdrop-blur-md rounded">
             {project.tags.map((tag, i) => (
               <motion.div
                 key={i}
@@ -90,7 +90,7 @@ const ProjectCard = ({ project, index }) => {
             href={project.demoURL}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-1.5 sm:p-2 px-3 flex items-center justify-center gap-1 rounded bg-white/10 hover:bg-primary hover:scale-102 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
+            className="w-27 h-9 flex items-center justify-center gap-1 rounded bg-white/10 hover:bg-primary hover:scale-102 text-gray-200 hover:text-white transition-all hover:shadow-md hover:shadow-blue-500/30"
           >
             <ExternalLink size={14} className="sm:w-4 sm:h-4" />
             <span className="text-sm">View Site</span>
